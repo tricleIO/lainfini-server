@@ -38,7 +38,11 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
 
     @ManyToOne
     @JoinColumn(name = "delivery_id", referencedColumnName = "id")
-    private Delivery deliveryType;
+    private Delivery delivery;
+
+    @ManyToOne
+    @JoinColumn(name = "shipping_region_id", referencedColumnName = "id")
+    private ShippingRegion shippingRegion;
 
     @ManyToOne
     @JoinColumn(name = "payment_id", referencedColumnName = "id")
@@ -70,8 +74,11 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
         if (cart != null) {
             orderDTO.setCartUid(cart.getId());
         }
-        if (deliveryType != null) {
-            orderDTO.setDeliveryType(deliveryType.toDTO(false));
+        if (delivery != null) {
+            orderDTO.setShipping(delivery.toDTO(false));
+        }
+        if (shippingRegion != null) {
+            orderDTO.setShippingRegion(shippingRegion.toDTO(false));
         }
         if (paymentMethod != null) {
             orderDTO.setPaymentMethod(paymentMethod.toDTO(false));
