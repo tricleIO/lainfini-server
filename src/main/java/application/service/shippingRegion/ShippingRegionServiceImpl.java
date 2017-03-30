@@ -26,7 +26,13 @@ public class ShippingRegionServiceImpl extends BaseDatabaseServiceImpl<ShippingR
         if (shippingRegion == null) {
             return ServiceResponse.error(ServiceResponseStatus.SHIPPING_REGION_NOT_FOUND);
         }
-        Country savedCountry = countryRepository.save(countryDTO.toEntity(true));
+        Country foundCountry = countryRepository.findOne(countryDTO.getUid());
+        Country savedCountry;
+        if (foundCountry == null) {
+            savedCountry = countryRepository.save(countryDTO.toEntity(true));
+        } else {
+            savedCountry = foundCountry;
+        }
         shippingRegion.getCountries().add(savedCountry);
         shippingRegionRepository.save(shippingRegion);
         return ServiceResponse.success(savedCountry.toDTO(true));
