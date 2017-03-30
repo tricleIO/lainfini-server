@@ -6,6 +6,7 @@ import application.rest.domain.ShippingRegionDTO;
 import application.service.response.ServiceResponse;
 import application.service.shippingRegion.ShippingRegionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -38,10 +39,14 @@ public class ShippingRegionController extends AbstractDatabaseController<Shippin
         return new ResponseEntity<>(countryResponse.getBody(), HttpStatus.OK);
     }
 
-//    @RequestMapping(value = "/{regionId}/countries", method = RequestMethod.GET)
-//    public ResponseEntity<?> readCountries(@PathVariable Integer regionId, Pageable pageable) {
-//
-//    }
+    @RequestMapping(value = "/{id}/countries", method = RequestMethod.GET)
+    public ResponseEntity<?> readCountries(@PathVariable Integer id) {
+        ServiceResponse<Page<CountryDTO>> countryResponse = shippingRegionService.readCountries(id);
+        if (!countryResponse.isSuccessful()) {
+            return new ErrorResponseEntity(countryResponse.getStatus());
+        }
+        return new ResponseEntity<>(countryResponse.getBody(), HttpStatus.OK);
+    }
 
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> createMaterial(@RequestBody ShippingRegionDTO shippingRegionDTO) {
