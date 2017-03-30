@@ -19,6 +19,8 @@ import application.service.delivery.DeliveryService;
 import application.service.paymentMethod.PaymentMethodService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
+import application.service.shippingRegion.ShippingRegionService;
+import application.service.shippingTariff.ShippingTariffService;
 import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -59,6 +61,12 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
 
     @Autowired
     private AddressService addressService;
+
+    @Autowired
+    private ShippingRegionService shippingRegionService;
+
+    @Autowired
+    private ShippingTariffService shippingTariffService;
 
     @Override
     public ServiceResponse<OrderDTO> create(OrderDTO dto) {
@@ -124,6 +132,18 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
             return ServiceResponse.error(ServiceResponseStatus.CART_NOT_OPEN);
         }
         dto.setCart(cartDTO);
+        ServiceResponse<ShippingTariffDTO> tariffResponse = shippingTariffService.read(dto.getShippingTariffUid());
+        if (tariffResponse.isSuccessful()) {
+            ShippingDTO shippingDTO = new ShippingDTO();
+            shippingDTO.setShippingTariff(tariffResponse.getBody());
+            // @TODO - NOT DONE
+            shippingDTO.setTrackingNumber("AAEE_NOT_DONE");
+            ServiceResponse<ShippingDTO> shippingCreateResponse = deliveryService.create(shippingDTO);
+            if (!shippingCreateResponse.isSuccessful()) {
+                return ServiceResponse.error(shippingCreateResponse.getStatus());
+            }
+            dto.setShipping(shippingCreateResponse.getBody());
+        }
         return super.doBeforeConvertInCreate(dto);
     }
 
@@ -163,10 +183,10 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                 new AdditionalDataManipulator.Writer<>(o::setCart),
                 ServiceResponseStatus.CART_NOT_FOUND)
         );
-        // add delivery type
+        // add shipping tariff
         batch.add(o -> new AdditionalDataManipulator<>(
-                new AdditionalDataManipulator.Reader<>(o.getDeliveryTypeUid(), deliveryService::read),
-                new AdditionalDataManipulator.Writer<>(o::setDeliveryType),
+                new AdditionalDataManipulator.Reader<>(o.getShippingTariffUid(), shippingTariffService::read),
+                new AdditionalDataManipulator.Writer<>(o::setShippingTariff),
                 ServiceResponseStatus.DELIVERY_NOT_FOUND)
         );
         // add payment method
@@ -186,6 +206,12 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                 new AdditionalDataManipulator.Reader<>(o.getDeliveryAddressUid(), addressService::read),
                 new AdditionalDataManipulator.Writer<>(o::setDeliveryAddress),
                 ServiceResponseStatus.ADDRESS_NOT_FOUND)
+        );
+        // add shipping region
+        batch.add(o -> new AdditionalDataManipulator<>(
+                new AdditionalDataManipulator.Reader<>(o.getShippingRegionUid(), shippingRegionService::read),
+                new AdditionalDataManipulator.Writer<>(o::setShippingRegion),
+                ServiceResponseStatus.SHIPPING_REGION_NOT_FOUND)
         );
         return batch;
     }
