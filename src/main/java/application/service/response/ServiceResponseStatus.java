@@ -59,7 +59,11 @@ public enum ServiceResponseStatus {
 
     SLUG_ALREADY_EXISTS("Slug already exists.", HttpStatus.CONFLICT),
 
-    CART_NOT_OPEN("Cart is not open, it can not be used for creating new product order.", HttpStatus.BAD_REQUEST);
+    CART_NOT_OPEN("Cart is not open, it can not be used for creating new product order.", HttpStatus.BAD_REQUEST),
+
+    CARRIER_NOT_FOUND("Carrier with given uid was not found.", HttpStatus.NOT_FOUND),
+    SHIPPING_TARIFF_NOT_FOUND("Shipping tariff with given uid was not found.", HttpStatus.NOT_FOUND),
+    SHIPPING_REGION_NOT_FOUND("Shipping region with given uid was not found.", HttpStatus.NOT_FOUND);
 
     private final HttpStatus httpStatus;
     private final String message;
