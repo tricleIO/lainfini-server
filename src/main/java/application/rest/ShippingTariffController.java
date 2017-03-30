@@ -16,7 +16,13 @@ public class ShippingTariffController extends AbstractDatabaseController<Shippin
     private ShippingTariffService shippingTariffService;
 
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<?> readMaterials(Pageable pageable) {
+    public ResponseEntity<?> readMaterials(@RequestParam(required = false, name = "country-code") String countryCode, @RequestParam(required = false, name = "country-id") Integer countryId, Pageable pageable) {
+        if (countryCode != null) {
+            return getPageResponseEntity(shippingTariffService.readByCountryCode(countryCode, pageable));
+        }
+        if (countryId != null) {
+            return getPageResponseEntity(shippingTariffService.readByCountryId(countryId, pageable));
+        }
         return readAll(pageable);
     }
 

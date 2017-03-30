@@ -4,11 +4,10 @@ import application.persistence.DTOConvertable;
 import application.rest.domain.ShippingRegionDTO;
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Data
@@ -30,5 +29,9 @@ public class ShippingRegion implements DTOConvertable<ShippingRegionDTO>, Serial
         shippingRegionDTO.setCode(code);
         return shippingRegionDTO;
     }
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "region_country", joinColumns = {@JoinColumn(name = "region_id")}, inverseJoinColumns = {@JoinColumn(name = "country_id")})
+    private Set<Country> countries = new HashSet<>();
 
 }

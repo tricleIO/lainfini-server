@@ -1,6 +1,8 @@
  package application.service.shippingTariff;
 
+import application.persistence.entity.ShippingAvailability;
 import application.persistence.entity.ShippingTariff;
+import application.persistence.repository.ShippingAvailabilityRepository;
 import application.persistence.repository.ShippingTariffRepository;
 import application.rest.domain.ShippingTariffDTO;
 import application.service.AdditionalDataManipulator;
@@ -8,11 +10,18 @@ import application.service.AdditionalDataManipulatorBatch;
 import application.service.BaseDatabaseServiceImpl;
 import application.service.carrier.CarrierService;
 import application.service.product.ApplicationFileService;
+import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-@Service
+import java.util.LinkedList;
+import java.util.List;
+
+ @Service
 public class ShippingTariffServiceImpl extends BaseDatabaseServiceImpl<ShippingTariff, Integer, ShippingTariffRepository, ShippingTariffDTO> implements ShippingTariffService {
 
     @Autowired
@@ -23,6 +32,33 @@ public class ShippingTariffServiceImpl extends BaseDatabaseServiceImpl<ShippingT
 
     @Autowired
     private ApplicationFileService applicationFileService;
+
+    @Autowired
+    private ShippingAvailabilityRepository shippingAvailabilityRepository;
+
+    public ServiceResponse<Page<ShippingTariffDTO>> readByCountryId(Integer countryId, Pageable pageable) {
+        Page<ShippingAvailability> availabilities = shippingAvailabilityRepository.findByRegionCountriesId(
+                countryId, pageable
+        );
+        Page<ShippingTariff> tariffsPage = getShippingTariffs(pageable, availabilities);
+        return ServiceResponse.success(convertPageWithEntitiesToPageWithDtos(tariffsPage, pageable));
+    }
+
+     public ServiceResponse<Page<ShippingTariffDTO>> readByCountryCode(String countryCode, Pageable pageable) {
+         Page<ShippingAvailability> availabilities = shippingAvailabilityRepository.findByRegionCountriesCode(
+                 countryCode, pageable
+         );
+         Page<ShippingTariff> tariffsPage = getShippingTariffs(pageable, availabilities);
+         return ServiceResponse.success(convertPageWithEntitiesToPageWithDtos(tariffsPage, pageable));
+     }
+
+     private Page<ShippingTariff> getShippingTariffs(Pageable pageable, Page<ShippingAvailability> availabilities) {
+         List<ShippingTariff> tariffs = new LinkedList<>();
+         for (ShippingAvailability availability : availabilities) {
+             tariffs.add(availability.getTariff());
+         }
+         return new PageImpl<>(tariffs, pageable, tariffs.size());
+     }
 
     @Override
     protected AdditionalDataManipulatorBatch<ShippingTariffDTO> getAdditionalDataLoaderBatch(ShippingTariffDTO dto) {
