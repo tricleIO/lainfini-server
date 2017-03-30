@@ -1,10 +1,13 @@
 package application.rest;
 
 import application.persistence.entity.ShippingRegion;
+import application.rest.domain.CountryDTO;
 import application.rest.domain.ShippingRegionDTO;
+import application.service.response.ServiceResponse;
 import application.service.shippingRegion.ShippingRegionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,6 +27,21 @@ public class ShippingRegionController extends AbstractDatabaseController<Shippin
     public ResponseEntity<?> readMaterial(@PathVariable Integer id) {
         return read(id);
     }
+
+    @RequestMapping(value = "/{id}/countries", method = RequestMethod.POST)
+    public ResponseEntity<?> addCountry(@PathVariable Integer id, @RequestBody CountryDTO country) {
+        country.setRegionUid(id);
+        ServiceResponse<CountryDTO> countryResponse = shippingRegionService.addCountry(country);
+        if (!countryResponse.isSuccessful()) {
+            return new ErrorResponseEntity(countryResponse.getStatus());
+        }
+        return new ResponseEntity<>(countryResponse.getBody(), HttpStatus.OK);
+    }
+
+//    @RequestMapping(value = "/{regionId}/countries", method = RequestMethod.GET)
+//    public ResponseEntity<?> readCountries(@PathVariable Integer regionId, Pageable pageable) {
+//
+//    }
 
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> createMaterial(@RequestBody ShippingRegionDTO shippingRegionDTO) {
