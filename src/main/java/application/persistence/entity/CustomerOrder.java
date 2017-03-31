@@ -2,6 +2,7 @@ package application.persistence.entity;
 
 import application.persistence.DTOConvertable;
 import application.persistence.type.OrderStatusEnum;
+import application.persistence.type.PaymentMethodEnum;
 import application.rest.domain.OrderDTO;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
@@ -44,9 +45,8 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
     @JoinColumn(name = "shipping_region_id", referencedColumnName = "id")
     private ShippingRegion shippingRegion;
 
-    @ManyToOne
-    @JoinColumn(name = "payment_id", referencedColumnName = "id")
-    private PaymentMethod paymentMethod;
+    @Enumerated(EnumType.ORDINAL)
+    private PaymentMethodEnum paymentMethod;
 
     @ManyToOne
     @JoinColumn(name = "cart_id", referencedColumnName = "id")
@@ -81,7 +81,7 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
             orderDTO.setShippingRegion(shippingRegion.toDTO(false));
         }
         if (paymentMethod != null) {
-            orderDTO.setPaymentMethod(paymentMethod.toDTO(false));
+            orderDTO.setPaymentMethod(paymentMethod);
         }
         if (deliveryAddress != null) {
             orderDTO.setDeliveryAddress(deliveryAddress.toDTO(false));

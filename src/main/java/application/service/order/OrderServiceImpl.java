@@ -16,7 +16,6 @@ import application.service.BaseDatabaseServiceImpl;
 import application.service.address.AddressService;
 import application.service.cart.CartService;
 import application.service.delivery.DeliveryService;
-import application.service.paymentMethod.PaymentMethodService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.shippingRegion.ShippingRegionService;
@@ -55,9 +54,6 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
 
     @Autowired
     private DeliveryService deliveryService;
-
-    @Autowired
-    private PaymentMethodService paymentMethodService;
 
     @Autowired
     private AddressService addressService;
@@ -188,12 +184,6 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                 new AdditionalDataManipulator.Reader<>(o.getShippingTariffUid(), shippingTariffService::read),
                 new AdditionalDataManipulator.Writer<>(o::setShippingTariff),
                 ServiceResponseStatus.DELIVERY_NOT_FOUND)
-        );
-        // add payment method
-        batch.add(o -> new AdditionalDataManipulator<>(
-                new AdditionalDataManipulator.Reader<>(o.getPaymentMethodUid(), paymentMethodService::read),
-                new AdditionalDataManipulator.Writer<>(o::setPaymentMethod),
-                ServiceResponseStatus.PAYMENT_METHOD_NOT_FOUND)
         );
         // add billing address
         batch.add(o -> new AdditionalDataManipulator<>(

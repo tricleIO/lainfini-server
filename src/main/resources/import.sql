@@ -134,11 +134,11 @@ INSERT INTO region_country (region_id, country_id) VALUES (1, 2);
 INSERT INTO shipping_availability (id, shipping_region_id, shipping_tariff_id) VALUES (1, 1, 1);
 
 -- INSERT INTO delivery (id, name) VALUES (1, 'DHL');
-INSERT INTO payment_method (id, name) VALUES (1, 'CARD');
+-- INSERT INTO payment_method (id, name) VALUES (1, 'CARD');
 
 INSERT INTO delivery (id, tracking_number, shipping_tariff_id) VALUES (1, 'AES_34', 1);
 
-INSERT INTO customer_order (id, created_at, status, billing_address_id, cart_id, customer_id, delivery_address_id, delivery_id, shipping_region_id, payment_id) VALUES (0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, '2017-03-21 13:20:29', 1, NULL, 0xF888EE4007D94A08B6D3A3F7F2F1CC6D, 0x66353763616364612D303935612D3130, 2, 1, 1, 1);
+INSERT INTO customer_order (id, created_at, status, billing_address_id, cart_id, customer_id, delivery_address_id, delivery_id, shipping_region_id, payment_method) VALUES (0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, '2017-03-21 13:20:29', 1, NULL, 0xF888EE4007D94A08B6D3A3F7F2F1CC6D, 0x66353763616364612D303935612D3130, 2, 1, 1, 1);
 --
 -- INSERT INTO order_item (added_at, price, quantity, order_id, product_id) VALUES ('2017-03-21 13:16:24', 995, 2, 0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, 0x991DC5AB44744538849059A613EECC70);
 -- INSERT INTO order_item (added_at, price, quantity, order_id, product_id) VALUES ('2017-03-21 13:15:45', 795, 1, 0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, 0x004EDA8D0F3F4F33A5C3706C55A248C5);
