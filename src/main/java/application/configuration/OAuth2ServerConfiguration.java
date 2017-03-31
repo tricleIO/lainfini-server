@@ -16,9 +16,8 @@
 
 package application.configuration;
 
-import application.service.security.CustomUserDetailsService;
+import application.service.security.RepositoryUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -34,16 +33,20 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Res
 import org.springframework.security.oauth2.provider.token.DefaultTokenServices;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
+import org.springframework.social.config.annotation.EnableSocial;
+import org.springframework.social.security.SpringSocialConfigurer;
 
 import javax.sql.DataSource;
 
 @Configuration
+@EnableSocial
 public class OAuth2ServerConfiguration {
 
 	private static final String RESOURCE_ID = "restservice";
 
 	@Configuration
 	@EnableResourceServer
+	@EnableSocial
 	protected static class ResourceServerConfiguration extends
 			ResourceServerConfigurerAdapter {
 
@@ -58,23 +61,24 @@ public class OAuth2ServerConfiguration {
 			http
 				.authorizeRequests()
 					.antMatchers("/blabla").hasRole("ADMIN")
-					.antMatchers("/greeting").authenticated();
+					.antMatchers("/greeting").authenticated().and()
+                .apply(new SpringSocialConfigurer());
 		}
 
 	}
 
 	@Configuration
 	@EnableAuthorizationServer
+	@EnableSocial
 	protected static class AuthorizationServerConfiguration extends
 			AuthorizationServerConfigurerAdapter {
 
 
 		@Autowired
-		@Qualifier("authenticationManagerBean")
 		private AuthenticationManager authenticationManager;
 
 		@Autowired
-		private CustomUserDetailsService userDetailsService;
+		private RepositoryUserDetailsService userDetailsService;
 
 		@Autowired
 		@SuppressWarnings("SpringJavaAutowiringInspection")

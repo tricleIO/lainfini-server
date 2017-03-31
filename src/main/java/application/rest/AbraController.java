@@ -1,11 +1,10 @@
 package application.rest;
 
-import application.service.abra.AbraService;
+import application.service.abra.AbraStorecardService;
 import application.service.abra.client.model.Storecard;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -17,10 +16,35 @@ import java.util.List;
 public class AbraController {
 
     @Autowired
-    private AbraService abraService;
+    private AbraStorecardService abraStorecardService;
 
-    @RequestMapping(value = "storecards",method = RequestMethod.GET)
-    public void getStorecards() {
-        List<Storecard> storecardList = abraService.getStorecardList();
+    @RequestMapping(value = "/storecards", method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE})
+    public List<Storecard> getStorecards() {
+        List<Storecard> storecardList = abraStorecardService.getStorecardList();
+        return storecardList;
+    }
+
+    @RequestMapping(value = "storecards/{id}", method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE})
+    public Storecard getStorecard(@PathVariable String id) {
+        Storecard storecard = abraStorecardService.getStorecard(id);
+        return storecard;
+    }
+
+    @RequestMapping(value = "storecards", method = RequestMethod.POST, consumes = {MediaType.APPLICATION_JSON_VALUE}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    public Storecard createStorecard(@RequestBody Storecard storecard) {
+        Storecard storecardOutput = abraStorecardService.createStorecard(storecard);
+        return storecardOutput;
+    }
+
+    @RequestMapping(value = "storecards/{id}", method = RequestMethod.PUT, consumes = {MediaType.APPLICATION_JSON_VALUE}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    public Storecard updateStorecard(@PathVariable String id, @RequestBody Storecard storecard) {
+        Storecard storecardOutput = abraStorecardService.updateStorecard(id, storecard);
+        return storecardOutput;
+    }
+
+    @RequestMapping(value = "storecards/{id}", method = RequestMethod.DELETE)
+    public Boolean deleteStorecard(@PathVariable String id) {
+        boolean isSuccessful = abraStorecardService.deleteStorecard(id);
+        return isSuccessful;
     }
 }
