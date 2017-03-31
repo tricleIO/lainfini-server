@@ -6,33 +6,28 @@ INSERT INTO complaint_reason (name) VALUES ('DEFECT');
 INSERT INTO category (id, name, parent_category_id, priority) VALUES (1, 'Scarves', NULL, 1);
 INSERT INTO category (id, name, parent_category_id, priority) VALUES (2, 'Shawl', 1, 1);
 
-INSERT INTO category (name, parent_category_id, priority) VALUES ('Bestselling', NULL, 1);
-INSERT INTO category (name, parent_category_id, priority) VALUES ('Discounts', NULL, 1);
+INSERT INTO category (id, name, parent_category_id, priority) VALUES (3,'Bestselling', NULL, 1);
+INSERT INTO category (id, name, parent_category_id, priority) VALUES (4, 'Discounts', NULL, 1);
 
-INSERT INTO currency (name, symbol, symbol_placement) VALUES ('CZK', 'Kč', 1);
-INSERT INTO currency (name, symbol, symbol_placement) VALUES ('USD', '$', 1);
-INSERT INTO currency (name, symbol, symbol_placement) VALUES ('EUR', '€', 1);
+INSERT INTO currency (id, name, symbol, symbol_placement) VALUES (1, 'CZK', 'Kč', 1);
+INSERT INTO currency (id, name, symbol, symbol_placement) VALUES (2, 'USD', '$', 1);
+INSERT INTO currency (id, name, symbol, symbol_placement) VALUES (3, 'EUR', '€', 1);
 
 INSERT INTO flash (message, title, type) VALUES ('This product may require professional installation', 'Professional is needed', 'WARNING');
 INSERT INTO flash (message, title, type) VALUES ('Goods is used', 'Used', 'WARNING');
 
-INSERT INTO size (value) VALUES ('90x90 cm');
-INSERT INTO size (value) VALUES ('180x70 cm');
-INSERT INTO size (value) VALUES ('S');
-INSERT INTO size (value) VALUES ('M');
-INSERT INTO size (value) VALUES ('L');
-INSERT INTO size (value) VALUES ('XL');
-INSERT INTO size (value) VALUES ('XXL');
+INSERT INTO size (id, value) VALUES (1,'90x90 cm');
+INSERT INTO size (id, value) VALUES (2,'180x70 cm');
 
 -- INSERT INTO unit (abbr, name) VALUES ('mm', 'milimeter');
 -- INSERT INTO unit (abbr, name) VALUES ('cm', 'centimeter');
 -- INSERT INTO unit (abbr, name) VALUES ('m', 'meter');
 -- INSERT INTO unit (abbr, name) VALUES ('g', 'gram');
-INSERT INTO unit (abbr, name) VALUES ('pcs', 'pieces');
+INSERT INTO unit (id, abbr, name) VALUES (1, 'pcs', 'pieces');
 
-INSERT INTO material (name, composition, slug) VALUES ('Twill', '100% Silk', 'twill');
-INSERT INTO material (name, composition, slug) VALUES ('Satin', '100% Silk', 'satin');
-INSERT INTO material (name, composition, slug) VALUES ('Triora', '70% Silk 30% Wool', 'triora');
+INSERT INTO material (id, name, composition, slug) VALUES (1,'Twill', '100% Silk', 'twill');
+INSERT INTO material (id, name, composition, slug) VALUES (2, 'Satin', '100% Silk', 'satin');
+INSERT INTO material (id, name, composition, slug) VALUES (3, 'Triora', '70% Silk 30% Wool', 'triora');
 
 INSERT INTO role (id, role_name) VALUES (1, 'ROLE_ADMIN');
 INSERT INTO role (id, role_name) VALUES (2, 'ROLE_CUSTOMER');
@@ -61,30 +56,48 @@ INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,vali
 INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (10,'F','10.png','UPLOADED',0xCF03CE9A7BE24201BF006B4C4CE62323,'image/png','2017-03-16 11:08:01');
 INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (11,'F','11.png','UPLOADED',0xCF03CE9A7BE24201BF006B4C4CE60323,'image/png','2017-03-16 11:08:01');
 INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (12,'F','12.png','UPLOADED',0xCF03CE9A7BE24201BF006B4C4CE62303,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (13,'F','13.png','UPLOADED',0xCF03CE9A7BE24201BF006B4C4CE62322,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (14,'F','14.png','UPLOADED',0xCF03CE9A7BE24201BF006B4C4CE62222,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (15,'F','15.png','UPLOADED',0xCF03CE9A7BE24201BF006B4C4CE63221,'image/png','2017-03-16 11:08:01');
 
-INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x66353763616364612D303935612D3131, 0, 'ST012010101_17001015', 'BUTTERFLY SCARF', 795, 'butterfly-scarf', 1, 1, 1, 1, 1, 0);
-INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0xCF03CE9A7BE24201BF006B4C4CE623F5, 0, 'ST012010103_17002015', 'PLAY OF BLUE SCARF', 795, 'play-of-blue-scarf', 1, 2, 1, 1, 1, 0);
-INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0xFA800FA1F9A24BCAB53B3736B67E0C1F, 0, 'SS012010104_17003015', 'MOONBOW', 795, 'moonbow', 1, 3, 2, 1, 1, 0);
-INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x004EDA8D0F3F4F33A5C3706C55A248C5, 0, 'ST012010105_17004015', 'SHIFT ROUND', 795, 'shift-round', 1, 4, 1, 1, 1, 0);
-INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0xCA0B32B2F0694B74A17E74AFAC3DCDF5, 0, 'ST012010105_17005015', 'SHIFT SQUARES', 795, 'shift-squares', 1, 5, 1, 1, 1, 0);
-INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0xBF5E361C9F0947CDA93AE0E34A2B23FB, 0, 'ST012010105_17006015', 'SHIFT BORDER', 795, 'shift-border', 1, 6, 1, 1, 1, 0);
-INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0xDE33C69DF2BD43BFB5E27B648C0E056B, 0, 'SS012010106_17007015', 'CERTAINTY RED', 795, 'certainty-red', 1, 7, 2, 1, 1, 0);
-INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x6ACf72A1D9B5462ABB90D05D6A87D61C, 0, 'ST012010106_17008015', 'CERTAINTY YELLOW', 795, 'certainty-yellow', 1, 8, 1, 1, 1, 0);
-INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x1D470BBF8E654CAC852B9A02E04F45FF, 0, 'ST012010106_17009015', 'CERTAINTY BLUE', 795, 'certainty-blue', 1, 9, 1, 1, 1, 0);
-INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x2D947E4844AD439E8C71B11A106D6B81, 0, 'ST012010107_17010015', 'MOVEMENT', 795, 'movement', 1, 10, 1, 1, 1, 0);
-INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x8EA1D8FD01DB4982AEEC30EBCDE88843, 0, 'MT012020201_17011012', 'BUTTERFLY SHAWL', 995, 'butterfly-shawl', 2, 11, 3, 1, 1, 0);
-INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x991DC5AB44744538849059A613EECC70, 0, 'MT012020203_17012012', 'PLAY OF BLUE SHAWL', 995, 'play-of-blue-shawl', 2, 12, 3, 1, 1, 0);
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (16,'F','16.png','UPLOADED',0xCF03CE9A7BE24201BF006B4C4CE6A1A1,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (17,'F','17.png','UPLOADED',0xCF03CE9A7BE24201BF006B4C4CE6A1A2,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (18,'F','18.png','UPLOADED',0xCF03CE9A7BE24201BF006B4C4CE6A1A3,'image/png','2017-03-16 11:08:01');
+
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (19,'F','19.png','UPLOADED',0xCF03CE9A7BE24201BF006B4C4CE6A1A4,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (20,'F','20.png','UPLOADED',0xCF03CE9A7BE24201BF006B4C4CE6A1A5,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (21,'F','21.png','UPLOADED',0xCF03CE9A7BE24201BF006B4C4CE6B1A1,'image/png','2017-03-16 11:08:01');
+
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (22,'F','22.png','UPLOADED',0xCF03CE9A7BE24201BF006B4C4CE6B1A2,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (23,'F','23.png','UPLOADED',0xCF03CE9A7BE24201BF006B4C4CE6B1A3,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (24,'F','24.png','UPLOADED',0xCF03CE9A7BE24201BF006B4C4CE6B1A4,'image/png','2017-03-16 11:08:01');
+
+INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x66353763616364612D303935612D3131, 0, 'ST012010101_17001015', 'BUTTERFLY SCARF', 795, 'butterfly-scarf', 1, 3, 1, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0xCF03CE9A7BE24201BF006B4C4CE623F5, 0, 'ST012010103_17002015', 'PLAY OF BLUE SCARF', 795, 'play-of-blue-scarf', 1, 6, 1, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0xFA800FA1F9A24BCAB53B3736B67E0C1F, 0, 'SS012010104_17003015', 'MOONBOW', 795, 'moonbow', 1, 1, 2, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x004EDA8D0F3F4F33A5C3706C55A248C5, 0, 'ST012010105_17004015', 'SHIFT ROUND', 795, 'shift-round', 1, 5, 1, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0xCA0B32B2F0694B74A17E74AFAC3DCDF5, 0, 'ST012010105_17005015', 'SHIFT SQUARES', 795, 'shift-squares', 1, 7, 1, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0xBF5E361C9F0947CDA93AE0E34A2B23FB, 0, 'ST012010105_17006015', 'SHIFT BORDER', 795, 'shift-border', 1, 13, 1, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0xDE33C69DF2BD43BFB5E27B648C0E056B, 0, 'SS012010106_17007015', 'CERTAINTY RED', 795, 'certainty-red', 1, 2, 2, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x6ACf72A1D9B5462ABB90D05D6A87D61C, 0, 'ST012010106_17008015', 'CERTAINTY YELLOW', 795, 'certainty-yellow', 1, 4, 1, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x1D470BBF8E654CAC852B9A02E04F45FF, 0, 'ST012010106_17009015', 'CERTAINTY BLUE', 795, 'certainty-blue', 1, 15, 1, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x2D947E4844AD439E8C71B11A106D6B81, 0, 'ST012010107_17010015', 'MOVEMENT', 795, 'movement', 1, 14, 1, 1, 1, 0);
+INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x8EA1D8FD01DB4982AEEC30EBCDE88843, 0, 'MT012020201_17011012', 'BUTTERFLY SHAWL', 995, 'butterfly-shawl', 2, 10, 3, 2, 1, 0);
+INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x991DC5AB44744538849059A613EECC70, 0, 'MT012020203_17012012', 'PLAY OF BLUE SHAWL', 995, 'play-of-blue-shawl', 2, 11, 3, 2, 1, 0);
 
 
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,16,0xBF5E361C9F0947CDA93AE0E34A2B23FB);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (2,17,0xBF5E361C9F0947CDA93AE0E34A2B23FB);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (3,18,0xBF5E361C9F0947CDA93AE0E34A2B23FB);
 
-INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,1,0x66353763616364612D303935612D3131);
-INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (3,2,0x66353763616364612D303935612D3131);
-INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (2,3,0x66353763616364612D303935612D3131);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,19,0x2D947E4844AD439E8C71B11A106D6B81);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (2,20,0x2D947E4844AD439E8C71B11A106D6B81);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (3,21,0x2D947E4844AD439E8C71B11A106D6B81);
 
-INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (0,3,0xCF03CE9A7BE24201BF006B4C4CE623F5);
-INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,4,0xCF03CE9A7BE24201BF006B4C4CE623F5);
-INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (3,5,0xCF03CE9A7BE24201BF006B4C4CE623F5);
-INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (5,6,0xCF03CE9A7BE24201BF006B4C4CE623F5);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,22,0x1D470BBF8E654CAC852B9A02E04F45FF);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (2,23,0x1D470BBF8E654CAC852B9A02E04F45FF);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (3,24,0x1D470BBF8E654CAC852B9A02E04F45FF);
+
 
 INSERT INTO file_collection (id,description,title,url_slug, valid_from) VALUES (1,'New collection for year 2017','Collection 2017','collection-2017','2017-01-01');
 INSERT INTO file_collection (id,description,title,url_slug, valid_from, valid_to) VALUES (2,'Sales description','Sales 2017','sales-2017', '2017-01-01', '2018-01-01');
