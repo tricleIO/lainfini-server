@@ -1,9 +1,25 @@
 package application.persistence.type;
 
-public enum PaymentMethodEnum {
+import application.persistence.DTOConvertable;
+import application.rest.domain.PaymentMethodDTO;
 
-    PAYPAL,
-    APPLE_PAY,
-    STRIPE;
+public enum PaymentMethodEnum implements DTOConvertable<PaymentMethodDTO> {
+
+    PAYPAL("www.paypal.com/payments"),
+    APPLE_PAY("www.apple-pay.com/payPay"),
+    STRIPE("www.stripe.org");
+
+    private String link;
+
+    PaymentMethodEnum(String link) {
+        this.link = link;
+    }
+
+    public PaymentMethodDTO toDTO(boolean selectAsParent, Object... parentParams) {
+        PaymentMethodDTO paymentMethodDTO = new PaymentMethodDTO();
+        paymentMethodDTO.setValue(this.name());
+        paymentMethodDTO.setLink(this.link);
+        return paymentMethodDTO;
+    }
 
 }
