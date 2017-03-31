@@ -131,9 +131,12 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
         ServiceResponse<ShippingTariffDTO> tariffResponse = shippingTariffService.read(dto.getShippingTariffUid());
         if (tariffResponse.isSuccessful()) {
             ShippingDTO shippingDTO = new ShippingDTO();
-            shippingDTO.setShippingTariff(tariffResponse.getBody());
+            ShippingTariffDTO tariff = tariffResponse.getBody();
+            shippingDTO.setShippingTariff(tariff);
             // @TODO - NOT DONE
             shippingDTO.setTrackingNumber("AAEE_NOT_DONE");
+            shippingDTO.setPrice(tariff.getPrice());
+            shippingDTO.setCurrencyUid(tariff.getCurrency().getUid());
             ServiceResponse<ShippingDTO> shippingCreateResponse = deliveryService.create(shippingDTO);
             if (!shippingCreateResponse.isSuccessful()) {
                 return ServiceResponse.error(shippingCreateResponse.getStatus());

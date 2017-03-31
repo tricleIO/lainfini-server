@@ -9,7 +9,10 @@ public class ShippingDTO implements ReadWriteDatabaseDTO<Delivery>, IdentifableD
     private Long uid;
     private String trackingNumber;
     private Integer shippingTariffUid;
+    private Double price;
+    private Integer currencyUid;
 
+    private CurrencyDTO currency;
     private ShippingTariffDTO shippingTariff;
 
     @Override
@@ -17,7 +20,11 @@ public class ShippingDTO implements ReadWriteDatabaseDTO<Delivery>, IdentifableD
         Delivery delivery = new Delivery();
         delivery.setId(uid);
         delivery.setTrackingNumber(trackingNumber);
+        delivery.setPrice(price);
         if (selectAsParent) {
+            if (currency != null) {
+                delivery.setCurrency(currency.toEntity(false));
+            }
             if (shippingTariff != null) {
                 delivery.setShippingTariff(shippingTariff.toEntity(false));
             }

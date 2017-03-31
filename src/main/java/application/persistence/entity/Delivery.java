@@ -19,6 +19,12 @@ public class Delivery implements DTOConvertable<ShippingDTO>, Serializable {
     @JoinColumn(name = "shipping_tariff_id", referencedColumnName = "id")
     private ShippingTariff shippingTariff;
 
+    private Double price;
+
+    @ManyToOne
+    @JoinColumn(name = "currency_id", referencedColumnName = "id")
+    private Currency currency;
+
     private String trackingNumber;
 
     @Override
@@ -26,6 +32,10 @@ public class Delivery implements DTOConvertable<ShippingDTO>, Serializable {
         ShippingDTO deliveryDTO = new ShippingDTO();
         deliveryDTO.setUid(id);
         deliveryDTO.setTrackingNumber(trackingNumber);
+        deliveryDTO.setPrice(price);
+        if (currency != null) {
+            deliveryDTO.setCurrency(currency.toDTO(false));
+        }
         if (shippingTariff != null) {
             deliveryDTO.setShippingTariffUid(shippingTariff.getId());
         }
