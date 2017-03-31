@@ -2,6 +2,7 @@ package application.rest.domain;
 
 import application.persistence.entity.CustomerOrder;
 import application.persistence.type.OrderStatusEnum;
+import application.persistence.type.PaymentMethodEnum;
 import application.rest.CartController;
 import application.rest.OrderController;
 import application.rest.UserController;
@@ -38,7 +39,7 @@ public class OrderDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cu
     private ShippingDTO shipping;
     private ShippingTariffDTO shippingTariff;
     private ShippingRegionDTO shippingRegion;
-    private PaymentMethodDTO paymentMethod;
+    private PaymentMethodEnum paymentMethod;
     private AddressDTO billingAddress;
     private AddressDTO deliveryAddress;
 
@@ -61,7 +62,7 @@ public class OrderDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cu
                 order.setShippingRegion(shippingRegion.toEntity(false));
             }
             if (paymentMethod != null) {
-                order.setPaymentMethod(paymentMethod.toEntity(false));
+                order.setPaymentMethod(paymentMethod);
             }
             if (billingAddress != null) {
                 order.setBillingAddress(billingAddress.toEntity(false));
