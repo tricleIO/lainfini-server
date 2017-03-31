@@ -56,6 +56,17 @@ public class UserController extends AbstractDatabaseController<User, UUID, UserD
         return new ResponseEntity<Object>(forObject,HttpStatus.OK);
     }
 
+    @RequestMapping(value = "/facebook/login")
+    public ResponseEntity<?> getFacebookUserId(@RequestParam String token) {
+        String url = "https://graph.facebook.com/v2.8/me?fields=id&access_token="+token;
+        RestTemplate restTemplate = new RestTemplate();
+        UserFacebookAccountDTO forObject = restTemplate.getForObject(url, UserFacebookAccountDTO.class);
+
+        return new ResponseEntity<Object>(forObject,HttpStatus.OK);
+    }
+
+
+
     @RequestMapping(value = "/instagram")
     public ResponseEntity<?> getInstagramUserDetails(@RequestParam String token) {
         String url = "https://api.instagram.com/v1/users/self/?access_token="+token;
