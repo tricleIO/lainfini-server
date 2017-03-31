@@ -18,7 +18,6 @@ package application.configuration;
 
 import application.persistence.repository.UserRepository;
 import application.service.security.RepositoryUserDetailsService;
-import application.service.security.SimpleSocialUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -30,7 +29,6 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.social.security.SocialUserDetailsService;
 
 @Configuration
 @EnableWebSecurity
@@ -62,11 +60,6 @@ public class SecurityContext extends WebSecurityConfigurerAdapter {
         authProvider.setUserDetailsService(userDetailsService());
         authProvider.setPasswordEncoder(passwordEncoder());
         return authProvider;
-    }
-
-    @Bean
-    public SocialUserDetailsService socialUserDetailsService() {
-        return new SimpleSocialUserDetailsService(userDetailsService());
     }
 
     /**

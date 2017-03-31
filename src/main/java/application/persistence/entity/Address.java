@@ -3,6 +3,7 @@ package application.persistence.entity;
 import application.persistence.DTOConvertable;
 import application.rest.domain.AddressDTO;
 import lombok.Data;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -10,6 +11,7 @@ import java.io.Serializable;
 @Entity
 @Table(name = "address")
 @Data
+@ToString(exclude = {"customer"})
 public class Address implements DTOConvertable<AddressDTO>, Serializable {
 
     @Id

@@ -41,6 +41,10 @@ INSERT INTO customer (id, degree_after_name, degree_before_name, first_name, las
 INSERT INTO customer (id, degree_after_name, degree_before_name, first_name, last_name, locale, email, password, phone_code, phone_number, sex, status, currency_id, register_status) VALUES (0x66353763616364612D303935612D3130, '', '', 'Petra', 'Andělová', 'CZECH', '2','$2a$10$ClApxW.jQ.ZhtDzsNB.yeunMPnrA.QiKkjwMEsfPqU5hRtuR2HUwW', '+420','555666888', 'F', 'ACTIVE', 1, 0);
 INSERT INTO customer (id, degree_after_name, degree_before_name, first_name, last_name, locale, email, password, phone_code, phone_number, sex, status, currency_id, register_status) VALUES (0x66353763616364612D303935612D3113, '', '', 'Milan', 'Předregistrovaný', 'CZECH', '3','$2a$10$ClApxW.jQ.ZhtDzsNB.yeunMPnrA.QiKkjwMEsfPqU5hRtuR2HUwW', '+420','555666888', 'F', 'ACTIVE', 1, 1);
 
+INSERT INTO linked_account(id, customer_id, account_party, account_status, valid_from) VALUES (1, 0x66353763616364612D303935612D3131, 'FACEBOOK', 0, '2017-03-16 11:08:01');
+
+INSERT INTO `lainfini-server`.la_facebook (facebook_id,username,linked_account_id) VALUES ('1360833047270444','abdul.f.salami',1);
+
 INSERT INTO customer_email_verification_token (id,expiry_date,verification_token,customer_id) VALUES (1,'2020-03-03 20:20:20','1',0x66353763616364612D303935612D3113);
 
 INSERT INTO address (city, country, house_number, postal_code, state, street, customer_id) VALUES ('Praha', 'Czechia', '987', '77984', 'Czechia', 'Polabinská', 0x66353763616364612D303935612D3131);
