@@ -13,16 +13,16 @@ INSERT INTO currency (name, symbol, symbol_placement) VALUES ('CZK', 'Kč', 1);
 INSERT INTO currency (name, symbol, symbol_placement) VALUES ('USD', '$', 1);
 INSERT INTO currency (name, symbol, symbol_placement) VALUES ('EUR', '€', 1);
 
-INSERT INTO flash (message, title, `type`) VALUES ('This product may require professional installation', 'Professional is needed', 'WARNING');
-INSERT INTO flash (message, title, `type`) VALUES ('Goods is used', 'Used', 'WARNING');
+INSERT INTO flash (message, title, type) VALUES ('This product may require professional installation', 'Professional is needed', 'WARNING');
+INSERT INTO flash (message, title, type) VALUES ('Goods is used', 'Used', 'WARNING');
 
-INSERT INTO `size` (value) VALUES ('90x90 cm');
-INSERT INTO `size` (value) VALUES ('180x70 cm');
-INSERT INTO `size` (value) VALUES ('S');
-INSERT INTO `size` (value) VALUES ('M');
-INSERT INTO `size` (value) VALUES ('L');
-INSERT INTO `size` (value) VALUES ('XL');
-INSERT INTO `size` (value) VALUES ('XXL');
+INSERT INTO size (value) VALUES ('90x90 cm');
+INSERT INTO size (value) VALUES ('180x70 cm');
+INSERT INTO size (value) VALUES ('S');
+INSERT INTO size (value) VALUES ('M');
+INSERT INTO size (value) VALUES ('L');
+INSERT INTO size (value) VALUES ('XL');
+INSERT INTO size (value) VALUES ('XXL');
 
 -- INSERT INTO unit (abbr, name) VALUES ('mm', 'milimeter');
 -- INSERT INTO unit (abbr, name) VALUES ('cm', 'centimeter');
@@ -34,8 +34,8 @@ INSERT INTO material (name, composition, slug) VALUES ('Twill', '100% Silk', 'tw
 INSERT INTO material (name, composition, slug) VALUES ('Satin', '100% Silk', 'satin');
 INSERT INTO material (name, composition, slug) VALUES ('Triora', '70% Silk 30% Wool', 'triora');
 
-INSERT INTO `role` (id, role_name) VALUES (1, 'ROLE_ADMIN');
-INSERT INTO `role` (id, role_name) VALUES (2, 'ROLE_CUSTOMER');
+INSERT INTO role (id, role_name) VALUES (1, 'ROLE_ADMIN');
+INSERT INTO role (id, role_name) VALUES (2, 'ROLE_CUSTOMER');
 
 INSERT INTO customer (id, degree_after_name, degree_before_name, first_name, last_name, locale, email, password, phone_code, phone_number, sex, status, currency_id, register_status) VALUES (0x66353763616364612D303935612D3131, 'PhD', 'Ing', 'Michal', 'Novák', 'CZECH', '1','$2a$10$ClApxW.jQ.ZhtDzsNB.yeunMPnrA.QiKkjwMEsfPqU5hRtuR2HUwW', '+420','987654987', 'M', 'ACTIVE', 1, 0);
 INSERT INTO customer (id, degree_after_name, degree_before_name, first_name, last_name, locale, email, password, phone_code, phone_number, sex, status, currency_id, register_status) VALUES (0x66353763616364612D303935612D3130, '', '', 'Petra', 'Andělová', 'CZECH', '2','$2a$10$ClApxW.jQ.ZhtDzsNB.yeunMPnrA.QiKkjwMEsfPqU5hRtuR2HUwW', '+420','555666888', 'F', 'ACTIVE', 1, 0);
@@ -119,13 +119,29 @@ INSERT INTO cart (id, created_at, created_from, status, customer_id) VALUES (0xF
 INSERT INTO cart_item (added_at, quantity, cart_id, product_id) VALUES ('2017-03-21 13:15:45', 1, 0xF888EE4007D94A08B6D3A3F7F2F1CC6D, 0x004EDA8D0F3F4F33A5C3706C55A248C5);
 INSERT INTO cart_item (added_at, quantity, cart_id, product_id) VALUES ('2017-03-21 13:16:24', 2, 0xF888EE4007D94A08B6D3A3F7F2F1CC6D, 0x991DC5AB44744538849059A613EECC70);
 
-INSERT INTO delivery (id, name) VALUES (1, 'DHL');
+INSERT INTO shipping_region (id, code, name) VALUES (1, 'NA', 'North America');
+
+INSERT INTO carrier (id, name, slug, tracking_endpoint, logo_image_id) VALUES (1, 'DHL', 'dhl', 'www.track-it.com/dhl', NULL);
+
+INSERT INTO shipping_tariff (id, code, name, slug, carrier_id, icon_image_id) VALUES (1, 'EABC', 'DHL Express', 'dhl-express', 1, NULL);
+
+INSERT INTO country (id, code, name) VALUES (1, 'US', 'USA');
+INSERT INTO country (id, code, name) VALUES (2, 'CAN', 'Canada');
+
+INSERT INTO region_country (region_id, country_id) VALUES (1, 1);
+INSERT INTO region_country (region_id, country_id) VALUES (1, 2);
+
+INSERT INTO shipping_availability (id, shipping_region_id, shipping_tariff_id) VALUES (1, 1, 1);
+
+-- INSERT INTO delivery (id, name) VALUES (1, 'DHL');
 INSERT INTO payment_method (id, name) VALUES (1, 'CARD');
 
-INSERT INTO customer_order (id, created_at, status, billing_address_id, cart_id, customer_id, delivery_address_id, delivery_id, payment_id) VALUES (0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, '2017-03-21 13:20:29', 1, NULL, 0xF888EE4007D94A08B6D3A3F7F2F1CC6D, 0x66353763616364612D303935612D3130, 2, 1, 1);
+INSERT INTO delivery (id, tracking_number, shipping_tariff_id) VALUES (1, 'AES_34', 1);
 
-INSERT INTO order_item (added_at, price, quantity, order_id, product_id) VALUES ('2017-03-21 13:16:24', 995, 2, 0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, 0x991DC5AB44744538849059A613EECC70);
-INSERT INTO order_item (added_at, price, quantity, order_id, product_id) VALUES ('2017-03-21 13:15:45', 795, 1, 0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, 0x004EDA8D0F3F4F33A5C3706C55A248C5);
+INSERT INTO customer_order (id, created_at, status, billing_address_id, cart_id, customer_id, delivery_address_id, delivery_id, shipping_region_id, payment_id) VALUES (0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, '2017-03-21 13:20:29', 1, NULL, 0xF888EE4007D94A08B6D3A3F7F2F1CC6D, 0x66353763616364612D303935612D3130, 2, 1, 1, 1);
+--
+-- INSERT INTO order_item (added_at, price, quantity, order_id, product_id) VALUES ('2017-03-21 13:16:24', 995, 2, 0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, 0x991DC5AB44744538849059A613EECC70);
+-- INSERT INTO order_item (added_at, price, quantity, order_id, product_id) VALUES ('2017-03-21 13:15:45', 795, 1, 0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, 0x004EDA8D0F3F4F33A5C3706C55A248C5);
 
 INSERT INTO complaint (id, created_at, message, type, customer_id, order_id, product_id, reason_id) VALUES (0x86573AC0E3164E4F9143D5FD6DD7E891, '2017-03-21 13:08:16', 'It is not i wanted.', 1, 0x66353763616364612D303935612D3130, 0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, 0x991DC5AB44744538849059A613EECC70, 1);
 

@@ -77,6 +77,10 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
         return user;
     }
 
+    public String getEmail() {
+        return username;
+    }
+
     @Override
     public void addLinks() {
         if (billingAddressUid != null) {

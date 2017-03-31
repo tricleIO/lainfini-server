@@ -3,7 +3,6 @@ package application.persistence.entity;
 import application.persistence.DTOConvertable;
 import application.persistence.type.OrderStatusEnum;
 import application.rest.domain.OrderDTO;
-import application.rest.domain.OrderItemDTO;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
@@ -11,8 +10,6 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
-import java.util.LinkedHashSet;
-import java.util.Set;
 import java.util.UUID;
 
 @Entity
@@ -41,7 +38,11 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
 
     @ManyToOne
     @JoinColumn(name = "delivery_id", referencedColumnName = "id")
-    private Delivery deliveryType;
+    private Delivery delivery;
+
+    @ManyToOne
+    @JoinColumn(name = "shipping_region_id", referencedColumnName = "id")
+    private ShippingRegion shippingRegion;
 
     @ManyToOne
     @JoinColumn(name = "payment_id", referencedColumnName = "id")
@@ -51,8 +52,8 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
     @JoinColumn(name = "cart_id", referencedColumnName = "id")
     private Cart cart;
 
-    @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "order")
-    private Set<OrderItem> items;
+//    @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "order")
+//    private Set<OrderItem> items;
 
     @OneToOne
     @JoinColumn(name = "billing_address_id", referencedColumnName = "id")
@@ -73,8 +74,11 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
         if (cart != null) {
             orderDTO.setCartUid(cart.getId());
         }
-        if (deliveryType != null) {
-            orderDTO.setDeliveryType(deliveryType.toDTO(false));
+        if (delivery != null) {
+            orderDTO.setShipping(delivery.toDTO(false));
+        }
+        if (shippingRegion != null) {
+            orderDTO.setShippingRegion(shippingRegion.toDTO(false));
         }
         if (paymentMethod != null) {
             orderDTO.setPaymentMethod(paymentMethod.toDTO(false));
@@ -85,13 +89,13 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
         if (billingAddress != null) {
             orderDTO.setDeliveryAddress(billingAddress.toDTO(false));
         }
-        if (items != null) {
-            Set<OrderItemDTO> itemDTOs = new LinkedHashSet<>(items.size());
-            for (OrderItem item : items) {
-                itemDTOs.add(item.toDTO(false));
-            }
-            orderDTO.setItems(itemDTOs);
-        }
+//        if (items != null) {
+//            Set<OrderItemDTO> itemDTOs = new LinkedHashSet<>(items.size());
+//            for (OrderItem item : items) {
+//                itemDTOs.add(item.toDTO(false));
+//            }
+//            orderDTO.setItems(itemDTOs);
+//        }
         return orderDTO;
     }
 

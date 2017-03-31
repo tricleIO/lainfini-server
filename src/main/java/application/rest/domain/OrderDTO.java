@@ -23,17 +23,21 @@ public class OrderDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cu
     private UUID uid;
     private UUID cartUid;
     private UUID customerUid;
-    private Integer deliveryTypeUid;
+    private Integer shippingUid;
+    private Integer shippingTariffUid;
     private Integer paymentMethodUid;
     private Date createdAt;
     private OrderStatusEnum status;
     private Set<OrderItemDTO> items;
     private Long billingAddressUid;
     private Long deliveryAddressUid;
+    private Integer shippingRegionUid;
 
     private CartDTO cart;
     private UserDTO customer;
-    private DeliveryDTO deliveryType;
+    private ShippingDTO shipping;
+    private ShippingTariffDTO shippingTariff;
+    private ShippingRegionDTO shippingRegion;
     private PaymentMethodDTO paymentMethod;
     private AddressDTO billingAddress;
     private AddressDTO deliveryAddress;
@@ -50,8 +54,11 @@ public class OrderDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cu
             if (customer != null) {
                 order.setCustomer(customer.toEntity(false));
             }
-            if (deliveryType != null) {
-                order.setDeliveryType(deliveryType.toEntity(false));
+            if (shipping != null) {
+                order.setDelivery(shipping.toEntity(false));
+            }
+            if (shippingRegion != null) {
+                order.setShippingRegion(shippingRegion.toEntity(false));
             }
             if (paymentMethod != null) {
                 order.setPaymentMethod(paymentMethod.toEntity(false));

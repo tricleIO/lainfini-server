@@ -1,7 +1,9 @@
 package application.service.cart;
 
 import application.persistence.entity.Cart;
+import application.persistence.entity.CartItem;
 import application.persistence.entity.User;
+import application.persistence.repository.CartItemRepository;
 import application.persistence.repository.CartRepository;
 import application.persistence.type.CartStatusEnum;
 import application.rest.domain.CartDTO;
@@ -18,6 +20,8 @@ import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.UUID;
 
@@ -28,6 +32,9 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
     private CartRepository cartRepository;
 
     @Autowired
+    private CartItemRepository cartItemRepository;
+
+    @Autowired
     private UserService userService;
 
     @Autowired
@@ -35,19 +42,23 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
 
     @Override
     protected void additionalUpdateDto(CartDTO dto) {
-        Set<CartItemDTO> items = dto.getItems();
-        for (CartItemDTO item : items) {
-            ServiceResponse<ProductDTO> productResponse = productService.read(item.getProductUid());
+        List<CartItem> items = cartItemRepository.findByCartId(dto.getUid());
+        Set<CartItemDTO> itemDTOs = new HashSet<>();
+        for (CartItem item : items) {
+            CartItemDTO cartItemDTO = item.toDTO(false);
+            ServiceResponse<ProductDTO> productResponse = productService.read(cartItemDTO.getProductUid());
             if (productResponse.isSuccessful()) {
-                item.setProduct(productResponse.getBody());
+                cartItemDTO.setProduct(productResponse.getBody());
             }
+            itemDTOs.add(cartItemDTO);
         }
+        dto.setItems(itemDTOs);
     }
 
     // @TODO - repair error with finOne in base service, not override here!
     @Override
     public ServiceResponse<CartDTO> read(UUID key) {
-        Cart cart = cartRepository.findOneById(key);
+        Cart cart = cartRepository.findById(key);
         if (cart == null) {
             return ServiceResponse.error(ServiceResponseStatus.CART_NOT_FOUND);
         }
@@ -59,7 +70,7 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
     public ServiceResponse<CartDTO> readCurrentCustomersCart() {
         User user = CustomUserDetails.getCurrentUser();
         if (user == null) {
-            return create(new CartDTO());
+            return ServiceResponse.error(ServiceResponseStatus.UNAUTHORIZED);
         }
         Cart cart = cartRepository.findFirstByCustomerIdAndStatusOrderByCreatedAtDesc(user.getId(), CartStatusEnum.OPENED);
         if (cart == null) {
@@ -67,7 +78,7 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
             cartDTO.setCustomerUid(user.getId());
             return create(cartDTO);
         }
-        return ServiceResponse.success(cart.toDTO(false));
+        return read(cart.getId());
     }
 
     @Override

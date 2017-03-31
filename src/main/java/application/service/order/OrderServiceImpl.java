@@ -4,13 +4,12 @@ import application.persistence.entity.Cart;
 import application.persistence.entity.CartItem;
 import application.persistence.entity.CustomerOrder;
 import application.persistence.entity.OrderItem;
+import application.persistence.repository.CartItemRepository;
 import application.persistence.repository.CartRepository;
+import application.persistence.repository.OrderItemRepository;
 import application.persistence.repository.OrderRepository;
 import application.persistence.type.CartStatusEnum;
-import application.rest.domain.AddressDTO;
-import application.rest.domain.CartDTO;
-import application.rest.domain.OrderDTO;
-import application.rest.domain.UserDTO;
+import application.rest.domain.*;
 import application.service.AdditionalDataManipulator;
 import application.service.AdditionalDataManipulatorBatch;
 import application.service.BaseDatabaseServiceImpl;
@@ -20,13 +19,16 @@ import application.service.delivery.DeliveryService;
 import application.service.paymentMethod.PaymentMethodService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
+import application.service.shippingRegion.ShippingRegionService;
+import application.service.shippingTariff.ShippingTariffService;
 import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.util.LinkedHashSet;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.UUID;
 
@@ -37,10 +39,16 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     private OrderRepository orderRepository;
 
     @Autowired
+    private OrderItemRepository orderItemRepository;
+
+    @Autowired
     private UserService userService;
 
     @Autowired
     private CartRepository cartRepository;
+
+    @Autowired
+    private CartItemRepository cartItemRepository;
 
     @Autowired
     private CartService cartService;
@@ -53,6 +61,21 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
 
     @Autowired
     private AddressService addressService;
+
+    @Autowired
+    private ShippingRegionService shippingRegionService;
+
+    @Autowired
+    private ShippingTariffService shippingTariffService;
+
+    @Override
+    public ServiceResponse<OrderDTO> create(OrderDTO dto) {
+        ServiceResponse<OrderDTO> createResponse = super.create(dto);
+        if (createResponse.isSuccessful()) {
+            return read(createResponse.getBody().getUid());
+        }
+        return createResponse;
+    }
 
     @Override
     public ServiceResponse<Page<OrderDTO>> readCustomerOrders(UUID customerId, Pageable pageable) {
@@ -109,6 +132,18 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
             return ServiceResponse.error(ServiceResponseStatus.CART_NOT_OPEN);
         }
         dto.setCart(cartDTO);
+        ServiceResponse<ShippingTariffDTO> tariffResponse = shippingTariffService.read(dto.getShippingTariffUid());
+        if (tariffResponse.isSuccessful()) {
+            ShippingDTO shippingDTO = new ShippingDTO();
+            shippingDTO.setShippingTariff(tariffResponse.getBody());
+            // @TODO - NOT DONE
+            shippingDTO.setTrackingNumber("AAEE_NOT_DONE");
+            ServiceResponse<ShippingDTO> shippingCreateResponse = deliveryService.create(shippingDTO);
+            if (!shippingCreateResponse.isSuccessful()) {
+                return ServiceResponse.error(shippingCreateResponse.getStatus());
+            }
+            dto.setShipping(shippingCreateResponse.getBody());
+        }
         return super.doBeforeConvertInCreate(dto);
     }
 
@@ -117,8 +152,7 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
         if (entity.getCart() != null) {
             Cart cart = cartRepository.findOne(entity.getCart().getId());
             if (cart != null) {
-                Set<OrderItem> orderItems = new LinkedHashSet<>();
-                for (CartItem cartItem : cart.getItems()) {
+                for (CartItem cartItem : cartItemRepository.findByCartId(entity.getCart().getId())) {
                     // create order item from cart item
                     OrderItem orderItem = new OrderItem();
                     orderItem.setProduct(cartItem.getProduct());
@@ -126,10 +160,8 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                     orderItem.setPrice(cartItem.getProduct().getPrice());
                     orderItem.setAddedAt(cartItem.getAddedAt());
                     orderItem.setOrder(entity);
-                    orderItems.add(orderItem);
+                    orderItemRepository.save(orderItem);
                 }
-                entity.setItems(orderItems);
-                orderRepository.save(entity);
             }
             cart.setStatus(CartStatusEnum.CHECKEDOUT);
             cartRepository.save(cart);
@@ -151,10 +183,10 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                 new AdditionalDataManipulator.Writer<>(o::setCart),
                 ServiceResponseStatus.CART_NOT_FOUND)
         );
-        // add delivery type
+        // add shipping tariff
         batch.add(o -> new AdditionalDataManipulator<>(
-                new AdditionalDataManipulator.Reader<>(o.getDeliveryTypeUid(), deliveryService::read),
-                new AdditionalDataManipulator.Writer<>(o::setDeliveryType),
+                new AdditionalDataManipulator.Reader<>(o.getShippingTariffUid(), shippingTariffService::read),
+                new AdditionalDataManipulator.Writer<>(o::setShippingTariff),
                 ServiceResponseStatus.DELIVERY_NOT_FOUND)
         );
         // add payment method
@@ -175,7 +207,23 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                 new AdditionalDataManipulator.Writer<>(o::setDeliveryAddress),
                 ServiceResponseStatus.ADDRESS_NOT_FOUND)
         );
+        // add shipping region
+        batch.add(o -> new AdditionalDataManipulator<>(
+                new AdditionalDataManipulator.Reader<>(o.getShippingRegionUid(), shippingRegionService::read),
+                new AdditionalDataManipulator.Writer<>(o::setShippingRegion),
+                ServiceResponseStatus.SHIPPING_REGION_NOT_FOUND)
+        );
         return batch;
+    }
+
+    @Override
+    protected void additionalUpdateDto(OrderDTO dto) {
+        List<OrderItem> items = orderItemRepository.findByOrderId(dto.getUid());
+        Set<OrderItemDTO> itemDTOs = new HashSet<>();
+        for (OrderItem item : items) {
+            itemDTOs.add(item.toDTO(false));
+        }
+        dto.setItems(itemDTOs);
     }
 
     @Override
