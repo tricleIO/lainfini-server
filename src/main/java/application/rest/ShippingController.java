@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(value = "/shippings")
+@RequestMapping(value = "/shipping")
 public class ShippingController extends AbstractDatabaseController<Delivery, Long, ShippingDTO, DeliveryService> {
 
     @Autowired

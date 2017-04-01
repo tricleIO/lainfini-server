@@ -33,6 +33,9 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
     @Column(name = "created_at", nullable = false)
     private Date createdAt;
 
+    @Column(name = "completed_at")
+    private Date completedAt;
+
     @Column(name = "status", nullable = false)
     @Enumerated(EnumType.ORDINAL)
     private OrderStatusEnum status;
@@ -71,6 +74,7 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
             orderDTO.setCustomerUid(customer.getId());
         }
         orderDTO.setCreatedAt(createdAt);
+        orderDTO.setCompletedAt(completedAt );
         if (cart != null) {
             orderDTO.setCartUid(cart.getId());
         }

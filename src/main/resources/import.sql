@@ -217,7 +217,7 @@ INSERT INTO shipping_region (id, code, name) VALUES (1, 'NA', 'North America');
 
 INSERT INTO carrier (id, name, slug, tracking_endpoint, logo_image_id) VALUES (1, 'DHL', 'dhl', 'www.track-it.com/dhl', NULL);
 
-INSERT INTO shipping_tariff (id, code, name, slug, carrier_id, icon_image_id) VALUES (1, 'EABC', 'DHL Express', 'dhl-express', 1, NULL);
+INSERT INTO shipping_tariff (id, code, name, slug, carrier_id, price, currency_id, icon_image_id) VALUES (1, 'EABC', 'DHL Express', 'dhl-express', 1, 130, 2, NULL);
 
 INSERT INTO country (id, code, name) VALUES (1, 'US', 'USA');
 INSERT INTO country (id, code, name) VALUES (2, 'CAN', 'Canada');

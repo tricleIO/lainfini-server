@@ -13,7 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(value = "/shippingRegions")
+@RequestMapping(value = "/shipping/regions")
 public class ShippingRegionController extends AbstractDatabaseController<ShippingRegion, Integer, ShippingRegionDTO, ShippingRegionService> {
 
     @Autowired
