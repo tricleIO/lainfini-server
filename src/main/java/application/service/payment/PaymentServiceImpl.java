@@ -12,7 +12,11 @@ import application.service.order.OrderService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+
+import java.util.UUID;
 
 @Service
 public class PaymentServiceImpl extends BaseDatabaseServiceImpl<Payment, Long, PaymentRepository, PaymentDTO> implements PaymentService {
@@ -25,6 +29,14 @@ public class PaymentServiceImpl extends BaseDatabaseServiceImpl<Payment, Long, P
 
     @Autowired
     private CurrencyRepository currencyRepository;
+
+    @Override
+    public ServiceResponse<Page<PaymentDTO>> readOrderPayments(UUID orderId, Pageable pageable) {
+        Page<Payment> payments = paymentRepository.findByOrderId(orderId, pageable);
+        return ServiceResponse.success(
+                convertPageWithEntitiesToPageWithDtos(payments, pageable)
+        );
+    }
 
     @Override
     protected ServiceResponse<PaymentDTO> doBeforeConvertInCreate(PaymentDTO dto) {
