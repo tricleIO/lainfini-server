@@ -72,6 +72,39 @@ INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,vali
 INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (23,'F','23.png','UPLOADED',0xCF03CE9A7BE24201BF006B4C4CE6B1A3,'image/png','2017-03-16 11:08:01');
 INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (24,'F','24.png','UPLOADED',0xCF03CE9A7BE24201BF006B4C4CE6B1A4,'image/png','2017-03-16 11:08:01');
 
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (25,'F','25.png','UPLOADED',0x0103CE9A7BE24201BF006B4C4CE6B1A2,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (26,'F','26.png','UPLOADED',0x0203CE9A7BE24201BF006B4C4CE6B1A3,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (27,'F','27.png','UPLOADED',0x0303CE9A7BE24201BF006B4C4CE6B1A4,'image/png','2017-03-16 11:08:01');
+
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (28,'F','28.png','UPLOADED',0x0403CE9A7BE24201BF006B4C4CE6B1A2,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (29,'F','29.png','UPLOADED',0x0503CE9A7BE24201BF006B4C4CE6B1A3,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (30,'F','30.png','UPLOADED',0x0603CE9A7BE24201BF006B4C4CE6B1A4,'image/png','2017-03-16 11:08:01');
+
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (31,'F','31.png','UPLOADED',0x0703CE9A7BE24201BF006B4C4CE6B1A2,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (32,'F','32.png','UPLOADED',0x0803CE9A7BE24201BF006B4C4CE6B1A3,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (33,'F','33.png','UPLOADED',0x0903CE9A7BE24201BF006B4C4CE6B1A4,'image/png','2017-03-16 11:08:01');
+
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (34,'F','34.png','UPLOADED',0x1003CE9A7BE24201BF006B4C4CE6B1A2,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (35,'F','35.png','UPLOADED',0x1103CE9A7BE24201BF006B4C4CE6B1A3,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (36,'F','36.png','UPLOADED',0x1203CE9A7BE24201BF006B4C4CE6B1A4,'image/png','2017-03-16 11:08:01');
+
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (37,'F','37.png','UPLOADED',0x1303CE9A7BE24201BF006B4C4CE6B1A2,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (38,'F','38.png','UPLOADED',0x1403CE9A7BE24201BF006B4C4CE6B1A3,'image/png','2017-03-16 11:08:01');
+
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (39,'F','39.png','UPLOADED',0x1503CE9A7BE24201BF006B4C4CE6B1A4,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (40,'F','40.png','UPLOADED',0x1603CE9A7BE24201BF006B4C4CE6B1A4,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (41,'F','41.png','UPLOADED',0x1703CE9A7BE24201BF006B4C4CE6B1A4,'image/png','2017-03-16 11:08:01');
+
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (42,'F','42.png','UPLOADED',0x1803CE9A7BE24201BF006B4C4CE6B1A4,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (43,'F','43.png','UPLOADED',0x1903CE9A7BE24201BF006B4C4CE6B1A4,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (44,'F','44.png','UPLOADED',0x2003CE9A7BE24201BF006B4C4CE6B1A4,'image/png','2017-03-16 11:08:01');
+
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (45,'F','45.png','UPLOADED',0x2103CE9A7BE24201BF006B4C4CE6B1A4,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (46,'F','46.png','UPLOADED',0x2203CE9A7BE24201BF006B4C4CE6B1A4,'image/png','2017-03-16 11:08:01');
+
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (47,'F','47.png','UPLOADED',0x2303CE9A7BE24201BF006B4C4CE6B1A4,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (48,'F','48.png','UPLOADED',0x2403CE9A7BE24201BF006B4C4CE6B1A4,'image/png','2017-03-16 11:08:01');
+
 INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x66353763616364612D303935612D3131, 0, 'ST012010101_17001015', 'BUTTERFLY SCARF', 795, 'butterfly-scarf', 1, 3, 1, 1, 1, 0);
 INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0xCF03CE9A7BE24201BF006B4C4CE623F5, 0, 'ST012010103_17002015', 'PLAY OF BLUE SCARF', 795, 'play-of-blue-scarf', 1, 6, 1, 1, 1, 0);
 INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0xFA800FA1F9A24BCAB53B3736B67E0C1F, 0, 'SS012010104_17003015', 'MOONBOW', 795, 'moonbow', 1, 1, 2, 1, 1, 0);
@@ -97,6 +130,39 @@ INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (3,21,0
 INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,22,0x1D470BBF8E654CAC852B9A02E04F45FF);
 INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (2,23,0x1D470BBF8E654CAC852B9A02E04F45FF);
 INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (3,24,0x1D470BBF8E654CAC852B9A02E04F45FF);
+
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,25,0xFA800FA1F9A24BCAB53B3736B67E0C1F);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (2,26,0xFA800FA1F9A24BCAB53B3736B67E0C1F);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (3,27,0xFA800FA1F9A24BCAB53B3736B67E0C1F);
+
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,28,0xDE33C69DF2BD43BFB5E27B648C0E056B);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (2,29,0xDE33C69DF2BD43BFB5E27B648C0E056B);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (3,30,0xDE33C69DF2BD43BFB5E27B648C0E056B);
+
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,31,0x66353763616364612D303935612D3131);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (2,32,0x66353763616364612D303935612D3131);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (3,33,0x66353763616364612D303935612D3131);
+
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,34,0x6ACf72A1D9B5462ABB90D05D6A87D61C);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (2,35,0x6ACf72A1D9B5462ABB90D05D6A87D61C);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (3,36,0x6ACf72A1D9B5462ABB90D05D6A87D61C);
+
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,37,0x004EDA8D0F3F4F33A5C3706C55A248C5);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (2,38,0x004EDA8D0F3F4F33A5C3706C55A248C5);
+
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,39,0xCF03CE9A7BE24201BF006B4C4CE623F5);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (2,40,0xCF03CE9A7BE24201BF006B4C4CE623F5);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (3,41,0xCF03CE9A7BE24201BF006B4C4CE623F5);
+
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,42,0xCA0B32B2F0694B74A17E74AFAC3DCDF5);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (2,43,0xCA0B32B2F0694B74A17E74AFAC3DCDF5);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (3,44,0xCA0B32B2F0694B74A17E74AFAC3DCDF5);
+
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,45,0x8EA1D8FD01DB4982AEEC30EBCDE88843);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (2,46,0x8EA1D8FD01DB4982AEEC30EBCDE88843);
+
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,47,0x991DC5AB44744538849059A613EECC70);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (2,48,0x991DC5AB44744538849059A613EECC70);
 
 
 INSERT INTO file_collection (id,description,title,url_slug, valid_from) VALUES (1,'New collection for year 2017','Collection 2017','collection-2017','2017-01-01');
@@ -147,11 +213,11 @@ INSERT INTO region_country (region_id, country_id) VALUES (1, 2);
 INSERT INTO shipping_availability (id, shipping_region_id, shipping_tariff_id) VALUES (1, 1, 1);
 
 -- INSERT INTO delivery (id, name) VALUES (1, 'DHL');
-INSERT INTO payment_method (id, name) VALUES (1, 'CARD');
+-- INSERT INTO payment_method (id, name) VALUES (1, 'CARD');
 
 INSERT INTO delivery (id, tracking_number, shipping_tariff_id) VALUES (1, 'AES_34', 1);
 
-INSERT INTO customer_order (id, created_at, status, billing_address_id, cart_id, customer_id, delivery_address_id, delivery_id, shipping_region_id, payment_id) VALUES (0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, '2017-03-21 13:20:29', 1, NULL, 0xF888EE4007D94A08B6D3A3F7F2F1CC6D, 0x66353763616364612D303935612D3130, 2, 1, 1, 1);
+INSERT INTO customer_order (id, created_at, status, billing_address_id, cart_id, customer_id, delivery_address_id, delivery_id, shipping_region_id, payment_method) VALUES (0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, '2017-03-21 13:20:29', 1, NULL, 0xF888EE4007D94A08B6D3A3F7F2F1CC6D, 0x66353763616364612D303935612D3130, 2, 1, 1, 1);
 --
 -- INSERT INTO order_item (added_at, price, quantity, order_id, product_id) VALUES ('2017-03-21 13:16:24', 995, 2, 0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, 0x991DC5AB44744538849059A613EECC70);
 -- INSERT INTO order_item (added_at, price, quantity, order_id, product_id) VALUES ('2017-03-21 13:15:45', 795, 1, 0x3C1DCA6C1B9A48BAAD1AC7231B4607EE, 0x004EDA8D0F3F4F33A5C3706C55A248C5);
