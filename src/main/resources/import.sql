@@ -105,6 +105,13 @@ INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,vali
 INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (47,'F','47.png','UPLOADED',0x2303CE9A7BE24201BF006B4C4CE6B1A4,'image/png','2017-03-16 11:08:01');
 INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (48,'F','48.png','UPLOADED',0x2403CE9A7BE24201BF006B4C4CE6B1A4,'image/png','2017-03-16 11:08:01');
 
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (49,'F','49.png','UPLOADED',0x104EDA8D0F3F4F33A5C3706C55A248C5,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (50,'F','50.png','UPLOADED',0x114EDA8D0F3F4F33A5C3706C55A248C5,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (51,'F','51.png','UPLOADED',0x124EDA8D0F3F4F33A5C3706C55A248C5,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (52,'F','52.png','UPLOADED',0x134EDA8D0F3F4F33A5C3706C55A248C5,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (53,'F','53.png','UPLOADED',0x144EDA8D0F3F4F33A5C3706C55A248C5,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (54,'F','54.png','UPLOADED',0x154EDA8D0F3F4F33A5C3706C55A248C5,'image/png','2017-03-16 11:08:01');
+
 INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0x66353763616364612D303935612D3131, 0, 'ST012010101_17001015', 'BUTTERFLY SCARF', 795, 'butterfly-scarf', 1, 3, 1, 1, 1, 0);
 INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0xCF03CE9A7BE24201BF006B4C4CE623F5, 0, 'ST012010103_17002015', 'PLAY OF BLUE SCARF', 795, 'play-of-blue-scarf', 1, 6, 1, 1, 1, 0);
 INSERT INTO product (id, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status) VALUES (0xFA800FA1F9A24BCAB53B3736B67E0C1F, 0, 'SS012010104_17003015', 'MOONBOW', 795, 'moonbow', 1, 1, 2, 1, 1, 0);
@@ -167,6 +174,7 @@ INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (2,48,0
 
 INSERT INTO file_collection (id,description,title,url_slug, valid_from) VALUES (1,'New collection for year 2017','Collection 2017','collection-2017','2017-01-01');
 INSERT INTO file_collection (id,description,title,url_slug, valid_from, valid_to) VALUES (2,'Sales description','Sales 2017','sales-2017', '2017-01-01', '2018-01-01');
+INSERT INTO file_collection (id,description,title,url_slug, valid_from) VALUES (3,'Carousel 2017','Carousel 2017','carousel-2017', '2017-01-01');
 
 INSERT INTO file_collection_has_file (sequence_number,file_id,collection_id) VALUES (5,1,1);
 INSERT INTO file_collection_has_file (sequence_number,file_id,collection_id) VALUES (2,2,1);
@@ -175,6 +183,13 @@ INSERT INTO file_collection_has_file (sequence_number,file_id,collection_id) VAL
 INSERT INTO file_collection_has_file (sequence_number,file_id,collection_id) VALUES (4,5,1);
 INSERT INTO file_collection_has_file (sequence_number,file_id,collection_id) VALUES (1,1,2);
 INSERT INTO file_collection_has_file (sequence_number,file_id,collection_id) VALUES (2,6,2);
+
+INSERT INTO file_collection_has_file (sequence_number,file_id,collection_id) VALUES (1,49,3);
+INSERT INTO file_collection_has_file (sequence_number,file_id,collection_id) VALUES (2,50,3);
+INSERT INTO file_collection_has_file (sequence_number,file_id,collection_id) VALUES (3,51,3);
+INSERT INTO file_collection_has_file (sequence_number,file_id,collection_id) VALUES (4,52,3);
+INSERT INTO file_collection_has_file (sequence_number,file_id,collection_id) VALUES (5,53,3);
+INSERT INTO file_collection_has_file (sequence_number,file_id,collection_id) VALUES (6,54,3);
 
 INSERT INTO product_collection (id, name, slug) VALUES (1,'New Arrivals','new-arrivals');
 -- INSERT INTO product_collection (id, name,slug) VALUES (2,'best toys ever','best_toys_ever');
