@@ -3,6 +3,8 @@ package application.rest.domain;
 import application.persistence.entity.Delivery;
 import lombok.Data;
 
+import java.util.Date;
+
 @Data
 public class ShippingDTO implements ReadWriteDatabaseDTO<Delivery>, IdentifableDTO<Long> {
 
@@ -11,6 +13,7 @@ public class ShippingDTO implements ReadWriteDatabaseDTO<Delivery>, IdentifableD
     private Integer shippingTariffUid;
     private Double price;
     private Integer currencyUid;
+    private Date shippedAt;
 
     private CurrencyDTO currency;
     private ShippingTariffDTO shippingTariff;
