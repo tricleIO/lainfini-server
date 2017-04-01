@@ -12,7 +12,10 @@ public class ShippingTariffDTO implements ReadWriteDatabaseDTO<ShippingTariff>, 
     private String slug;
     private Long iconUid;
     private Integer carrierUid;
+    private Double price;
+    private Integer currencyUid;
 
+    private CurrencyDTO currency;
     private CarrierDTO carrier;
     private ApplicationFileDTO icon;
 
@@ -23,7 +26,11 @@ public class ShippingTariffDTO implements ReadWriteDatabaseDTO<ShippingTariff>, 
         shippingTariff.setName(name);
         shippingTariff.setCode(code);
         shippingTariff.setSlug(slug);
+        shippingTariff.setPrice(price);
         if (selectAsParent) {
+            if (currency != null) {
+                shippingTariff.setCurrency(currency.toEntity(false));
+            }
             if (carrier != null) {
                 shippingTariff.setCarrier(carrier.toEntity(false));
             }

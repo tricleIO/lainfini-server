@@ -28,6 +28,7 @@ public class OrderDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cu
     private Integer shippingTariffUid;
     private Integer paymentMethodUid;
     private Date createdAt;
+    private Date completedAt;
     private OrderStatusEnum status;
     private Set<OrderItemDTO> items;
     private Long billingAddressUid;
