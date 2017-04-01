@@ -28,7 +28,7 @@ public abstract class AbstractFile<T extends AbstractFileDTO>  implements DTOCon
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "file_index", columnDefinition = "BINARY(16)")
+    @Column(name = "file_index", columnDefinition = "BINARY(16)", unique = true)
     private UUID index;
 
     @Column(name = "file_name", length = 255)
