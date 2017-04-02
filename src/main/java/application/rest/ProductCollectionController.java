@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(value = "/collections")
+@RequestMapping(value = "/products/collections")
 public class ProductCollectionController extends AbstractDatabaseController<ProductCollection, Integer, ProductCollectionDTO, ProductCollectionService> {
 
     @Autowired
