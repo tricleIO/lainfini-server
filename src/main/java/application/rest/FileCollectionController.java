@@ -17,7 +17,7 @@ import java.util.UUID;
  * Created by pfilip on 13.3.17.
  */
 @RestController
-@RequestMapping(value = "/file-collection")
+@RequestMapping(value = "/files/collections/")
 public class FileCollectionController extends AbstractDatabaseController<FileCollection, Long, FileCollectionDTO, FileCollectionService> {
 
     @Autowired
@@ -45,9 +45,13 @@ public class FileCollectionController extends AbstractDatabaseController<FileCol
         return new ErrorResponseEntity(ServiceResponseStatus.NOT_FOUND);
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<?> readById(@PathVariable Long id) {
-        return read(id);
+    @RequestMapping(value = "/{urlSlug}", method = RequestMethod.GET)
+    public ResponseEntity<?> readBySlug(@PathVariable String urlSlug) {
+        ServiceResponse<FileCollectionDTO> fileCollectionDTOServiceResponse = fileCollectionService.readBySlug(urlSlug);
+        if (fileCollectionDTOServiceResponse.getBody() != null) {
+            return ResponseEntity.ok(fileCollectionDTOServiceResponse.getBody());
+        }
+        return new ErrorResponseEntity(ServiceResponseStatus.NOT_FOUND);
     }
 
     @RequestMapping(value = "/{collectionId}/{fileId}", method = RequestMethod.PATCH)

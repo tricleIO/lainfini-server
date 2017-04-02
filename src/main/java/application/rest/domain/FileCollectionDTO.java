@@ -15,12 +15,12 @@ import java.util.Set;
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class FileCollectionDTO extends ResourceSupport implements ReadWriteDatabaseDTO<FileCollection>, IdentifableDTO<Long>{
+public class FileCollectionDTO extends ResourceSupport implements ReadWriteDatabaseDTO<FileCollection>, IdentifableDTO<Long>,SlugDTO {
 
     private Long uid;
     private String title;
     private String description;
-    private String urlSlug;
+    private String slug;
     private Date validFrom;
     private Date validTo;
     private Set<ApplicationFileDTO> files;
@@ -31,7 +31,7 @@ public class FileCollectionDTO extends ResourceSupport implements ReadWriteDatab
         fileCollection.setId(getUid());
         fileCollection.setTitle(getTitle());
         fileCollection.setDescription(getDescription());
-        fileCollection.setUrlSlug(getUrlSlug());
+        fileCollection.setSlug(getSlug());
         fileCollection.setValidFrom(getValidFrom());
         fileCollection.setValidTo(getValidTo());
 
@@ -54,5 +54,10 @@ public class FileCollectionDTO extends ResourceSupport implements ReadWriteDatab
     @Override
     public void setUid(Long key) {
         this.uid = key;
+    }
+
+    @Override
+    public String slugFrom() {
+        return title;
     }
 }
