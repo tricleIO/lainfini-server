@@ -3,6 +3,7 @@ package application.rest.domain;
 import application.persistence.entity.CustomerOrder;
 import application.persistence.type.OrderStatusEnum;
 import application.persistence.type.PaymentMethodEnum;
+import application.persistence.type.PaymentStateEnum;
 import application.rest.CartController;
 import application.rest.OrderController;
 import application.rest.UserController;
@@ -34,6 +35,7 @@ public class OrderDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cu
     private Long billingAddressUid;
     private Long deliveryAddressUid;
     private Integer shippingRegionUid;
+    private PaymentStateEnum paymentState;
 
     private CartDTO cart;
     private UserDTO customer;
