@@ -19,7 +19,7 @@ import java.util.Set;
 @Table(name = "file_collection")
 @Data
 @EqualsAndHashCode(exclude="files")
-public class FileCollection implements DTOConvertable<FileCollectionDTO>, Serializable {
+public class FileCollection implements DTOConvertable<FileCollectionDTO>, Serializable, SlugEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,7 +32,7 @@ public class FileCollection implements DTOConvertable<FileCollectionDTO>, Serial
     private String description;
 
     @Column(name="url_slug")
-    private String urlSlug;
+    private String slug;
 
     @Column(name = "valid_from", nullable = false)
     private Date validFrom;
@@ -52,7 +52,7 @@ public class FileCollection implements DTOConvertable<FileCollectionDTO>, Serial
         fileCollectionDTO.setUid(getId());
         fileCollectionDTO.setTitle(getTitle());
         fileCollectionDTO.setDescription(getDescription());
-        fileCollectionDTO.setUrlSlug(getUrlSlug());
+        fileCollectionDTO.setSlug(getSlug());
         fileCollectionDTO.setValidFrom(getValidFrom());
         fileCollectionDTO.setValidTo(getValidTo());
 
