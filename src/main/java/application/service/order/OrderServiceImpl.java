@@ -1,14 +1,9 @@
 package application.service.order;
 
-import application.persistence.entity.Cart;
-import application.persistence.entity.CartItem;
-import application.persistence.entity.CustomerOrder;
-import application.persistence.entity.OrderItem;
-import application.persistence.repository.CartItemRepository;
-import application.persistence.repository.CartRepository;
-import application.persistence.repository.OrderItemRepository;
-import application.persistence.repository.OrderRepository;
+import application.persistence.entity.*;
+import application.persistence.repository.*;
 import application.persistence.type.CartStatusEnum;
+import application.persistence.type.PaymentStateEnum;
 import application.rest.domain.*;
 import application.service.AdditionalDataManipulator;
 import application.service.AdditionalDataManipulatorBatch;
@@ -63,6 +58,10 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
 
     @Autowired
     private ShippingTariffService shippingTariffService;
+
+    @Autowired
+    private PaymentRepository paymentRepository;
+
 
     @Override
     public ServiceResponse<OrderDTO> create(OrderDTO dto) {
@@ -217,6 +216,35 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
             itemDTOs.add(item.toDTO(false));
         }
         dto.setItems(itemDTOs);
+        dto.setPaymentState(getOrderState(dto));
+    }
+
+    private PaymentStateEnum getOrderState(OrderDTO orderDTO) {
+        // total order price
+        double orderTotalPrice = 0;
+        for (OrderItemDTO item : orderDTO.getItems()) {
+            orderTotalPrice += item.getPrice();
+        }
+        // add shipping price
+        orderTotalPrice += orderDTO.getShipping().getPrice();
+
+        // total paid amount from order payments
+        List<Payment> orderPayments = paymentRepository.findByOrderId(orderDTO.getUid());
+        double totalPaidAmount = 0;
+        for (Payment payment : orderPayments) {
+            totalPaidAmount += payment.getAmount();
+        }
+
+        // get state
+        if (totalPaidAmount == orderTotalPrice) {
+            return PaymentStateEnum.PAID;
+        } else if (totalPaidAmount > orderTotalPrice) {
+            return PaymentStateEnum.OVERPAID;
+        } else if (totalPaidAmount == 0) {
+            return PaymentStateEnum.NOT_PAID;
+        } else {
+            return PaymentStateEnum.PARTLY_PAID;
+        }
     }
 
     @Override
