@@ -33,7 +33,12 @@ public class ProductCollectionItem implements DTOConvertable<ProductCollectionIt
         ProductCollectionItemDTO productCollectionItemDTO = new ProductCollectionItemDTO();
         productCollectionItemDTO.setUid(id);
         productCollectionItemDTO.setPosition(position);
-        productCollectionItemDTO.setProductUid(product.getId());
+        if (product != null) {
+            productCollectionItemDTO.setProductUid(product.getId());
+        }
+        if (productCollection != null) {
+            productCollectionItemDTO.setCollectionUid(productCollection.getId());
+        }
         return productCollectionItemDTO;
     }
 
