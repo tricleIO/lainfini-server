@@ -25,6 +25,12 @@ public class ShippingTariff implements DTOConvertable<ShippingTariffDTO>, Serial
     @JoinColumn(name = "carrier_id", referencedColumnName = "id")
     private Carrier carrier;
 
+    private Double price;
+
+    @ManyToOne
+    @JoinColumn(name = "currency_id", referencedColumnName = "id")
+    private Currency currency;
+
     @OneToOne
     @JoinColumn(name = "icon_image_id", referencedColumnName = "id")
     private ApplicationFile icon;
@@ -36,10 +42,14 @@ public class ShippingTariff implements DTOConvertable<ShippingTariffDTO>, Serial
         shippingTariffDTO.setName(name);
         shippingTariffDTO.setCode(code);
         shippingTariffDTO.setSlug(slug);
+        shippingTariffDTO.setPrice(price);
         if (carrier != null) {
             shippingTariffDTO.setCarrierUid(carrier.getId());
         }
         if (selectAsParent) {
+            if (currency != null) {
+                shippingTariffDTO.setCurrency(currency.toDTO(false));
+            }
             if (icon != null) {
                 shippingTariffDTO.setIcon(icon.toDTO(false));
             }

@@ -63,7 +63,8 @@ public enum ServiceResponseStatus {
 
     CARRIER_NOT_FOUND("Carrier with given uid was not found.", HttpStatus.NOT_FOUND),
     SHIPPING_TARIFF_NOT_FOUND("Shipping tariff with given uid was not found.", HttpStatus.NOT_FOUND),
-    SHIPPING_REGION_NOT_FOUND("Shipping region with given uid was not found.", HttpStatus.NOT_FOUND);
+    SHIPPING_REGION_NOT_FOUND("Shipping region with given uid was not found.", HttpStatus.NOT_FOUND),
+    CURRENCY_NOT_FOUND("Currency with given uid was not found.", HttpStatus.NOT_FOUND);
 
     private final HttpStatus httpStatus;
     private final String message;
