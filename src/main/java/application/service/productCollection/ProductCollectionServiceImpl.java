@@ -8,6 +8,7 @@ import application.rest.domain.ProductDTO;
 import application.service.BaseDatabaseServiceImpl;
 import application.service.product.ProductService;
 import application.service.response.ServiceResponse;
+import application.service.response.ServiceResponseStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,6 +23,17 @@ public class ProductCollectionServiceImpl extends BaseDatabaseServiceImpl<Produc
 
     @Autowired
     private ProductService productService;
+
+    @Override
+    public ServiceResponse<ProductCollectionDTO> readBySlug(String slug) {
+        ProductCollection productCollection = getRepository().findOneBySlug(slug);
+        if (productCollection == null) {
+            return ServiceResponse.error(ServiceResponseStatus.COLLECTION_NOT_FOUND);
+        }
+        ProductCollectionDTO dto = productCollection.toDTO(true);
+        additionalUpdateDto(dto);
+        return ServiceResponse.success(dto);
+    }
 
     @Override
     protected void additionalUpdateDto(ProductCollectionDTO dto) {
