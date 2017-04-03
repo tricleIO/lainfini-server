@@ -3,6 +3,7 @@ package application.configuration;
 import application.configuration.gsonAdapter.DateTimeTypeAdapter;
 import application.configuration.gsonAdapter.InterfaceAdapter;
 import application.configuration.gsonAdapter.SpringfoxJsonToGsonAdapter;
+import application.configuration.gsonAdapter.SuperclassExclusionStrategy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.joda.time.DateTime;
@@ -26,6 +27,8 @@ public class GsonHttpMessageConverterConfig {
         gsb.registerTypeAdapter(DateTime.class, new DateTimeTypeAdapter());
         gsb.registerTypeAdapter(OAuth2AccessToken.class, new InterfaceAdapter<OAuth2AccessToken>());
         gsb.registerTypeAdapter(Json.class, new SpringfoxJsonToGsonAdapter());
+        gsb.addDeserializationExclusionStrategy(new SuperclassExclusionStrategy());
+        gsb.addSerializationExclusionStrategy(new SuperclassExclusionStrategy());
         Gson gsonWithAdapter = gsb.create();
         converter.setGson(gsonWithAdapter);
         return converter;
