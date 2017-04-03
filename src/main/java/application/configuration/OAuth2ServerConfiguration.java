@@ -16,9 +16,8 @@
 
 package application.configuration;
 
-import application.service.security.CustomUserDetailsService;
+import application.service.security.RepositoryUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -70,11 +69,10 @@ public class OAuth2ServerConfiguration {
 
 
 		@Autowired
-		@Qualifier("authenticationManagerBean")
 		private AuthenticationManager authenticationManager;
 
 		@Autowired
-		private CustomUserDetailsService userDetailsService;
+		private RepositoryUserDetailsService userDetailsService;
 
 		@Autowired
 		@SuppressWarnings("SpringJavaAutowiringInspection")

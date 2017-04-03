@@ -38,7 +38,7 @@ import java.util.UUID;
 @Entity
 @Table(name = "customer")
 @Data
-@EqualsAndHashCode(exclude = {"addresses","wishes"})
+@EqualsAndHashCode(exclude = {"addresses","wishes", "linkedAccountList"})
 public class User implements DTOConvertable<UserDTO>, Serializable {
 
     @Id

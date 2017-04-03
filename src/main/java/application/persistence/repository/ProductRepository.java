@@ -14,4 +14,5 @@ public interface ProductRepository extends PagingAndSortingRepository<Product, U
     Page<Product> findByCategoryIdIn(List<Integer> categoryIds, Pageable pageable);
     Product findOneBySlug(String slug);
 
+    Product findByCode(String code);
 }

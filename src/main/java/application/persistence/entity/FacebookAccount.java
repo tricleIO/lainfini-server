@@ -1,6 +1,8 @@
 package application.persistence.entity;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -9,6 +11,8 @@ import java.io.Serializable;
 @Entity
 @Table(name = "la_facebook")
 @Data
+@EqualsAndHashCode(exclude = {"linkedAccount"})
+@ToString(exclude = {"linkedAccount"})
 public class FacebookAccount implements Serializable {
 
     @Id
@@ -17,7 +21,7 @@ public class FacebookAccount implements Serializable {
 
     @NotNull
     @Column(name = "facebook_id", nullable = false)
-    private Long facebookId;
+    private String facebookId;
 
     @NotNull
     @Column(name = "username", length = 128, nullable = false)
