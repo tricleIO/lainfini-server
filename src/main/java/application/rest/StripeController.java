@@ -2,7 +2,14 @@ package application.rest;
 
 import application.configuration.AppProperties;
 import application.persistence.entity.User;
+import application.persistence.type.PaymentMethodEnum;
+import application.rest.domain.OrderDTO;
+import application.rest.domain.PaymentDTO;
 import application.rest.domain.PaymentInformationDTO;
+import application.service.order.OrderService;
+import application.service.payment.PaymentService;
+import application.service.response.ServiceResponse;
+import application.service.response.ServiceResponseStatus;
 import application.service.security.CustomUserDetails;
 import application.service.user.UserService;
 import com.stripe.Stripe;
@@ -12,6 +19,7 @@ import com.stripe.model.Customer;
 import com.stripe.model.ExternalAccountCollection;
 import com.stripe.model.Token;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,23 +30,43 @@ import java.util.Map;
  * Created by pfilip on 5.3.17.
  */
 @RestController
-@RequestMapping(value = "/payment")
+@RequestMapping(value = "/payments")
 public class StripeController {
 
     @Autowired
     private UserService userService;
 
     @Autowired
+    private OrderService orderService;
+
+    @Autowired
+    private PaymentService paymentService;
+
+    @Autowired
     private AppProperties appProperties;
 
     @ResponseBody
-    @RequestMapping(value = "/", method = RequestMethod.POST)
+    @RequestMapping(value = "/stripe", method = RequestMethod.POST)
     public ResponseEntity<?> createPayment(@RequestBody PaymentInformationDTO paymentInformation) throws CardException, APIException, AuthenticationException, InvalidRequestException, APIConnectionException {
         Stripe.apiKey = appProperties.getStripeSecretKey();
 
+        if (paymentInformation.getOrderUid() == null) {
+            return new ErrorResponseEntity(ServiceResponseStatus.ORDER_NOT_FOUND);
+        }
+        ServiceResponse<OrderDTO> orderResponse = orderService.read(paymentInformation.getOrderUid());
+        if (!orderResponse.isSuccessful()) {
+            return new ErrorResponseEntity(orderResponse.getStatus());
+        }
 
         User user = null;
         Customer customer = null;
+
+        OrderDTO orderDTO = orderResponse.getBody();
+
+        final double wholePriceWithShipping = orderDTO.getWholePriceWithShipping();
+        final int amountForStripe = (int) Math.ceil(wholePriceWithShipping * 100);
+        paymentInformation.setAmount(amountForStripe);
+        paymentInformation.setCurrency("usd");
 
         if (paymentInformation.getCardNumber() == null ||
                 paymentInformation.getMonthExpiration() == null ||
@@ -46,27 +74,44 @@ public class StripeController {
                 paymentInformation.getCvc() == null ||
                 paymentInformation.getAmount() == null ||
                 paymentInformation.getCurrency() == null) {
-            return ResponseEntity.unprocessableEntity().body("Mising payment information");
+            return ResponseEntity.unprocessableEntity().body("Missing payment information");
         }
 
         user = CustomUserDetails.getCurrentUser();
 
-        if (user == null) {
-            return ResponseEntity.unprocessableEntity().body("User not found");
-        }
-
         //create new customer token
-        if (user.getStripeToken() != null) {
+        if (user != null && user.getStripeToken() != null) {
             customer = getCustomer(user.getStripeToken());
         }
 
         if (customer == null) {
-            customer = createCustomer(user.getEmail(), paymentInformation.getCardNumber(), paymentInformation.getMonthExpiration(), paymentInformation.getYearExpiration(), paymentInformation.getCvc());
-            user.setStripeToken(customer.getId());
-            userService.patch(user.toDTO(true));
+            customer = createCustomer((user != null) ? user.getEmail() : null, paymentInformation.getCardNumber(), paymentInformation.getMonthExpiration(), paymentInformation.getYearExpiration(), paymentInformation.getCvc());
+            if (user != null) {
+                user.setStripeToken(customer.getId());
+                userService.patch(user.toDTO(true));
+            }
         }
 
-        return chargeCustomer(paymentInformation.getAmount(), paymentInformation.getCurrency(), paymentInformation.getPaymentDescription(), customer);
+        ResponseEntity<?> chargeResponse = chargeCustomer(
+                paymentInformation.getAmount(), paymentInformation.getCurrency(), paymentInformation.getPaymentDescription(), customer
+        );
+        if (chargeResponse.getStatusCode() == HttpStatus.OK) {
+            Charge charge = (Charge) chargeResponse.getBody();
+            if (charge.getPaid()) {
+                PaymentDTO paymentDTO = new PaymentDTO();
+                paymentDTO.setCurrencyUid(2);
+                paymentDTO.setOrderUid(orderDTO.getUid());
+                paymentDTO.setAmount(charge.getAmount() / (double) 100);
+                paymentDTO.setPaymentMethod(PaymentMethodEnum.STRIPE);
+                paymentDTO.setReferenceCode(charge.getId());
+                ServiceResponse<PaymentDTO> createPaymentResponse = paymentService.create(paymentDTO);
+                if (!createPaymentResponse.isSuccessful()) {
+                    return new ErrorResponseEntity(createPaymentResponse.getStatus());
+                }
+                return new ResponseEntity<>(createPaymentResponse.getBody(), HttpStatus.OK);
+            }
+        }
+        return chargeResponse;
     }
 
 
