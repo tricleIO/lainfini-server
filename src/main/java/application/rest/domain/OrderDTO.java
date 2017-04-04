@@ -82,6 +82,17 @@ public class OrderDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cu
         return order;
     }
 
+    public double getWholePriceWithShipping() {
+        // total order price
+        double orderTotalPrice = 0;
+        for (OrderItemDTO item : this.getItems()) {
+            orderTotalPrice += item.getPrice();
+        }
+        // add shipping price
+        orderTotalPrice += this.getShipping().getPrice();
+        return orderTotalPrice;
+    }
+
     @Override
     public void addLinks() {
         add(linkTo(methodOn(OrderController.class).readOrder(uid)).withSelfRel());
