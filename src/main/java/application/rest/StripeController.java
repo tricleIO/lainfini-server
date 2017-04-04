@@ -79,19 +79,17 @@ public class StripeController {
 
         user = CustomUserDetails.getCurrentUser();
 
-        if (user == null) {
-            return ResponseEntity.unprocessableEntity().body("User not found");
-        }
-
         //create new customer token
-        if (user.getStripeToken() != null) {
+        if (user != null && user.getStripeToken() != null) {
             customer = getCustomer(user.getStripeToken());
         }
 
         if (customer == null) {
-            customer = createCustomer(user.getEmail(), paymentInformation.getCardNumber(), paymentInformation.getMonthExpiration(), paymentInformation.getYearExpiration(), paymentInformation.getCvc());
-            user.setStripeToken(customer.getId());
-            userService.patch(user.toDTO(true));
+            customer = createCustomer((user != null) ? user.getEmail() : null, paymentInformation.getCardNumber(), paymentInformation.getMonthExpiration(), paymentInformation.getYearExpiration(), paymentInformation.getCvc());
+            if (user != null) {
+                user.setStripeToken(customer.getId());
+                userService.patch(user.toDTO(true));
+            }
         }
 
         ResponseEntity<?> chargeResponse = chargeCustomer(
