@@ -52,6 +52,9 @@ public class OrderDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cu
         order.setId(uid);
         order.setCreatedAt(new Date());
         order.setCompletedAt(completedAt);
+        if (status == null) {
+            status = OrderStatusEnum.WAIT;
+        }
         order.setStatus(status);
         if (selectAsParent) {
             if (cart != null) {
@@ -77,6 +80,17 @@ public class OrderDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cu
             }
         }
         return order;
+    }
+
+    public double getWholePriceWithShipping() {
+        // total order price
+        double orderTotalPrice = 0;
+        for (OrderItemDTO item : this.getItems()) {
+            orderTotalPrice += item.getPrice();
+        }
+        // add shipping price
+        orderTotalPrice += this.getShipping().getPrice();
+        return orderTotalPrice;
     }
 
     @Override
