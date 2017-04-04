@@ -52,6 +52,9 @@ public class OrderDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cu
         order.setId(uid);
         order.setCreatedAt(new Date());
         order.setCompletedAt(completedAt);
+        if (status == null) {
+            status = OrderStatusEnum.WAIT;
+        }
         order.setStatus(status);
         if (selectAsParent) {
             if (cart != null) {
