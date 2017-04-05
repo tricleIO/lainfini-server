@@ -50,7 +50,6 @@ public enum ServiceResponseStatus {
 
     ADDRESS_NOT_FOUND("Address with given uid was not found.", HttpStatus.NOT_FOUND),
 
-    CUSTOMER_OR_DELIVERY_ADDRESS_NOT_GIVEN("Customer or delivery address was not given.", HttpStatus.BAD_REQUEST),
     CART_NOT_GIVEN("Cart was not given.", HttpStatus.BAD_REQUEST),
 
     COMPLAINT_REASON_NOT_FOUND("Complaint reason with given uid was not found.", HttpStatus.NOT_FOUND),
@@ -64,7 +63,10 @@ public enum ServiceResponseStatus {
     CARRIER_NOT_FOUND("Carrier with given uid was not found.", HttpStatus.NOT_FOUND),
     SHIPPING_TARIFF_NOT_FOUND("Shipping tariff with given uid was not found.", HttpStatus.NOT_FOUND),
     SHIPPING_REGION_NOT_FOUND("Shipping region with given uid was not found.", HttpStatus.NOT_FOUND),
-    CURRENCY_NOT_FOUND("Currency with given uid was not found.", HttpStatus.NOT_FOUND);
+    CURRENCY_NOT_FOUND("Currency with given uid was not found.", HttpStatus.NOT_FOUND),
+
+    DELIVERY_ADDRESS_NOT_GIVEN("Delivery address was not given.", HttpStatus.BAD_REQUEST),
+    CUSTOMER_NOT_GIVEN("Customer was not given.", HttpStatus.BAD_REQUEST);
 
     private final HttpStatus httpStatus;
     private final String message;
