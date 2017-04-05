@@ -63,7 +63,7 @@ public class StripeController {
 
         OrderDTO orderDTO = orderResponse.getBody();
 
-        final double wholePriceWithShipping = orderDTO.getWholePriceWithShipping();
+        final double wholePriceWithShipping = orderDTO.getTotalPriceWithShipping();
         final int amountForStripe = (int) Math.ceil(wholePriceWithShipping * 100);
         paymentInformation.setAmount(amountForStripe);
         paymentInformation.setCurrency("usd");
