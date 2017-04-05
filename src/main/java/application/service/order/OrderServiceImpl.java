@@ -236,13 +236,7 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
 
     private PaymentStateEnum getOrderState(OrderDTO orderDTO) {
         // total order price
-        double orderTotalPrice = 0;
-        for (OrderItemDTO item : orderDTO.getItems()) {
-            orderTotalPrice += item.getPrice();
-        }
-        // add shipping price
-        orderTotalPrice += orderDTO.getShipping().getPrice();
-
+        double totalPriceWithShipping = orderDTO.getTotalPriceWithShipping();
         // total paid amount from order payments
         List<Payment> orderPayments = paymentRepository.findByOrderId(orderDTO.getUid());
         double totalPaidAmount = 0;
@@ -251,9 +245,9 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
         }
 
         // get state
-        if (totalPaidAmount == orderTotalPrice) {
+        if (totalPaidAmount == totalPriceWithShipping) {
             return PaymentStateEnum.PAID;
-        } else if (totalPaidAmount > orderTotalPrice) {
+        } else if (totalPaidAmount > totalPriceWithShipping) {
             return PaymentStateEnum.OVERPAID;
         } else if (totalPaidAmount == 0) {
             return PaymentStateEnum.NOT_PAID;
