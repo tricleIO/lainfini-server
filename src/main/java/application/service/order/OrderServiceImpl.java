@@ -82,38 +82,6 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
 
     @Override
     protected ServiceResponse<OrderDTO> doBeforeConvertInCreate(OrderDTO dto) {
-        if (dto.getCustomerUid() == null && dto.getDeliveryAddressUid() == null) {
-            if (dto.getCustomer() != null && dto.getDeliveryAddress() != null) {
-                // create unregistered user
-                ServiceResponse<UserDTO> userResponse = userService.create(dto.getCustomer());
-                if (!userResponse.isSuccessful()) {
-                    return ServiceResponse.error(userResponse.getStatus());
-                }
-                dto.setCustomer(userResponse.getBody());
-
-                // create his delivery address
-                ServiceResponse<AddressDTO> deliveryAddressResponse = addressService.create(
-                        dto.getDeliveryAddress()
-                );
-                if (!deliveryAddressResponse.isSuccessful()) {
-                    return ServiceResponse.error(deliveryAddressResponse.getStatus());
-                }
-                dto.setDeliveryAddress(deliveryAddressResponse.getBody());
-
-                // if billing address is set, create it to
-                if (dto.getBillingAddress() != null) {
-                    ServiceResponse<AddressDTO> billingAddressResponse = addressService.create(
-                            dto.getBillingAddress()
-                    );
-                    if (!billingAddressResponse.isSuccessful()) {
-                        return ServiceResponse.error(billingAddressResponse.getStatus());
-                    }
-                    dto.setBillingAddress(billingAddressResponse.getBody());
-                }
-            } else {
-                return ServiceResponse.error(ServiceResponseStatus.CUSTOMER_OR_DELIVERY_ADDRESS_NOT_GIVEN);
-            }
-        }
         // cart
         if (dto.getCartUid() == null) {
             return ServiceResponse.error(ServiceResponseStatus.CART_NOT_GIVEN);
@@ -127,6 +95,53 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
             return ServiceResponse.error(ServiceResponseStatus.CART_NOT_OPEN);
         }
         dto.setCart(cartDTO);
+        ServiceResponse<UserDTO> userResponse = null;
+        if (dto.getCustomerUid() == null) {
+            if (dto.getCustomer() != null) {
+                // create unregistered user
+                userResponse = userService.create(dto.getCustomer());
+                if (!userResponse.isSuccessful()) {
+                    return ServiceResponse.error(userResponse.getStatus());
+                }
+                dto.setCustomer(userResponse.getBody());
+            } else {
+                return ServiceResponse.error(ServiceResponseStatus.CUSTOMER_NOT_GIVEN);
+            }
+        } else {
+            userResponse = userService.read(dto.getCustomerUid());
+            if (!userResponse.isSuccessful()) {
+                return ServiceResponse.error(userResponse.getStatus());
+            }
+        }
+        // addresses
+        if (dto.getDeliveryAddressUid() == null) {
+            if (dto.getDeliveryAddress() != null) {
+                dto.getDeliveryAddress().setCustomer(userResponse.getBody());
+                // create his delivery address
+                ServiceResponse<AddressDTO> deliveryAddressResponse = addressService.create(
+                        dto.getDeliveryAddress()
+                );
+                if (!deliveryAddressResponse.isSuccessful()) {
+                    return ServiceResponse.error(deliveryAddressResponse.getStatus());
+                }
+                dto.setDeliveryAddress(deliveryAddressResponse.getBody());
+
+                // if billing address is set, create it to
+                if (dto.getBillingAddress() != null) {
+                    dto.getBillingAddress().setCustomer(userResponse.getBody());
+                    ServiceResponse<AddressDTO> billingAddressResponse = addressService.create(
+                            dto.getBillingAddress()
+                    );
+                    if (!billingAddressResponse.isSuccessful()) {
+                        return ServiceResponse.error(billingAddressResponse.getStatus());
+                    }
+                    dto.setBillingAddress(billingAddressResponse.getBody());
+                }
+            } else {
+                return ServiceResponse.error(ServiceResponseStatus.DELIVERY_ADDRESS_NOT_GIVEN);
+            }
+        }
+        // tariff
         ServiceResponse<ShippingTariffDTO> tariffResponse = shippingTariffService.read(dto.getShippingTariffUid());
         if (tariffResponse.isSuccessful()) {
             ShippingDTO shippingDTO = new ShippingDTO();
