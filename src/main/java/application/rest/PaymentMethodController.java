@@ -6,6 +6,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.LinkedList;
@@ -16,10 +17,11 @@ import java.util.List;
 public class PaymentMethodController {
 
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<?> readPaymentMethods() {
+    public ResponseEntity<?> readPaymentMethods(@RequestParam(required = false) Integer hidden) {
         List<PaymentMethodDTO> paymentMethodDTOList = new LinkedList<>();
         for (PaymentMethodEnum payment : PaymentMethodEnum.values()) {
-            if (payment.getState() == PaymentMethodEnum.State.ALLOWED) {
+            if (payment.getState() == PaymentMethodEnum.State.ALLOWED
+                    || ((payment.getState() == PaymentMethodEnum.State.HIDDEN) && hidden == 1)) {
                 paymentMethodDTOList.add(payment.toDTO(false));
             }
         }
