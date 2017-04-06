@@ -91,7 +91,7 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                         )
                 );
                 if (!mailResponse.isSuccessful()) {
-                    return ServiceResponse.error(mailResponse.getStatus());
+//                    return ServiceResponse.error(mailResponse.getStatus());
                 }
                 for (String sellerEmail : appProperties.getSellerEmails()) {
                     ServiceResponse<MailDTO> sellerMailResponse = mailService.sendMail(
