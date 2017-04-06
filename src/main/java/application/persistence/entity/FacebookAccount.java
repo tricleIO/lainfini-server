@@ -13,7 +13,7 @@ import java.io.Serializable;
 @Data
 @EqualsAndHashCode(exclude = {"linkedAccount"})
 @ToString(exclude = {"linkedAccount"})
-public class FacebookAccount implements Serializable {
+public class FacebookAccount implements ILinkableAccount, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,9 +26,6 @@ public class FacebookAccount implements Serializable {
     @NotNull
     @Column(name = "username", length = 128, nullable = false)
     private String username;
-
-    @Column(name = "token",length = 255)
-    private String token;
 
     @OneToOne
     @JoinColumn(name = "linked_account_id", referencedColumnName = "id")

@@ -10,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
 
+import java.util.List;
 import java.util.UUID;
 
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
@@ -47,6 +48,10 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
     private UserStatusEnum registerStatus;
 
     private LocaleEnum locale;
+
+    private List<LinkedAccountDTO> linkedAccounts;
+
+    private LinkedAccountDTO socialRequest;
 
     @Override
     public User toEntity(boolean selectAsParent, Object... parentParams) {

@@ -9,7 +9,7 @@ import java.io.Serializable;
 @Entity
 @Table(name = "la_instagram")
 @Data
-public class InstagramAccount implements Serializable {
+public class InstagramAccount implements ILinkableAccount, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
