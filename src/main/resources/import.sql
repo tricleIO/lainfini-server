@@ -250,18 +250,30 @@ INSERT INTO cart_item (added_at, quantity, cart_id, product_id) VALUES ('2017-03
 INSERT INTO cart_item (added_at, quantity, cart_id, product_id) VALUES ('2017-03-21 13:16:24', 2, 0xF888EE4007D94A08B6D3A3F7F2F1CC6D, 0x991DC5AB44744538849059A613EECC70);
 
 INSERT INTO shipping_region (id, code, name) VALUES (1, 'NA', 'North America');
+INSERT INTO shipping_region (id, code, name) VALUES (2, 'EU', 'Europe');
+INSERT INTO shipping_region (id, code, name) VALUES (3, 'REST', 'Rest of the world');
 
 INSERT INTO carrier (id, name, slug, tracking_endpoint, logo_image_id) VALUES (1, 'DHL', 'dhl', 'www.track-it.com/dhl', NULL);
 
-INSERT INTO shipping_tariff (id, code, name, slug, carrier_id, price, currency_id, icon_image_id) VALUES (1, 'EABC', 'DHL Express', 'dhl-express', 1, 130, 2, NULL);
+INSERT INTO shipping_tariff (id, name, slug, carrier_id, price, currency_id, icon_image_id) VALUES (1, 'DHL EXPRESS WORLDWIDE', 'dhl-express', 1, 45, 2, NULL);
+INSERT INTO shipping_tariff (id, name, slug, carrier_id, price, currency_id, icon_image_id) VALUES (2, 'DHL EXPRESS WORLDWIDE', 'dhl-express', 1, 35, 2, NULL);
+INSERT INTO shipping_tariff (id, name, slug, carrier_id, price, currency_id, icon_image_id) VALUES (3, 'DHL EXPRESS WORLDWIDE', 'dhl-express', 1, 75, 2, NULL);
 
 INSERT INTO country (id, code, name) VALUES (1, 'US', 'USA');
 INSERT INTO country (id, code, name) VALUES (2, 'CAN', 'Canada');
+INSERT INTO country (id, code, name) VALUES (3, 'FR', 'France');
+INSERT INTO country (id, code, name) VALUES (4, 'IT', 'Italy');
+INSERT INTO country (id, code, name) VALUES (5, 'JP', 'Japan');
 
 INSERT INTO region_country (region_id, country_id) VALUES (1, 1);
 INSERT INTO region_country (region_id, country_id) VALUES (1, 2);
+INSERT INTO region_country (region_id, country_id) VALUES (2, 3);
+INSERT INTO region_country (region_id, country_id) VALUES (2, 4);
+INSERT INTO region_country (region_id, country_id) VALUES (3, 5);
 
-INSERT INTO shipping_availability (id, shipping_region_id, shipping_tariff_id) VALUES (1, 1, 1);
+INSERT INTO shipping_availability (shipping_region_id, shipping_tariff_id) VALUES (1, 1);
+INSERT INTO shipping_availability (shipping_region_id, shipping_tariff_id) VALUES (2, 2);
+INSERT INTO shipping_availability (shipping_region_id, shipping_tariff_id) VALUES (3, 3);
 
 -- INSERT INTO delivery (id, name) VALUES (1, 'DHL');
 -- INSERT INTO payment_method (id, name) VALUES (1, 'CARD');
