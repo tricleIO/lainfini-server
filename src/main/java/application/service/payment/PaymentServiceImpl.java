@@ -4,6 +4,7 @@ import application.persistence.entity.Currency;
 import application.persistence.entity.Payment;
 import application.persistence.repository.CurrencyRepository;
 import application.persistence.repository.PaymentRepository;
+import application.persistence.type.PaymentMethodEnum;
 import application.rest.domain.PaymentDTO;
 import application.service.AdditionalDataManipulator;
 import application.service.AdditionalDataManipulatorBatch;
@@ -40,6 +41,9 @@ public class PaymentServiceImpl extends BaseDatabaseServiceImpl<Payment, Long, P
 
     @Override
     protected ServiceResponse<PaymentDTO> doBeforeConvertInCreate(PaymentDTO dto) {
+        if (dto.getPaymentMethod().getState() == PaymentMethodEnum.State.DENIED) {
+            return ServiceResponse.error(ServiceResponseStatus.PAYMENT_METHOD_FORBIDDEN);
+        }
         Currency currency = currencyRepository.findOne(dto.getCurrencyUid());
         if (currency == null) {
             return ServiceResponse.error(ServiceResponseStatus.CURRENCY_NOT_FOUND);
