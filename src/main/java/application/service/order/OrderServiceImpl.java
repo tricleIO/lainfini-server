@@ -1,5 +1,6 @@
 package application.service.order;
 
+import application.configuration.AppProperties;
 import application.persistence.entity.*;
 import application.persistence.repository.*;
 import application.persistence.type.CartStatusEnum;
@@ -71,17 +72,38 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     @Autowired
     private ProductService productService;
 
+    @Autowired
+    private AppProperties appProperties;
+
     @Override
     public ServiceResponse<OrderDTO> create(OrderDTO dto) {
         ServiceResponse<OrderDTO> createResponse = super.create(dto);
         if (createResponse.isSuccessful()) {
             ServiceResponse<OrderDTO> readOrderResponse = read(createResponse.getBody().getUid());
             if (readOrderResponse.isSuccessful()) {
+                final String orderString = getOrderString(dto.getCustomer(), readOrderResponse.getBody());
+                // email for customer
                 ServiceResponse<MailDTO> mailResponse = mailService.sendMail(
-                        createOrderMail(dto.getCustomer().getEmail(), readOrderResponse.getBody())
+                        createMail(
+                                dto.getCustomer().getEmail(),
+                                "Order confirmation",
+                                getBaseTextForCustomer() + orderString
+                        )
                 );
                 if (!mailResponse.isSuccessful()) {
                     return ServiceResponse.error(mailResponse.getStatus());
+                }
+                for (String sellerEmail : appProperties.getSellerEmails()) {
+                    ServiceResponse<MailDTO> sellerMailResponse = mailService.sendMail(
+                            createMail(
+                                    sellerEmail,
+                                    "New Order in e-shop",
+                                    getBaseTextForSeller() + orderString
+                            )
+                    );
+                    if (!sellerMailResponse.isSuccessful()) {
+                        // log! ServiceResponse.error(mailResponse.getStatus());
+                    }
                 }
             }
             return readOrderResponse;
@@ -97,24 +119,37 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
         );
     }
 
-    private MailDTO createOrderMail(String email, OrderDTO dto) {
+    private MailDTO createMail(String email, String subject, String text) {
         MailDTO mailDTO = new MailDTO();
         mailDTO.setTo(email);
-        mailDTO.setSubject("Order confirmation");
-        final String baseText = "<h2>Greetings from Atelier LAINFINI!</h2>" +
+        mailDTO.setSubject(subject);
+        mailDTO.setText(text);
+        return mailDTO;
+    }
+
+    private String getBaseTextForCustomer() {
+        return "<h2>Greetings from Atelier LAINFINI!</h2>" +
                 "<p>We are happy to confirm your order.<br>" +
                 "Thank you for your interest in Atelier LAINFINI!</p>";
+    }
+
+    private String getBaseTextForSeller() {
+        return "<h2>New Order</h2>" +
+                "<p>New order in e-shop.<br>";
+    }
+
+    private String getOrderString(UserDTO customerDTO, OrderDTO orderDTO) {
         StringBuilder orderItemsStringBuilder = new StringBuilder();
         orderItemsStringBuilder.append("<p>items:<br><ul>");
-        for (OrderItemDTO item : dto.getItems()) {
-            orderItemsStringBuilder.append("<li>" + item.getProduct().getName() + " - quantity: " + item.getQuantity() + "</li>");
+        for (OrderItemDTO item : orderDTO.getItems()) {
+            orderItemsStringBuilder.append("<li>" + item.getProduct().getName() + " - quantity: " + item.getQuantity() + ", price: $" + item.getPrice() +  "</li>");
         }
         orderItemsStringBuilder.append("</ul></p>")
-                .append("<p>total price: " + dto.getTotalPrice() + "<br>")
-                .append("shipping price: " + dto.getShipping().getPrice() + "<br>")
-                .append("total price with shipping: " + dto.getTotalPriceWithShipping() + "</p>");
-        mailDTO.setText(baseText + orderItemsStringBuilder.toString());
-        return mailDTO;
+                .append("<p>total price: $" + orderDTO.getTotalPrice() + "<br>")
+                .append("shipping price: $" + orderDTO.getShipping().getPrice() + "<br>")
+                .append("total price with shipping: $" + orderDTO.getTotalPriceWithShipping() + "</p>")
+                .append("<p>name: " + customerDTO.getFirstName() + " " + customerDTO.getLastName() + "<br>");
+        return orderItemsStringBuilder.toString();
     }
 
     @Override

@@ -7,6 +7,8 @@ import org.springframework.context.annotation.Configuration;
 import javax.annotation.PostConstruct;
 import java.io.Serializable;
 import java.lang.reflect.Field;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created by pfilip on 25.2.17.
@@ -69,4 +71,15 @@ public class AppProperties implements Serializable {
             }
         }
     }
+
+    public List<String> getSellerEmails() {
+        List<String> sellerEmails = new LinkedList<>();
+        sellerEmails.add("jan.merta.90@gmail.com");
+//        sellerEmails.add("jan.merta@tricle.io");
+//        sellerEmails.add("petr.filip@tricle.io");
+//        sellerEmails.add("michal.fikejs@tricle.io");
+//        sellerEmails.add("pavel.janku@tricle.io");
+        return sellerEmails;
+    }
+
 }
