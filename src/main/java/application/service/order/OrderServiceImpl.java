@@ -4,6 +4,7 @@ import application.configuration.AppProperties;
 import application.persistence.entity.*;
 import application.persistence.repository.*;
 import application.persistence.type.CartStatusEnum;
+import application.persistence.type.OrderStatusEnum;
 import application.persistence.type.PaymentMethodEnum;
 import application.persistence.type.PaymentStateEnum;
 import application.rest.domain.*;
@@ -118,6 +119,32 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
         return ServiceResponse.success(
                 convertPageWithEntitiesToPageWithDtos(orders, pageable)
         );
+    }
+
+    @Override
+    public ServiceResponse<OrderDTO> shipOrder(UUID orderId) {
+        ServiceResponse<OrderDTO> readResponse = read(orderId);
+        if (!readResponse.isSuccessful()) {
+            return readResponse;
+        }
+        OrderDTO orderDTO = new OrderDTO();
+        orderDTO.setUid(orderId);
+        orderDTO.setStatus(OrderStatusEnum.SHIPPED);
+        ServiceResponse<OrderDTO> patchResponse = patch(orderDTO);
+        if (!patchResponse.isSuccessful()) {
+            return patchResponse;
+        }
+        ServiceResponse<UserDTO> userResponse = userService.read(readResponse.getBody().getCustomerUid());
+        if (userResponse.isSuccessful()) {
+            MailDTO mailDTO = new MailDTO();
+            mailDTO.setTo(userResponse.getBody().getEmail());
+            mailDTO.setSubject("Order shipped");
+            mailDTO.setText("<h2>Greetings from Atelier LAINFINI!</h2>" +
+                    "<p>We are happy to announce your order <b>" + orderDTO.getUid() + "</b> has been shipped.<br><br>" +
+                    "Thank you for your interest in Atelier LAINFINI!</p>");
+            mailService.sendMail(mailDTO);
+        }
+        return read(orderId);
     }
 
     private MailDTO createMail(String email, String subject, String text) {
