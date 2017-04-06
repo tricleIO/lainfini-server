@@ -141,8 +141,8 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
     private MailDTO createResetPasswordEmailForUser(UserDTO userDTO, String password) {
         MailDTO mailDTO = new MailDTO();
         mailDTO.setTo(userDTO.getEmail());
-        mailDTO.setSubject("Reset password.");
-        mailDTO.setText("Your new password is: " + password);
+        mailDTO.setSubject("Reset password");
+        mailDTO.setText("Dear Customer, your new password is: " + password);
         return mailDTO;
     }
 
