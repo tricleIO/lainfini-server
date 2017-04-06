@@ -19,7 +19,9 @@ public class PaymentMethodController {
     public ResponseEntity<?> readPaymentMethods() {
         List<PaymentMethodDTO> paymentMethodDTOList = new LinkedList<>();
         for (PaymentMethodEnum payment : PaymentMethodEnum.values()) {
-            paymentMethodDTOList.add(payment.toDTO(false));
+            if (payment.getState() == PaymentMethodEnum.State.ALLOWED) {
+                paymentMethodDTOList.add(payment.toDTO(false));
+            }
         }
         return new ResponseEntity<>(paymentMethodDTOList, HttpStatus.OK);
     }
