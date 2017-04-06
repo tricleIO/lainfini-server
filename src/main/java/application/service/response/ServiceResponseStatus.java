@@ -14,6 +14,8 @@ public enum ServiceResponseStatus {
     UNAUTHORIZED("Unauthorized.", HttpStatus.UNAUTHORIZED),
     OBJECT_BY_SLUG_NOT_FOUND("Object with given slug was not found.", HttpStatus.NOT_FOUND),
 
+    PAYMENT_METHOD_FORBIDDEN("Forbidden payment method.", HttpStatus.FORBIDDEN),
+
     // user
     USERNAME_ALREADY_EXISTS("User with given username already exists.", HttpStatus.CONFLICT),
 

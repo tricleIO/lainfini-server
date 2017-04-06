@@ -48,6 +48,9 @@ public class StripeController {
     @ResponseBody
     @RequestMapping(value = "/stripe", method = RequestMethod.POST)
     public ResponseEntity<?> createPayment(@RequestBody PaymentInformationDTO paymentInformation) throws CardException, APIException, AuthenticationException, InvalidRequestException, APIConnectionException {
+        if (PaymentMethodEnum.STRIPE.getState() == PaymentMethodEnum.State.DENIED) {
+            return new ErrorResponseEntity(ServiceResponseStatus.PAYMENT_METHOD_FORBIDDEN);
+        }
         Stripe.apiKey = appProperties.getStripeSecretKey();
 
         if (paymentInformation.getOrderUid() == null) {

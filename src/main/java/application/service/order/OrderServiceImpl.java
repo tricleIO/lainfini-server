@@ -3,6 +3,7 @@ package application.service.order;
 import application.persistence.entity.*;
 import application.persistence.repository.*;
 import application.persistence.type.CartStatusEnum;
+import application.persistence.type.PaymentMethodEnum;
 import application.persistence.type.PaymentStateEnum;
 import application.rest.domain.*;
 import application.service.AdditionalDataManipulator;
@@ -82,6 +83,9 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
 
     @Override
     protected ServiceResponse<OrderDTO> doBeforeConvertInCreate(OrderDTO dto) {
+        if (dto.getPaymentMethod().getState() == PaymentMethodEnum.State.DENIED) {
+            return ServiceResponse.error(ServiceResponseStatus.PAYMENT_METHOD_FORBIDDEN);
+        }
         // cart
         if (dto.getCartUid() == null) {
             return ServiceResponse.error(ServiceResponseStatus.CART_NOT_GIVEN);
