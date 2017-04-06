@@ -21,7 +21,7 @@ public class PaymentMethodController {
         List<PaymentMethodDTO> paymentMethodDTOList = new LinkedList<>();
         for (PaymentMethodEnum payment : PaymentMethodEnum.values()) {
             if (payment.getState() == PaymentMethodEnum.State.ALLOWED
-                    || ((payment.getState() == PaymentMethodEnum.State.HIDDEN) && hidden == 1)) {
+                    || ((payment.getState() == PaymentMethodEnum.State.HIDDEN) && hidden != null && hidden == 1)) {
                 paymentMethodDTOList.add(payment.toDTO(false));
             }
         }
