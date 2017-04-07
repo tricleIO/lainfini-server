@@ -74,7 +74,7 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
             orderDTO.setCustomerUid(customer.getId());
         }
         orderDTO.setCreatedAt(createdAt);
-        orderDTO.setCompletedAt(completedAt );
+        orderDTO.setCompletedAt(completedAt);
         if (cart != null) {
             orderDTO.setCartUid(cart.getId());
         }
@@ -93,6 +93,7 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
         if (billingAddress != null) {
             orderDTO.setDeliveryAddress(billingAddress.toDTO(false));
         }
+        orderDTO.setStatus(status);
 //        if (items != null) {
 //            Set<OrderItemDTO> itemDTOs = new LinkedHashSet<>(items.size());
 //            for (OrderItem item : items) {

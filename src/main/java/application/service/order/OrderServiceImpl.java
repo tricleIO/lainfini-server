@@ -1,8 +1,10 @@
 package application.service.order;
 
+import application.configuration.AppProperties;
 import application.persistence.entity.*;
 import application.persistence.repository.*;
 import application.persistence.type.CartStatusEnum;
+import application.persistence.type.OrderStatusEnum;
 import application.persistence.type.PaymentMethodEnum;
 import application.persistence.type.PaymentStateEnum;
 import application.rest.domain.*;
@@ -12,6 +14,8 @@ import application.service.BaseDatabaseServiceImpl;
 import application.service.address.AddressService;
 import application.service.cart.CartService;
 import application.service.delivery.DeliveryService;
+import application.service.mail.MailService;
+import application.service.product.ProductService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.shippingRegion.ShippingRegionService;
@@ -63,12 +67,48 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     @Autowired
     private PaymentRepository paymentRepository;
 
+    @Autowired
+    private MailService mailService;
+
+    @Autowired
+    private ProductService productService;
+
+    @Autowired
+    private AppProperties appProperties;
 
     @Override
     public ServiceResponse<OrderDTO> create(OrderDTO dto) {
         ServiceResponse<OrderDTO> createResponse = super.create(dto);
         if (createResponse.isSuccessful()) {
-            return read(createResponse.getBody().getUid());
+            ServiceResponse<OrderDTO> readOrderResponse = read(createResponse.getBody().getUid());
+            if (readOrderResponse.isSuccessful()) {
+                final String orderString = getOrderString(dto.getCustomer(), readOrderResponse.getBody());
+                // email for customer
+                ServiceResponse<MailDTO> mailResponse = mailService.sendMail(
+                        createMail(
+                                dto.getCustomer().getEmail(),
+                                "Order confirmation",
+                                getBaseTextForCustomer() + orderString
+                        )
+                );
+                if (!mailResponse.isSuccessful()) {
+//                    return ServiceResponse.error(mailResponse.getStatus());
+                }
+                // email to sellers
+                for (String sellerEmail : appProperties.getSellerEmails()) {
+                    ServiceResponse<MailDTO> sellerMailResponse = mailService.sendMail(
+                            createMail(
+                                    sellerEmail,
+                                    "New Order in e-shop",
+                                    getBaseTextForSeller() + orderString
+                            )
+                    );
+                    if (!sellerMailResponse.isSuccessful()) {
+                        // log! ServiceResponse.error(mailResponse.getStatus());
+                    }
+                }
+            }
+            return readOrderResponse;
         }
         return createResponse;
     }
@@ -79,6 +119,65 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
         return ServiceResponse.success(
                 convertPageWithEntitiesToPageWithDtos(orders, pageable)
         );
+    }
+
+    @Override
+    public ServiceResponse<OrderDTO> shipOrder(UUID orderId) {
+        ServiceResponse<OrderDTO> readResponse = read(orderId);
+        if (!readResponse.isSuccessful()) {
+            return readResponse;
+        }
+        OrderDTO orderDTO = new OrderDTO();
+        orderDTO.setUid(orderId);
+        orderDTO.setStatus(OrderStatusEnum.SHIPPED);
+        ServiceResponse<OrderDTO> patchResponse = patch(orderDTO);
+        if (!patchResponse.isSuccessful()) {
+            return patchResponse;
+        }
+        ServiceResponse<UserDTO> userResponse = userService.read(readResponse.getBody().getCustomerUid());
+        if (userResponse.isSuccessful()) {
+            MailDTO mailDTO = new MailDTO();
+            mailDTO.setTo(userResponse.getBody().getEmail());
+            mailDTO.setSubject("Order shipped");
+            mailDTO.setText("<h2>Greetings from Atelier LAINFINI!</h2>" +
+                    "<p>We are happy to announce your order <b>" + orderDTO.getUid() + "</b> has been shipped.<br><br>" +
+                    "Thank you for your interest in Atelier LAINFINI!</p>");
+            mailService.sendMail(mailDTO);
+        }
+        return read(orderId);
+    }
+
+    private MailDTO createMail(String email, String subject, String text) {
+        MailDTO mailDTO = new MailDTO();
+        mailDTO.setTo(email);
+        mailDTO.setSubject(subject);
+        mailDTO.setText(text);
+        return mailDTO;
+    }
+
+    private String getBaseTextForCustomer() {
+        return "<h2>Greetings from Atelier LAINFINI!</h2>" +
+                "<p>We are happy to confirm your order.<br>" +
+                "Thank you for your interest in Atelier LAINFINI!</p>";
+    }
+
+    private String getBaseTextForSeller() {
+        return "<h2>New Order</h2>" +
+                "<p>New order in e-shop.<br>";
+    }
+
+    private String getOrderString(UserDTO customerDTO, OrderDTO orderDTO) {
+        StringBuilder orderItemsStringBuilder = new StringBuilder();
+        orderItemsStringBuilder.append("<p>items:<br><ul>");
+        for (OrderItemDTO item : orderDTO.getItems()) {
+            orderItemsStringBuilder.append("<li>" + item.getProduct().getName() + " - quantity: " + item.getQuantity() + ", price: $" + item.getPrice() +  "</li>");
+        }
+        orderItemsStringBuilder.append("</ul></p>")
+                .append("<p>total price: $" + orderDTO.getTotalPrice() + "<br>")
+                .append("shipping price: $" + orderDTO.getShipping().getPrice() + "<br>")
+                .append("total price with shipping: $" + orderDTO.getTotalPriceWithShipping() + "</p>")
+                .append("<p>name: " + customerDTO.getFirstName() + " " + customerDTO.getLastName() + "<br>");
+        return orderItemsStringBuilder.toString();
     }
 
     @Override
@@ -232,7 +331,12 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
         List<OrderItem> items = orderItemRepository.findByOrderId(dto.getUid());
         Set<OrderItemDTO> itemDTOs = new HashSet<>();
         for (OrderItem item : items) {
-            itemDTOs.add(item.toDTO(false));
+            OrderItemDTO orderItemDTO = item.toDTO(false);
+            ServiceResponse<ProductDTO> productResponse = productService.read(item.getProduct().getId());
+            if (productResponse.isSuccessful()) {
+                orderItemDTO.setProduct(productResponse.getBody());
+            }
+            itemDTOs.add(orderItemDTO);
         }
         dto.setItems(itemDTOs);
         dto.setPaymentState(getOrderState(dto));

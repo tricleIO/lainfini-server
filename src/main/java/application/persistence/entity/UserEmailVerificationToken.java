@@ -5,6 +5,7 @@ import lombok.EqualsAndHashCode;
 import org.apache.commons.lang3.RandomStringUtils;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Calendar;
 import java.util.Date;
@@ -16,7 +17,7 @@ import java.util.Date;
 @Table(name = "customer_email_verification_token")
 @Data
 @EqualsAndHashCode(exclude = "user")
-public class UserEmailVerificationToken {
+public class UserEmailVerificationToken implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
