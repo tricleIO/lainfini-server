@@ -56,6 +56,10 @@ public class AppProperties implements Serializable {
     @Value("${lainfini.server.address:null}")
     private String serverAddress;
 
+    @Value("${lainfini.frontend.address:null}")
+    private String frontendAddress;
+
+
     @PostConstruct
     private void testValueContent() {
 
@@ -75,10 +79,10 @@ public class AppProperties implements Serializable {
     public List<String> getSellerEmails() {
         List<String> sellerEmails = new LinkedList<>();
         sellerEmails.add("jan.merta.90@gmail.com");
-//        sellerEmails.add("jan.merta@tricle.io");
-//        sellerEmails.add("petr.filip@tricle.io");
-//        sellerEmails.add("michal.fikejs@tricle.io");
-//        sellerEmails.add("pavel.janku@tricle.io");
+        sellerEmails.add("jan.merta@tricle.io");
+        sellerEmails.add("petr.filip@tricle.io");
+        sellerEmails.add("michal.fikejs@tricle.io");
+        sellerEmails.add("pavel.janku@tricle.io");
         return sellerEmails;
     }
 

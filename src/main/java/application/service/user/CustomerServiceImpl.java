@@ -71,7 +71,9 @@ public class CustomerServiceImpl extends UserServiceImpl implements CustomerServ
             MailDTO mailDTO = new MailDTO();
             mailDTO.setSubject("Registration");
             mailDTO.setTo(user.getEmail());
-            mailDTO.setText("Text about registration with verification link: " + getVerificationUrl(userEmailVerificationToken));
+            mailDTO.setText("<h2>Welcome to Atelier LAINFINI!</h2>" +
+                    "<p>Before you get going, please prove you are a real and beautiful human by verifying your email address" +
+                    "<br>by clicking on this verification link:<br>" + getVerificationUrl(userEmailVerificationToken) + "</p>");
             mailService.sendMail(mailDTO);
         } else {
             user.setRegisterStatus(UserStatusEnum.UNREGISTERED);
@@ -87,7 +89,7 @@ public class CustomerServiceImpl extends UserServiceImpl implements CustomerServ
     }
 
     private String getVerificationUrl(UserEmailVerificationToken userEmailVerificationToken) {
-       return appProperties.getServerAddress() + "users/verify?verificationToken="+userEmailVerificationToken.getToken();
+       return appProperties.getFrontendAddress() + "email-verification/?verification_token=" + userEmailVerificationToken.getToken();
     }
 
 }
