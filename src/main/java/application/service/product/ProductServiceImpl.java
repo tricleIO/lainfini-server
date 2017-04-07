@@ -2,6 +2,7 @@ package application.service.product;
 
 import application.persistence.entity.*;
 import application.persistence.repository.*;
+import application.persistence.type.StatusEnum;
 import application.persistence.type.UserStatusEnum;
 import application.rest.domain.FlashDTO;
 import application.rest.domain.ProductDTO;
@@ -171,12 +172,12 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     // privates
 
     private boolean userLikesProduct(User user, ProductDTO productDTO) {
-        Wish wish = new Wish();
-        wish.setCustomer(user);
-        Product product = new Product();
-        product.setId(productDTO.getUid());
-        wish.setProduct(product);
-        return user.getWishes().contains(wish);
+        for (Wish currentWish : user.getWishes()) {
+            if (currentWish.getProduct().getId().equals(productDTO.getUid()) && currentWish.getStatus() == StatusEnum.ACTIVE) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private List<Integer> getCategoryAndAllSubcategoriesIds(Integer categoryId) {
