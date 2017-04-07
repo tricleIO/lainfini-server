@@ -3,6 +3,7 @@ package application.service.user;
 import application.persistence.entity.Role;
 import application.persistence.entity.User;
 import application.persistence.repository.UserRepository;
+import application.persistence.type.LocaleEnum;
 import application.persistence.type.UserRoleEnum;
 import application.persistence.type.UserStatusEnum;
 import application.rest.domain.MailDTO;
@@ -58,6 +59,10 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
         // bcrypt password
         if (user.getPassword() != null) {
             user.setPassword(passwordEncoder.encode(user.getPassword()));
+        }
+        // default locale
+        if (user.getLocale() == null) {
+            user.setLocale(LocaleEnum.NONE);
         }
         return super.create(user);
     }
