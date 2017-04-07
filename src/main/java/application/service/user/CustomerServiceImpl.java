@@ -89,7 +89,7 @@ public class CustomerServiceImpl extends UserServiceImpl implements CustomerServ
     }
 
     private String getVerificationUrl(UserEmailVerificationToken userEmailVerificationToken) {
-       return appProperties.getFrontendAddress() + "email-verification/?verification_token=" + userEmailVerificationToken.getToken();
+       return appProperties.getFrontendAddress() + "email-verification/" + userEmailVerificationToken.getToken();
     }
 
 }
