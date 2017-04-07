@@ -31,6 +31,13 @@ public class OrderController extends AbstractDatabaseController<CustomerOrder, U
         return read(id);
     }
 
+    @RequestMapping(value = "/orders/{id}/ship", method = RequestMethod.POST)
+    public ResponseEntity<?> shipOrder(@PathVariable UUID id) {
+        return getSimpleResponseEntity(
+                orderService.shipOrder(id)
+        );
+    }
+
     @RequestMapping(value = "/customers/{customerId}/orders", method = RequestMethod.GET)
     public ResponseEntity<?> readCustomerOrders(@PathVariable UUID customerId, Pageable pageable) {
         return getPageResponseEntity(

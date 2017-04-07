@@ -26,7 +26,7 @@ public class MailgunMailServiceImpl implements MailService {
         parts.add("from",appProperties.getMailgunFromName()+ " <"+appProperties.getMailgunFromEmail()+">");
         parts.add("to", mailDTO.getTo());
         parts.add("subject", mailDTO.getSubject());
-        parts.add("text", mailDTO.getText());
+        parts.add("html", mailDTO.getText());
 
         HttpHeaders requestHeaders = new HttpHeaders();
         requestHeaders.setContentType(MediaType.APPLICATION_FORM_URLENCODED);

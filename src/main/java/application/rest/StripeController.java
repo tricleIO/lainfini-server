@@ -3,9 +3,8 @@ package application.rest;
 import application.configuration.AppProperties;
 import application.persistence.entity.User;
 import application.persistence.type.PaymentMethodEnum;
-import application.rest.domain.OrderDTO;
-import application.rest.domain.PaymentDTO;
-import application.rest.domain.PaymentInformationDTO;
+import application.rest.domain.*;
+import application.service.mail.MailService;
 import application.service.order.OrderService;
 import application.service.payment.PaymentService;
 import application.service.response.ServiceResponse;
@@ -44,6 +43,9 @@ public class StripeController {
 
     @Autowired
     private AppProperties appProperties;
+
+    @Autowired
+    private MailService mailService;
 
     @ResponseBody
     @RequestMapping(value = "/stripe", method = RequestMethod.POST)
@@ -87,12 +89,17 @@ public class StripeController {
             customer = getCustomer(user.getStripeToken());
         }
 
-        if (customer == null) {
-            customer = createCustomer((user != null) ? user.getEmail() : null, paymentInformation.getCardNumber(), paymentInformation.getMonthExpiration(), paymentInformation.getYearExpiration(), paymentInformation.getCvc());
-            if (user != null) {
-                user.setStripeToken(customer.getId());
-                userService.patch(user.toDTO(true));
+        try {
+            if (customer == null) {
+                customer = createCustomer((user != null) ? user.getEmail() : null, paymentInformation.getCardNumber(), paymentInformation.getMonthExpiration(), paymentInformation.getYearExpiration(), paymentInformation.getCvc());
+                if (user != null) {
+                    user.setStripeToken(customer.getId());
+                    userService.patch(user.toDTO(true));
+                }
             }
+        } catch (Exception ex) {
+            sendPaymentNotSuccessfulEmail(orderDTO);
+            throw ex;
         }
 
         ResponseEntity<?> chargeResponse = chargeCustomer(
@@ -112,11 +119,28 @@ public class StripeController {
                     return new ErrorResponseEntity(createPaymentResponse.getStatus());
                 }
                 return new ResponseEntity<>(createPaymentResponse.getBody(), HttpStatus.OK);
+            } else {
+                sendPaymentNotSuccessfulEmail(orderDTO);
             }
+        } else {
+            sendPaymentNotSuccessfulEmail(orderDTO);
         }
         return chargeResponse;
     }
 
+    public void sendPaymentNotSuccessfulEmail(OrderDTO orderDTO) {
+        ServiceResponse<UserDTO> userResponse = userService.read(orderDTO.getCustomerUid());
+        if (userResponse.isSuccessful()) {
+            MailDTO mailDTO = new MailDTO();
+            mailDTO.setTo(userResponse.getBody().getEmail());
+            mailDTO.setSubject("Unsuccessful payment");
+            mailDTO.setText("<p>Dear Customer,<br><br>" +
+                    "Unfortunately, we have been unable to process the payment for your shopping (order " + orderDTO.getUid() + ") in Atelier LAINFINI.<br>" +
+                    "Please try again.<br>" +
+                    "Thank you for your shopping in Atelier LAINFINI!</p>");
+            mailService.sendMail(mailDTO);
+        }
+    }
 
     private ResponseEntity<?> chargeCustomer(Integer amount, String currency, String paymentDescription, Customer customer) throws CardException, APIException, AuthenticationException, InvalidRequestException, APIConnectionException {
         if (customer != null) {

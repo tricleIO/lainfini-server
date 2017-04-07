@@ -21,6 +21,7 @@ import application.persistence.type.LocaleEnum;
 import application.persistence.type.SexEnum;
 import application.persistence.type.StatusEnum;
 import application.persistence.type.UserStatusEnum;
+import application.rest.domain.LinkedAccountDTO;
 import application.rest.domain.UserDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
@@ -30,10 +31,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 
 @Entity
 @Table(name = "customer")
@@ -56,12 +54,10 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(name = "degree_after_name")
     private String degreeAfterName;
 
-    @NotNull
-    @Column(name = "first_name", length = 64, nullable = false)
+    @Column(name = "first_name", length = 64)
     private String firstName;
 
-    @NotNull
-    @Column(name = "last_name", length = 64, nullable = false)
+    @Column(name = "last_name", length = 64)
     private String lastName;
 
     @Column(name = "sex", length = 1)
@@ -173,6 +169,16 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         userDTO.setStripeToken(stripeToken);
         if (currency != null) {
             userDTO.setCurrency(currency.toDTO(false));
+        }
+
+        if (linkedAccountList != null && linkedAccountList.size() > 0) {
+            List<LinkedAccountDTO> linkedAccountDTOS = new ArrayList<>();
+            for (LinkedAccount linkedAccount : linkedAccountList) {
+                LinkedAccountDTO linkedAccountDTO = new LinkedAccountDTO();
+                linkedAccountDTO.setParty(linkedAccount.getParty());
+                linkedAccountDTOS.add(linkedAccountDTO);
+            }
+            userDTO.setLinkedAccounts(linkedAccountDTOS);
         }
         userDTO.setDegreeAfterName(degreeAfterName);
         userDTO.setDegreeBeforeName(degreeBeforeName);

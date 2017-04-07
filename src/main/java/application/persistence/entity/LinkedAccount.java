@@ -1,7 +1,9 @@
 package application.persistence.entity;
 
+import application.persistence.DTOConvertable;
 import application.persistence.type.AccountPartyEnum;
 import application.persistence.type.StatusEnum;
+import application.rest.domain.LinkedAccountDTO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
@@ -16,7 +18,7 @@ import java.util.Date;
 @Data
 @EqualsAndHashCode(exclude = {"customer"})
 @ToString(exclude = {"customer", "facebookAccount", "instagramAccount"})
-public class LinkedAccount implements Serializable {
+public class LinkedAccount implements DTOConvertable<LinkedAccountDTO>, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,21 +33,26 @@ public class LinkedAccount implements Serializable {
     @Column(name = "account_party", length = 15)
     private AccountPartyEnum party;
 
-    @OneToOne(mappedBy = "linkedAccount")
+    @OneToOne(mappedBy = "linkedAccount", cascade = CascadeType.ALL)
     private FacebookAccount facebookAccount;
 
-    @OneToOne(mappedBy = "linkedAccount")
+    @OneToOne(mappedBy = "linkedAccount", cascade = CascadeType.ALL)
     private InstagramAccount instagramAccount;
 
     @Column(name = "account_status", length = 10)
     @Enumerated(EnumType.ORDINAL)
     private StatusEnum status;
 
-    @Column(name = "valid_from")
-    private Date validFrom;
+    @Column(name = "valid_from", nullable = false)
+    private Date validFrom = new Date();
 
     @Column(name = "valid_to")
     private Date validTo;
 
-
+    @Override
+    public LinkedAccountDTO toDTO(boolean selectAsParent, Object... parentParams) {
+        LinkedAccountDTO linkedAccountDTO = new LinkedAccountDTO();
+        linkedAccountDTO.setParty(this.party);
+        return linkedAccountDTO;
+    }
 }

@@ -1,5 +1,6 @@
 package application.rest.domain;
 
+import application.persistence.type.StatusEnum;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -21,5 +22,7 @@ public class UserFacebookAccountDTO implements Serializable{
     private String email;
 
     private String gender;
+
+    private StatusEnum statusInSystem;
 
 }

@@ -12,5 +12,6 @@ import java.util.UUID;
 public interface OrderService extends BaseDatabaseService<CustomerOrder, UUID, OrderDTO> {
 
     ServiceResponse<Page<OrderDTO>> readCustomerOrders(UUID customerId, Pageable pageable);
+    ServiceResponse<OrderDTO> shipOrder(UUID orderId);
 
 }
