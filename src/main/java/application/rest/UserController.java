@@ -4,7 +4,9 @@ import application.persistence.entity.User;
 import application.persistence.repository.UserRepository;
 import application.persistence.type.UserRoleEnum;
 import application.persistence.type.UserStatusEnum;
+import application.rest.domain.MailDTO;
 import application.rest.domain.UserDTO;
+import application.service.mail.MailService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.security.CustomUserDetails;
@@ -38,6 +40,9 @@ public class UserController extends AbstractDatabaseController<User, UUID, UserD
 
     @Autowired
     private UserDetailsService userDetailsService;
+
+    @Autowired
+    private MailService mailService;
 
     @Autowired
     private AuthorizationServerTokenServices authorizationServerTokenServices;
@@ -90,9 +95,17 @@ public class UserController extends AbstractDatabaseController<User, UUID, UserD
         if (user.getRegisterStatus() == UserStatusEnum.PRE_REGISTERED) {
             user.setRegisterStatus(UserStatusEnum.REGISTERED);
             userRepository.save(user);
+
+            MailDTO mailDTO = new MailDTO();
+            mailDTO.setTo(user.getEmail());
+            mailDTO.setSubject("Registration confirmed");
+            mailDTO.setText("<h2>Welcome to Atelier LAINFINI!</h2>" +
+                    "<p>Your Atelier LAINFINI Registration has been successfully created.<br><br>" +
+                    "Enjoy your shopping!</p>");
+            mailService.sendMail(mailDTO);
         }
 
-        Set<GrantedAuthority> authorities = new HashSet<GrantedAuthority>();
+        Set<GrantedAuthority> authorities = new HashSet<>();
         authorities.add(new SimpleGrantedAuthority("USER"));
 
         Map<String, String> requestParameters = new HashMap<>();
