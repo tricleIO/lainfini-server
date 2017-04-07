@@ -21,7 +21,6 @@ import application.persistence.type.LocaleEnum;
 import application.persistence.type.SexEnum;
 import application.persistence.type.StatusEnum;
 import application.persistence.type.UserStatusEnum;
-import application.rest.domain.LinkedAccountDTO;
 import application.rest.domain.UserDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
@@ -31,7 +30,9 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.UUID;
 
 @Entity
 @Table(name = "customer")
@@ -45,8 +46,8 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(name = "id", unique = true, nullable = false, columnDefinition = "BINARY(16)")
     private UUID id;
 
-    @OneToMany(mappedBy = "customer")
-    private List<LinkedAccount> linkedAccountList;
+//    @OneToMany(mappedBy = "customer")
+//    private List<LinkedAccount> linkedAccountList;
 
     @Column(name = "degree_before_name")
     private String degreeBeforeName;
@@ -131,7 +132,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         this.email = user.getEmail();
         this.password = user.getPassword();
         this.roles = user.getRoles();
-        this.linkedAccountList = user.getLinkedAccountList();
+//        this.linkedAccountList = user.getLinkedAccountList();
         this.degreeBeforeName = user.getDegreeBeforeName();
         this.degreeAfterName = user.getDegreeAfterName();
         this.firstName =user.getFirstName();
@@ -171,15 +172,15 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
             userDTO.setCurrency(currency.toDTO(false));
         }
 
-        if (linkedAccountList != null && linkedAccountList.size() > 0) {
-            List<LinkedAccountDTO> linkedAccountDTOS = new ArrayList<>();
-            for (LinkedAccount linkedAccount : linkedAccountList) {
-                LinkedAccountDTO linkedAccountDTO = new LinkedAccountDTO();
-                linkedAccountDTO.setParty(linkedAccount.getParty());
-                linkedAccountDTOS.add(linkedAccountDTO);
-            }
-            userDTO.setLinkedAccounts(linkedAccountDTOS);
-        }
+//        if (linkedAccountList != null && linkedAccountList.size() > 0) {
+//            List<LinkedAccountDTO> linkedAccountDTOS = new ArrayList<>();
+//            for (LinkedAccount linkedAccount : linkedAccountList) {
+//                LinkedAccountDTO linkedAccountDTO = new LinkedAccountDTO();
+//                linkedAccountDTO.setParty(linkedAccount.getParty());
+//                linkedAccountDTOS.add(linkedAccountDTO);
+//            }
+//            userDTO.setLinkedAccounts(linkedAccountDTOS);
+//        }
         userDTO.setDegreeAfterName(degreeAfterName);
         userDTO.setDegreeBeforeName(degreeBeforeName);
         userDTO.setRegisterStatus(registerStatus);
