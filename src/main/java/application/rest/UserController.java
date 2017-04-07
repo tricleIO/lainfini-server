@@ -1,10 +1,12 @@
 package application.rest;
 
 import application.persistence.entity.User;
+import application.persistence.repository.UserRepository;
 import application.persistence.type.UserRoleEnum;
 import application.persistence.type.UserStatusEnum;
 import application.rest.domain.UserDTO;
 import application.service.response.ServiceResponse;
+import application.service.response.ServiceResponseStatus;
 import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -22,7 +24,8 @@ public class UserController extends AbstractDatabaseController<User, UUID, UserD
     @Autowired
     private UserService userService;
 
-
+    @Autowired
+    private UserRepository userRepository;
 
     @Autowired
     private UserDetailsService userDetailsService;
@@ -67,25 +70,17 @@ public class UserController extends AbstractDatabaseController<User, UUID, UserD
 
     @RequestMapping(value = "/verify", method = RequestMethod.GET)
     public ResponseEntity<?> verifyUser(@RequestParam String verificationToken) {
-        UserDTO body = userService.findByEmailVerificationTokenToken(verificationToken).getBody();
-        if (body != null) {
-            if (body.getRegisterStatus().equals(UserStatusEnum.REGISTERED)) {
-                return new ResponseEntity<>(
-                        HttpStatus.OK
-                );
-            } else if (body.getRegisterStatus().equals(UserStatusEnum.PRE_REGISTERED)) {
 //            Date expiryDate = body.toEntity(true).getEmailVerificationToken().getExpiryDate(); //todo: brát v potaz expiraci
-                body.setRegisterStatus(UserStatusEnum.REGISTERED);
-                userService.patch(body); //todo: tady dát lepší patch, aby nemazal heslo
-                return new ResponseEntity<>(
-                        HttpStatus.OK
-                );
-            }
+        User user = userRepository.findByEmailVerificationTokenToken(verificationToken);
+        if (user == null) {
+            return new ErrorResponseEntity(ServiceResponseStatus.CUSTOMER_NOT_FOUND);
         }
-
+        if (user.getRegisterStatus() == UserStatusEnum.PRE_REGISTERED) {
+            user.setRegisterStatus(UserStatusEnum.REGISTERED);
+            userRepository.save(user);
+        }
         return new ResponseEntity<>(
-                "Token not found",
-                HttpStatus.INTERNAL_SERVER_ERROR
+                HttpStatus.OK
         );
     }
 
