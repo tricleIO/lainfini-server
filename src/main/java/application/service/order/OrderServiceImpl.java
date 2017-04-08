@@ -82,7 +82,7 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
         if (createResponse.isSuccessful()) {
             ServiceResponse<OrderDTO> readOrderResponse = read(createResponse.getBody().getUid());
             if (readOrderResponse.isSuccessful()) {
-                final String orderString = getOrderString(dto.getCustomer(), readOrderResponse.getBody());
+                final String orderString = getOrderString(dto.getCustomer(), dto.getDeliveryAddress(), readOrderResponse.getBody(), dto.getShippingTariff());
                 // email for customer
                 ServiceResponse<MailDTO> mailResponse = mailService.sendMail(
                         createMail(
@@ -166,17 +166,38 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                 "<p>New order in e-shop.<br>";
     }
 
-    private String getOrderString(UserDTO customerDTO, OrderDTO orderDTO) {
+    private String getOrderString(UserDTO customerDTO, AddressDTO deliveryAddressDTO, OrderDTO orderDTO, ShippingTariffDTO shippingTariffDTO) {
         StringBuilder orderItemsStringBuilder = new StringBuilder();
         orderItemsStringBuilder.append("<p>items:<br><ul>");
         for (OrderItemDTO item : orderDTO.getItems()) {
-            orderItemsStringBuilder.append("<li>" + item.getProduct().getName() + " - quantity: " + item.getQuantity() + ", price: $" + item.getPrice() +  "</li>");
+            orderItemsStringBuilder.append("<li>" + item.getProduct().getName() + " - quantity: " + item.getQuantity() + ", price: $" + item.getPrice() + "</li>");
         }
-        orderItemsStringBuilder.append("</ul></p>")
+        orderItemsStringBuilder
+                .append("</ul></p>")
+                .append("<p>shipping tariff: " + shippingTariffDTO.getName() + "</p>")
                 .append("<p>total price: $" + orderDTO.getTotalPrice() + "<br>")
                 .append("shipping price: $" + orderDTO.getShipping().getPrice() + "<br>")
                 .append("total price with shipping: $" + orderDTO.getTotalPriceWithShipping() + "</p>")
-                .append("<p>name: " + customerDTO.getFirstName() + " " + customerDTO.getLastName() + "<br>");
+                .append("<p>name: " + customerDTO.getFirstName() + " " + customerDTO.getLastName() + "<br>")
+                .append("email: " + customerDTO.getEmail() +"<br>");
+        if (customerDTO.getPhoneCode() != null && customerDTO.getPhoneNumber() != null) {
+            orderItemsStringBuilder.append("<phone:" + customerDTO.getPhoneCode() + customerDTO.getPhoneNumber() + "<br>");
+        }
+        orderItemsStringBuilder.append("</p>");
+        if (deliveryAddressDTO != null) {
+            orderItemsStringBuilder
+                    .append("<p>delivery address:<br>")
+                    .append("street: " + deliveryAddressDTO.getStreet() + " " + deliveryAddressDTO.getHouseNumber() + "<br>")
+                    .append("city: " + deliveryAddressDTO.getCity() + "<br>")
+                    .append("postal: " + deliveryAddressDTO.getPostal() + "<br>");
+            if (deliveryAddressDTO.getState() != null) {
+                orderItemsStringBuilder
+                        .append("state: " + deliveryAddressDTO.getState() + "<br>");
+            }
+            orderItemsStringBuilder
+                    .append("country: " + deliveryAddressDTO.getCountry() + "<br>")
+                    .append("</p>");
+        }
         return orderItemsStringBuilder.toString();
     }
 
