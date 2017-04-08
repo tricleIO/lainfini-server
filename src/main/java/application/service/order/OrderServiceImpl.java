@@ -172,7 +172,8 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
         for (OrderItemDTO item : orderDTO.getItems()) {
             orderItemsStringBuilder.append("<li>" + item.getProduct().getName() + " - quantity: " + item.getQuantity() + ", price: $" + item.getPrice() + "</li>");
         }
-        orderItemsStringBuilder.append("</ul></p>")
+        orderItemsStringBuilder
+                .append("</ul></p>")
                 .append("<p>shipping tariff: " + shippingTariffDTO.getName() + "</p>")
                 .append("<p>total price: $" + orderDTO.getTotalPrice() + "<br>")
                 .append("shipping price: $" + orderDTO.getShipping().getPrice() + "<br>")
@@ -184,10 +185,16 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
         }
         orderItemsStringBuilder.append("</p>");
         if (deliveryAddressDTO != null) {
-            orderItemsStringBuilder.append("<p>delivery address:<br>")
+            orderItemsStringBuilder
+                    .append("<p>delivery address:<br>")
                     .append("street: " + deliveryAddressDTO.getStreet() + " " + deliveryAddressDTO.getHouseNumber() + "<br>")
                     .append("city: " + deliveryAddressDTO.getCity() + "<br>")
-                    .append("postal: " + deliveryAddressDTO.getPostal() + "<br>")
+                    .append("postal: " + deliveryAddressDTO.getPostal() + "<br>");
+            if (deliveryAddressDTO.getState() != null) {
+                orderItemsStringBuilder
+                        .append("state: " + deliveryAddressDTO.getState() + "<br>");
+            }
+            orderItemsStringBuilder
                     .append("country: " + deliveryAddressDTO.getCountry() + "<br>")
                     .append("</p>");
         }
