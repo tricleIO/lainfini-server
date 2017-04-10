@@ -24,7 +24,7 @@ public class AbraStoresubcardExpandStoreServiceImpl extends AbraServiceImpl<Stor
     private ProductService productService;
 
     /**
-     * Check product availability by system UUID
+     * Check product availability by system UUIDreceivedorders
      * @param uuid
      * @return
      */

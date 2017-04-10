@@ -79,7 +79,7 @@ public class Person   {
   private String comment = null;
 
   @SerializedName("address_id")
-  private Person addressId = null;
+  private Address addressId = null;
 
   @SerializedName("fullname")
   private String fullname = null;
@@ -363,7 +363,7 @@ public class Person   {
     this.comment = comment;
   }
 
-  public Person addressId(Person addressId) {
+  public Person addressId(Address addressId) {
     this.addressId = addressId;
     return this;
   }
@@ -373,11 +373,11 @@ public class Person   {
    * @return addressId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Person getAddressId() {
+  public Address getAddressId() {
     return addressId;
   }
 
-  public void setAddressId(Person addressId) {
+  public void setAddressId(Address addressId) {
     this.addressId = addressId;
   }
 
