@@ -58,38 +58,7 @@ public abstract class AbraServiceImpl<T> implements AbraService {
                 httpEntity,
                 new ParameterizedTypeReference<String>() {
                 });
-//        return forObject.getBody();
-        return "[\n" +
-                "  {\n" +
-                "    \"storecard_id\": \"1200000101\",\n" +
-                "    \"quantity\": 14,\n" +
-                "    \"store_id\": {\n" +
-                "      \"account_id\": \"MA00000101\",\n" +
-//                "      \"address_id\": \"5B00000101\",\n" +
-                "      \"code\": \"01\",\n" +
-                "      \"fifo\": true,\n" +
-                "      \"firstopenperiod_id\": \"2200000101\",\n" +
-                "      \"hidden\": false,\n" +
-                "      \"id\": \"2100000101\",\n" +
-                "      \"intrastatinputstatistic_id\": \"1000000000\",\n" +
-                "      \"intrastatoutputstatistic_id\": \"1000000000\",\n" +
-                "      \"intrastatregion_id\": null,\n" +
-                "      \"inventorystate\": 0,\n" +
-                "      \"invstartedby_id\": \"SUPER00000\",\n" +
-                "      \"islogistic\": false,\n" +
-                "      \"islogisticfromdate$date\": null,\n" +
-                "      \"lastopenperiod_id\": \"2200000101\",\n" +
-                "      \"machinename\": \"AHRI.dell\",\n" +
-                "      \"name\": \"Hlavní sklad\",\n" +
-                "      \"objversion\": 13,\n" +
-                "      \"outofstockbatchdelivery\": 0,\n" +
-                "      \"outofstockdelivery\": 0,\n" +
-                "      \"pricelist_id\": \"1400000101\",\n" +
-                "      \"refundstore_id\": null,\n" +
-                "      \"toaccount\": true\n" +
-                "    }\n" +
-                "  }\n" +
-                "]";
+        return forObject.getBody();
     }
 
     public final <T> T requestAbra(String url, HttpMethod httpMethod, Class<T> clazz, boolean returnCollection) {
