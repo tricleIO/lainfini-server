@@ -42,6 +42,8 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private String code;
     private ProductStatusEnum productStatus;
 
+    private String abraLink;
+
     @JsonProperty("mainImage")
     private ApplicationFileDTO mainImageDTO;
 
@@ -60,6 +62,7 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
         product.setDescription(description);
         product.setPrice(price);
         product.setCode(code);
+        product.setAbraLink(abraLink);
         product.setProductStatus(productStatus);
         if (mainImageDTO != null) {
             product.setMainImage(mainImageDTO.toEntity(false));

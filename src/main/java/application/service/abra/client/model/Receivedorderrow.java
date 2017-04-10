@@ -218,7 +218,7 @@ public class Receivedorderrow   {
   private String priceId = null;
 
   @SerializedName("reservation_id")
-  private Receivedorderrow reservationId = null;
+  private Reservation reservationId = null;
 
   @SerializedName("deliveredquantity")
   private Double deliveredquantity = null;
@@ -1357,7 +1357,7 @@ public class Receivedorderrow   {
     this.priceId = priceId;
   }
 
-  public Receivedorderrow reservationId(Receivedorderrow reservationId) {
+  public Receivedorderrow reservationId(Reservation reservationId) {
     this.reservationId = reservationId;
     return this;
   }
@@ -1367,11 +1367,11 @@ public class Receivedorderrow   {
    * @return reservationId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Receivedorderrow getReservationId() {
+  public Reservation getReservationId() {
     return reservationId;
   }
 
-  public void setReservationId(Receivedorderrow reservationId) {
+  public void setReservationId(Reservation reservationId) {
     this.reservationId = reservationId;
   }
 
