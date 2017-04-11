@@ -6,11 +6,14 @@ import com.google.gson.GsonBuilder;
 import org.apache.commons.codec.binary.Base64;
 import org.joda.time.DateTime;
 import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.hateoas.UriTemplate;
 import org.springframework.http.*;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
+import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Type;
+import java.net.URLDecoder;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 
@@ -27,6 +30,7 @@ public abstract class AbraServiceImpl<T> implements AbraService {
 //        List<ClientHttpRequestInterceptor> interceptors = new ArrayList<ClientHttpRequestInterceptor>();
 //        interceptors.add(new LoggingRequestInterceptor());
 //        restTemplate.setInterceptors(interceptors);
+        //keep it on
         StringHttpMessageConverter stringHttpMessageConverter = new StringHttpMessageConverter(Charset.forName("UTF-8"));
         stringHttpMessageConverter.setWriteAcceptCharset(false);
         restTemplate.getMessageConverters().add(0, stringHttpMessageConverter);
@@ -39,7 +43,18 @@ public abstract class AbraServiceImpl<T> implements AbraService {
         } else {
             httpEntity = new HttpEntity<>(convertObjectToJson(requestBodyObject), httpHeaders);
         }
-        ResponseEntity<String> forObject = restTemplate.exchange(url, httpMethod,
+
+
+        UriTemplate uriTemplate = new UriTemplate(url);
+
+        String decode = null;
+        try {
+            decode = URLDecoder.decode(uriTemplate.toString(), "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        ResponseEntity<String> forObject = restTemplate.exchange(decode, httpMethod,
                 httpEntity,
                 new ParameterizedTypeReference<String>() {
                 });

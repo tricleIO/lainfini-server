@@ -1,9 +1,12 @@
 package application.rest;
 
 import application.persistence.entity.Product;
+import application.rest.domain.ProductAvailabilityDTO;
 import application.rest.domain.ProductDTO;
 import application.rest.domain.ProductHasFlashDTO;
+import application.service.abra.AbraStoresubcardExpandStoreService;
 import application.service.product.ProductService;
+import application.service.response.ServiceResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +21,9 @@ public class ProductController extends AbstractDatabaseController<Product, UUID,
 
     @Autowired
     private ProductService productService;
+
+    @Autowired
+    private AbraStoresubcardExpandStoreService abraStoresubcardExpandStoreService;
 
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<?> readProducts(Pageable pageable, @RequestParam(name = "slug", required = false) String slug, Principal principal) {
@@ -71,6 +77,12 @@ public class ProductController extends AbstractDatabaseController<Product, UUID,
         return getPageResponseEntity(
                 productService.findByImagesPfFileId(imageId)
         );
+    }
+
+    @RequestMapping(value = "product/{id}/availability", method = RequestMethod.GET)
+    public ProductAvailabilityDTO checkAvailability(@PathVariable UUID id) {
+        ServiceResponse<ProductAvailabilityDTO> productAvailabilityDTOServiceResponse = abraStoresubcardExpandStoreService.checkProductAvailability(id);
+        return productAvailabilityDTOServiceResponse.getBody();
     }
 
     @Override

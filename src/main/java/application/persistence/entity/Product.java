@@ -75,6 +75,9 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     @Enumerated(EnumType.ORDINAL)
     private ProductStatusEnum productStatus;
 
+    @Column(name = "abra_link")
+    private String abraLink;
+
     @Override
     public ProductDTO toDTO(boolean selectAsParent, Object... parentParams) {
         ProductDTO productDTO = new ProductDTO();
@@ -85,6 +88,7 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
         productDTO.setDescription(description);
         productDTO.setPrice(price);
         productDTO.setCode(code);
+        productDTO.setAbraLink(abraLink);
         productDTO.setProductStatus(productStatus);
         if (mainImage != null) {
             productDTO.setMainImageDTO(mainImage.toDTO(false));

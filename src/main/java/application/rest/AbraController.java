@@ -1,12 +1,16 @@
 package application.rest;
 
+import application.rest.domain.ProductAvailabilityDTO;
 import application.service.abra.AbraStorecardService;
+import application.service.abra.AbraStoresubcardExpandStoreService;
 import application.service.abra.client.model.Storecard;
+import application.service.response.ServiceResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 /**
  * Created by pfilip on 27.3.17.
@@ -17,6 +21,9 @@ public class AbraController {
 
     @Autowired
     private AbraStorecardService abraStorecardService;
+
+    @Autowired
+    private AbraStoresubcardExpandStoreService abraStoresubcardExpandStoreService;
 
     @RequestMapping(value = "/storecards", method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE})
     public List<Storecard> getStorecards() {
@@ -46,5 +53,12 @@ public class AbraController {
     public Boolean deleteStorecard(@PathVariable String id) {
         boolean isSuccessful = abraStorecardService.deleteStorecard(id);
         return isSuccessful;
+    }
+
+    /////////////////////////////////////
+    @RequestMapping(value = "product/{id}/availability", method = RequestMethod.GET)
+    public ProductAvailabilityDTO checkAvailability(@PathVariable UUID id) {
+        ServiceResponse<ProductAvailabilityDTO> productAvailabilityDTOServiceResponse = abraStoresubcardExpandStoreService.checkProductAvailability(id);
+        return productAvailabilityDTOServiceResponse.getBody();
     }
 }
