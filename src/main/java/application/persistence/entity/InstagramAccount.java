@@ -17,7 +17,7 @@ public class InstagramAccount implements ILinkableAccount, Serializable {
 
     @NotNull
     @Column(name = "instagram_id", nullable = false)
-    private Long instagramId;
+    private String instagramId;
 
     @NotNull
     @Column(name = "username", length = 128, nullable = false)

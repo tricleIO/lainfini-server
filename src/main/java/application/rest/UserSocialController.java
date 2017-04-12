@@ -1,9 +1,11 @@
 package application.rest;
 
 import application.persistence.entity.FacebookAccount;
+import application.persistence.entity.InstagramAccount;
 import application.persistence.entity.LinkedAccount;
 import application.persistence.entity.User;
 import application.persistence.repository.FacebookAccountRepository;
+import application.persistence.repository.InstagramAccountRepository;
 import application.persistence.repository.LinkedAccountRepository;
 import application.persistence.type.AccountPartyEnum;
 import application.persistence.type.StatusEnum;
@@ -11,11 +13,13 @@ import application.persistence.type.UserStatusEnum;
 import application.rest.domain.LinkedAccountDTO;
 import application.rest.domain.UserDTO;
 import application.rest.domain.UserFacebookAccountDTO;
+import application.rest.domain.UserInstagramAccountDTO;
+import application.service.Connection;
 import application.service.security.CustomUserDetails;
 import application.service.user.UserService;
+import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -23,6 +27,8 @@ import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.security.oauth2.provider.OAuth2Request;
 import org.springframework.security.oauth2.provider.token.AuthorizationServerTokenServices;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -47,6 +53,9 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
 
     @Autowired
     private FacebookAccountRepository facebookAccountRepository;
+
+    @Autowired
+    private InstagramAccountRepository instagramAccountRepository;
 
     @Autowired
     private AuthorizationServerTokenServices authorizationServerTokenServices;
@@ -85,7 +94,7 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
             if (linkedAccountInput.getParty().equals(AccountPartyEnum.FACEBOOK)) {
                 return new ResponseEntity<Object>(connectFacebookAccount(linkedAccountInput.getToken()), HttpStatus.OK);
             } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.INSTAGRAM)) {
-                return new ResponseEntity<Object>(HttpStatus.INTERNAL_SERVER_ERROR, HttpStatus.OK);
+                return new ResponseEntity<Object>(connectInstagramAccount(linkedAccountInput.getToken()), HttpStatus.OK);
             } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.GOOGLE)) {
                 return new ResponseEntity<Object>(HttpStatus.INTERNAL_SERVER_ERROR, HttpStatus.OK);
             } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.TWITTER)) {
@@ -111,7 +120,7 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
             if (linkedAccountInput.getParty().equals(AccountPartyEnum.FACEBOOK)) {
                 return new ResponseEntity<Object>(createNewAccountFromFacebook(linkedAccountInput.getToken()), HttpStatus.OK);
             } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.INSTAGRAM)) {
-                return new ResponseEntity<Object>(HttpStatus.INTERNAL_SERVER_ERROR, HttpStatus.OK);
+                return new ResponseEntity<Object>(createNewAccountFromInstagram(linkedAccountInput.getToken()), HttpStatus.OK);
             } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.GOOGLE)) {
                 return new ResponseEntity<Object>(HttpStatus.INTERNAL_SERVER_ERROR, HttpStatus.OK);
             } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.TWITTER)) {
@@ -139,7 +148,15 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
                     return new ResponseEntity<Object>("", HttpStatus.OK);
                 }
             } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.INSTAGRAM)) {
-                return new ResponseEntity<Object>(HttpStatus.INTERNAL_SERVER_ERROR, HttpStatus.OK);
+                LinkedAccount linkedAccountByInstagramCode = getLinkedAccountByInstagramCode(linkedAccountInput.getToken());
+                if (linkedAccountByInstagramCode != null) {
+                    linkedAccountByInstagramCode.setStatus(StatusEnum.ACTIVE);
+                    User customer = linkedAccountByInstagramCode.getCustomer();
+                    customer.setStatus(StatusEnum.ACTIVE);
+                    customer.setRegisterStatus(UserStatusEnum.REGISTERED);
+                    userService.patch(customer.toDTO(false));
+                    return new ResponseEntity<Object>("", HttpStatus.OK);
+                }
             } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.GOOGLE)) {
                 return new ResponseEntity<Object>(HttpStatus.INTERNAL_SERVER_ERROR, HttpStatus.OK);
             } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.TWITTER)) {
@@ -180,7 +197,7 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
         if (linkedAccountInput.getParty().equals(AccountPartyEnum.FACEBOOK)) {
             linkedAccount = getLinkedAccountByFacebookToken(linkedAccountInput.getToken());
         } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.INSTAGRAM)) {
-            return null;
+            linkedAccount = getLinkedAccountByInstagramCode(linkedAccountInput.getToken());
         } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.GOOGLE)) {
             return null;
         } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.TWITTER)) {
@@ -206,15 +223,13 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
      * @param token
      * @return
      */
-    public boolean createNewAccountFromFacebook(String token) {
-        String url = "https://graph.facebook.com/v2.8/me?fields=id,hometown,email,gender,first_name,last_name&access_token=" + token;
-        RestTemplate restTemplate = new RestTemplate();
-        UserFacebookAccountDTO userFacebookAccountDTO = restTemplate.getForObject(url, UserFacebookAccountDTO.class);
+    private boolean createNewAccountFromFacebook(String token) {
+        UserFacebookAccountDTO userFacebookAccountDTO = getUserFacebookAccountDTO(token);
 
         FacebookAccount byFacebookId = facebookAccountRepository.findByFacebookId(userFacebookAccountDTO.getId());
 
         if (byFacebookId != null) {
-            userFacebookAccountDTO.setStatusInSystem(byFacebookId.getLinkedAccount().getStatus());
+            //userFacebookAccountDTO.setStatusInSystem(byFacebookId.getLinkedAccount().getStatus());
             return false;
         }
 
@@ -237,13 +252,48 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
 
     }
 
+    private UserFacebookAccountDTO getUserFacebookAccountDTO(String token) {
+        String url = "https://graph.facebook.com/v2.8/me?fields=id,hometown,email,gender,first_name,last_name&access_token=" + token;
+        RestTemplate restTemplate = new RestTemplate();
+        return restTemplate.getForObject(url, UserFacebookAccountDTO.class);
+    }
+
+    private boolean createNewAccountFromInstagram(String token) {
+        UserInstagramAccountDTO userInstagramAccountDTO = getInstagramUserByCode(token);
+
+        InstagramAccount byFacebookId = instagramAccountRepository.findByInstagramId(userInstagramAccountDTO.getData().getId());
+
+        if (byFacebookId != null) {
+            //userInstagramAccountDTO.setStatusInSystem(byFacebookId.getLinkedAccount().getStatus());
+            return false;
+        }
+
+        UserDTO userDTO = new UserDTO();
+        userDTO.setRegisterStatus(UserStatusEnum.PRE_REGISTERED);
+        userDTO.setUsername(userInstagramAccountDTO.getData().getUsername());
+        ResponseEntity<UserDTO> userEntity = (ResponseEntity<UserDTO>) create(userDTO);
+        UserDTO body = userEntity.getBody();
+        LinkedAccount linkedAccount = new LinkedAccount();
+        linkedAccount.setParty(AccountPartyEnum.FACEBOOK);
+        linkedAccount.setStatus(StatusEnum.INACTIVE);
+        linkedAccount.setCustomer(body.toEntity(false));
+        InstagramAccount facebookAccount = new InstagramAccount();
+        facebookAccount.setLinkedAccount(linkedAccount);
+        facebookAccount.setInstagramId(userInstagramAccountDTO.getData().getId());
+        facebookAccount.setUsername(userInstagramAccountDTO.getData().getUsername());
+        linkedAccount.setInstagramAccount(facebookAccount);
+        LinkedAccount save = linkedAccountRepository.save(linkedAccount);
+        return true;
+
+    }
+
     /**
      * Connect facebook account to existing user
      *
      * @param token
      * @return
      */
-    public boolean connectFacebookAccount(String token) {
+    private boolean connectFacebookAccount(String token) {
         String url = "https://graph.facebook.com/v2.8/me?fields=id,hometown,email,gender,first_name,last_name&access_token=" + token;
         RestTemplate restTemplate = new RestTemplate();
         UserFacebookAccountDTO body1 = restTemplate.getForObject(url, UserFacebookAccountDTO.class);
@@ -266,8 +316,34 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
         return true;
     }
 
+    private boolean connectInstagramAccount(String token) {
+        UserInstagramAccountDTO forObject = getInstagramUserByCode(token);
+
+        if (forObject == null) {
+            return false;
+        }
+
+        InstagramAccount byInstagramId = instagramAccountRepository.findByInstagramId(forObject.getData().getId());
+        if (byInstagramId != null) {
+            return false;
+        }
+
+        LinkedAccount linkedAccount = new LinkedAccount();
+        linkedAccount.setParty(AccountPartyEnum.INSTAGRAM);
+        linkedAccount.setStatus(StatusEnum.ACTIVE);
+        linkedAccount.setCustomer(CustomUserDetails.getCurrentUser());
+        InstagramAccount instagramAccount = new InstagramAccount();
+        instagramAccount.setLinkedAccount(linkedAccount);
+        instagramAccount.setInstagramId(forObject.getData().getId());
+        instagramAccount.setUsername(forObject.getData().getUsername());
+        linkedAccount.setInstagramAccount(instagramAccount);
+        LinkedAccount save = linkedAccountRepository.save(linkedAccount);
+        return true;
+    }
+
     /**
      * get linked account from facebook token
+     *
      * @param token
      * @return
      */
@@ -283,12 +359,38 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
         }
     }
 
+    private LinkedAccount getLinkedAccountByInstagramCode(String token) {
+        UserInstagramAccountDTO instagramByCode = getInstagramUserByCode(token);
+        InstagramAccount instagramAccount = instagramAccountRepository.findByInstagramId(instagramByCode.getData().getId());
+        if (instagramAccount != null) {
+            return instagramAccount.getLinkedAccount();
+        } else {
+            return null;
+        }
+    }
 
-//    @RequestMapping(value = "/instagram")
-//    public ResponseEntity<?> getInstagramUserDetails(@RequestParam String token) {
-//        String url = "https://api.instagram.com/v1/users/self/?access_token=" + token;
-//        RestTemplate restTemplate = new RestTemplate();
-//        UserInstagramAccountDTO forObject = restTemplate.getForObject(url, UserInstagramAccountDTO.class);
-//        return new ResponseEntity<Object>(forObject, HttpStatus.OK);
-//    }
+    ///helpers
+
+    private UserInstagramAccountDTO getInstagramUserByCode(String code) {
+        //String url1 = "https://api.instagram.com/oauth/authorize/?client_id=b9ef38ab779242b8b06b2047f6bf8781&redirect_uri=http://localhost:8080/users/linkedAccounts&response_type=code";
+
+        HttpHeaders requestHeaders = new HttpHeaders();
+        requestHeaders.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
+
+        MultiValueMap<String, Object> parts = new LinkedMultiValueMap<String, Object>();
+        parts.add("client_id", "b9ef38ab779242b8b06b2047f6bf8781");
+        parts.add("client_secret", "42229c16359e4508a67000502c04d2d8");
+        parts.add("grant_type", "authorization_code");
+        parts.add("redirect_uri", "http://localhost:8080");
+        parts.add("code", code);
+
+        HttpEntity httpEntity = new HttpEntity(parts, requestHeaders);
+
+        String url = "https://api.instagram.com/oauth/access_token";
+        Connection connection = new Connection();
+        ResponseEntity<String> stringResponseEntity = connection.doRequest(url, HttpMethod.POST, httpEntity, String.class);
+
+        UserInstagramAccountDTO userInstagramAccountDTO = new Gson().fromJson(stringResponseEntity.getBody(), UserInstagramAccountDTO.class);
+        return userInstagramAccountDTO;
+    }
 }
