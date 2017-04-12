@@ -1,5 +1,6 @@
 package application.configuration;
 
+import application.util.HtmlGenerator;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
@@ -22,6 +23,11 @@ public class ThymeleafConfig extends WebMvcConfigurerAdapter implements Applicat
 
     public void setApplicationContext(ApplicationContext applicationContext) {
         this.applicationContext = applicationContext;
+    }
+
+    @Bean
+    public HtmlGenerator htmlGenerator() {
+        return new HtmlGenerator();
     }
 
     @Bean

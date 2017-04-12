@@ -21,15 +21,14 @@ import application.service.response.ServiceResponseStatus;
 import application.service.shippingRegion.ShippingRegionService;
 import application.service.shippingTariff.ShippingTariffService;
 import application.service.user.UserService;
+import application.util.HtmlGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.thymeleaf.context.Context;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 
 @Service
 public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUID, OrderRepository, OrderDTO> implements OrderService {
@@ -76,6 +75,9 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     @Autowired
     private AppProperties appProperties;
 
+    @Autowired
+    private HtmlGenerator htmlGenerator;
+
     @Override
     public ServiceResponse<OrderDTO> create(OrderDTO dto) {
         ServiceResponse<OrderDTO> createResponse = super.create(dto);
@@ -88,7 +90,7 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                         createMail(
                                 dto.getCustomer().getEmail(),
                                 "Order confirmation",
-                                getBaseTextForCustomer() + orderString
+                                orderString
                         )
                 );
                 if (!mailResponse.isSuccessful()) {
@@ -100,7 +102,7 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                             createMail(
                                     sellerEmail,
                                     "New Order in e-shop",
-                                    getBaseTextForSeller() + orderString
+                                    orderString
                             )
                     );
                     if (!sellerMailResponse.isSuccessful()) {
@@ -167,38 +169,12 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     }
 
     private String getOrderString(UserDTO customerDTO, AddressDTO deliveryAddressDTO, OrderDTO orderDTO, ShippingTariffDTO shippingTariffDTO) {
-        StringBuilder orderItemsStringBuilder = new StringBuilder();
-        orderItemsStringBuilder.append("<p>items:<br><ul>");
-        for (OrderItemDTO item : orderDTO.getItems()) {
-            orderItemsStringBuilder.append("<li>" + item.getProduct().getName() + " - quantity: " + item.getQuantity() + ", price: $" + item.getPrice() + "</li>");
-        }
-        orderItemsStringBuilder
-                .append("</ul></p>")
-                .append("<p>shipping tariff: " + shippingTariffDTO.getName() + "</p>")
-                .append("<p>total price: $" + orderDTO.getTotalPrice() + "<br>")
-                .append("shipping price: $" + orderDTO.getShipping().getPrice() + "<br>")
-                .append("total price with shipping: $" + orderDTO.getTotalPriceWithShipping() + "</p>")
-                .append("<p>name: " + customerDTO.getFirstName() + " " + customerDTO.getLastName() + "<br>")
-                .append("email: " + customerDTO.getEmail() +"<br>");
-        if (customerDTO.getPhoneCode() != null && customerDTO.getPhoneNumber() != null) {
-            orderItemsStringBuilder.append("<phone:" + customerDTO.getPhoneCode() + customerDTO.getPhoneNumber() + "<br>");
-        }
-        orderItemsStringBuilder.append("</p>");
-        if (deliveryAddressDTO != null) {
-            orderItemsStringBuilder
-                    .append("<p>delivery address:<br>")
-                    .append("street: " + deliveryAddressDTO.getStreet() + " " + deliveryAddressDTO.getHouseNumber() + "<br>")
-                    .append("city: " + deliveryAddressDTO.getCity() + "<br>")
-                    .append("postal: " + deliveryAddressDTO.getPostal() + "<br>");
-            if (deliveryAddressDTO.getState() != null) {
-                orderItemsStringBuilder
-                        .append("state: " + deliveryAddressDTO.getState() + "<br>");
-            }
-            orderItemsStringBuilder
-                    .append("country: " + deliveryAddressDTO.getCountry() + "<br>")
-                    .append("</p>");
-        }
-        return orderItemsStringBuilder.toString();
+        final Context context = new Context(Locale.ENGLISH);
+        context.setVariable("customer", customerDTO);
+        context.setVariable("deliveryAddress", deliveryAddressDTO);
+        context.setVariable("order", orderDTO);
+        context.setVariable("shippingTariff", shippingTariffDTO);
+        return htmlGenerator.generateHtml("templates/emails/order/order_customer.html", context);
     }
 
     @Override
