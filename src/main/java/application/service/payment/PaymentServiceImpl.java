@@ -19,11 +19,14 @@ import application.service.order.OrderService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.user.UserService;
+import application.util.HtmlGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.thymeleaf.context.Context;
 
+import java.util.Locale;
 import java.util.UUID;
 
 @Service
@@ -47,6 +50,9 @@ public class PaymentServiceImpl extends BaseDatabaseServiceImpl<Payment, Long, P
     @Autowired
     private AppProperties appProperties;
 
+    @Autowired
+    private HtmlGenerator htmlGenerator;
+
     @Override
     public ServiceResponse<PaymentDTO> create(PaymentDTO dto) {
         ServiceResponse<PaymentDTO> createPaymentResponse = super.create(dto);
@@ -55,22 +61,32 @@ public class PaymentServiceImpl extends BaseDatabaseServiceImpl<Payment, Long, P
             if (readOrderResponse.isSuccessful()) {
                 OrderDTO orderDTO = readOrderResponse.getBody();
                 if (orderDTO.getPaymentState() == PaymentStateEnum.PAID) {
+                    // send mail to customer
                     ServiceResponse<UserDTO> readUserResponse = userService.read(readOrderResponse.getBody().getCustomerUid());
                     if (readUserResponse.isSuccessful()) {
                         MailDTO mailDTO = new MailDTO();
                         mailDTO.setTo(readUserResponse.getBody().getEmail());
                         mailDTO.setSubject("Order payment accepted");
-                        mailDTO.setText("<h2>Greetings from Atelier LAINFINI!</h2>" +
-                                "<p>We are happy to announce we successfully got your payment for order <b>" + orderDTO.getUid() + "</b><br>" +
-                                "Thank you for your shopping in Atelier LAINFINI!</p>");
+
+                        final Context context = new Context(Locale.ENGLISH);
+                        context.setVariable("order", orderDTO);
+                        mailDTO.setText(htmlGenerator.generateHtml(
+                                "templates/emails/payment/payment_accepted.html",
+                                context)
+                        );
                         mailService.sendMail(mailDTO);
                     }
+
+                    // sellers
+                    final Context context = new Context(Locale.ENGLISH);
+                    context.setVariable("order", orderDTO);
+                    final String htmlSeller = htmlGenerator.generateHtml("templates/emails/payment/payment_accepted.html", context);
+                    // send mail to all sellers
                     for (String sellerEmail : appProperties.getSellerEmails()) {
                         MailDTO mailDTO = new MailDTO();
                         mailDTO.setTo(sellerEmail);
                         mailDTO.setSubject("Order payment accepted");
-                        mailDTO.setText("<h2>Customer payment accepted</h2>" +
-                                "<p>Payment for order <b>" + orderDTO.getUid() + "</b> accepted.");
+                        mailDTO.setText(htmlSeller);
                         mailService.sendMail(mailDTO);
                     }
                 }

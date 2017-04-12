@@ -11,6 +11,7 @@ import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.security.CustomUserDetails;
 import application.service.user.UserService;
+import application.util.HtmlGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
@@ -24,6 +25,7 @@ import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.security.oauth2.provider.OAuth2Request;
 import org.springframework.security.oauth2.provider.token.AuthorizationServerTokenServices;
 import org.springframework.web.bind.annotation.*;
+import org.thymeleaf.context.Context;
 
 import java.io.Serializable;
 import java.util.*;
@@ -46,6 +48,9 @@ public class UserController extends AbstractDatabaseController<User, UUID, UserD
 
     @Autowired
     private AuthorizationServerTokenServices authorizationServerTokenServices;
+
+    @Autowired
+    private HtmlGenerator htmlGenerator;
 
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<?> readUsers(Pageable pageable) {
@@ -99,9 +104,8 @@ public class UserController extends AbstractDatabaseController<User, UUID, UserD
             MailDTO mailDTO = new MailDTO();
             mailDTO.setTo(user.getEmail());
             mailDTO.setSubject("Registration confirmed");
-            mailDTO.setText("<h2>Welcome to Atelier LAINFINI!</h2>" +
-                    "<p>Your Atelier LAINFINI Registration has been successfully created.<br><br>" +
-                    "Enjoy your shopping!</p>");
+            final Context context = new Context(Locale.ENGLISH);
+            mailDTO.setText(htmlGenerator.generateHtml("templates/emails/user/registration_confirmation.html", context));
             mailService.sendMail(mailDTO);
         }
 
