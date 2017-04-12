@@ -11,6 +11,7 @@ import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.security.CustomUserDetails;
 import application.service.user.UserService;
+import application.util.HtmlGenerator;
 import com.stripe.Stripe;
 import com.stripe.exception.*;
 import com.stripe.model.Charge;
@@ -21,8 +22,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.thymeleaf.context.Context;
 
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 /**
@@ -46,6 +49,9 @@ public class StripeController {
 
     @Autowired
     private MailService mailService;
+
+    @Autowired
+    private HtmlGenerator htmlGenerator;
 
     @ResponseBody
     @RequestMapping(value = "/stripe", method = RequestMethod.POST)
@@ -134,10 +140,11 @@ public class StripeController {
             MailDTO mailDTO = new MailDTO();
             mailDTO.setTo(userResponse.getBody().getEmail());
             mailDTO.setSubject("Unsuccessful payment");
-            mailDTO.setText("<p>Dear Customer,<br><br>" +
-                    "Unfortunately, we have been unable to process the payment for your shopping (order " + orderDTO.getUid() + ") in Atelier LAINFINI.<br>" +
-                    "Please try again.<br>" +
-                    "Thank you for your shopping in Atelier LAINFINI!</p>");
+            // html
+            final Context context = new Context(Locale.ENGLISH);
+            context.setVariable("order", orderDTO);
+            mailDTO.setText(htmlGenerator.generateHtml("templates/emails/payment/payment_not_accepted.html", context));
+            // send
             mailService.sendMail(mailDTO);
         }
     }
