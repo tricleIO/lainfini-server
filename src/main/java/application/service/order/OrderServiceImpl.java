@@ -84,25 +84,32 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
         if (createResponse.isSuccessful()) {
             ServiceResponse<OrderDTO> readOrderResponse = read(createResponse.getBody().getUid());
             if (readOrderResponse.isSuccessful()) {
-                final String orderString = getOrderString(dto.getCustomer(), dto.getDeliveryAddress(), readOrderResponse.getBody(), dto.getShippingTariff());
+                // set variables
+                final Context context = new Context(Locale.ENGLISH);
+                context.setVariable("customer", dto.getCustomer());
+                context.setVariable("deliveryAddress", dto.getDeliveryAddress());
+                context.setVariable("order", readOrderResponse.getBody());
+                context.setVariable("shippingTariff", dto.getShippingTariff());
+
                 // email for customer
                 ServiceResponse<MailDTO> mailResponse = mailService.sendMail(
                         createMail(
                                 dto.getCustomer().getEmail(),
                                 "Order confirmation",
-                                orderString
+                                htmlGenerator.generateHtml("templates/emails/order/order_customer.html", context)
                         )
                 );
                 if (!mailResponse.isSuccessful()) {
 //                    return ServiceResponse.error(mailResponse.getStatus());
                 }
                 // email to sellers
+                String htmlForSellers = htmlGenerator.generateHtml("templates/emails/order/order_seller.html", context);
                 for (String sellerEmail : appProperties.getSellerEmails()) {
                     ServiceResponse<MailDTO> sellerMailResponse = mailService.sendMail(
                             createMail(
                                     sellerEmail,
-                                    "New Order in e-shop",
-                                    orderString
+                                    "Check new Order in e-shop",
+                                    htmlForSellers
                             )
                     );
                     if (!sellerMailResponse.isSuccessful()) {
@@ -155,26 +162,6 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
         mailDTO.setSubject(subject);
         mailDTO.setText(text);
         return mailDTO;
-    }
-
-    private String getBaseTextForCustomer() {
-        return "<h2>Greetings from Atelier LAINFINI!</h2>" +
-                "<p>We are happy to confirm your order.<br>" +
-                "Thank you for your interest in Atelier LAINFINI!</p>";
-    }
-
-    private String getBaseTextForSeller() {
-        return "<h2>New Order</h2>" +
-                "<p>New order in e-shop.<br>";
-    }
-
-    private String getOrderString(UserDTO customerDTO, AddressDTO deliveryAddressDTO, OrderDTO orderDTO, ShippingTariffDTO shippingTariffDTO) {
-        final Context context = new Context(Locale.ENGLISH);
-        context.setVariable("customer", customerDTO);
-        context.setVariable("deliveryAddress", deliveryAddressDTO);
-        context.setVariable("order", orderDTO);
-        context.setVariable("shippingTariff", shippingTariffDTO);
-        return htmlGenerator.generateHtml("templates/emails/order/order_customer.html", context);
     }
 
     @Override
