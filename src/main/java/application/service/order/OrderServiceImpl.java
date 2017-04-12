@@ -21,15 +21,14 @@ import application.service.response.ServiceResponseStatus;
 import application.service.shippingRegion.ShippingRegionService;
 import application.service.shippingTariff.ShippingTariffService;
 import application.service.user.UserService;
+import application.util.HtmlGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.thymeleaf.context.Context;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 
 @Service
 public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUID, OrderRepository, OrderDTO> implements OrderService {
@@ -76,31 +75,41 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     @Autowired
     private AppProperties appProperties;
 
+    @Autowired
+    private HtmlGenerator htmlGenerator;
+
     @Override
     public ServiceResponse<OrderDTO> create(OrderDTO dto) {
         ServiceResponse<OrderDTO> createResponse = super.create(dto);
         if (createResponse.isSuccessful()) {
             ServiceResponse<OrderDTO> readOrderResponse = read(createResponse.getBody().getUid());
             if (readOrderResponse.isSuccessful()) {
-                final String orderString = getOrderString(dto.getCustomer(), dto.getDeliveryAddress(), readOrderResponse.getBody(), dto.getShippingTariff());
+                // set variables
+                final Context context = new Context(Locale.ENGLISH);
+                context.setVariable("customer", dto.getCustomer());
+                context.setVariable("deliveryAddress", dto.getDeliveryAddress());
+                context.setVariable("order", readOrderResponse.getBody());
+                context.setVariable("shippingTariff", dto.getShippingTariff());
+
                 // email for customer
                 ServiceResponse<MailDTO> mailResponse = mailService.sendMail(
                         createMail(
                                 dto.getCustomer().getEmail(),
                                 "Order confirmation",
-                                getBaseTextForCustomer() + orderString
+                                htmlGenerator.generateHtml("templates/emails/order/order_customer.html", context)
                         )
                 );
                 if (!mailResponse.isSuccessful()) {
 //                    return ServiceResponse.error(mailResponse.getStatus());
                 }
                 // email to sellers
+                String htmlForSellers = htmlGenerator.generateHtml("templates/emails/order/order_seller.html", context);
                 for (String sellerEmail : appProperties.getSellerEmails()) {
                     ServiceResponse<MailDTO> sellerMailResponse = mailService.sendMail(
                             createMail(
                                     sellerEmail,
-                                    "New Order in e-shop",
-                                    getBaseTextForSeller() + orderString
+                                    "Check new Order in e-shop",
+                                    htmlForSellers
                             )
                     );
                     if (!sellerMailResponse.isSuccessful()) {
@@ -153,52 +162,6 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
         mailDTO.setSubject(subject);
         mailDTO.setText(text);
         return mailDTO;
-    }
-
-    private String getBaseTextForCustomer() {
-        return "<h2>Greetings from Atelier LAINFINI!</h2>" +
-                "<p>We are happy to confirm your order.<br>" +
-                "Thank you for your interest in Atelier LAINFINI!</p>";
-    }
-
-    private String getBaseTextForSeller() {
-        return "<h2>New Order</h2>" +
-                "<p>New order in e-shop.<br>";
-    }
-
-    private String getOrderString(UserDTO customerDTO, AddressDTO deliveryAddressDTO, OrderDTO orderDTO, ShippingTariffDTO shippingTariffDTO) {
-        StringBuilder orderItemsStringBuilder = new StringBuilder();
-        orderItemsStringBuilder.append("<p>items:<br><ul>");
-        for (OrderItemDTO item : orderDTO.getItems()) {
-            orderItemsStringBuilder.append("<li>" + item.getProduct().getName() + " - quantity: " + item.getQuantity() + ", price: $" + item.getPrice() + "</li>");
-        }
-        orderItemsStringBuilder
-                .append("</ul></p>")
-                .append("<p>shipping tariff: " + shippingTariffDTO.getName() + "</p>")
-                .append("<p>total price: $" + orderDTO.getTotalPrice() + "<br>")
-                .append("shipping price: $" + orderDTO.getShipping().getPrice() + "<br>")
-                .append("total price with shipping: $" + orderDTO.getTotalPriceWithShipping() + "</p>")
-                .append("<p>name: " + customerDTO.getFirstName() + " " + customerDTO.getLastName() + "<br>")
-                .append("email: " + customerDTO.getEmail() +"<br>");
-        if (customerDTO.getPhoneCode() != null && customerDTO.getPhoneNumber() != null) {
-            orderItemsStringBuilder.append("<phone:" + customerDTO.getPhoneCode() + customerDTO.getPhoneNumber() + "<br>");
-        }
-        orderItemsStringBuilder.append("</p>");
-        if (deliveryAddressDTO != null) {
-            orderItemsStringBuilder
-                    .append("<p>delivery address:<br>")
-                    .append("street: " + deliveryAddressDTO.getStreet() + " " + deliveryAddressDTO.getHouseNumber() + "<br>")
-                    .append("city: " + deliveryAddressDTO.getCity() + "<br>")
-                    .append("postal: " + deliveryAddressDTO.getPostal() + "<br>");
-            if (deliveryAddressDTO.getState() != null) {
-                orderItemsStringBuilder
-                        .append("state: " + deliveryAddressDTO.getState() + "<br>");
-            }
-            orderItemsStringBuilder
-                    .append("country: " + deliveryAddressDTO.getCountry() + "<br>")
-                    .append("</p>");
-        }
-        return orderItemsStringBuilder.toString();
     }
 
     @Override

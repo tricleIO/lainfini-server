@@ -13,17 +13,16 @@ import application.service.mail.MailService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.security.CustomUserDetails;
+import application.util.HtmlGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.thymeleaf.context.Context;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
-import java.util.Arrays;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 
 @Service
 @Primary
@@ -37,6 +36,9 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
 
     @Autowired
     private MailService mailService;
+
+    @Autowired
+    private HtmlGenerator htmlGenerator;
 
     @Override
     public UserRepository getRepository() {
@@ -147,7 +149,9 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
         MailDTO mailDTO = new MailDTO();
         mailDTO.setTo(userDTO.getEmail());
         mailDTO.setSubject("Reset password");
-        mailDTO.setText("Dear Customer, your new password is: " + password);
+        final Context context = new Context(Locale.ENGLISH);
+        context.setVariable("password", password);
+        mailDTO.setText(htmlGenerator.generateHtml("templates/emails/user/password_reset.html", context));
         return mailDTO;
     }
 

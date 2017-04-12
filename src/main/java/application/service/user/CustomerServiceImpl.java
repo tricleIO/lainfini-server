@@ -13,12 +13,15 @@ import application.rest.domain.UserDTO;
 import application.service.mail.MailService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
+import application.util.HtmlGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.thymeleaf.context.Context;
 
 import java.util.HashSet;
+import java.util.Locale;
 import java.util.Set;
 import java.util.UUID;
 
@@ -36,6 +39,9 @@ public class CustomerServiceImpl extends UserServiceImpl implements CustomerServ
 
     @Autowired
     private AppProperties appProperties;
+
+    @Autowired
+    private HtmlGenerator htmlGenerator;
 
     @Override
     public ServiceResponse<UserDTO> read(UUID key) {
@@ -71,9 +77,10 @@ public class CustomerServiceImpl extends UserServiceImpl implements CustomerServ
             MailDTO mailDTO = new MailDTO();
             mailDTO.setSubject("Registration");
             mailDTO.setTo(user.getEmail());
-            mailDTO.setText("<h2>Welcome to Atelier LAINFINI!</h2>" +
-                    "<p>Before you get going, please prove you are a real and beautiful human by verifying your email address" +
-                    "<br>by clicking on this verification link:<br>" + getVerificationUrl(userEmailVerificationToken) + "</p>");
+
+            final Context context = new Context(Locale.ENGLISH);
+            context.setVariable("verificationLink", getVerificationUrl(userEmailVerificationToken));
+            mailDTO.setText(htmlGenerator.generateHtml("templates/emails/user/registration_verification.html", context));
             mailService.sendMail(mailDTO);
         } else {
             user.setRegisterStatus(UserStatusEnum.UNREGISTERED);
