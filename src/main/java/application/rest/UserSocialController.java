@@ -17,6 +17,11 @@ import application.rest.domain.UserInstagramAccountDTO;
 import application.service.Connection;
 import application.service.security.CustomUserDetails;
 import application.service.user.UserService;
+import com.google.api.client.googleapis.auth.oauth2.*;
+import com.google.api.client.http.HttpTransport;
+import com.google.api.client.http.javanet.NetHttpTransport;
+import com.google.api.client.json.JsonFactory;
+import com.google.api.client.json.jackson2.JacksonFactory;
 import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
@@ -35,7 +40,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import java.io.IOException;
 import java.io.Serializable;
+import java.io.StringReader;
 import java.util.*;
 
 /**
@@ -114,13 +121,13 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
      * @return
      */
     @RequestMapping(value = "/registration/1", method = RequestMethod.POST)
-    public ResponseEntity<?> preRegisterUserByFacebookToken(@RequestBody LinkedAccountDTO linkedAccountInput) {
+    public ResponseEntity<?> preRegistrationUserByToken(@RequestBody LinkedAccountDTO linkedAccountInput) {
         User currentUser = CustomUserDetails.getCurrentUser();
         if (currentUser == null) {
             if (linkedAccountInput.getParty().equals(AccountPartyEnum.FACEBOOK)) {
-                return new ResponseEntity<Object>(createNewAccountFromFacebook(linkedAccountInput.getToken()), HttpStatus.OK);
+                return createNewAccountFromFacebook(linkedAccountInput.getToken());
             } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.INSTAGRAM)) {
-                return new ResponseEntity<Object>(createNewAccountFromInstagram(linkedAccountInput.getToken()), HttpStatus.OK);
+                return createNewAccountFromInstagram(linkedAccountInput.getToken());
             } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.GOOGLE)) {
                 return new ResponseEntity<Object>(HttpStatus.INTERNAL_SERVER_ERROR, HttpStatus.OK);
             } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.TWITTER)) {
@@ -133,7 +140,7 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
     }
 
     @RequestMapping(value = "/registration/2", method = RequestMethod.POST)
-    public ResponseEntity<?> finishRegisterUserByFacebookToken(@RequestBody UserDTO userDTO) {
+    public ResponseEntity<?> finishRegistritaionUserByToken(@RequestBody UserDTO userDTO) {
         LinkedAccountDTO linkedAccountInput = userDTO.getSocialRequest();
         User currentUser = CustomUserDetails.getCurrentUser();
         if (currentUser == null && linkedAccountInput != null) {
@@ -145,7 +152,7 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
                     customer.setStatus(StatusEnum.ACTIVE);
                     customer.setRegisterStatus(UserStatusEnum.REGISTERED);
                     userService.patch(customer.toDTO(false));
-                    return new ResponseEntity<Object>("", HttpStatus.OK);
+                    return new ResponseEntity<Object>(HttpStatus.OK);
                 }
             } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.INSTAGRAM)) {
                 LinkedAccount linkedAccountByInstagramCode = getLinkedAccountByInstagramCode(linkedAccountInput.getToken());
@@ -155,7 +162,7 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
                     customer.setStatus(StatusEnum.ACTIVE);
                     customer.setRegisterStatus(UserStatusEnum.REGISTERED);
                     userService.patch(customer.toDTO(false));
-                    return new ResponseEntity<Object>("", HttpStatus.OK);
+                    return new ResponseEntity<Object>( HttpStatus.OK);
                 }
             } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.GOOGLE)) {
                 return new ResponseEntity<Object>(HttpStatus.INTERNAL_SERVER_ERROR, HttpStatus.OK);
@@ -199,14 +206,14 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
         } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.INSTAGRAM)) {
             linkedAccount = getLinkedAccountByInstagramCode(linkedAccountInput.getToken());
         } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.GOOGLE)) {
-            return null;
+            linkedAccount = getLinkedAccountByGoogleToken(linkedAccountInput.getToken());
         } else if (linkedAccountInput.getParty().equals(AccountPartyEnum.TWITTER)) {
             return null;
         } else {
             return null;
         }
 
-        if (linkedAccount == null) {
+        if (linkedAccount == null || linkedAccount.getStatus().equals(StatusEnum.INACTIVE)) {
             return null;
         }
         User userPrincipal = linkedAccount.getCustomer();
@@ -223,14 +230,14 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
      * @param token
      * @return
      */
-    private boolean createNewAccountFromFacebook(String token) {
+    private ResponseEntity<UserDTO> createNewAccountFromFacebook(String token) {
         UserFacebookAccountDTO userFacebookAccountDTO = getUserFacebookAccountDTO(token);
 
         FacebookAccount byFacebookId = facebookAccountRepository.findByFacebookId(userFacebookAccountDTO.getId());
 
         if (byFacebookId != null) {
             //userFacebookAccountDTO.setStatusInSystem(byFacebookId.getLinkedAccount().getStatus());
-            return false;
+            throw new RuntimeException("User already exists!");
         }
 
         UserDTO userDTO = new UserDTO();
@@ -248,24 +255,18 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
         facebookAccount.setUsername(userFacebookAccountDTO.getEmail());
         linkedAccount.setFacebookAccount(facebookAccount);
         LinkedAccount save = linkedAccountRepository.save(linkedAccount);
-        return true;
+        return userEntity;
 
     }
 
-    private UserFacebookAccountDTO getUserFacebookAccountDTO(String token) {
-        String url = "https://graph.facebook.com/v2.8/me?fields=id,hometown,email,gender,first_name,last_name&access_token=" + token;
-        RestTemplate restTemplate = new RestTemplate();
-        return restTemplate.getForObject(url, UserFacebookAccountDTO.class);
-    }
-
-    private boolean createNewAccountFromInstagram(String token) {
+    private ResponseEntity<UserDTO> createNewAccountFromInstagram(String token) {
         UserInstagramAccountDTO userInstagramAccountDTO = getInstagramUserByCode(token);
 
         InstagramAccount byFacebookId = instagramAccountRepository.findByInstagramId(userInstagramAccountDTO.getData().getId());
 
         if (byFacebookId != null) {
             //userInstagramAccountDTO.setStatusInSystem(byFacebookId.getLinkedAccount().getStatus());
-            return false;
+            throw new RuntimeException("User already exists!");
         }
 
         UserDTO userDTO = new UserDTO();
@@ -283,7 +284,7 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
         facebookAccount.setUsername(userInstagramAccountDTO.getData().getUsername());
         linkedAccount.setInstagramAccount(facebookAccount);
         LinkedAccount save = linkedAccountRepository.save(linkedAccount);
-        return true;
+        return userEntity;
 
     }
 
@@ -294,11 +295,10 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
      * @return
      */
     private boolean connectFacebookAccount(String token) {
-        String url = "https://graph.facebook.com/v2.8/me?fields=id,hometown,email,gender,first_name,last_name&access_token=" + token;
-        RestTemplate restTemplate = new RestTemplate();
-        UserFacebookAccountDTO body1 = restTemplate.getForObject(url, UserFacebookAccountDTO.class);
+        UserFacebookAccountDTO userFacebookAccountDTO = getUserFacebookAccountDTO(token);
 
-        FacebookAccount byFacebookId = facebookAccountRepository.findByFacebookId(body1.getId());
+
+        FacebookAccount byFacebookId = facebookAccountRepository.findByFacebookId(userFacebookAccountDTO.getId());
         if (byFacebookId != null) {
             return false;
         }
@@ -309,8 +309,8 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
         linkedAccount.setCustomer(CustomUserDetails.getCurrentUser());
         FacebookAccount facebookAccount = new FacebookAccount();
         facebookAccount.setLinkedAccount(linkedAccount);
-        facebookAccount.setFacebookId(body1.getId());
-        facebookAccount.setUsername(body1.getEmail());
+        facebookAccount.setFacebookId(userFacebookAccountDTO.getId());
+        facebookAccount.setUsername(userFacebookAccountDTO.getEmail());
         linkedAccount.setFacebookAccount(facebookAccount);
         LinkedAccount save = linkedAccountRepository.save(linkedAccount);
         return true;
@@ -348,10 +348,8 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
      * @return
      */
     private LinkedAccount getLinkedAccountByFacebookToken(String token) {
-        String url = "https://graph.facebook.com/v2.8/me?fields=id&access_token=" + token;
-        RestTemplate restTemplate = new RestTemplate();
-        UserFacebookAccountDTO forObject = restTemplate.getForObject(url, UserFacebookAccountDTO.class);
-        FacebookAccount facebookAccount = facebookAccountRepository.findByFacebookId(forObject.getId());
+        UserFacebookAccountDTO userFacebookAccountDTO = getUserFacebookAccountDTO(token);
+        FacebookAccount facebookAccount = facebookAccountRepository.findByFacebookId(userFacebookAccountDTO.getId());
         if (facebookAccount != null) {
             return facebookAccount.getLinkedAccount();
         } else {
@@ -367,6 +365,78 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
         } else {
             return null;
         }
+    }
+
+    private LinkedAccount getLinkedAccountByGoogleToken(String token) {
+
+        String s = "{\"web\":" +
+                "{\"client_id\":\"871228726029-kgmm585lvh22knlgkn5laapblpt1e0p8.apps.googleusercontent.com\"," +
+                "\"project_id\":\"lainfini-local\"," +
+                "\"auth_uri\":\"https://accounts.google.com/o/oauth2/auth\"," +
+                "\"token_uri\":\"https://accounts.google.com/o/oauth2/token\"," +
+                "\"auth_provider_x509_cert_url\":\"https://www.googleapis.com/oauth2/v1/certs\"," +
+                "\"client_secret\":\"E82fI2YWbLypyvDVdaauulG_\"," +
+                "\"javascript_origins\":[\"http://localhost:8080\"]}}";
+        String CLIENT_SECRET_FILE = "/path/to/client_secret.json";
+
+// Exchange auth code for access token
+        GoogleClientSecrets clientSecrets = null;
+        try {
+            clientSecrets = GoogleClientSecrets.load(JacksonFactory.getDefaultInstance(), new StringReader(s));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        HttpTransport httpTransport = new NetHttpTransport();
+        JsonFactory jsonFactory = new JacksonFactory();
+
+        GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(httpTransport, jsonFactory,
+                clientSecrets.getDetails().getClientId(),
+                clientSecrets.getDetails().getClientSecret(), Arrays.asList("https://www.googleapis.com/auth/plus.login ", "https://www.googleapis.com/auth/plus.me")).build();
+        String url = flow.newAuthorizationUrl().setRedirectUri("http://localhost:8080").build();
+        System.out.println(url);
+
+        GoogleTokenResponse tokenResponse = null;
+        try {
+            tokenResponse = new GoogleAuthorizationCodeTokenRequest(
+                    new NetHttpTransport(),
+                    JacksonFactory.getDefaultInstance(),
+                    "https://www.googleapis.com/oauth2/v4/token",
+                    clientSecrets.getDetails().getClientId(),
+                    clientSecrets.getDetails().getClientSecret(),
+                    token,
+                    "")  // Specify the same redirect URI that you use with your web
+                    // app. If you don't have a web version of your app, you can
+                    // specify an empty string.
+                    .execute();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        String accessToken = tokenResponse.getAccessToken();
+
+// Use access token to call API
+        GoogleCredential credential = new GoogleCredential().setAccessToken(accessToken);
+
+
+// Get profile info from ID token
+        GoogleIdToken idToken = null;
+        try {
+            idToken = tokenResponse.parseIdToken();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        GoogleIdToken.Payload payload = idToken.getPayload();
+        String userId = payload.getSubject();  // Use this value as a key to identify a user.
+        String email = payload.getEmail();
+        boolean emailVerified = Boolean.valueOf(payload.getEmailVerified());
+        String name = (String) payload.get("name");
+        String pictureUrl = (String) payload.get("picture");
+        String locale = (String) payload.get("locale");
+        String familyName = (String) payload.get("family_name");
+        String givenName = (String) payload.get("given_name");
+        return null;
     }
 
     ///helpers
@@ -392,5 +462,11 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
 
         UserInstagramAccountDTO userInstagramAccountDTO = new Gson().fromJson(stringResponseEntity.getBody(), UserInstagramAccountDTO.class);
         return userInstagramAccountDTO;
+    }
+
+    private UserFacebookAccountDTO getUserFacebookAccountDTO(String token) {
+        String url = "https://graph.facebook.com/v2.8/me?fields=id,hometown,email,gender,first_name,last_name&access_token=" + token;
+        RestTemplate restTemplate = new RestTemplate();
+        return restTemplate.getForObject(url, UserFacebookAccountDTO.class);
     }
 }

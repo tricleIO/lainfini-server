@@ -74,7 +74,8 @@ INSERT INTO customer (id, degree_after_name, degree_before_name, first_name, las
 
 INSERT INTO linked_account(id, customer_id, account_party, account_status, valid_from) VALUES (1, 0x66353763616364612D303935612D3131, 'FACEBOOK', 0, '2017-03-16 11:08:01');
 
-INSERT INTO `lainfini-server`.la_facebook (facebook_id,username,linked_account_id) VALUES ('1360833047270444','abdul.f.salami',1);
+INSERT INTO `lainfini-server`.la_facebook (facebook_id,username,linked_account_id) VALUES ('1360833047270443','abdul.f.salami',1);
+# INSERT INTO `lainfini-server`.la_facebook (facebook_id,username,linked_account_id) VALUES ('1360833047270444','abdul.f.salami',1);
 
 INSERT INTO customer_email_verification_token (id,expiry_date,verification_token,customer_id) VALUES (1,'2020-03-03 20:20:20','1',0x66353763616364612D303935612D3113);
 
