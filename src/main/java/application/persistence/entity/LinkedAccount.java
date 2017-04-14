@@ -39,6 +39,9 @@ public class LinkedAccount implements DTOConvertable<LinkedAccountDTO>, Serializ
     @OneToOne(mappedBy = "linkedAccount", cascade = CascadeType.ALL)
     private InstagramAccount instagramAccount;
 
+    @OneToOne(mappedBy = "linkedAccount", cascade = CascadeType.ALL)
+    private GoogleAccount googleAccount;
+
     @Column(name = "account_status", length = 10)
     @Enumerated(EnumType.ORDINAL)
     private StatusEnum status;

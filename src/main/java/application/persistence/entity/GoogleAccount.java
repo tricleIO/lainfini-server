@@ -16,6 +16,10 @@ public class GoogleAccount implements Serializable {
     private Long id;
 
     @NotNull
+    @Column(name = "google_id", nullable = false)
+    private String googleId;
+
+    @NotNull
     @Column(name = "username", length = 128, nullable = false)
     private String username;
 
