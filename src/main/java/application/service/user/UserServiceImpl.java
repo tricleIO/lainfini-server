@@ -111,14 +111,11 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
     }
 
     public ServiceResponse<UserDTO> resetUserPassword(String email) {
-        // read user
-        ServiceResponse<UserDTO> readUserResponse = read(email);
-        if (!readUserResponse.isSuccessful()) {
-            // problem, not found etc.
-            return ServiceResponse.error(readUserResponse.getStatus());
+        User user = userRepository.findByEmailAndRegisterStatus(email, UserStatusEnum.REGISTERED);
+        if (user == null) {
+            return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
         }
-        // get user to reset his password
-        UserDTO userDTO = readUserResponse.getBody();
+        UserDTO userDTO = user.toDTO(true);
         // generate new password
         String newPassword = PasswordGenerator.generate();
         // patch user password
