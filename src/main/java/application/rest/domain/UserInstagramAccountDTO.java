@@ -1,5 +1,6 @@
 package application.rest.domain;
 
+import com.google.gson.annotations.SerializedName;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -10,10 +11,11 @@ import java.io.Serializable;
 @Data
 public class UserInstagramAccountDTO implements Serializable {
 
+    @SerializedName("user")
     private InstagramData data;
 
     @Data
-    class InstagramData implements Serializable {
+    public class InstagramData implements Serializable {
 
         private String id;
 
