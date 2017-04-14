@@ -17,7 +17,7 @@ import java.util.Date;
 @Table(name = "linked_account")
 @Data
 @EqualsAndHashCode(exclude = {"customer"})
-@ToString(exclude = {"customer", "facebookAccount", "instagramAccount"})
+@ToString(exclude = {"customer", "facebookAccount", "instagramAccount", "googleAccount"})
 public class LinkedAccount implements DTOConvertable<LinkedAccountDTO>, Serializable {
 
     @Id

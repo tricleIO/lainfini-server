@@ -269,7 +269,7 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
         ResponseEntity<UserDTO> userEntity = (ResponseEntity<UserDTO>) create(userDTO);
         UserDTO body = userEntity.getBody();
         LinkedAccount linkedAccount = new LinkedAccount();
-        linkedAccount.setParty(AccountPartyEnum.FACEBOOK);
+        linkedAccount.setParty(AccountPartyEnum.INSTAGRAM);
         linkedAccount.setStatus(StatusEnum.INACTIVE);
         linkedAccount.setCustomer(body.toEntity(false));
         InstagramAccount instagramAccount = new InstagramAccount();
@@ -283,28 +283,28 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
     }
 
     private ResponseEntity<UserDTO> createNewAccountFromGoogle(String token) {
-        UserGoogleAccountDTO userInstagramAccountDTO = getGoogleUserByCode(token);
+        UserGoogleAccountDTO googleUserByCode = getGoogleUserByCode(token);
 
-        InstagramAccount byFacebookId = instagramAccountRepository.findByInstagramId(userInstagramAccountDTO.getId());
+        GoogleAccount byGoogleId = googleAccountRepository.findByGoogleId(googleUserByCode.getId());
 
-        if (byFacebookId != null) {
+        if (byGoogleId != null) {
             //userInstagramAccountDTO.setStatusInSystem(byFacebookId.getLinkedAccount().getStatus());
             throw new RuntimeException("User already exists!");
         }
 
         UserDTO userDTO = new UserDTO();
         userDTO.setRegisterStatus(UserStatusEnum.PRE_REGISTERED);
-        userDTO.setUsername(userInstagramAccountDTO.getEmail());
+        userDTO.setUsername(googleUserByCode.getEmail());
         ResponseEntity<UserDTO> userEntity = (ResponseEntity<UserDTO>) create(userDTO);
         UserDTO body = userEntity.getBody();
         LinkedAccount linkedAccount = new LinkedAccount();
-        linkedAccount.setParty(AccountPartyEnum.FACEBOOK);
+        linkedAccount.setParty(AccountPartyEnum.GOOGLE);
         linkedAccount.setStatus(StatusEnum.INACTIVE);
         linkedAccount.setCustomer(body.toEntity(false));
         GoogleAccount googleAccount = new GoogleAccount();
         googleAccount.setLinkedAccount(linkedAccount);
-        googleAccount.setGoogleId(userInstagramAccountDTO.getId());
-        googleAccount.setUsername(userInstagramAccountDTO.getEmail());
+        googleAccount.setGoogleId(googleUserByCode.getId());
+        googleAccount.setUsername(googleUserByCode.getEmail());
         linkedAccount.setGoogleAccount(googleAccount);
         LinkedAccount save = linkedAccountRepository.save(linkedAccount);
         return userEntity;
@@ -427,15 +427,17 @@ public class UserSocialController extends AbstractDatabaseController<User, UUID,
 
     ///helpers
 
+    @Data
+    public class GOAuth {
+        private String access_token;
+        private String token_type;
+        private Integer expires_in;
+        private String id_token;
+    }
+
+
     private UserGoogleAccountDTO getGoogleUserByCode(String code) {
 
-        @Data
-        class GOAuth {
-            private String access_token;
-            private String token_type;
-            private Integer expires_in;
-            private String id_token;
-        }
 
 
         //https://accounts.google.com/o/oauth2/v2/auth?redirect_uri=http://localhost:8080&response_type=code&client_id=871228726029-kgmm585lvh22knlgkn5laapblpt1e0p8.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.me+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&pli=1&authuser=0
