@@ -17,7 +17,7 @@ import java.util.Date;
 @Table(name = "linked_account")
 @Data
 @EqualsAndHashCode(exclude = {"customer"})
-@ToString(exclude = {"customer", "facebookAccount", "instagramAccount"})
+@ToString(exclude = {"customer", "facebookAccount", "instagramAccount", "googleAccount"})
 public class LinkedAccount implements DTOConvertable<LinkedAccountDTO>, Serializable {
 
     @Id
@@ -38,6 +38,9 @@ public class LinkedAccount implements DTOConvertable<LinkedAccountDTO>, Serializ
 
     @OneToOne(mappedBy = "linkedAccount", cascade = CascadeType.ALL)
     private InstagramAccount instagramAccount;
+
+    @OneToOne(mappedBy = "linkedAccount", cascade = CascadeType.ALL)
+    private GoogleAccount googleAccount;
 
     @Column(name = "account_status", length = 10)
     @Enumerated(EnumType.ORDINAL)

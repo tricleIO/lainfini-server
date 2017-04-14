@@ -1,6 +1,8 @@
 package application.persistence.entity;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -9,6 +11,8 @@ import java.io.Serializable;
 @Entity
 @Table(name = "la_instagram")
 @Data
+@EqualsAndHashCode(exclude = {"linkedAccount"})
+@ToString(exclude = {"linkedAccount"})
 public class InstagramAccount implements ILinkableAccount, Serializable {
 
     @Id
