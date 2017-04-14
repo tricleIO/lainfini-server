@@ -41,6 +41,8 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private StatusEnum status;
     private String code;
     private ProductStatusEnum productStatus;
+    private Integer technologyUid;
+    private Integer designUid;
 
     private String abraLink;
 
@@ -51,6 +53,8 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private Set<ApplicationFileDTO> applicationFileDTOS;
 
     private CategoryDTO category;
+    private TechnologyDTO technology;
+    private ProductDesignDTO design;
 
     @Override
     public Product toEntity(boolean selectAsParent, Object... parentParams) {
@@ -87,6 +91,12 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
                     productFile.getPf().setProduct(product);
                     product.getImages().add(productFile);
                 }
+            }
+            if (technology != null) {
+                product.setTechnology(technology.toEntity(false));
+            }
+            if (design != null) {
+                product.setDesign(design.toEntity(false));
             }
         }
         product.setSlug(slug);

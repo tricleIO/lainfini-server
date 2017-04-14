@@ -68,7 +68,9 @@ public enum ServiceResponseStatus {
     CURRENCY_NOT_FOUND("Currency with given uid was not found.", HttpStatus.NOT_FOUND),
 
     DELIVERY_ADDRESS_NOT_GIVEN("Delivery address was not given.", HttpStatus.BAD_REQUEST),
-    CUSTOMER_NOT_GIVEN("Customer was not given.", HttpStatus.BAD_REQUEST);
+    CUSTOMER_NOT_GIVEN("Customer was not given.", HttpStatus.BAD_REQUEST),
+    TECHNOLOGY_NOT_FOUND("Technology with given uid was not found.", HttpStatus.NOT_FOUND),
+    DESIGN_NOT_FOUND("Product design with given uid was not found.", HttpStatus.NOT_FOUND);
 
     private final HttpStatus httpStatus;
     private final String message;
