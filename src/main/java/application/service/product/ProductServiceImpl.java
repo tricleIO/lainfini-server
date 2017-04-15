@@ -13,9 +13,11 @@ import application.service.BaseSoftDeletableDatabaseServiceImpl;
 import application.service.category.CategoryService;
 import application.service.flash.FlashService;
 import application.service.material.MaterialService;
+import application.service.productDesign.ProductDesignService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.size.SizeService;
+import application.service.technology.TechnologyService;
 import application.service.unit.UnitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -165,6 +167,16 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         dataManipulatorBatch.add(this::getMaterialDataManipulator);
         dataManipulatorBatch.add(this::getSizeDataManipulator);
         dataManipulatorBatch.add(this::getUnitDataManipulator);
+        dataManipulatorBatch.add(p -> new AdditionalDataManipulator<>(
+                new AdditionalDataManipulator.Reader<>(p.getTechnologyUid(), technologyService::read),
+                new AdditionalDataManipulator.Writer<>(p::setTechnology),
+                ServiceResponseStatus.TECHNOLOGY_NOT_FOUND
+        ));
+        dataManipulatorBatch.add(p -> new AdditionalDataManipulator<>(
+                new AdditionalDataManipulator.Reader<>(p.getDesignUid(), productDesignService::read),
+                new AdditionalDataManipulator.Writer<>(p::setDesign),
+                ServiceResponseStatus.DESIGN_NOT_FOUND
+        ));
         return dataManipulatorBatch;
     }
 
@@ -273,5 +285,11 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
 
     @Autowired
     private UnitService unitService;
+
+    @Autowired
+    private TechnologyService technologyService;
+
+    @Autowired
+    private ProductDesignService productDesignService;
 
 }
