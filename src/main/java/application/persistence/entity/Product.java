@@ -78,6 +78,14 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     @Column(name = "abra_link")
     private String abraLink;
 
+    @ManyToOne
+    @JoinColumn(name = "technology_id", referencedColumnName = "id")
+    private Technology technology;
+
+    @ManyToOne
+    @JoinColumn(name = "design_id", referencedColumnName = "id")
+    private ProductDesign design;
+
     @Override
     public ProductDTO toDTO(boolean selectAsParent, Object... parentParams) {
         ProductDTO productDTO = new ProductDTO();

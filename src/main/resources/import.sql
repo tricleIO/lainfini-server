@@ -33,6 +33,9 @@ INSERT INTO faq (question, answer) VALUES ('Is the product changing color on the
 INSERT INTO faq (question, answer) VALUES ('Can I order more pieces to sell it through my shop?', '<p>We are sorry, but LAINFINI Atelier business is based on the uniqueness of its products. Our collections are limited and their uniqueness is certified. We never produce more pieces of the collection which is already released.</p>');
 INSERT INTO faq (question, answer) VALUES ('Can I contact you as a wholesaler?', '<p> Please contact us via email address <a href="mailto:info@lainfini.com">info@lainfini.com</a></p>');
 
+INSERT INTO technology (id, name) VALUES (1, 'Digital print');
+
+INSERT INTO product_design (id, name) VALUES (1, 'Atelier Lainfini');
 
 -- INSERT INTO faq (question, answer) VALUES ('How can I comment on a BBC programme or service?', 'We appreciate ');
 -- INSERT INTO faq (question, answer)VALUES ('Where can I obtain my radio or key code, or a new key for my Ford?', 'Firstly, ');
