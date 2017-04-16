@@ -81,7 +81,7 @@ public class BraintreeController {
         return createBraintreePayment(braintreePaymentDTO, PaymentMethodEnum.CARD);
     }
 
-    public ResponseEntity<?> createBraintreePayment(@RequestBody BraintreePaymentDTO braintreePaymentDTO, PaymentMethodEnum paymentMethodValue) {
+    public ResponseEntity<?> createBraintreePayment(BraintreePaymentDTO braintreePaymentDTO, PaymentMethodEnum paymentMethodValue) {
         if (paymentMethodValue.getState() == PaymentMethodEnum.State.DENIED) {
             return new ErrorResponseEntity(ServiceResponseStatus.PAYMENT_METHOD_FORBIDDEN);
         }
@@ -98,8 +98,20 @@ public class BraintreeController {
                 .done();
         Result<Transaction> result = gateway.transaction().sale(request);
         if (!result.isSuccess()) {
-            sendPaymentNotSuccessfulEmail(orderDTO);
-            return new ErrorResponseEntity(ServiceResponseStatus.PAYMENT_UNSUCCESSFUL);
+            ServiceResponseStatus paymentUnsuccessfulStatus = ServiceResponseStatus.PAYMENT_UNSUCCESSFUL;
+            for (ValidationError error : result.getErrors().getAllDeepValidationErrors()) {
+                StatusDTO errorStatus = new StatusDTO();
+                errorStatus.setStatus(paymentUnsuccessfulStatus.getMessage());
+                errorStatus.setMessage(error.getMessage());
+                try {
+                    errorStatus.setCode(Integer.parseInt(error.getCode().code));
+                } catch (Exception exception) {
+                    errorStatus.setCode(paymentUnsuccessfulStatus.getHttpStatus().value());
+                }
+                sendPaymentNotSuccessfulEmail(orderDTO);
+                return new ResponseEntity<>(errorStatus, paymentUnsuccessfulStatus.getHttpStatus());
+            }
+            return new ErrorResponseEntity(paymentUnsuccessfulStatus);
         } else {
             if (Arrays.stream(TRANSACTION_SUCCESS_STATUSES).anyMatch(s -> s == result.getTarget().getStatus())) {
                 PaymentDTO paymentDTO = new PaymentDTO();
