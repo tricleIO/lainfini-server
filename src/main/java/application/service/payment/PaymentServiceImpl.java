@@ -26,6 +26,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.thymeleaf.context.Context;
 
+import java.util.Date;
 import java.util.Locale;
 import java.util.UUID;
 
@@ -55,6 +56,7 @@ public class PaymentServiceImpl extends BaseDatabaseServiceImpl<Payment, Long, P
 
     @Override
     public ServiceResponse<PaymentDTO> create(PaymentDTO dto) {
+        dto.setMadeAt(new Date());
         ServiceResponse<PaymentDTO> createPaymentResponse = super.create(dto);
         if (dto.getOrderUid() != null) {
             ServiceResponse<OrderDTO> readOrderResponse = orderService.read(dto.getOrderUid());
