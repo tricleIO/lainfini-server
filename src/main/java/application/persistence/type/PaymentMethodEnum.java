@@ -5,9 +5,10 @@ import application.rest.domain.PaymentMethodDTO;
 
 public enum PaymentMethodEnum implements DTOConvertable<PaymentMethodDTO> {
 
-    PAYPAL("www.paypal.com/payments", State.DENIED),
-    APPLE_PAY("www.apple-pay.com/payPay", State.DENIED),
-    STRIPE("www.stripe.org", State.ALLOWED);
+    PAYPAL("/payments/braintree/paypal", State.ALLOWED),
+    APPLE_PAY("/payments/braintree/applePay", State.ALLOWED),
+    CARD("/payments/braintree/card", State.ALLOWED),
+    STRIPE("/payments/stripe", State.HIDDEN);
 
     private String link;
     private State state;
