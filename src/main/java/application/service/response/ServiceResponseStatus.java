@@ -70,7 +70,9 @@ public enum ServiceResponseStatus {
     DELIVERY_ADDRESS_NOT_GIVEN("Delivery address was not given.", HttpStatus.BAD_REQUEST),
     CUSTOMER_NOT_GIVEN("Customer was not given.", HttpStatus.BAD_REQUEST),
     TECHNOLOGY_NOT_FOUND("Technology with given uid was not found.", HttpStatus.NOT_FOUND),
-    DESIGN_NOT_FOUND("Product design with given uid was not found.", HttpStatus.NOT_FOUND);
+    DESIGN_NOT_FOUND("Product design with given uid was not found.", HttpStatus.NOT_FOUND),
+
+    PAYMENT_UNSUCCESSFUL("Unsuccessful payment", HttpStatus.EXPECTATION_FAILED);
 
     private final HttpStatus httpStatus;
     private final String message;
