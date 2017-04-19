@@ -2,6 +2,7 @@ package application.rest;
 
 import application.configuration.AppProperties;
 import application.persistence.type.PaymentMethodEnum;
+import application.persistence.type.PaymentStateEnum;
 import application.rest.domain.*;
 import application.service.mail.MailService;
 import application.service.order.OrderService;
@@ -85,11 +86,20 @@ public class BraintreeController {
         if (paymentMethodValue.getState() == PaymentMethodEnum.State.DENIED) {
             return new ErrorResponseEntity(ServiceResponseStatus.PAYMENT_METHOD_FORBIDDEN);
         }
+
+        // order exists
         ServiceResponse<OrderDTO> orderResponse = orderService.read(braintreePaymentDTO.getOrderUid());
         if (!orderResponse.isSuccessful()) {
             return new ErrorResponseEntity(ServiceResponseStatus.ORDER_NOT_FOUND);
         }
+
         OrderDTO orderDTO = orderResponse.getBody();
+
+        if (orderDTO.getPaymentState() == PaymentStateEnum.PAID) {
+            return new ErrorResponseEntity(ServiceResponseStatus.ORDER_ALREADY_PAID);
+        }
+
+        // do transaction
         TransactionRequest request = new TransactionRequest()
                 .amount(new BigDecimal(orderDTO.getTotalPriceWithShipping()))
                 .paymentMethodNonce(braintreePaymentDTO.getPaymentMethodNonce())
@@ -97,39 +107,62 @@ public class BraintreeController {
                 .submitForSettlement(true)
                 .done();
         Result<Transaction> result = gateway.transaction().sale(request);
-        if (!result.isSuccess()) {
-            ServiceResponseStatus paymentUnsuccessfulStatus = ServiceResponseStatus.PAYMENT_UNSUCCESSFUL;
-            for (ValidationError error : result.getErrors().getAllDeepValidationErrors()) {
-                StatusDTO errorStatus = new StatusDTO();
-                errorStatus.setStatus(paymentUnsuccessfulStatus.getMessage());
-                errorStatus.setMessage(error.getMessage());
-                try {
-                    errorStatus.setCode(Integer.parseInt(error.getCode().code));
-                } catch (Exception exception) {
-                    errorStatus.setCode(paymentUnsuccessfulStatus.getHttpStatus().value());
-                }
-                sendPaymentNotSuccessfulEmail(orderDTO);
-                return new ResponseEntity<>(errorStatus, paymentUnsuccessfulStatus.getHttpStatus());
-            }
-            return new ErrorResponseEntity(paymentUnsuccessfulStatus);
-        } else {
+
+        // result of transaction
+        if (result.isSuccess()) {
+            // success status
             if (Arrays.stream(TRANSACTION_SUCCESS_STATUSES).anyMatch(s -> s == result.getTarget().getStatus())) {
+                // prepare internal payment
                 PaymentDTO paymentDTO = new PaymentDTO();
                 paymentDTO.setCurrencyUid(2);
                 paymentDTO.setOrderUid(orderDTO.getUid());
                 paymentDTO.setAmount(result.getTarget().getAmount().doubleValue());
                 paymentDTO.setPaymentMethod(paymentMethodValue);
                 paymentDTO.setReferenceCode(result.getTarget().getId());
+
+                // and create it
                 ServiceResponse<PaymentDTO> createPaymentResponse = paymentService.create(paymentDTO);
+
+                // problems with creating payment internally
                 if (!createPaymentResponse.isSuccessful()) {
                     return new ErrorResponseEntity(createPaymentResponse.getStatus());
                 }
+
+                // everything is ok
                 return new ResponseEntity<>(createPaymentResponse.getBody(), HttpStatus.OK);
             } else {
+                // not success status
                 sendPaymentNotSuccessfulEmail(orderDTO);
+                return new ErrorResponseEntity(ServiceResponseStatus.PAYMENT_UNSUCCESSFUL);
             }
+        } else {
+            // not success
+            // payment error status
+            ServiceResponseStatus paymentUnsuccessfulStatus = ServiceResponseStatus.PAYMENT_UNSUCCESSFUL;
+            // send error mail
+            sendPaymentNotSuccessfulEmail(orderDTO);
+            // try to find concrete error
+            for (ValidationError error : result.getErrors().getAllDeepValidationErrors()) {
+                return new ResponseEntity<>(
+                        getStatusDTO(error, paymentUnsuccessfulStatus),
+                        paymentUnsuccessfulStatus.getHttpStatus()
+                );
+            }
+            // generic payment error
+            return new ErrorResponseEntity(paymentUnsuccessfulStatus);
         }
-        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
+
+    public StatusDTO getStatusDTO(ValidationError error, ServiceResponseStatus paymentUnsuccessfulStatus) {
+        StatusDTO errorStatus = new StatusDTO();
+        errorStatus.setStatus(paymentUnsuccessfulStatus.getMessage());
+        errorStatus.setMessage(error.getMessage());
+        try {
+            errorStatus.setCode(Integer.parseInt(error.getCode().code));
+        } catch (Exception exception) {
+            errorStatus.setCode(paymentUnsuccessfulStatus.getHttpStatus().value());
+        }
+        return errorStatus;
     }
 
     public void sendPaymentNotSuccessfulEmail(OrderDTO orderDTO) {

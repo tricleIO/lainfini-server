@@ -58,38 +58,41 @@ public class PaymentServiceImpl extends BaseDatabaseServiceImpl<Payment, Long, P
     public ServiceResponse<PaymentDTO> create(PaymentDTO dto) {
         dto.setMadeAt(new Date());
         ServiceResponse<PaymentDTO> createPaymentResponse = super.create(dto);
-        if (dto.getOrderUid() != null) {
-            ServiceResponse<OrderDTO> readOrderResponse = orderService.read(dto.getOrderUid());
-            if (readOrderResponse.isSuccessful()) {
-                OrderDTO orderDTO = readOrderResponse.getBody();
-                if (orderDTO.getPaymentState() == PaymentStateEnum.PAID) {
-                    // send mail to customer
-                    ServiceResponse<UserDTO> readUserResponse = userService.read(readOrderResponse.getBody().getCustomerUid());
-                    if (readUserResponse.isSuccessful()) {
-                        MailDTO mailDTO = new MailDTO();
-                        mailDTO.setTo(readUserResponse.getBody().getEmail());
-                        mailDTO.setSubject("Order payment accepted");
+        if (createPaymentResponse.isSuccessful()) {
+            // send emails
+            if (dto.getOrderUid() != null) {
+                ServiceResponse<OrderDTO> readOrderResponse = orderService.read(dto.getOrderUid());
+                if (readOrderResponse.isSuccessful()) {
+                    OrderDTO orderDTO = readOrderResponse.getBody();
+                    if (orderDTO.getPaymentState() == PaymentStateEnum.PAID) {
+                        // send mail to customer
+                        ServiceResponse<UserDTO> readUserResponse = userService.read(readOrderResponse.getBody().getCustomerUid());
+                        if (readUserResponse.isSuccessful()) {
+                            MailDTO mailDTO = new MailDTO();
+                            mailDTO.setTo(readUserResponse.getBody().getEmail());
+                            mailDTO.setSubject("Order payment accepted");
 
+                            final Context context = new Context(Locale.ENGLISH);
+                            context.setVariable("order", orderDTO);
+                            mailDTO.setText(htmlGenerator.generateHtml(
+                                    "templates/emails/payment/payment_accepted.html",
+                                    context)
+                            );
+                            mailService.sendMail(mailDTO);
+                        }
+
+                        // sellers
                         final Context context = new Context(Locale.ENGLISH);
                         context.setVariable("order", orderDTO);
-                        mailDTO.setText(htmlGenerator.generateHtml(
-                                "templates/emails/payment/payment_accepted.html",
-                                context)
-                        );
-                        mailService.sendMail(mailDTO);
-                    }
-
-                    // sellers
-                    final Context context = new Context(Locale.ENGLISH);
-                    context.setVariable("order", orderDTO);
-                    final String htmlSeller = htmlGenerator.generateHtml("templates/emails/payment/payment_accepted.html", context);
-                    // send mail to all sellers
-                    for (String sellerEmail : appProperties.getSellerEmails()) {
-                        MailDTO mailDTO = new MailDTO();
-                        mailDTO.setTo(sellerEmail);
-                        mailDTO.setSubject("Order payment accepted");
-                        mailDTO.setText(htmlSeller);
-                        mailService.sendMail(mailDTO);
+                        final String htmlSeller = htmlGenerator.generateHtml("templates/emails/payment/payment_accepted_seller.html", context);
+                        // send mail to all sellers
+                        for (String sellerEmail : appProperties.getSellerEmails()) {
+                            MailDTO mailDTO = new MailDTO();
+                            mailDTO.setTo(sellerEmail);
+                            mailDTO.setSubject("Customer payment accepted");
+                            mailDTO.setText(htmlSeller);
+                            mailService.sendMail(mailDTO);
+                        }
                     }
                 }
             }
