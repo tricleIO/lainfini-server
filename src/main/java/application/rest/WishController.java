@@ -1,9 +1,9 @@
 package application.rest;
 
 import application.persistence.entity.Wish;
+import application.persistence.type.UserRoleEnum;
 import application.rest.domain.WishDTO;
-import application.service.response.ServiceResponseStatus;
-import application.service.security.CustomUserDetails;
+import application.service.response.ServiceResponse;
 import application.service.user.UserService;
 import application.service.wish.WishService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,16 +24,12 @@ public class WishController extends AbstractDatabaseController<Wish, Long, WishD
 
     @RequestMapping(value = "/customers/{customerId}/wishlist", method = RequestMethod.GET)
     public ResponseEntity<?> readUsersWishes(@PathVariable UUID customerId, Pageable pageable) {
-        if (CustomUserDetails.getCurrentUser() == null) {
-            return new ErrorResponseEntity(ServiceResponseStatus.UNAUTHORIZED);
-        }
-//        // has logged user demanded roles
-//        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
-//                UserRoleEnum.ROLE_ADMIN
-//        );
-        // error
-        if (!CustomUserDetails.getCurrentUser().getId().equals(customerId)) {
-            return new ErrorResponseEntity(ServiceResponseStatus.READ_FORBIDDEN);
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        ServiceResponse<Boolean> isCurrentUserResponse = userService.isCurrrentUser(customerId);
+        if (!hasRolesResponse.isSuccessful() && !isCurrentUserResponse.isSuccessful()) {
+            return new ErrorResponseEntity(isCurrentUserResponse.getStatus());
         }
         return getPageResponseEntity(
                 wishService.readCustomersWishes(customerId, pageable)
@@ -49,22 +45,18 @@ public class WishController extends AbstractDatabaseController<Wish, Long, WishD
 
     @RequestMapping(value = "/customers/{customerId}/wishlist/{wishId}", method = RequestMethod.GET)
     public ResponseEntity<?> readWish(@PathVariable UUID customerId, @PathVariable Long wishId) {
-        if (CustomUserDetails.getCurrentUser() != null) {
-            return new ErrorResponseEntity(ServiceResponseStatus.UNAUTHORIZED);
-        }
-        if (!CustomUserDetails.getCurrentUser().getId().equals(customerId)) {
-            return new ErrorResponseEntity(ServiceResponseStatus.READ_FORBIDDEN);
+        ServiceResponse<Boolean> isCurrentUserResponse = userService.isCurrrentUser(customerId);
+        if (!isCurrentUserResponse.isSuccessful()) {
+            return new ErrorResponseEntity(isCurrentUserResponse.getStatus());
         }
         return read(wishId);
     }
 
     @RequestMapping(value = "/customers/{customerId}/wishlist", method = RequestMethod.POST)
     public ResponseEntity<?> createWish(@PathVariable UUID customerId, @RequestBody WishDTO wishDTO) {
-        if (CustomUserDetails.getCurrentUser() != null) {
-            return new ErrorResponseEntity(ServiceResponseStatus.UNAUTHORIZED);
-        }
-        if (!CustomUserDetails.getCurrentUser().getId().equals(customerId)) {
-            return new ErrorResponseEntity(ServiceResponseStatus.READ_FORBIDDEN);
+        ServiceResponse<Boolean> isCurrentUserResponse = userService.isCurrrentUser(customerId);
+        if (!isCurrentUserResponse.isSuccessful()) {
+            return new ErrorResponseEntity(isCurrentUserResponse.getStatus());
         }
         wishDTO.setCustomerUid(customerId);
         return create(wishDTO);
@@ -79,11 +71,9 @@ public class WishController extends AbstractDatabaseController<Wish, Long, WishD
 
     @RequestMapping(value = "/customers/{customerId}/wishlist/{productId}", method = RequestMethod.DELETE)
     public ResponseEntity<?> deleteWish(@PathVariable UUID customerId, @PathVariable UUID productId) {
-        if (CustomUserDetails.getCurrentUser() != null) {
-            return new ErrorResponseEntity(ServiceResponseStatus.UNAUTHORIZED);
-        }
-        if (!CustomUserDetails.getCurrentUser().getId().equals(customerId)) {
-            return new ErrorResponseEntity(ServiceResponseStatus.READ_FORBIDDEN);
+        ServiceResponse<Boolean> isCurrentUserResponse = userService.isCurrrentUser(customerId);
+        if (!isCurrentUserResponse.isSuccessful()) {
+            return new ErrorResponseEntity(isCurrentUserResponse.getStatus());
         }
         return getSimpleResponseEntity(
                 wishService.removeProductFromWishes(customerId, productId)
@@ -101,5 +91,6 @@ public class WishController extends AbstractDatabaseController<Wish, Long, WishD
     public WishService getBaseService() {
         return wishService;
     }
+
 
 }
