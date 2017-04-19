@@ -72,7 +72,8 @@ public enum ServiceResponseStatus {
     TECHNOLOGY_NOT_FOUND("Technology with given uid was not found.", HttpStatus.NOT_FOUND),
     DESIGN_NOT_FOUND("Product design with given uid was not found.", HttpStatus.NOT_FOUND),
 
-    PAYMENT_UNSUCCESSFUL("Unsuccessful payment", HttpStatus.EXPECTATION_FAILED);
+    PAYMENT_UNSUCCESSFUL("Unsuccessful payment", HttpStatus.EXPECTATION_FAILED),
+    ORDER_ALREADY_PAID("Order has been already paid.", HttpStatus.CONFLICT);
 
     private final HttpStatus httpStatus;
     private final String message;
