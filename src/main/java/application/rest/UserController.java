@@ -64,13 +64,12 @@ public class UserController extends AbstractDatabaseController<User, UUID, UserD
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public ResponseEntity<?> readUser(@PathVariable UUID id) {
-        // has logged user demanded roles
         ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
                 UserRoleEnum.ROLE_ADMIN
         );
-        // error
-        if (!hasRolesResponse.isSuccessful()) {
-            return new ErrorResponseEntity(hasRolesResponse.getStatus());
+        ServiceResponse<Boolean> isCurrentUserResponse = userService.isCurrrentUser(id);
+        if (!hasRolesResponse.isSuccessful() && !isCurrentUserResponse.isSuccessful()) {
+            return new ErrorResponseEntity(ServiceResponseStatus.FORBIDDEN);
         }
         return read(id);
     }
