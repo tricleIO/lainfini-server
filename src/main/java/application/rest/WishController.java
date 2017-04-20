@@ -4,6 +4,7 @@ import application.persistence.entity.Wish;
 import application.persistence.type.UserRoleEnum;
 import application.rest.domain.WishDTO;
 import application.service.response.ServiceResponse;
+import application.service.response.ServiceResponseStatus;
 import application.service.user.UserService;
 import application.service.wish.WishService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +30,7 @@ public class WishController extends AbstractDatabaseController<Wish, Long, WishD
         );
         ServiceResponse<Boolean> isCurrentUserResponse = userService.isCurrrentUser(customerId);
         if (!hasRolesResponse.isSuccessful() && !isCurrentUserResponse.isSuccessful()) {
-            return new ErrorResponseEntity(isCurrentUserResponse.getStatus());
+            return new ErrorResponseEntity(ServiceResponseStatus.FORBIDDEN);
         }
         return getPageResponseEntity(
                 wishService.readCustomersWishes(customerId, pageable)
