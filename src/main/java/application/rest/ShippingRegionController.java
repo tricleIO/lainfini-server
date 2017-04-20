@@ -1,10 +1,12 @@
 package application.rest;
 
 import application.persistence.entity.ShippingRegion;
+import application.persistence.type.UserRoleEnum;
 import application.rest.domain.CountryDTO;
 import application.rest.domain.ShippingRegionDTO;
 import application.service.response.ServiceResponse;
 import application.service.shippingRegion.ShippingRegionService;
+import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -19,6 +21,9 @@ public class ShippingRegionController extends AbstractDatabaseController<Shippin
     @Autowired
     private ShippingRegionService shippingRegionService;
 
+    @Autowired
+    private UserService userService;
+
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<?> readMaterials(Pageable pageable) {
         return readAll(pageable);
@@ -31,6 +36,12 @@ public class ShippingRegionController extends AbstractDatabaseController<Shippin
 
     @RequestMapping(value = "/{id}/countries", method = RequestMethod.POST)
     public ResponseEntity<?> addCountry(@PathVariable Integer id, @RequestBody CountryDTO country) {
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        if (!hasRolesResponse.isSuccessful()) {
+            return new ErrorResponseEntity(hasRolesResponse.getStatus());
+        }
         country.setRegionUid(id);
         ServiceResponse<CountryDTO> countryResponse = shippingRegionService.addCountry(country);
         if (!countryResponse.isSuccessful()) {
@@ -49,7 +60,13 @@ public class ShippingRegionController extends AbstractDatabaseController<Shippin
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<?> createMaterial(@RequestBody ShippingRegionDTO shippingRegionDTO) {
+    public ResponseEntity<?> createRegion(@RequestBody ShippingRegionDTO shippingRegionDTO) {
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        if (!hasRolesResponse.isSuccessful()) {
+            return new ErrorResponseEntity(hasRolesResponse.getStatus());
+        }
         return create(shippingRegionDTO);
     }
 
