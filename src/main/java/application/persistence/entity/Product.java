@@ -86,6 +86,9 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     @JoinColumn(name = "design_id", referencedColumnName = "id")
     private ProductDesign design;
 
+    @Column(nullable = false, columnDefinition = "TINYINT", length = 1)
+    private Boolean serialNumberIsRequired;
+
     @Override
     public ProductDTO toDTO(boolean selectAsParent, Object... parentParams) {
         ProductDTO productDTO = new ProductDTO();
@@ -98,6 +101,7 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
         productDTO.setCode(code);
         productDTO.setAbraLink(abraLink);
         productDTO.setProductStatus(productStatus);
+        productDTO.setSerialNumberIsRequired(serialNumberIsRequired);
         if (mainImage != null) {
             productDTO.setMainImageDTO(mainImage.toDTO(false));
         }

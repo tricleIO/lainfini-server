@@ -3,6 +3,7 @@ package application.rest;
 import application.persistence.entity.StockItem;
 import application.persistence.type.UserRoleEnum;
 import application.rest.domain.StockItemDTO;
+import application.rest.domain.UnstockItemsDTO;
 import application.service.response.ServiceResponse;
 import application.service.stockItem.StockItemService;
 import application.service.user.UserService;
@@ -39,7 +40,31 @@ public class StockItemController extends AbstractDatabaseController<StockItem, L
         return getPageResponseEntity(
                 stockItemService.readStockedItems(pageable)
         );
+    }
 
+    @RequestMapping(value = "/items/unstock", method = RequestMethod.POST)
+    public ResponseEntity<?> unstockItems(@RequestBody UnstockItemsDTO unstockItemsDTO) {
+        ServiceResponse<Boolean> isAdminResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        if (!isAdminResponse.isSuccessful()) {
+            return new ErrorResponseEntity(isAdminResponse.getStatus());
+        }
+        if (unstockItemsDTO.getSerialNumbers() != null && !unstockItemsDTO.getSerialNumbers().isEmpty()) {
+            return getPageResponseEntity(
+                    stockItemService.unstockProduct(
+                            unstockItemsDTO.getProductUid(),
+                            unstockItemsDTO.getAmount(),
+                            unstockItemsDTO.getSerialNumbers()
+                    )
+            );
+        }
+        return getPageResponseEntity(
+                stockItemService.unstockProduct(
+                        unstockItemsDTO.getProductUid(),
+                        unstockItemsDTO.getAmount()
+                )
+        );
     }
 
     @RequestMapping(value = "/items/{id}", method = RequestMethod.GET)
@@ -53,7 +78,7 @@ public class StockItemController extends AbstractDatabaseController<StockItem, L
         return read(id);
     }
 
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping(value = "/items", method = RequestMethod.POST)
     public ResponseEntity<?> createStockItem(@RequestBody StockItemDTO stockItemDTO) {
         ServiceResponse<Boolean> isAdminResponse = userService.hasCurrentUserDemandedRoles(
                 UserRoleEnum.ROLE_ADMIN

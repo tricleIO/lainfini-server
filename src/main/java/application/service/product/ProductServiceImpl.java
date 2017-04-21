@@ -38,6 +38,14 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     private ApplicationFileRepository applicationFileRepository;
 
     @Override
+    protected ServiceResponse<ProductDTO> doBeforeConvertInCreate(ProductDTO dto) {
+        if (dto.getSerialNumberIsRequired() == null) {
+            dto.setSerialNumberIsRequired(false);
+        }
+        return super.doBeforeConvertInCreate(dto);
+    }
+
+    @Override
     public ServiceResponse<ProductDTO> read(UUID key, Principal principal) {
         ServiceResponse<ProductDTO> response = super.read(key);
         if (response.isSuccessful()) {

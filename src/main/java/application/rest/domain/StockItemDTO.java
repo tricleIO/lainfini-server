@@ -24,9 +24,9 @@ public class StockItemDTO implements ReadWriteDatabaseDTO<StockItem>, Identifabl
     public StockItem toEntity(boolean selectAsParent, Object... parentParams) {
         StockItem stockItem = new StockItem();
         stockItem.setId(uid);
-//        stockItem.setAddedAt(new Date());
+        stockItem.setAddedAt(addedAt);
         stockItem.setSerialNumber(serialNumber);
-//        stockItem.setState();
+        stockItem.setState(state);
         if (selectAsParent) {
             if (product != null) {
                 stockItem.setProduct(product.toEntity(false));
