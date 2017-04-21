@@ -94,6 +94,9 @@ public class StockItemServiceImpl extends BaseDatabaseServiceImpl<StockItem, Lon
             return ServiceResponse.error(ServiceResponseStatus.SERIAL_NUMBER_REQUIRED_FOR_PRODUCT);
         }
         // unstock
+        if (stockItemRepository.countByProductIdAndState(productId, StockItemStateEnum.STOCKED) < amount) {
+            return ServiceResponse.error(ServiceResponseStatus.NOT_ENOUGH_ITEMS_IN_STOCK);
+        }
         Pageable pageable = new PageRequest(0, amount);
         Page<StockItem> itemsToUnstock = stockItemRepository.findByProductIdAndState(productId, StockItemStateEnum.STOCKED, pageable);
         Page<StockItem> unstockedItems = unstockItems(pageable, itemsToUnstock);
@@ -116,6 +119,10 @@ public class StockItemServiceImpl extends BaseDatabaseServiceImpl<StockItem, Lon
         ServiceResponse<ProductDTO> productResponse = productService.read(productId);
         if (!productResponse.isSuccessful()) {
             return ServiceResponse.error(productResponse.getStatus());
+        }
+        // unstock
+        if (stockItemRepository.countByProductIdAndSerialNumberInAndState(productId, serialNumbers, StockItemStateEnum.STOCKED) < amount) {
+            return ServiceResponse.error(ServiceResponseStatus.NOT_ENOUGH_ITEMS_IN_STOCK);
         }
         Pageable pageable = new PageRequest(0, amount);
         Page<StockItem> itemsToUnstock = stockItemRepository.findByProductIdAndSerialNumberInAndState(

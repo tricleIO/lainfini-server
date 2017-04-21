@@ -76,7 +76,8 @@ public enum ServiceResponseStatus {
     ORDER_ALREADY_PAID("Order has been already paid.", HttpStatus.CONFLICT),
     SERIAL_NUMBER_REQUIRED_FOR_PRODUCT("Serial number is required for this Product.", HttpStatus.BAD_REQUEST),
     AMOUNT_IS_NOT_EQUAL_TO_SERIAL_NUMBER_LIST_SIZE("Amount is not equal to size of given serial numbers list.", HttpStatus.BAD_REQUEST),
-    PRODUCT_NOT_GIVEN("Porduct id was not given.", HttpStatus.BAD_REQUEST);
+    PRODUCT_NOT_GIVEN("Product id was not given.", HttpStatus.BAD_REQUEST),
+    NOT_ENOUGH_ITEMS_IN_STOCK("Not enough items in stock.", HttpStatus.NOT_FOUND);
 
     private final HttpStatus httpStatus;
     private final String message;
