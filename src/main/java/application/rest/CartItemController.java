@@ -13,6 +13,8 @@ import java.util.UUID;
 @RequestMapping(value = "/carts")
 public class CartItemController extends AbstractDatabaseController<CartItem, Long, CartItemDTO, CartItemService> {
 
+    // @TODO - rights
+
     @Autowired
     private CartItemService cartItemService;
 
