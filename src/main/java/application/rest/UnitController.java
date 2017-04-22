@@ -1,8 +1,11 @@
 package application.rest;
 
 import application.persistence.entity.Unit;
+import application.persistence.type.UserRoleEnum;
 import application.rest.domain.UnitDTO;
+import application.service.response.ServiceResponse;
 import application.service.unit.UnitService;
+import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +17,9 @@ public class UnitController extends AbstractDatabaseController<Unit, Integer, Un
 
     @Autowired
     private UnitService unitService;
+
+    @Autowired
+    private UserService userService;
 
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<?> readUnits(Pageable pageable) {
@@ -27,6 +33,12 @@ public class UnitController extends AbstractDatabaseController<Unit, Integer, Un
 
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> createUnit(@RequestBody UnitDTO unitDTO) {
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        if (!hasRolesResponse.isSuccessful()) {
+            return new ErrorResponseEntity(hasRolesResponse.getStatus());
+        }
         return create(unitDTO);
     }
 

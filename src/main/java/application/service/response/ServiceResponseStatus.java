@@ -10,7 +10,7 @@ public enum ServiceResponseStatus {
     NOT_FOUND("Object with given parameters was not found.", HttpStatus.NOT_FOUND),
     ALREADY_EXISTS("Object with given parameters already exists.", HttpStatus.CONFLICT),
     INTERNAL_ERROR("Internal error", HttpStatus.INTERNAL_SERVER_ERROR),
-    READ_FORBIDDEN("Read forbidden.", HttpStatus.FORBIDDEN),
+    FORBIDDEN("Access forbidden", HttpStatus.FORBIDDEN),
     UNAUTHORIZED("Unauthorized.", HttpStatus.UNAUTHORIZED),
     OBJECT_BY_SLUG_NOT_FOUND("Object with given slug was not found.", HttpStatus.NOT_FOUND),
 

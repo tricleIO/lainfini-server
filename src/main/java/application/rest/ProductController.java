@@ -1,12 +1,14 @@
 package application.rest;
 
 import application.persistence.entity.Product;
+import application.persistence.type.UserRoleEnum;
 import application.rest.domain.ProductAvailabilityDTO;
 import application.rest.domain.ProductDTO;
 import application.rest.domain.ProductHasFlashDTO;
 import application.service.abra.AbraStoresubcardExpandStoreService;
 import application.service.product.ProductService;
 import application.service.response.ServiceResponse;
+import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
@@ -21,6 +23,9 @@ public class ProductController extends AbstractDatabaseController<Product, UUID,
 
     @Autowired
     private ProductService productService;
+
+    @Autowired
+    private UserService userService;
 
     @Autowired
     private AbraStoresubcardExpandStoreService abraStoresubcardExpandStoreService;
@@ -46,11 +51,27 @@ public class ProductController extends AbstractDatabaseController<Product, UUID,
 
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> createProduct(@RequestBody ProductDTO product) {
+        // has logged user demanded roles
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        // error
+        if (!hasRolesResponse.isSuccessful()) {
+            return new ErrorResponseEntity(hasRolesResponse.getStatus());
+        }
         return create(product);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<?> deleteProduct(@PathVariable UUID id) {
+        // has logged user demanded roles
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        // error
+        if (!hasRolesResponse.isSuccessful()) {
+            return new ErrorResponseEntity(hasRolesResponse.getStatus());
+        }
         return getSimpleResponseEntity(
                 productService.delete(id)
         );
@@ -58,6 +79,14 @@ public class ProductController extends AbstractDatabaseController<Product, UUID,
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PATCH)
     public ResponseEntity<?> patchProduct(@PathVariable UUID id, @RequestBody ProductDTO productDTO) {
+        // has logged user demanded roles
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        // error
+        if (!hasRolesResponse.isSuccessful()) {
+            return new ErrorResponseEntity(hasRolesResponse.getStatus());
+        }
         productDTO.setUid(id);
         return getSimpleResponseEntity(
                 productService.patch(productDTO)
@@ -66,6 +95,14 @@ public class ProductController extends AbstractDatabaseController<Product, UUID,
 
     @RequestMapping(value = "/{productId}/flashes", method = RequestMethod.POST)
     public ResponseEntity<?> addFlash(@PathVariable UUID productId, @RequestBody ProductHasFlashDTO productHasFlash) {
+        // has logged user demanded roles
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        // error
+        if (!hasRolesResponse.isSuccessful()) {
+            return new ErrorResponseEntity(hasRolesResponse.getStatus());
+        }
         productHasFlash.setProductUid(productId);
         return getSimpleResponseEntity(
                 productService.addFlash(productHasFlash)

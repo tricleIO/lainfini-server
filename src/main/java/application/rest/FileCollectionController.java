@@ -1,10 +1,12 @@
 package application.rest;
 
 import application.persistence.entity.FileCollection;
+import application.persistence.type.UserRoleEnum;
 import application.rest.domain.FileCollectionDTO;
 import application.service.file.FileCollectionService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
+import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +25,9 @@ public class FileCollectionController extends AbstractDatabaseController<FileCol
     @Autowired
     private FileCollectionService fileCollectionService;
 
+    @Autowired
+    private UserService userService;
+
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<?> read(Pageable pageable) {
         return readAll(pageable);
@@ -30,11 +35,23 @@ public class FileCollectionController extends AbstractDatabaseController<FileCol
 
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> createFileCollection(@RequestBody FileCollectionDTO fileCollectionDTO) {
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        if (!hasRolesResponse.isSuccessful()) {
+            return new ErrorResponseEntity(hasRolesResponse.getStatus());
+        }
         return create(fileCollectionDTO);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<?> deleteFileCollection(@PathVariable Long id) {
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        if (!hasRolesResponse.isSuccessful()) {
+            return new ErrorResponseEntity(hasRolesResponse.getStatus());
+        }
         ServiceResponse<FileCollectionDTO> read = fileCollectionService.read(id);
         if (read.getBody() != null) {
             FileCollectionDTO fileCollectionDTO = read.getBody();
@@ -61,6 +78,12 @@ public class FileCollectionController extends AbstractDatabaseController<FileCol
 
     @RequestMapping(value = "/{collectionId}/{fileId}",method = RequestMethod.DELETE)
     public ResponseEntity<?> removeFileFromCollection(@PathVariable Long collectionId, @PathVariable UUID fileId) {
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        if (!hasRolesResponse.isSuccessful()) {
+            return new ErrorResponseEntity(hasRolesResponse.getStatus());
+        }
         return getSimpleResponseEntity(fileCollectionService.removeFileFromCollection(collectionId, fileId));
     }
 
