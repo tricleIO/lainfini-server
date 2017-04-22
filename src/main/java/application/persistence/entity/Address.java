@@ -50,6 +50,9 @@ public class Address implements DTOConvertable<AddressDTO>, Serializable {
         addressDTO.setPostal(postalCode);
         addressDTO.setState(state);
         addressDTO.setCountry(country);
+        if (customer != null) {
+            addressDTO.setCustomerUid(customer.getId());
+        }
         return addressDTO;
     }
 

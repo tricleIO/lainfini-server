@@ -95,7 +95,18 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
             currentUserRoleValues.add(currentUserRole.getValue());
         }
         if (!currentUserRoleValues.containsAll(Arrays.asList(demandedRoles))) {
-            return ServiceResponse.error(ServiceResponseStatus.READ_FORBIDDEN);
+            return ServiceResponse.error(ServiceResponseStatus.FORBIDDEN);
+        }
+        return ServiceResponse.success(true);
+    }
+
+    @Override
+    public ServiceResponse<Boolean> isCurrrentUser(UUID userId) {
+        if (CustomUserDetails.getCurrentUser() == null) {
+            return ServiceResponse.error(ServiceResponseStatus.UNAUTHORIZED);
+        }
+        if (!CustomUserDetails.getCurrentUser().getId().equals(userId)) {
+            return ServiceResponse.error(ServiceResponseStatus.FORBIDDEN);
         }
         return ServiceResponse.success(true);
     }

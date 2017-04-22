@@ -6,6 +6,7 @@ import application.persistence.entity.User;
 import application.persistence.repository.CartItemRepository;
 import application.persistence.repository.CartRepository;
 import application.persistence.type.CartStatusEnum;
+import application.persistence.type.UserRoleEnum;
 import application.rest.domain.CartDTO;
 import application.rest.domain.CartItemDTO;
 import application.rest.domain.ProductDTO;
@@ -79,6 +80,28 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
             return create(cartDTO);
         }
         return read(cart.getId());
+    }
+
+    @Override
+    public ServiceResponse<CartDTO> readCartSecured(UUID cartId) {
+        ServiceResponse<CartDTO> cartResponse = read(cartId);
+        if (cartResponse.isSuccessful()) {
+            CartDTO cartDTO = cartResponse.getBody();
+            // is admin
+            ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                    UserRoleEnum.ROLE_ADMIN
+            );
+            if (cartDTO.getCustomerUid() != null) {
+                // or its his
+                ServiceResponse<Boolean> isCurrentUserResponse = userService.isCurrrentUser(
+                        cartDTO.getCustomerUid()
+                );
+                if (!hasRolesResponse.isSuccessful() && !isCurrentUserResponse.isSuccessful()) {
+                    return ServiceResponse.error(ServiceResponseStatus.FORBIDDEN);
+                }
+            }
+        }
+        return cartResponse;
     }
 
     @Override

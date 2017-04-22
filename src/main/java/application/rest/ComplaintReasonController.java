@@ -1,8 +1,11 @@
 package application.rest;
 
 import application.persistence.entity.ComplaintReason;
+import application.persistence.type.UserRoleEnum;
 import application.rest.domain.ComplaintReasonDTO;
 import application.service.complaintReason.ComplaintReasonService;
+import application.service.response.ServiceResponse;
+import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
@@ -15,18 +18,27 @@ public class ComplaintReasonController extends AbstractDatabaseController<Compla
     @Autowired
     private ComplaintReasonService complaintReasonService;
 
+    @Autowired
+    private UserService userService;
+
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<?> readMaterials(Pageable pageable) {
+    public ResponseEntity<?> readReasons(Pageable pageable) {
         return readAll(pageable);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<?> readMaterial(@PathVariable Integer id) {
+    public ResponseEntity<?> readReason(@PathVariable Integer id) {
         return read(id);
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<?> createMaterial(@RequestBody ComplaintReasonDTO complaintReasonDTO) {
+    public ResponseEntity<?> createReason(@RequestBody ComplaintReasonDTO complaintReasonDTO) {
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        if (!hasRolesResponse.isSuccessful()) {
+            return new ErrorResponseEntity(hasRolesResponse.getStatus());
+        }
         return create(complaintReasonDTO);
     }
 

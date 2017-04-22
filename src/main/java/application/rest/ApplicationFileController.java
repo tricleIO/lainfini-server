@@ -1,11 +1,13 @@
 package application.rest;
 
 import application.persistence.entity.ApplicationFile;
+import application.persistence.type.UserRoleEnum;
 import application.rest.domain.ApplicationFileDTO;
 import application.rest.domain.ProductDTO;
 import application.service.product.ApplicationFileService;
 import application.service.product.ProductService;
 import application.service.response.ServiceResponse;
+import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,8 +28,18 @@ public class ApplicationFileController extends AbstractFileController<Applicatio
     @Autowired
     private ProductService productService;
 
+    @Autowired
+    private UserService userService;
+
     @RequestMapping(value = "/product/{productId}", method = RequestMethod.POST)
     public ResponseEntity<?> uploadProductDocument(@PathVariable UUID productId, @RequestParam("file") MultipartFile[] files) throws IllegalAccessException, InstantiationException {
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        if (!hasRolesResponse.isSuccessful()) {
+            return new ErrorResponseEntity(hasRolesResponse.getStatus());
+        }
+
         List<ApplicationFileDTO> applicationFileDTOS = new ArrayList<>();
 
         ServiceResponse<ProductDTO> read = productService.read(productId);

@@ -1,8 +1,11 @@
 package application.rest;
 
 import application.persistence.entity.ShippingAvailability;
+import application.persistence.type.UserRoleEnum;
 import application.rest.domain.ShippingAvailabilityDTO;
+import application.service.response.ServiceResponse;
 import application.service.shippingAvailability.ShippingAvailabilityService;
+import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
@@ -15,18 +18,27 @@ public class ShippingAvailabilityController extends AbstractDatabaseController<S
     @Autowired
     private ShippingAvailabilityService shippingAvailabilityService;
 
+    @Autowired
+    private UserService userService;
+
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<?> readMaterials(Pageable pageable) {
+    public ResponseEntity<?> readAvailabilities(Pageable pageable) {
         return readAll(pageable);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<?> readMaterial(@PathVariable Integer id) {
+    public ResponseEntity<?> readAvailability(@PathVariable Integer id) {
         return read(id);
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<?> createMaterial(@RequestBody ShippingAvailabilityDTO ShippingAvailabilityDTO) {
+    public ResponseEntity<?> addAvailability(@RequestBody ShippingAvailabilityDTO ShippingAvailabilityDTO) {
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        if (!hasRolesResponse.isSuccessful()) {
+            return new ErrorResponseEntity(hasRolesResponse.getStatus());
+        }
         return create(ShippingAvailabilityDTO);
     }
 
