@@ -42,7 +42,7 @@ public class StockItemServiceImpl extends BaseDatabaseServiceImpl<StockItem, Lon
         // default timestamp
         dto.setAddedAt(new Date());
         // default state
-        dto.setState(StockItemStateEnum.STOCKED);
+        dto.setState(StockItemStateEnum.AVAILABLE);
         // current user
         ServiceResponse<UserDTO> userResponse = userService.readCurrentUser();
         if (!userResponse.isSuccessful()) {
@@ -94,11 +94,11 @@ public class StockItemServiceImpl extends BaseDatabaseServiceImpl<StockItem, Lon
             return ServiceResponse.error(ServiceResponseStatus.SERIAL_NUMBER_REQUIRED_FOR_PRODUCT);
         }
         // unstock
-        if (stockItemRepository.countByProductIdAndState(productId, StockItemStateEnum.STOCKED) < amount) {
+        if (stockItemRepository.countByProductIdAndState(productId, StockItemStateEnum.AVAILABLE) < amount) {
             return ServiceResponse.error(ServiceResponseStatus.NOT_ENOUGH_ITEMS_IN_STOCK);
         }
         Pageable pageable = new PageRequest(0, amount);
-        Page<StockItem> itemsToUnstock = stockItemRepository.findByProductIdAndState(productId, StockItemStateEnum.STOCKED, pageable);
+        Page<StockItem> itemsToUnstock = stockItemRepository.findByProductIdAndState(productId, StockItemStateEnum.AVAILABLE, pageable);
         Page<StockItem> unstockedItems = unstockItems(pageable, itemsToUnstock);
         return ServiceResponse.success(convertPageWithEntitiesToPageWithDtos(unstockedItems, pageable));
     }
@@ -121,14 +121,14 @@ public class StockItemServiceImpl extends BaseDatabaseServiceImpl<StockItem, Lon
             return ServiceResponse.error(productResponse.getStatus());
         }
         // unstock
-        if (stockItemRepository.countByProductIdAndSerialNumberInAndState(productId, serialNumbers, StockItemStateEnum.STOCKED) < amount) {
+        if (stockItemRepository.countByProductIdAndSerialNumberInAndState(productId, serialNumbers, StockItemStateEnum.AVAILABLE) < amount) {
             return ServiceResponse.error(ServiceResponseStatus.NOT_ENOUGH_ITEMS_IN_STOCK);
         }
         Pageable pageable = new PageRequest(0, amount);
         Page<StockItem> itemsToUnstock = stockItemRepository.findByProductIdAndSerialNumberInAndState(
                 productId,
                 serialNumbers,
-                StockItemStateEnum.STOCKED,
+                StockItemStateEnum.AVAILABLE,
                 pageable
         );
         Page<StockItem> unstockedItems = unstockItems(pageable, itemsToUnstock);
@@ -137,7 +137,7 @@ public class StockItemServiceImpl extends BaseDatabaseServiceImpl<StockItem, Lon
 
     @Override
     public ServiceResponse<Page<StockItemDTO>> readStockedItems(Pageable pageable) {
-        Page<StockItem> stockItems = stockItemRepository.findByState(StockItemStateEnum.STOCKED, pageable);
+        Page<StockItem> stockItems = stockItemRepository.findByState(StockItemStateEnum.AVAILABLE, pageable);
         return ServiceResponse.success(
                 convertPageWithEntitiesToPageWithDtos(stockItems, pageable)
         );
@@ -145,7 +145,7 @@ public class StockItemServiceImpl extends BaseDatabaseServiceImpl<StockItem, Lon
 
     @Override
     public ServiceResponse<Page<StockItemDTO>> readProductStockedItems(UUID productUid, Pageable pageable) {
-        Page<StockItem> stockItems = stockItemRepository.findByProductIdAndState(productUid, StockItemStateEnum.STOCKED, pageable);
+        Page<StockItem> stockItems = stockItemRepository.findByProductIdAndState(productUid, StockItemStateEnum.AVAILABLE, pageable);
         return ServiceResponse.success(
                 convertPageWithEntitiesToPageWithDtos(stockItems, pageable)
         );
@@ -156,7 +156,7 @@ public class StockItemServiceImpl extends BaseDatabaseServiceImpl<StockItem, Lon
         return ServiceResponse.success(
                 stockItemRepository.countByProductIdAndState(
                         productUid,
-                        StockItemStateEnum.STOCKED
+                        StockItemStateEnum.AVAILABLE
                 )
         );
     }
