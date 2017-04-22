@@ -99,7 +99,7 @@ public class StockItemServiceImpl extends BaseDatabaseServiceImpl<StockItem, Lon
     }
 
     @Override
-    public ServiceResponse<Page<StockItemDTO>> reserveProduct(UUID productId, int amount, UUID orderId) {
+    public synchronized ServiceResponse<Page<StockItemDTO>> reserveProduct(UUID productId, int amount, UUID orderId) {
         // find product
         ServiceResponse<ProductDTO> productResponse = productService.read(productId);
         if (!productResponse.isSuccessful()) {

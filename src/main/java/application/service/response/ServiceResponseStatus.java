@@ -13,6 +13,7 @@ public enum ServiceResponseStatus {
     READ_FORBIDDEN("Read forbidden.", HttpStatus.FORBIDDEN),
     UNAUTHORIZED("Unauthorized.", HttpStatus.UNAUTHORIZED),
     OBJECT_BY_SLUG_NOT_FOUND("Object with given slug was not found.", HttpStatus.NOT_FOUND),
+    TRANSACTION_NOT_COMPLETE("Transaction was not completed whole, check data for inconsistencies.", HttpStatus.EXPECTATION_FAILED),
 
     PAYMENT_METHOD_FORBIDDEN("Forbidden payment method.", HttpStatus.FORBIDDEN),
 
