@@ -1,6 +1,8 @@
 package application.service.stockItem;
 
+import application.persistence.entity.CustomerOrder;
 import application.persistence.entity.StockItem;
+import application.persistence.repository.OrderRepository;
 import application.persistence.repository.StockItemRepository;
 import application.persistence.type.StockItemStateEnum;
 import application.rest.domain.ProductDTO;
@@ -9,6 +11,7 @@ import application.rest.domain.UserDTO;
 import application.service.AdditionalDataManipulator;
 import application.service.AdditionalDataManipulatorBatch;
 import application.service.BaseDatabaseServiceImpl;
+import application.service.order.OrderService;
 import application.service.product.ProductService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
@@ -36,6 +39,12 @@ public class StockItemServiceImpl extends BaseDatabaseServiceImpl<StockItem, Lon
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private OrderRepository orderRepository;
+
+    @Autowired
+    private OrderService orderService;
 
     @Override
     protected ServiceResponse<StockItemDTO> doBeforeConvertInCreate(StockItemDTO dto) {
@@ -81,59 +90,97 @@ public class StockItemServiceImpl extends BaseDatabaseServiceImpl<StockItem, Lon
                     ServiceResponseStatus.PRODUCT_NOT_FOUND
             ));
         }
+        batch.add(si -> new AdditionalDataManipulator<>(
+                new AdditionalDataManipulator.Reader<>(si.getOrderUid(), orderService::read),
+                new AdditionalDataManipulator.Writer<>(si::setOrder),
+                ServiceResponseStatus.ORDER_NOT_FOUND
+        ));
         return batch;
     }
 
     @Override
-    public ServiceResponse<Page<StockItemDTO>> unstockProduct(UUID productId, int amount) {
+    public ServiceResponse<Page<StockItemDTO>> reserveProduct(UUID productId, int amount, UUID orderId) {
+        // find product
         ServiceResponse<ProductDTO> productResponse = productService.read(productId);
         if (!productResponse.isSuccessful()) {
             return ServiceResponse.error(productResponse.getStatus());
         }
-        if (productResponse.getBody().getSerialNumberIsRequired()) {
-            return ServiceResponse.error(ServiceResponseStatus.SERIAL_NUMBER_REQUIRED_FOR_PRODUCT);
+        // find order
+        CustomerOrder order = orderRepository.findOne(orderId);
+        if (order == null) {
+            return ServiceResponse.error(ServiceResponseStatus.ORDER_NOT_FOUND);
         }
-        // unstock
-        if (stockItemRepository.countByProductIdAndState(productId, StockItemStateEnum.AVAILABLE) < amount) {
+        // are there enough available items for product in stock?
+        if (enoughAvailableItems(productId, amount)) {
             return ServiceResponse.error(ServiceResponseStatus.NOT_ENOUGH_ITEMS_IN_STOCK);
         }
-        Pageable pageable = new PageRequest(0, amount);
-        Page<StockItem> itemsToUnstock = stockItemRepository.findByProductIdAndState(productId, StockItemStateEnum.AVAILABLE, pageable);
-        Page<StockItem> unstockedItems = unstockItems(pageable, itemsToUnstock);
-        return ServiceResponse.success(convertPageWithEntitiesToPageWithDtos(unstockedItems, pageable));
-    }
-
-    private Page<StockItem> unstockItems(Pageable pageable, Page<StockItem> itemsToUnstock) {
-        List<StockItem> unstockedItemsList = new LinkedList<>();
-        for (StockItem item : itemsToUnstock) {
-            unstockedItemsList.add(unstockItem(item));
-        }
-        return new PageImpl<>(unstockedItemsList, pageable, unstockedItemsList.size());
-    }
-
-    @Override
-    public ServiceResponse<Page<StockItemDTO>> unstockProduct(UUID productId, int amount, List<String> serialNumbers) {
-        if (amount != serialNumbers.size()) {
-            return ServiceResponse.error(ServiceResponseStatus.AMOUNT_IS_NOT_EQUAL_TO_SERIAL_NUMBER_LIST_SIZE);
-        }
-        ServiceResponse<ProductDTO> productResponse = productService.read(productId);
-        if (!productResponse.isSuccessful()) {
-            return ServiceResponse.error(productResponse.getStatus());
-        }
-        // unstock
-        if (stockItemRepository.countByProductIdAndSerialNumberInAndState(productId, serialNumbers, StockItemStateEnum.AVAILABLE) < amount) {
-            return ServiceResponse.error(ServiceResponseStatus.NOT_ENOUGH_ITEMS_IN_STOCK);
-        }
-        Pageable pageable = new PageRequest(0, amount);
-        Page<StockItem> itemsToUnstock = stockItemRepository.findByProductIdAndSerialNumberInAndState(
+        // get requested amount of product
+        Pageable requestedProductsPageable = getPageable(amount);
+        Page<StockItem> itemsToReserve = stockItemRepository.findByProductIdAndState(
                 productId,
-                serialNumbers,
                 StockItemStateEnum.AVAILABLE,
-                pageable
+                requestedProductsPageable
         );
-        Page<StockItem> unstockedItems = unstockItems(pageable, itemsToUnstock);
-        return ServiceResponse.success(convertPageWithEntitiesToPageWithDtos(unstockedItems, pageable));
+        // reserve them for order
+        Page<StockItem> reservedItems = reserveItems(
+                itemsToReserve,
+                order,
+                requestedProductsPageable
+        );
+        // convert it to dto page
+        return ServiceResponse.success(
+                convertPageWithEntitiesToPageWithDtos(
+                        reservedItems,
+                        requestedProductsPageable
+                )
+        );
     }
+
+    private PageRequest getPageable(int amount) {
+        return new PageRequest(0, amount);
+    }
+
+    private boolean enoughAvailableItems(UUID productId, int amount) {
+        return stockItemRepository.countByProductIdAndState(productId, StockItemStateEnum.AVAILABLE) < amount;
+    }
+
+    private Page<StockItem> reserveItems(Page<StockItem> itemsToReserve, CustomerOrder order, Pageable pageable) {
+        List<StockItem> reservedItems = new LinkedList<>();
+        for (StockItem item : itemsToReserve) {
+            reservedItems.add(reserveItem(item, order));
+        }
+        return new PageImpl<>(reservedItems, pageable, reservedItems.size());
+    }
+
+    private StockItem reserveItem(StockItem itemToUnstock, CustomerOrder order) {
+        itemToUnstock.setState(StockItemStateEnum.RESERVED);
+        itemToUnstock.setOrder(order);
+        return stockItemRepository.save(itemToUnstock);
+    }
+
+//    @Override
+//    public ServiceResponse<Page<StockItemDTO>> reserveProduct(UUID productId, int amount, List<String> serialNumbers) {
+//        if (amount != serialNumbers.size()) {
+//            return ServiceResponse.error(ServiceResponseStatus.AMOUNT_IS_NOT_EQUAL_TO_SERIAL_NUMBER_LIST_SIZE);
+//        }
+//        ServiceResponse<ProductDTO> productResponse = productService.read(productId);
+//        if (!productResponse.isSuccessful()) {
+//            return ServiceResponse.error(productResponse.getStatus());
+//        }
+//        // unstock
+//        if (stockItemRepository.countByProductIdAndSerialNumberInAndState(productId, serialNumbers, StockItemStateEnum.AVAILABLE) < amount) {
+//            return ServiceResponse.error(ServiceResponseStatus.NOT_ENOUGH_ITEMS_IN_STOCK);
+//        }
+//        Pageable pageable = new PageRequest(0, amount);
+//        Page<StockItem> itemsToUnstock = stockItemRepository.findByProductIdAndSerialNumberInAndState(
+//                productId,
+//                serialNumbers,
+//                StockItemStateEnum.AVAILABLE,
+//                pageable
+//        );
+//        Page<StockItem> unstockedItems = reserveItems(itemsToUnstock, pageable);
+//        return ServiceResponse.success(convertPageWithEntitiesToPageWithDtos(unstockedItems, pageable));
+//    }
 
     @Override
     public ServiceResponse<Page<StockItemDTO>> readStockedItems(Pageable pageable) {
@@ -183,11 +230,6 @@ public class StockItemServiceImpl extends BaseDatabaseServiceImpl<StockItem, Lon
     @Override
     public StockItemRepository getRepository() {
         return stockItemRepository;
-    }
-
-    private StockItem unstockItem(StockItem itemToUnstock) {
-        itemToUnstock.setState(StockItemStateEnum.SOLD);
-        return stockItemRepository.save(itemToUnstock);
     }
 
 }

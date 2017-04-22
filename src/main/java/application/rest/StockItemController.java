@@ -50,19 +50,20 @@ public class StockItemController extends AbstractDatabaseController<StockItem, L
         if (!isAdminResponse.isSuccessful()) {
             return new ErrorResponseEntity(isAdminResponse.getStatus());
         }
-        if (unstockItemsDTO.getSerialNumbers() != null && !unstockItemsDTO.getSerialNumbers().isEmpty()) {
-            return getPageResponseEntity(
-                    stockItemService.unstockProduct(
-                            unstockItemsDTO.getProductUid(),
-                            unstockItemsDTO.getAmount(),
-                            unstockItemsDTO.getSerialNumbers()
-                    )
-            );
-        }
+//        if (unstockItemsDTO.getSerialNumbers() != null && !unstockItemsDTO.getSerialNumbers().isEmpty()) {
+//            return getPageResponseEntity(
+//                    stockItemService.unstockProduct(
+//                            unstockItemsDTO.getProductUid(),
+//                            unstockItemsDTO.getAmount(),
+//                            unstockItemsDTO.getSerialNumbers()
+//                    )
+//            );
+//        }
         return getPageResponseEntity(
-                stockItemService.unstockProduct(
+                stockItemService.reserveProduct(
                         unstockItemsDTO.getProductUid(),
-                        unstockItemsDTO.getAmount()
+                        unstockItemsDTO.getAmount(),
+                        unstockItemsDTO.getOrderUid()
                 )
         );
     }

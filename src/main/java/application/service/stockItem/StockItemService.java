@@ -7,13 +7,12 @@ import application.service.response.ServiceResponse;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-import java.util.List;
 import java.util.UUID;
 
 public interface StockItemService extends BaseDatabaseService<StockItem, Long, StockItemDTO> {
 
-    ServiceResponse<Page<StockItemDTO>> unstockProduct(UUID productId, int amount);
-    ServiceResponse<Page<StockItemDTO>> unstockProduct(UUID productId, int amount, List<String> serialNumbers);
+    ServiceResponse<Page<StockItemDTO>> reserveProduct(UUID productId, int amount, UUID orderId);
+//    ServiceResponse<Page<StockItemDTO>> reserveProduct(UUID productId, int amount, List<String> serialNumbers);
     ServiceResponse<Page<StockItemDTO>> readStockedItems(Pageable pageable);
     ServiceResponse<Page<StockItemDTO>> readProductStockedItems(UUID productUid, Pageable pageable);
     ServiceResponse<Long> countProductsInStock(UUID productUid);
