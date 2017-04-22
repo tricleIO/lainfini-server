@@ -99,10 +99,6 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
                 if (!hasRolesResponse.isSuccessful() && !isCurrentUserResponse.isSuccessful()) {
                     return ServiceResponse.error(ServiceResponseStatus.FORBIDDEN);
                 }
-            } else {
-                if (!hasRolesResponse.isSuccessful()) {
-                    return ServiceResponse.error(hasRolesResponse.getStatus());
-                }
             }
         }
         return cartResponse;
