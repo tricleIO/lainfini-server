@@ -17,6 +17,7 @@ public interface StockItemService extends BaseDatabaseService<StockItem, Long, S
     ServiceResponse<Page<StockItemDTO>> readStockedItems(Pageable pageable);
     ServiceResponse<Page<StockItemDTO>> readProductStockedItems(UUID productUid, Pageable pageable);
     ServiceResponse<Long> countProductsInStock(UUID productUid);
+    ServiceResponse<Long> countAllTimeSoldItems(UUID productUid);
     ServiceResponse<Long> countAllTimeStockedProducts(UUID productUid);
 
 }

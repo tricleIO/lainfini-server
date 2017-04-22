@@ -162,6 +162,16 @@ public class StockItemServiceImpl extends BaseDatabaseServiceImpl<StockItem, Lon
     }
 
     @Override
+    public ServiceResponse<Long> countAllTimeSoldItems(UUID productUid) {
+        return ServiceResponse.success(
+                stockItemRepository.countByProductIdAndState(
+                        productUid,
+                        StockItemStateEnum.SOLD
+                )
+        );
+    }
+
+    @Override
     public ServiceResponse<Long> countAllTimeStockedProducts(UUID productUid) {
         return ServiceResponse.success(
                 stockItemRepository.countByProductId(
