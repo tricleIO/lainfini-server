@@ -9,7 +9,10 @@ import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value = "/shipping")
@@ -34,19 +37,25 @@ public class ShippingController extends AbstractDatabaseController<Delivery, Lon
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public ResponseEntity<?> readShipping(@PathVariable Long id) {
-        return read(id);
-    }
-
-    @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<?> createShipping(@RequestBody ShippingDTO shippingDTO) {
         ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
                 UserRoleEnum.ROLE_ADMIN
         );
         if (!hasRolesResponse.isSuccessful()) {
             return new ErrorResponseEntity(hasRolesResponse.getStatus());
         }
-        return create(shippingDTO);
+        return read(id);
     }
+
+//    @RequestMapping(method = RequestMethod.POST)
+//    public ResponseEntity<?> createShipping(@RequestBody ShippingDTO shippingDTO) {
+//        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+//                UserRoleEnum.ROLE_ADMIN
+//        );
+//        if (!hasRolesResponse.isSuccessful()) {
+//            return new ErrorResponseEntity(hasRolesResponse.getStatus());
+//        }
+//        return create(shippingDTO);
+//    }
 
     @Override
     public DeliveryService getBaseService() {
