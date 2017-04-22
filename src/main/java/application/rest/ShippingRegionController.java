@@ -25,12 +25,12 @@ public class ShippingRegionController extends AbstractDatabaseController<Shippin
     private UserService userService;
 
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<?> readMaterials(Pageable pageable) {
+    public ResponseEntity<?> readRegions(Pageable pageable) {
         return readAll(pageable);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<?> readMaterial(@PathVariable Integer id) {
+    public ResponseEntity<?> readRegion(@PathVariable Integer id) {
         return read(id);
     }
 
