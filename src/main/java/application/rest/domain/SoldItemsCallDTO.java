@@ -10,16 +10,14 @@ import lombok.Data;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class SoldItemsCallDTO extends CallDTO {
 
-    private Integer sold;
-    private Integer made;
+    private Long made;
+    private Long sold;
 
     @Override
     public CallToAction toEntity(boolean selectAsParent, Object... parentParams) {
         SoldItemsCall soldItemsCall = new SoldItemsCall();
         soldItemsCall.setId(getUid());
         soldItemsCall.setType(CallEnum.GOOD_TASTE);
-//        soldItemsCall.setMade(made);
-//        soldItemsCall.setSold(sold);
         return soldItemsCall;
     }
 

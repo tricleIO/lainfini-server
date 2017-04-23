@@ -20,12 +20,14 @@ import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.shippingRegion.ShippingRegionService;
 import application.service.shippingTariff.ShippingTariffService;
+import application.service.stockItem.StockItemService;
 import application.service.user.UserService;
 import application.util.HtmlGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.thymeleaf.context.Context;
 
 import java.util.*;
@@ -78,12 +80,34 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     @Autowired
     private HtmlGenerator htmlGenerator;
 
+    @Autowired
+    private StockItemService stockItemService;
+
     @Override
-    public ServiceResponse<OrderDTO> create(OrderDTO dto) {
+    @Transactional
+    public synchronized ServiceResponse<OrderDTO> create(OrderDTO dto) {
+        // cart is given?
+        if (dto.getCartUid() == null) {
+            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_GIVEN);
+        }
+        // cart exists?
+        if (!cartRepository.exists(dto.getCartUid())) {
+            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_FOUND);
+        }
+        List<CartItem> cartItems = cartItemRepository.findByCartId(dto.getCartUid());
+        // enough in stock?
+        ServiceResponse<Boolean> countItemsInStockResponse = enoughAllOfCartItemsInStock(cartItems);
+        if (!countItemsInStockResponse.isSuccessful()) {
+            return ServiceResponse.error(countItemsInStockResponse.getStatus());
+        }
+        // create order
         ServiceResponse<OrderDTO> createResponse = super.create(dto);
         if (createResponse.isSuccessful()) {
+            // send emails
             ServiceResponse<OrderDTO> readOrderResponse = read(createResponse.getBody().getUid());
             if (readOrderResponse.isSuccessful()) {
+                // reserve all items
+                reserveItems(readOrderResponse.getBody());
                 // set variables
                 final Context context = new Context(Locale.ENGLISH);
                 context.setVariable("customer", dto.getCustomer());
@@ -120,6 +144,32 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
             return readOrderResponse;
         }
         return createResponse;
+    }
+
+    private ServiceResponse<Boolean> enoughAllOfCartItemsInStock(List<CartItem> cartItems) {
+        for (CartItem item : cartItems) {
+            ServiceResponse<Long> countItemsInStockResponse = stockItemService.countProductsInStock(item.getProduct().getId());
+            if (!countItemsInStockResponse.isSuccessful()) {
+                return ServiceResponse.error(countItemsInStockResponse.getStatus());
+            }
+            if (countItemsInStockResponse.getBody() < item.getQuantity()) {
+                return ServiceResponse.error(ServiceResponseStatus.NOT_ENOUGH_ITEMS_IN_STOCK);
+            }
+        }
+        return ServiceResponse.success(true);
+    }
+
+    private void reserveItems(OrderDTO orderDTO) {
+        for (OrderItemDTO item : orderDTO.getItems()) {
+            ServiceResponse<Page<StockItemDTO>> reserveItemsResponse = stockItemService.reserveProduct(
+                    item.getProductUid(),
+                    item.getQuantity(),
+                    orderDTO.getUid()
+            );
+            if (!reserveItemsResponse.isSuccessful()) {
+                throw new RuntimeException("Incomplete order!");
+            }
+        }
     }
 
     @Override

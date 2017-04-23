@@ -13,6 +13,7 @@ public enum ServiceResponseStatus {
     FORBIDDEN("Access forbidden", HttpStatus.FORBIDDEN),
     UNAUTHORIZED("Unauthorized.", HttpStatus.UNAUTHORIZED),
     OBJECT_BY_SLUG_NOT_FOUND("Object with given slug was not found.", HttpStatus.NOT_FOUND),
+    TRANSACTION_NOT_COMPLETE("Transaction was not completed whole, check data for inconsistencies.", HttpStatus.EXPECTATION_FAILED),
 
     PAYMENT_METHOD_FORBIDDEN("Forbidden payment method.", HttpStatus.FORBIDDEN),
 
@@ -73,7 +74,12 @@ public enum ServiceResponseStatus {
     DESIGN_NOT_FOUND("Product design with given uid was not found.", HttpStatus.NOT_FOUND),
 
     PAYMENT_UNSUCCESSFUL("Unsuccessful payment", HttpStatus.EXPECTATION_FAILED),
-    ORDER_ALREADY_PAID("Order has been already paid.", HttpStatus.CONFLICT);
+    ORDER_ALREADY_PAID("Order has been already paid.", HttpStatus.CONFLICT),
+    SERIAL_NUMBER_REQUIRED_FOR_PRODUCT("Serial number is required for this Product.", HttpStatus.BAD_REQUEST),
+    AMOUNT_IS_NOT_EQUAL_TO_SERIAL_NUMBER_LIST_SIZE("Amount is not equal to size of given serial numbers list.", HttpStatus.BAD_REQUEST),
+    PRODUCT_NOT_GIVEN("Product id was not given.", HttpStatus.BAD_REQUEST),
+    NOT_ENOUGH_ITEMS_IN_STOCK("Not enough items in stock.", HttpStatus.NOT_FOUND),
+    SELLING_NOT_RESERVED_STOCK_ITEMS("Selling not reserved stock items.", HttpStatus.BAD_REQUEST);
 
     private final HttpStatus httpStatus;
     private final String message;
