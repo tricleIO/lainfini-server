@@ -17,6 +17,7 @@ import application.service.productDesign.ProductDesignService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.size.SizeService;
+import application.service.stockItem.StockItemService;
 import application.service.technology.TechnologyService;
 import application.service.unit.UnitService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +37,9 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
 
     @Autowired
     private ApplicationFileRepository applicationFileRepository;
+
+    @Autowired
+    private StockItemService stockItemService;
 
     @Override
     protected ServiceResponse<ProductDTO> doBeforeConvertInCreate(ProductDTO dto) {
@@ -59,6 +63,15 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
                         productDTO.setIsFavourite(true);
                     }
                 }
+            }
+            // count available item
+            ServiceResponse<Long> countAvailableProductItems = stockItemService.countProductsInStock(
+                    productDTO.getUid()
+            );
+            if (countAvailableProductItems.isSuccessful()) {
+                productDTO.setAvailableItemsCount(
+                        countAvailableProductItems.getBody()
+                );
             }
         }
         return response;

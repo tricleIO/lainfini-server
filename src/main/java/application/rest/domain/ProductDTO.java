@@ -45,6 +45,8 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private Integer designUid;
     private Boolean serialNumberIsRequired;
 
+    private Long availableItemsCount;
+
     private String abraLink;
 
     @JsonProperty("mainImage")
