@@ -11,13 +11,14 @@ import java.util.UUID;
 
 public interface StockItemRepository extends PagingAndSortingRepository<StockItem, Long> {
 
-    StockItem findFirstByProductIdAndState(UUID productId, StockItemStateEnum state);
-    Page<StockItem> findByProductIdAndSerialNumberInAndState(UUID productId, List<String> serialNumber, StockItemStateEnum state, Pageable pageable);
-    Long countByProductIdAndSerialNumberInAndState(UUID productId, List<String> serialNumber, StockItemStateEnum state);
+//    StockItem findFirstByProductIdAndState(UUID productId, StockItemStateEnum state);
+//    Page<StockItem> findByProductIdAndSerialNumberInAndState(UUID productId, List<String> serialNumber, StockItemStateEnum state, Pageable pageable);
+//    Long countByProductIdAndSerialNumberInAndState(UUID productId, List<String> serialNumber, StockItemStateEnum state);
     Page<StockItem> findByState(StockItemStateEnum state, Pageable pageable);
     Page<StockItem> findByProductId(UUID productId, Pageable pageable);
     Page<StockItem> findByProductIdAndState(UUID productId, StockItemStateEnum state, Pageable pageable);
     Long countByProductId(UUID productId);
     Long countByProductIdAndState(UUID productId, StockItemStateEnum state);
+    List<StockItem> findByOrderId(UUID orderId);
 
 }
