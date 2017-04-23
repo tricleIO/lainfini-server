@@ -4,9 +4,7 @@ import application.persistence.entity.*;
 import application.persistence.repository.*;
 import application.persistence.type.StatusEnum;
 import application.persistence.type.UserStatusEnum;
-import application.rest.domain.FlashDTO;
-import application.rest.domain.ProductDTO;
-import application.rest.domain.ProductHasFlashDTO;
+import application.rest.domain.*;
 import application.service.AdditionalDataManipulator;
 import application.service.AdditionalDataManipulatorBatch;
 import application.service.BaseSoftDeletableDatabaseServiceImpl;
@@ -17,6 +15,7 @@ import application.service.productDesign.ProductDesignService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.size.SizeService;
+import application.service.stockItem.StockItemService;
 import application.service.technology.TechnologyService;
 import application.service.unit.UnitService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +36,17 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     @Autowired
     private ApplicationFileRepository applicationFileRepository;
 
+    @Autowired
+    private StockItemService stockItemService;
+
+    @Override
+    protected ServiceResponse<ProductDTO> doBeforeConvertInCreate(ProductDTO dto) {
+        if (dto.getSerialNumberIsRequired() == null) {
+            dto.setSerialNumberIsRequired(false);
+        }
+        return super.doBeforeConvertInCreate(dto);
+    }
+
     @Override
     public ServiceResponse<ProductDTO> read(UUID key, Principal principal) {
         ServiceResponse<ProductDTO> response = super.read(key);
@@ -52,6 +62,16 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
                     }
                 }
             }
+            // count available item
+            ServiceResponse<Long> countAvailableProductItems = stockItemService.countProductsInStock(
+                    productDTO.getUid()
+            );
+            if (countAvailableProductItems.isSuccessful()) {
+                productDTO.setAvailableItemsCount(
+                        countAvailableProductItems.getBody()
+                );
+            }
+            addRandomCallToAction(productDTO);
         }
         return response;
     }
@@ -210,12 +230,18 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         return categoryIds;
     }
 
-    private void addRandomCallToAction(ProductDTO product) {
-        if (productHasCallToActionRepository.countByProductId(product.getUid()) > 0) {
-            List<ProductHasCallToAction> productHasCallToAction = productHasCallToActionRepository.findByProductId(product.getUid());
+    private void addRandomCallToAction(ProductDTO productDTO) {
+        if (productHasCallToActionRepository.countByProductId(productDTO.getUid()) > 0) {
+            List<ProductHasCallToAction> productHasCallToAction = productHasCallToActionRepository.findByProductId(productDTO.getUid());
             int index = random.nextInt(productHasCallToAction.size());
             ProductHasCallToAction randomProductHasCallToAction = productHasCallToAction.get(index);
-            product.setCall(randomProductHasCallToAction.getCallToAction().toDTO(false));
+            CallDTO call = randomProductHasCallToAction.getCallToAction().toDTO(false);
+            if (call instanceof SoldItemsCallDTO) {
+                SoldItemsCallDTO soldItemsCallDTO = (SoldItemsCallDTO) call;
+                soldItemsCallDTO.setMade(stockItemService.countAllTimeStockedProducts(productDTO.getUid()).getBody());
+                soldItemsCallDTO.setSold(stockItemService.countAllTimeSoldItems(productDTO.getUid()).getBody());
+            }
+            productDTO.setCall(call);
         }
     }
 

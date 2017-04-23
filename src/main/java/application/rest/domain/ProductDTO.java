@@ -43,6 +43,9 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private ProductStatusEnum productStatus;
     private Integer technologyUid;
     private Integer designUid;
+    private Boolean serialNumberIsRequired;
+
+    private Long availableItemsCount;
 
     private String abraLink;
 
@@ -68,6 +71,7 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
         product.setCode(code);
         product.setAbraLink(abraLink);
         product.setProductStatus(productStatus);
+        product.setSerialNumberIsRequired(serialNumberIsRequired);
         if (mainImageDTO != null) {
             product.setMainImage(mainImageDTO.toEntity(false));
         }
