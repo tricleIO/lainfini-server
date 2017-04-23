@@ -4,9 +4,7 @@ import application.persistence.entity.*;
 import application.persistence.repository.*;
 import application.persistence.type.StatusEnum;
 import application.persistence.type.UserStatusEnum;
-import application.rest.domain.FlashDTO;
-import application.rest.domain.ProductDTO;
-import application.rest.domain.ProductHasFlashDTO;
+import application.rest.domain.*;
 import application.service.AdditionalDataManipulator;
 import application.service.AdditionalDataManipulatorBatch;
 import application.service.BaseSoftDeletableDatabaseServiceImpl;
@@ -73,6 +71,7 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
                         countAvailableProductItems.getBody()
                 );
             }
+            addRandomCallToAction(productDTO);
         }
         return response;
     }
@@ -231,12 +230,18 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         return categoryIds;
     }
 
-    private void addRandomCallToAction(ProductDTO product) {
-        if (productHasCallToActionRepository.countByProductId(product.getUid()) > 0) {
-            List<ProductHasCallToAction> productHasCallToAction = productHasCallToActionRepository.findByProductId(product.getUid());
+    private void addRandomCallToAction(ProductDTO productDTO) {
+        if (productHasCallToActionRepository.countByProductId(productDTO.getUid()) > 0) {
+            List<ProductHasCallToAction> productHasCallToAction = productHasCallToActionRepository.findByProductId(productDTO.getUid());
             int index = random.nextInt(productHasCallToAction.size());
             ProductHasCallToAction randomProductHasCallToAction = productHasCallToAction.get(index);
-            product.setCall(randomProductHasCallToAction.getCallToAction().toDTO(false));
+            CallDTO call = randomProductHasCallToAction.getCallToAction().toDTO(false);
+            if (call instanceof SoldItemsCallDTO) {
+                SoldItemsCallDTO soldItemsCallDTO = (SoldItemsCallDTO) call;
+                soldItemsCallDTO.setMade(stockItemService.countAllTimeStockedProducts(productDTO.getUid()).getBody());
+                soldItemsCallDTO.setSold(stockItemService.countAllTimeSoldItems(productDTO.getUid()).getBody());
+            }
+            productDTO.setCall(call);
         }
     }
 
