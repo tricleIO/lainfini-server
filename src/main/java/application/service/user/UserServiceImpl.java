@@ -3,9 +3,7 @@ package application.service.user;
 import application.persistence.entity.Role;
 import application.persistence.entity.User;
 import application.persistence.repository.UserRepository;
-import application.persistence.type.LocaleEnum;
-import application.persistence.type.UserRoleEnum;
-import application.persistence.type.UserStatusEnum;
+import application.persistence.type.*;
 import application.rest.domain.MailDTO;
 import application.rest.domain.UserDTO;
 import application.service.BaseDatabaseServiceImpl;
@@ -66,6 +64,11 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
         if (user.getLocale() == null) {
             user.setLocale(LocaleEnum.NONE);
         }
+        // default sex
+        if (user.getSex() == null) {
+            user.setSex(SexEnum.UNKNOWN);
+        }
+        user.setStatus(StatusEnum.ACTIVE);
         return super.create(user);
     }
 
