@@ -25,9 +25,6 @@ public class WishDTO implements ReadWriteDatabaseDTO<Wish>, IdentifableDTO<Long>
     public Wish toEntity(boolean selectAsParent, Object... parentParams) {
         Wish wish = new Wish();
         wish.setId(uid);
-        if (status == null) {
-            status = StatusEnum.ACTIVE;
-        }
         wish.setStatus(status);
         if (selectAsParent) {
             if (product != null) {
@@ -37,7 +34,7 @@ public class WishDTO implements ReadWriteDatabaseDTO<Wish>, IdentifableDTO<Long>
                 wish.setCustomer(customer.toEntity(false));
             }
         }
-        wish.setAddedAt(new Date());
+        wish.setAddedAt(addedAt);
         return wish;
     }
 

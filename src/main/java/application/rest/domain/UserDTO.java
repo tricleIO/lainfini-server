@@ -64,15 +64,9 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
         user.setPhoneCode(phoneCode);
         user.setPhoneNumber(phoneNumber);
         user.setLocale(locale);
-        user.setStatus(StatusEnum.ACTIVE);
+        user.setStatus(status);
         if (currency != null) {
             user.setCurrency(currency.toEntity(false));
-        }
-        if (sex == null) {
-            sex = SexEnum.UNKNOWN;
-        }
-        if (locale == null) {
-            locale = LocaleEnum.NONE;
         }
         user.setSex(sex);
         user.setAbraLink(abraLink);

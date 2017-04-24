@@ -216,6 +216,12 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
 
     @Override
     protected ServiceResponse<OrderDTO> doBeforeConvertInCreate(OrderDTO dto) {
+        // defaults
+        dto.setCreatedAt(new Date());
+        if (dto.getStatus() == null) {
+            dto.setStatus(OrderStatusEnum.WAITING_FOR_PAYMENT);
+        }
+        // restrictions
         if (dto.getPaymentMethod().getState() == PaymentMethodEnum.State.DENIED) {
             return ServiceResponse.error(ServiceResponseStatus.PAYMENT_METHOD_FORBIDDEN);
         }

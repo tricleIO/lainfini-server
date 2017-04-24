@@ -13,6 +13,7 @@ import application.service.response.ServiceResponseStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.UUID;
 
 @Service
@@ -33,6 +34,12 @@ public class CartItemServiceImpl extends BaseDatabaseServiceImpl<CartItem, Long,
             return ServiceResponse.error(ServiceResponseStatus.ALREADY_EXISTS);
         }
         return super.create(dto);
+    }
+
+    @Override
+    protected ServiceResponse<CartItemDTO> doBeforeConvertInCreate(CartItemDTO dto) {
+        dto.setAddedAt(new Date());
+        return super.doBeforeConvertInCreate(dto);
     }
 
     @Override

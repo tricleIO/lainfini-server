@@ -21,10 +21,7 @@ import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 
 @Service
 public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRepository, CartDTO> implements CartService {
@@ -102,6 +99,15 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
             }
         }
         return cartResponse;
+    }
+
+    @Override
+    protected ServiceResponse<CartDTO> doBeforeConvertInCreate(CartDTO dto) {
+        dto.setCreatedAt(new Date());
+        if (dto.getStatus() == null) {
+            dto.setStatus(CartStatusEnum.OPENED);
+        }
+        return super.doBeforeConvertInCreate(dto);
     }
 
     @Override
