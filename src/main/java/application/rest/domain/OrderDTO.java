@@ -29,7 +29,7 @@ public class OrderDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cu
     private Integer shippingTariffUid;
     private Integer paymentMethodUid;
     private Date createdAt;
-    private Date completedAt;
+    private Date completedAt; // @TODO - set completed at some place!
     private OrderStatusEnum status;
     private Set<OrderItemDTO> items;
     private Long billingAddressUid;
@@ -50,11 +50,8 @@ public class OrderDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cu
     public CustomerOrder toEntity(boolean selectAsParent, Object... parentParams) {
         CustomerOrder order = new CustomerOrder();
         order.setId(uid);
-        order.setCreatedAt(new Date());
+        order.setCreatedAt(createdAt);
         order.setCompletedAt(completedAt);
-        if (status == null) {
-            status = OrderStatusEnum.WAITING_FOR_PAYMENT;
-        }
         order.setStatus(status);
         if (selectAsParent) {
             if (cart != null) {
