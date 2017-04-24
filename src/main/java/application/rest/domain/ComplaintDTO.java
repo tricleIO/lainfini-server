@@ -34,7 +34,7 @@ public class ComplaintDTO implements ReadWriteDatabaseDTO<Complaint>, Identifabl
         complaint.setId(uid);
         complaint.setType(type);
         complaint.setMessage(message);
-        complaint.setCreatedAt(new Date());
+        complaint.setCreatedAt(createdAt);
         if (selectAsParent) {
             if (reason != null) {
                 complaint.setReason(reason.toEntity(false));

@@ -49,7 +49,7 @@ public class CartItemDTO extends ResourceSupport implements ReadWriteDatabaseDTO
             }
         }
         cartItem.setQuantity(quantity);
-        cartItem.setAddedAt(new Date());
+        cartItem.setAddedAt(addedAt);
         return cartItem;
     }
 

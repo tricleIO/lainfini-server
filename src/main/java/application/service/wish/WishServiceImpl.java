@@ -18,6 +18,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.UUID;
 
 @Service
@@ -68,6 +69,8 @@ public class WishServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Wish, 
             if (wish.getStatus() != StatusEnum.ACTIVE) {
                 // patch and act like its first time create
                 dto.setUid(wish.getId());
+                dto.setStatus(StatusEnum.ACTIVE);
+                dto.setAddedAt(new Date());
                 return patch(dto);
             }
             // already exists and active
@@ -103,6 +106,15 @@ public class WishServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Wish, 
         }
         dto.setCustomerUid(currentUserResponse.getBody().getUid());
         return this.create(dto);
+    }
+
+    @Override
+    protected ServiceResponse<WishDTO> doBeforeConvertInCreate(WishDTO dto) {
+        if (dto.getStatus() == null) {
+            dto.setStatus(StatusEnum.ACTIVE);
+        }
+        dto.setAddedAt(new Date());
+        return super.doBeforeConvertInCreate(dto);
     }
 
     @Override
