@@ -30,6 +30,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.thymeleaf.context.Context;
 
+import java.math.BigDecimal;
 import java.util.*;
 
 @Service
@@ -384,20 +385,20 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
 
     private PaymentStateEnum getOrderState(OrderDTO orderDTO) {
         // total order price
-        double totalPriceWithShipping = orderDTO.getTotalPriceWithShipping();
+        BigDecimal totalPriceWithShipping = orderDTO.getTotalPriceWithShipping();
         // total paid amount from order payments
         List<Payment> orderPayments = paymentRepository.findByOrderId(orderDTO.getUid());
-        double totalPaidAmount = 0;
+        BigDecimal totalPaidAmount = BigDecimal.ZERO;
         for (Payment payment : orderPayments) {
-            totalPaidAmount += payment.getAmount();
+            totalPaidAmount = totalPaidAmount.add(payment.getAmount());
         }
 
         // get state
-        if (totalPaidAmount == totalPriceWithShipping) {
+        if (totalPaidAmount.compareTo(totalPriceWithShipping) == 0) {
             return PaymentStateEnum.PAID;
-        } else if (totalPaidAmount > totalPriceWithShipping) {
+        } else if (totalPaidAmount.compareTo(totalPriceWithShipping) == 1) {
             return PaymentStateEnum.OVERPAID;
-        } else if (totalPaidAmount == 0) {
+        } else if (totalPaidAmount.compareTo(BigDecimal.ZERO) == 0) {
             return PaymentStateEnum.NOT_PAID;
         } else {
             return PaymentStateEnum.PARTLY_PAID;

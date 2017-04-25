@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
 
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.UUID;
 
@@ -21,7 +22,7 @@ public class OrderItemDTO extends ResourceSupport implements ReadWriteDatabaseDT
     private Integer quantity;
     private Date addedAt;
     private UUID orderUid;
-    private Double price;
+    private BigDecimal price;
 
     private ProductDTO product;
     private OrderDTO order;

@@ -24,6 +24,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.thymeleaf.context.Context;
 
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
@@ -74,8 +75,9 @@ public class StripeController {
 
         OrderDTO orderDTO = orderResponse.getBody();
 
-        final double wholePriceWithShipping = orderDTO.getTotalPriceWithShipping();
-        final int amountForStripe = (int) Math.ceil(wholePriceWithShipping * 100);
+        final BigDecimal wholePriceWithShipping = orderDTO.getTotalPriceWithShipping();
+        final BigDecimal ratioOfConvert = new BigDecimal(100);
+        final int amountForStripe = wholePriceWithShipping.multiply(ratioOfConvert).intValue();
         paymentInformation.setAmount(amountForStripe);
         paymentInformation.setCurrency("usd");
 
@@ -117,7 +119,7 @@ public class StripeController {
                 PaymentDTO paymentDTO = new PaymentDTO();
                 paymentDTO.setCurrencyUid(2);
                 paymentDTO.setOrderUid(orderDTO.getUid());
-                paymentDTO.setAmount(charge.getAmount() / (double) 100);
+                paymentDTO.setAmount(new BigDecimal(charge.getAmount()).divide(ratioOfConvert));
                 paymentDTO.setPaymentMethod(PaymentMethodEnum.STRIPE);
                 paymentDTO.setReferenceCode(charge.getId());
                 ServiceResponse<PaymentDTO> createPaymentResponse = paymentService.create(paymentDTO);

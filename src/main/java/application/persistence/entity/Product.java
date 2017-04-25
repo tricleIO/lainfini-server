@@ -10,6 +10,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
@@ -41,8 +42,8 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     @Column(name = "description", columnDefinition = "TEXT")
     private String description;
 
-    @Column(name = "price")
-    private Double price;
+    @Column(name = "price", precision = 11, scale = 2)
+    private BigDecimal price;
 
     @OneToOne
     private Category category;

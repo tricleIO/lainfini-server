@@ -11,6 +11,8 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Date;
 import java.util.Set;
 import java.util.UUID;
@@ -79,17 +81,18 @@ public class OrderDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cu
         return order;
     }
 
-    public double getTotalPriceWithShipping() {
-        return getTotalPrice() + this.getShipping().getPrice();
+    public BigDecimal getTotalPriceWithShipping() {
+        return getTotalPrice().add(this.getShipping().getPrice()).setScale(2, RoundingMode.HALF_UP);
     }
 
-    public double getTotalPrice() {
+    public BigDecimal getTotalPrice() {
         // total order price
-        double orderTotalPrice = 0;
+        BigDecimal orderTotalPrice = BigDecimal.ZERO;
         for (OrderItemDTO item : this.getItems()) {
-            orderTotalPrice += item.getPrice() * item.getQuantity();
+            BigDecimal itemsCost = item.getPrice().multiply(new BigDecimal(item.getQuantity()));
+            orderTotalPrice = orderTotalPrice.add(itemsCost);
         }
-        return orderTotalPrice;
+        return orderTotalPrice.setScale(2, RoundingMode.HALF_UP);
     }
 
     @Override
