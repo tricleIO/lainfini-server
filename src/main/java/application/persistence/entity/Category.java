@@ -3,10 +3,12 @@ package application.persistence.entity;
 import application.persistence.DTOConvertable;
 import application.rest.domain.CategoryDTO;
 import lombok.Data;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
+@Audited
 @Data
 @Entity
 @Table(name = "category")

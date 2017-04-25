@@ -8,6 +8,7 @@ import org.hibernate.envers.Audited;
 import javax.persistence.*;
 import java.io.Serializable;
 
+@Audited
 @Entity
 @Data
 public class Technology implements DTOConvertable<TechnologyDTO>, Serializable {
@@ -17,7 +18,6 @@ public class Technology implements DTOConvertable<TechnologyDTO>, Serializable {
     @Column(updatable = false)
     private Integer id;
 
-    @Audited
     private String name;
 
     @Override

@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.envers.Audited;
+import org.hibernate.envers.NotAudited;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -16,6 +17,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
+@Audited
 @Entity
 @Table(name = "product")
 @Data
@@ -28,27 +30,21 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     @Column(name = "id", unique = true, nullable = false, updatable = false, columnDefinition = "BINARY(16)")
     private UUID id;
 
-    @Audited
     @Column(name = "name", nullable = false, length = 255)
     private String name;
 
-    @Audited
     @Column(name = "ean", length = 13)
     private String ean;
 
-    @Audited
     @Column(name = "code", length = 25)
     private String code;
 
-    @Audited
     @Column(name = "short_description", length = 255)
     private String shortDescription;
 
-    @Audited
     @Column(name = "description", columnDefinition = "TEXT")
     private String description;
 
-    @Audited
     @Column(name = "price", precision = 11, scale = 2)
     private BigDecimal price;
 
@@ -67,28 +63,27 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     @JoinColumn(name = "unit_id", referencedColumnName = "id")
     private Unit unit;
 
+    @NotAudited
     @OneToOne
     @JoinColumn(name = "main_image_id", referencedColumnName = "id")
     private ApplicationFile mainImage;
 
+    @NotAudited
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "pf.product", cascade=CascadeType.ALL)
     private Set<ProductFile> images = new HashSet<>();
 
     @Transient
     private Set<ApplicationFile> applicationFiles;
 
-    @Audited
     @Column(name = "slug", unique = true)
     private String slug;
 
-    @Audited
     @Enumerated(EnumType.ORDINAL)
     private ProductStatusEnum productStatus;
 
     @Column(name = "abra_link")
     private String abraLink;
 
-    @Audited
     @ManyToOne
     @JoinColumn(name = "technology_id", referencedColumnName = "id")
     private Technology technology;
@@ -97,7 +92,6 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     @JoinColumn(name = "design_id", referencedColumnName = "id")
     private ProductDesign design;
 
-    @Audited
     @Column(nullable = false, columnDefinition = "TINYINT", length = 1)
     private Boolean serialNumberIsRequired;
 
