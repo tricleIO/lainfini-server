@@ -10,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Set;
 import java.util.UUID;
@@ -26,7 +27,7 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private String ean;
     private String shortDescription;
     private String description;
-    private Double price;
+    private BigDecimal price;
     private Integer categoryUid;
     private CallDTO call;
     private List<FlashDTO> flashes;

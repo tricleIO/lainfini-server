@@ -19,7 +19,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.thymeleaf.context.Context;
 
-import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.Locale;
 
@@ -101,7 +100,7 @@ public class BraintreeController {
 
         // do transaction
         TransactionRequest request = new TransactionRequest()
-                .amount(new BigDecimal(orderDTO.getTotalPriceWithShipping()))
+                .amount(orderDTO.getTotalPriceWithShipping())
                 .paymentMethodNonce(braintreePaymentDTO.getPaymentMethodNonce())
                 .options()
                 .submitForSettlement(true)
@@ -116,7 +115,7 @@ public class BraintreeController {
                 PaymentDTO paymentDTO = new PaymentDTO();
                 paymentDTO.setCurrencyUid(2);
                 paymentDTO.setOrderUid(orderDTO.getUid());
-                paymentDTO.setAmount(result.getTarget().getAmount().doubleValue());
+                paymentDTO.setAmount(result.getTarget().getAmount());
                 paymentDTO.setPaymentMethod(paymentMethodValue);
                 paymentDTO.setReferenceCode(result.getTarget().getId());
 

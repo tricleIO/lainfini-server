@@ -3,6 +3,8 @@ package application.rest.domain;
 import application.persistence.entity.ShippingTariff;
 import lombok.Data;
 
+import java.math.BigDecimal;
+
 @Data
 public class ShippingTariffDTO implements ReadWriteDatabaseDTO<ShippingTariff>, IdentifableDTO<Integer> {
 
@@ -12,7 +14,7 @@ public class ShippingTariffDTO implements ReadWriteDatabaseDTO<ShippingTariff>, 
     private String slug;
     private Long iconUid;
     private Integer carrierUid;
-    private Double price;
+    private BigDecimal price;
     private Integer currencyUid;
 
     private CurrencyDTO currency;
