@@ -7,6 +7,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
@@ -24,7 +25,8 @@ public class Payment implements DTOConvertable<PaymentDTO>, Serializable {
 
     private Date madeAt;
 
-    private Double amount;
+    @Column(precision = 11, scale = 2)
+    private BigDecimal amount;
 
     @ManyToOne
     @JoinColumn(name = "currency_id", referencedColumnName = "id")

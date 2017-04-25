@@ -7,6 +7,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 @Entity
 @Data
@@ -27,7 +28,8 @@ public class ShippingTariff implements DTOConvertable<ShippingTariffDTO>, Serial
     @JoinColumn(name = "carrier_id", referencedColumnName = "id")
     private Carrier carrier;
 
-    private Double price;
+    @Column(precision = 11, scale = 2)
+    private BigDecimal price;
 
     @ManyToOne
     @JoinColumn(name = "currency_id", referencedColumnName = "id")

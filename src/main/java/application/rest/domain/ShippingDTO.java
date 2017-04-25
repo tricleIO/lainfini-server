@@ -3,6 +3,7 @@ package application.rest.domain;
 import application.persistence.entity.Delivery;
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Data
@@ -11,7 +12,7 @@ public class ShippingDTO implements ReadWriteDatabaseDTO<Delivery>, IdentifableD
     private Long uid;
     private String trackingNumber;
     private Integer shippingTariffUid;
-    private Double price;
+    private BigDecimal price;
     private Integer currencyUid;
     private Date shippedAt;
 

@@ -4,6 +4,7 @@ import application.persistence.entity.Payment;
 import application.persistence.type.PaymentMethodEnum;
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.UUID;
 
@@ -14,7 +15,7 @@ public class PaymentDTO implements ReadWriteDatabaseDTO<Payment>, IdentifableDTO
     private String referenceCode;
     private PaymentMethodEnum paymentMethod;
     private Date madeAt;
-    private Double amount;
+    private BigDecimal amount;
     private Integer currencyUid;
     private UUID orderUid;
     private String abraLink;
