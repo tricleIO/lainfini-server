@@ -12,10 +12,9 @@ import java.util.UUID;
 @Entity
 @Data
 @RevisionEntity(UserRevisionListener.class)
-public class UserRevEntity extends DefaultRevisionEntity {
+public class UserRevisionInfo extends DefaultRevisionEntity {
 
     @Column(columnDefinition = "BINARY(16)")
     private UUID userId;
-    private String username;
 
 }
