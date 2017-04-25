@@ -3,12 +3,15 @@ package application.persistence.entity;
 import application.persistence.DTOConvertable;
 import application.rest.domain.ShippingRegionDTO;
 import lombok.Data;
+import org.hibernate.envers.Audited;
+import org.hibernate.envers.NotAudited;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
+@Audited
 @Entity
 @Data
 public class ShippingRegion implements DTOConvertable<ShippingRegionDTO>, Serializable {
@@ -30,6 +33,7 @@ public class ShippingRegion implements DTOConvertable<ShippingRegionDTO>, Serial
         return shippingRegionDTO;
     }
 
+    @NotAudited
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "region_country", joinColumns = {@JoinColumn(name = "region_id")}, inverseJoinColumns = {@JoinColumn(name = "country_id")})
     private Set<Country> countries = new HashSet<>();

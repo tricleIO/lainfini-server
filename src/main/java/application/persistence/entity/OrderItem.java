@@ -5,6 +5,7 @@ import application.rest.domain.OrderItemDTO;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -12,6 +13,7 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
+@Audited
 @Entity
 @Getter
 @Setter
@@ -20,23 +22,25 @@ public class OrderItem implements DTOConvertable<OrderItemDTO>, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(updatable = false)
     private Long id;
 
     @ManyToOne
     @JoinColumn(name = "product_id", referencedColumnName = "id")
     private Product product;
 
+    @Column(updatable = false)
     private Integer quantity;
 
-    @Column(precision = 11, scale = 2)
+    @Column(precision = 11, scale = 2, updatable = false)
     private BigDecimal price;
 
     @NotNull
-    @Column(name = "added_at", nullable = false)
+    @Column(name = "added_at", nullable = false, updatable = false)
     private Date addedAt;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "order_id", nullable = false)
+    @JoinColumn(name = "order_id", nullable = false, updatable = false)
     private CustomerOrder order;
 
     @Override

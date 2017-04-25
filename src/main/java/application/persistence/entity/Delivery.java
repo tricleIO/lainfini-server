@@ -3,12 +3,14 @@ package application.persistence.entity;
 import application.persistence.DTOConvertable;
 import application.rest.domain.ShippingDTO;
 import lombok.Data;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
+@Audited
 @Entity
 @Data
 public class Delivery implements DTOConvertable<ShippingDTO>, Serializable {
