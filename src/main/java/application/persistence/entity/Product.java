@@ -7,6 +7,7 @@ import application.rest.domain.ProductDTO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -24,24 +25,30 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     @Id
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     @GeneratedValue(generator = "uuid")
-    @Column(name = "id", unique = true, nullable = false, columnDefinition = "BINARY(16)")
+    @Column(name = "id", unique = true, nullable = false, updatable = false, columnDefinition = "BINARY(16)")
     private UUID id;
 
+    @Audited
     @Column(name = "name", nullable = false, length = 255)
     private String name;
 
+    @Audited
     @Column(name = "ean", length = 13)
     private String ean;
 
+    @Audited
     @Column(name = "code", length = 25)
     private String code;
 
+    @Audited
     @Column(name = "short_description", length = 255)
     private String shortDescription;
 
+    @Audited
     @Column(name = "description", columnDefinition = "TEXT")
     private String description;
 
+    @Audited
     @Column(name = "price", precision = 11, scale = 2)
     private BigDecimal price;
 
@@ -70,15 +77,18 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     @Transient
     private Set<ApplicationFile> applicationFiles;
 
+    @Audited
     @Column(name = "slug", unique = true)
     private String slug;
 
+    @Audited
     @Enumerated(EnumType.ORDINAL)
     private ProductStatusEnum productStatus;
 
     @Column(name = "abra_link")
     private String abraLink;
 
+    @Audited
     @ManyToOne
     @JoinColumn(name = "technology_id", referencedColumnName = "id")
     private Technology technology;
@@ -87,6 +97,7 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     @JoinColumn(name = "design_id", referencedColumnName = "id")
     private ProductDesign design;
 
+    @Audited
     @Column(nullable = false, columnDefinition = "TINYINT", length = 1)
     private Boolean serialNumberIsRequired;
 
