@@ -38,6 +38,12 @@ public abstract class AbstractDatabaseController<E extends DTOConvertable<D>, I 
         );
     }
 
+    protected final ResponseEntity<?> patch(D dto) {
+        return getSimpleResponseEntity(
+                getBaseService().patch(dto)
+        );
+    }
+
     protected ResponseEntity<?> getPageResponseEntity(ServiceResponse<Page<D>> response) {
         if (response.isSuccessful()) {
             Page<D> page = response.getBody();

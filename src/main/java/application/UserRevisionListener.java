@@ -9,9 +9,11 @@ public class UserRevisionListener implements RevisionListener {
 
     @Override
     public void newRevision(Object revisionEntity) {
-        UserRevisionInfo userRevEntity = (UserRevisionInfo) revisionEntity;
         User currentUser = CustomUserDetails.getCurrentUser();
-        userRevEntity.setUserId(currentUser.getId());
+        if (currentUser != null) {
+            UserRevisionInfo userRevEntity = (UserRevisionInfo) revisionEntity;
+            userRevEntity.setUserId(currentUser.getId());
+        }
     }
 
 }

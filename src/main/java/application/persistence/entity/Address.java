@@ -4,10 +4,12 @@ import application.persistence.DTOConvertable;
 import application.rest.domain.AddressDTO;
 import lombok.Data;
 import lombok.ToString;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
+@Audited
 @Entity
 @Table(name = "address")
 @Data

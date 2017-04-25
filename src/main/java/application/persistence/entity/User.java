@@ -26,6 +26,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.envers.Audited;
+import org.hibernate.envers.NotAudited;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -34,6 +36,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
+@Audited
 @Entity
 @Table(name = "customer")
 @Data
@@ -81,9 +84,11 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(name = "abra_link")
     private String abraLink;
 
+    @NotAudited
     @Column(name = "stripe_customer_token")
     private String stripeToken;
 
+    @NotAudited
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private UserEmailVerificationToken emailVerificationToken;
 
@@ -99,9 +104,11 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(name = "locale", length = 10)
     private LocaleEnum locale;
 
+    @NotAudited
     @OneToMany(cascade=CascadeType.ALL, mappedBy = "customer")
     private Set<Wish> wishes;
 
+    @NotAudited
     @OneToMany(cascade=CascadeType.ALL, mappedBy = "customer")
     private Set<Address> addresses;
 
@@ -111,9 +118,11 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(nullable = false)
     private String email;
 
+    @NotAudited
     @Column(name = "password", length = 64)
     private String password;
 
+    @NotAudited
     @JsonIgnore
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "user_role", joinColumns = {@JoinColumn(name = "user_id")}, inverseJoinColumns = {@JoinColumn(name = "role_id")})
@@ -192,7 +201,9 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     }
 
     public void setSex(SexEnum sex) {
-        this.sex = sex.getValue();
+        if (sex != null) {
+            this.sex = sex.getValue();
+        }
     }
 
 }

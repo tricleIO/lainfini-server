@@ -59,6 +59,19 @@ public class CustomerController extends AbstractDatabaseController<User, UUID, U
         );
     }
 
+    @RequestMapping(value = "/{id}", method = RequestMethod.PATCH)
+    public ResponseEntity<?> patchCustomer(@PathVariable UUID id, @RequestBody UserDTO userDTO) {
+        ServiceResponse<Boolean> hasRolesResponse = customerService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        ServiceResponse<Boolean> isCurrentUserResponse = customerService.isCurrrentUser(id);
+        if (!hasRolesResponse.isSuccessful() && !isCurrentUserResponse.isSuccessful()) {
+            return new ErrorResponseEntity(ServiceResponseStatus.FORBIDDEN);
+        }
+        userDTO.setUid(id);
+        return patch(userDTO);
+    }
+
     @RequestMapping(value = "/password-reset", method = RequestMethod.POST)
     public ResponseEntity<?> resetPassword(@RequestBody UserDTO userDTO) {
         return getSimpleResponseEntity(
