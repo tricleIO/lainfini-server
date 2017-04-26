@@ -43,6 +43,8 @@ public class ShippingTariff implements DTOConvertable<ShippingTariffDTO>, Serial
     @JoinColumn(name = "icon_image_id", referencedColumnName = "id")
     private ApplicationFile icon;
 
+    private String deliveryTime;
+
     @Override
     public ShippingTariffDTO toDTO(boolean selectAsParent, Object... parentParams) {
         ShippingTariffDTO shippingTariffDTO = new ShippingTariffDTO();
@@ -51,6 +53,7 @@ public class ShippingTariff implements DTOConvertable<ShippingTariffDTO>, Serial
         shippingTariffDTO.setCode(code);
         shippingTariffDTO.setSlug(slug);
         shippingTariffDTO.setPrice(price);
+        shippingTariffDTO.setDeliveryTime(deliveryTime);
         if (carrier != null) {
             shippingTariffDTO.setCarrierUid(carrier.getId());
         }
