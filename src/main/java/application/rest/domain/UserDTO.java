@@ -1,6 +1,7 @@
 package application.rest.domain;
 
 import application.persistence.entity.User;
+import application.persistence.type.LocaleEnum;
 import application.persistence.type.SexEnum;
 import application.persistence.type.StatusEnum;
 import application.persistence.type.UserStatusEnum;
@@ -9,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
 
+import java.util.List;
 import java.util.UUID;
 
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
@@ -45,28 +47,38 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
 
     private UserStatusEnum registerStatus;
 
+    private LocaleEnum locale;
+
+    private List<LinkedAccountDTO> linkedAccounts;
+
+    private LinkedAccountDTO socialRequest;
+
     @Override
     public User toEntity(boolean selectAsParent, Object... parentParams) {
         User user = new User();
         user.setId(uid);
-        user.setLogin(username);
+        user.setEmail(username);
         user.setPassword(password);
         user.setFirstName(firstName);
         user.setLastName(lastName);
         user.setPhoneCode(phoneCode);
         user.setPhoneNumber(phoneNumber);
-        user.setStatusEnum(status);
+        user.setLocale(locale);
+        user.setStatus(status);
         if (currency != null) {
             user.setCurrency(currency.toEntity(false));
         }
-        if (sex != null) {
-            user.setSex(sex);
-        }
+        user.setSex(sex);
         user.setAbraLink(abraLink);
         user.setStripeToken(stripeToken);
         user.setDegreeAfterName(degreeAfterName);
         user.setDegreeBeforeName(degreeBeforeName);
+        user.setRegisterStatus(registerStatus);
         return user;
+    }
+
+    public String getEmail() {
+        return username;
     }
 
     @Override

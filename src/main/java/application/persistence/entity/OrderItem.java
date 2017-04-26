@@ -5,12 +5,15 @@ import application.rest.domain.OrderItemDTO;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.Date;
 
+@Audited
 @Entity
 @Getter
 @Setter
@@ -27,7 +30,8 @@ public class OrderItem implements DTOConvertable<OrderItemDTO>, Serializable {
 
     private Integer quantity;
 
-    private Double price;
+    @Column(precision = 11, scale = 2)
+    private BigDecimal price;
 
     @NotNull
     @Column(name = "added_at", nullable = false)

@@ -12,9 +12,7 @@ import application.service.response.ServiceResponse;
  */
 public interface ImageFileService<E extends AbstractFile,D extends AbstractFileDTO> extends BaseDatabaseService<ImageFile, Long, ImageFileDTO> {
 
-    boolean createResizedCopyAndSave(String pathToOrigin, String extension, int width, int height);
-
-    boolean createCopyAndSave(String pathToOrigin, String extension);
+    boolean createResizedCopyAndSave(String pathToOrigin, String extension, Integer width, Integer height);
 
     ServiceResponse<D> create(D abstractFileDTO);
 }

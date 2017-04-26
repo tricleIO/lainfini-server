@@ -1,25 +1,26 @@
 package application.service.product;
 
-import application.persistence.entity.Category;
-import application.persistence.entity.Product;
-import application.persistence.entity.ProductHasCallToAction;
-import application.persistence.entity.ProductHasFlash;
+import application.persistence.entity.*;
 import application.persistence.repository.*;
-import application.rest.domain.FlashDTO;
-import application.rest.domain.ProductDTO;
-import application.rest.domain.ProductHasFlashDTO;
+import application.persistence.type.StatusEnum;
+import application.persistence.type.UserStatusEnum;
+import application.rest.domain.*;
 import application.service.AdditionalDataManipulator;
 import application.service.AdditionalDataManipulatorBatch;
 import application.service.BaseSoftDeletableDatabaseServiceImpl;
 import application.service.category.CategoryService;
 import application.service.flash.FlashService;
 import application.service.material.MaterialService;
+import application.service.productDesign.ProductDesignService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.size.SizeService;
+import application.service.stockItem.StockItemService;
+import application.service.technology.TechnologyService;
 import application.service.unit.UnitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
@@ -29,15 +30,21 @@ import java.util.*;
 // @TODO - refactor this class, eventually add generic support for secured services
 
 @Service
-public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Product, UUID, ProductRepository, ProductDTO> implements ProductService {
+public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Product, UUID, ProductRepository, ProductDTO>
+        implements ProductService {
+
+    @Autowired
+    private ApplicationFileRepository applicationFileRepository;
+
+    @Autowired
+    private StockItemService stockItemService;
 
     @Override
-    public ServiceResponse<ProductDTO> read(String urlSlug) {
-        Product product = productRepository.findOneByUrlSlug(urlSlug);
-        if (product == null) {
-            return ServiceResponse.error(ServiceResponseStatus.PRODUCT_SLUG_NOT_FOUND);
+    protected ServiceResponse<ProductDTO> doBeforeConvertInCreate(ProductDTO dto) {
+        if (dto.getSerialNumberIsRequired() == null) {
+            dto.setSerialNumberIsRequired(false);
         }
-        return ServiceResponse.success(product.toDTO(true));
+        return super.doBeforeConvertInCreate(dto);
     }
 
     @Override
@@ -46,10 +53,25 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         if (response.isSuccessful()) {
             ProductDTO productDTO = response.getBody();
             if (principal != null) {
-                if (userLikesProduct(principal.getName(), productDTO)) {
-                    productDTO.setIsFavourite(true);
+                User user = userRepository.findByEmailAndRegisterStatus(
+                        principal.getName(), UserStatusEnum.REGISTERED
+                );
+                if (user != null) {
+                    if (userLikesProduct(user, productDTO)) {
+                        productDTO.setIsFavourite(true);
+                    }
                 }
             }
+            // count available item
+            ServiceResponse<Long> countAvailableProductItems = stockItemService.countProductsInStock(
+                    productDTO.getUid()
+            );
+            if (countAvailableProductItems.isSuccessful()) {
+                productDTO.setAvailableItemsCount(
+                        countAvailableProductItems.getBody()
+                );
+            }
+            addRandomCallToAction(productDTO);
         }
         return response;
     }
@@ -58,9 +80,16 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     public ServiceResponse<Page<ProductDTO>> readAll(Pageable pageable, Principal principal) {
         ServiceResponse<Page<ProductDTO>> response = super.readAll(pageable);
         if (principal != null) {
-            for (ProductDTO productDTO : response.getBody().getContent()) {
-                if (userLikesProduct(principal.getName(), productDTO)) {
-                    productDTO.setIsFavourite(true);
+            if (principal != null) {
+                User user = userRepository.findByEmailAndRegisterStatus(
+                        principal.getName(), UserStatusEnum.REGISTERED
+                );
+                if (user != null) {
+                    for (ProductDTO productDTO : response.getBody().getContent()) {
+                        if (userLikesProduct(user, productDTO)) {
+                            productDTO.setIsFavourite(true);
+                        }
+                    }
                 }
             }
         }
@@ -74,9 +103,14 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         Page<ProductDTO> pageWithDtos = convertPageWithEntitiesToPageWithDtos(pageWithProducts, pageable);
 
         if (principal != null) {
-            for (ProductDTO productDTO : pageWithDtos.getContent()) {
-                if (userLikesProduct(principal.getName(), productDTO)) {
-                    productDTO.setIsFavourite(true);
+            User user = userRepository.findByEmailAndRegisterStatus(
+                    principal.getName(), UserStatusEnum.REGISTERED
+            );
+            if (user != null) {
+                for (ProductDTO productDTO : pageWithDtos.getContent()) {
+                    if (userLikesProduct(user, productDTO)) {
+                        productDTO.setIsFavourite(true);
+                    }
                 }
             }
         }
@@ -111,6 +145,18 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     }
 
     @Override
+    public ServiceResponse<Page<ProductDTO>> findByImagesPfFileId(Long imageId) {
+        ApplicationFile one = applicationFileRepository.findOne(imageId);
+        Set<ProductFile> productFiles = one.getProductFiles();
+        List<ProductDTO> productDTOS = new ArrayList<>();
+        for (ProductFile productFile : productFiles) {
+            productDTOS.add(productFile.getPf().getProduct().toDTO(false));
+        }
+        return ServiceResponse.success(new PageImpl<ProductDTO>(productDTOS, null, productDTOS.size()));
+
+    }
+
+    @Override
     public ProductRepository getRepository() {
         return productRepository;
     }
@@ -135,34 +181,35 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     // additional data manipulators
 
     @Override
-    protected AdditionalDataManipulatorBatch<ProductDTO> getCreateAdditionalDataLoaderBatch(ProductDTO productDTO) {
+    protected AdditionalDataManipulatorBatch<ProductDTO> getAdditionalDataLoaderBatch(ProductDTO productDTO) {
         AdditionalDataManipulatorBatch<ProductDTO> dataManipulatorBatch = new AdditionalDataManipulatorBatch<>(productDTO);
         dataManipulatorBatch.add(this::getCategoryDataManipulator);
         dataManipulatorBatch.add(this::getMaterialDataManipulator);
         dataManipulatorBatch.add(this::getSizeDataManipulator);
         dataManipulatorBatch.add(this::getUnitDataManipulator);
+        dataManipulatorBatch.add(p -> new AdditionalDataManipulator<>(
+                new AdditionalDataManipulator.Reader<>(p.getTechnologyUid(), technologyService::read),
+                new AdditionalDataManipulator.Writer<>(p::setTechnology),
+                ServiceResponseStatus.TECHNOLOGY_NOT_FOUND
+        ));
+        dataManipulatorBatch.add(p -> new AdditionalDataManipulator<>(
+                new AdditionalDataManipulator.Reader<>(p.getDesignUid(), productDesignService::read),
+                new AdditionalDataManipulator.Writer<>(p::setDesign),
+                ServiceResponseStatus.DESIGN_NOT_FOUND
+        ));
         return dataManipulatorBatch;
     }
 
-    @Override
-    protected ServiceResponse<ProductDTO> doBeforeConvertInCreate(ProductDTO productDTO) {
-        // if url slug is null, generate it from name
-        if (productDTO.getUrlSlug() == null) {
-            productDTO.setUrlSlug(
-                    getUrlSlugFromName(productDTO.getName())
-            );
-        }
-        return super.doBeforeConvertInCreate(productDTO);
-    }
 
     // privates
 
-    private boolean userLikesProduct(String username, ProductDTO productDTO) {
-        return userLikesProductRepository.countByUserLoginAndProductId(username, productDTO.getUid()) > 0;
-    }
-
-    private String getUrlSlugFromName(String productName) {
-        return productName.replaceAll("\\s+", "-").toLowerCase();
+    private boolean userLikesProduct(User user, ProductDTO productDTO) {
+        for (Wish currentWish : user.getWishes()) {
+            if (currentWish.getProduct().getId().equals(productDTO.getUid()) && currentWish.getStatus() == StatusEnum.ACTIVE) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private List<Integer> getCategoryAndAllSubcategoriesIds(Integer categoryId) {
@@ -183,12 +230,18 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         return categoryIds;
     }
 
-    private void addRandomCallToAction(ProductDTO product) {
-        if (productHasCallToActionRepository.countByProductId(product.getUid()) > 0) {
-            List<ProductHasCallToAction> productHasCallToAction = productHasCallToActionRepository.findByProductId(product.getUid());
+    private void addRandomCallToAction(ProductDTO productDTO) {
+        if (productHasCallToActionRepository.countByProductId(productDTO.getUid()) > 0) {
+            List<ProductHasCallToAction> productHasCallToAction = productHasCallToActionRepository.findByProductId(productDTO.getUid());
             int index = random.nextInt(productHasCallToAction.size());
             ProductHasCallToAction randomProductHasCallToAction = productHasCallToAction.get(index);
-            product.setCall(randomProductHasCallToAction.getCallToAction().toDTO(false));
+            CallDTO call = randomProductHasCallToAction.getCallToAction().toDTO(false);
+            if (call instanceof SoldItemsCallDTO) {
+                SoldItemsCallDTO soldItemsCallDTO = (SoldItemsCallDTO) call;
+                soldItemsCallDTO.setMade(stockItemService.countAllTimeStockedProducts(productDTO.getUid()).getBody());
+                soldItemsCallDTO.setSold(stockItemService.countAllTimeSoldItems(productDTO.getUid()).getBody());
+            }
+            productDTO.setCall(call);
         }
     }
 
@@ -245,7 +298,7 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     private FlashService flashService;
 
     @Autowired
-    private UserLikesProductRepository userLikesProductRepository;
+    private UserRepository userRepository;
 
     @Autowired
     private CategoryService categoryService;
@@ -258,5 +311,11 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
 
     @Autowired
     private UnitService unitService;
+
+    @Autowired
+    private TechnologyService technologyService;
+
+    @Autowired
+    private ProductDesignService productDesignService;
 
 }

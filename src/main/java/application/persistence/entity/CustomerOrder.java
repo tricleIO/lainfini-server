@@ -2,19 +2,19 @@ package application.persistence.entity;
 
 import application.persistence.DTOConvertable;
 import application.persistence.type.OrderStatusEnum;
+import application.persistence.type.PaymentMethodEnum;
 import application.rest.domain.OrderDTO;
-import application.rest.domain.OrderItemDTO;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
-import java.util.LinkedHashSet;
-import java.util.Set;
 import java.util.UUID;
 
+@Audited
 @Entity
 @Table(name = "customer_order")
 @Data
@@ -26,7 +26,7 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
     @Column(name = "id", unique = true, nullable = false, columnDefinition = "BINARY(16)")
     private UUID id;
 
-    @OneToOne
+    @ManyToOne
     @NotNull
     @JoinColumn(name = "customer_id", referencedColumnName = "id", nullable = false)
     private User customer;
@@ -35,23 +35,30 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
     @Column(name = "created_at", nullable = false)
     private Date createdAt;
 
+    @Column(name = "completed_at")
+    private Date completedAt;
+
+    @Column(name = "status", nullable = false)
     @Enumerated(EnumType.ORDINAL)
     private OrderStatusEnum status;
 
     @ManyToOne
     @JoinColumn(name = "delivery_id", referencedColumnName = "id")
-    private Delivery deliveryType;
+    private Delivery delivery;
 
     @ManyToOne
-    @JoinColumn(name = "payment_id", referencedColumnName = "id")
-    private PaymentMethod paymentMethod;
+    @JoinColumn(name = "shipping_region_id", referencedColumnName = "id")
+    private ShippingRegion shippingRegion;
+
+    @Enumerated(EnumType.ORDINAL)
+    private PaymentMethodEnum paymentMethod;
 
     @ManyToOne
     @JoinColumn(name = "cart_id", referencedColumnName = "id")
     private Cart cart;
 
-    @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "order")
-    private Set<OrderItem> items;
+//    @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "order")
+//    private Set<OrderItem> items;
 
     @OneToOne
     @JoinColumn(name = "billing_address_id", referencedColumnName = "id")
@@ -69,14 +76,18 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
             orderDTO.setCustomerUid(customer.getId());
         }
         orderDTO.setCreatedAt(createdAt);
+        orderDTO.setCompletedAt(completedAt);
         if (cart != null) {
             orderDTO.setCartUid(cart.getId());
         }
-        if (deliveryType != null) {
-            orderDTO.setDeliveryType(deliveryType.toDTO(false));
+        if (delivery != null) {
+            orderDTO.setShipping(delivery.toDTO(false));
+        }
+        if (shippingRegion != null) {
+            orderDTO.setShippingRegion(shippingRegion.toDTO(false));
         }
         if (paymentMethod != null) {
-            orderDTO.setPaymentMethod(paymentMethod.toDTO(false));
+            orderDTO.setPaymentMethod(paymentMethod);
         }
         if (deliveryAddress != null) {
             orderDTO.setDeliveryAddress(deliveryAddress.toDTO(false));
@@ -84,13 +95,14 @@ public class CustomerOrder implements DTOConvertable<OrderDTO>, Serializable {
         if (billingAddress != null) {
             orderDTO.setDeliveryAddress(billingAddress.toDTO(false));
         }
-        if (items != null) {
-            Set<OrderItemDTO> itemDTOs = new LinkedHashSet<>(items.size());
-            for (OrderItem item : items) {
-                itemDTOs.add(item.toDTO(false));
-            }
-            orderDTO.setItems(itemDTOs);
-        }
+        orderDTO.setStatus(status);
+//        if (items != null) {
+//            Set<OrderItemDTO> itemDTOs = new LinkedHashSet<>(items.size());
+//            for (OrderItem item : items) {
+//                itemDTOs.add(item.toDTO(false));
+//            }
+//            orderDTO.setItems(itemDTOs);
+//        }
         return orderDTO;
     }
 

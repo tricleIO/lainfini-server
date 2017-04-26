@@ -1,32 +1,37 @@
 package application.service.order;
 
-import application.persistence.entity.CartHasProduct;
-import application.persistence.entity.CustomerOrder;
-import application.persistence.entity.OrderItem;
-import application.persistence.repository.CartHasProductRepository;
-import application.persistence.repository.OrderRepository;
-import application.rest.domain.AddressDTO;
-import application.rest.domain.OrderDTO;
-import application.rest.domain.UserDTO;
+import application.configuration.AppProperties;
+import application.persistence.entity.*;
+import application.persistence.repository.*;
+import application.persistence.type.CartStatusEnum;
+import application.persistence.type.OrderStatusEnum;
+import application.persistence.type.PaymentMethodEnum;
+import application.persistence.type.PaymentStateEnum;
+import application.rest.domain.*;
 import application.service.AdditionalDataManipulator;
 import application.service.AdditionalDataManipulatorBatch;
 import application.service.BaseDatabaseServiceImpl;
 import application.service.address.AddressService;
 import application.service.cart.CartService;
 import application.service.delivery.DeliveryService;
-import application.service.paymentMethod.PaymentMethodService;
+import application.service.mail.MailService;
+import application.service.product.ProductService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
+import application.service.shippingRegion.ShippingRegionService;
+import application.service.shippingTariff.ShippingTariffService;
+import application.service.stockItem.StockItemService;
 import application.service.user.UserService;
+import application.util.HtmlGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.thymeleaf.context.Context;
 
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.UUID;
+import java.math.BigDecimal;
+import java.util.*;
 
 @Service
 public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUID, OrderRepository, OrderDTO> implements OrderService {
@@ -35,10 +40,16 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     private OrderRepository orderRepository;
 
     @Autowired
-    private CartHasProductRepository cartHasProductRepository;
+    private OrderItemRepository orderItemRepository;
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private CartRepository cartRepository;
+
+    @Autowired
+    private CartItemRepository cartItemRepository;
 
     @Autowired
     private CartService cartService;
@@ -47,10 +58,120 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     private DeliveryService deliveryService;
 
     @Autowired
-    private PaymentMethodService paymentMethodService;
+    private AddressService addressService;
 
     @Autowired
-    private AddressService addressService;
+    private ShippingRegionService shippingRegionService;
+
+    @Autowired
+    private ShippingTariffService shippingTariffService;
+
+    @Autowired
+    private PaymentRepository paymentRepository;
+
+    @Autowired
+    private MailService mailService;
+
+    @Autowired
+    private ProductService productService;
+
+    @Autowired
+    private AppProperties appProperties;
+
+    @Autowired
+    private HtmlGenerator htmlGenerator;
+
+    @Autowired
+    private StockItemService stockItemService;
+
+    @Override
+    @Transactional
+    public synchronized ServiceResponse<OrderDTO> create(OrderDTO dto) {
+        // cart is given?
+        if (dto.getCartUid() == null) {
+            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_GIVEN);
+        }
+        // cart exists?
+        if (!cartRepository.exists(dto.getCartUid())) {
+            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_FOUND);
+        }
+        List<CartItem> cartItems = cartItemRepository.findByCartId(dto.getCartUid());
+        // enough in stock?
+        ServiceResponse<Boolean> countItemsInStockResponse = enoughAllOfCartItemsInStock(cartItems);
+        if (!countItemsInStockResponse.isSuccessful()) {
+            return ServiceResponse.error(countItemsInStockResponse.getStatus());
+        }
+        // create order
+        ServiceResponse<OrderDTO> createResponse = super.create(dto);
+        if (createResponse.isSuccessful()) {
+            // send emails
+            ServiceResponse<OrderDTO> readOrderResponse = read(createResponse.getBody().getUid());
+            if (readOrderResponse.isSuccessful()) {
+                // reserve all items
+                reserveItems(readOrderResponse.getBody());
+                // set variables
+                final Context context = new Context(Locale.ENGLISH);
+                context.setVariable("customer", dto.getCustomer());
+                context.setVariable("deliveryAddress", dto.getDeliveryAddress());
+                context.setVariable("order", readOrderResponse.getBody());
+                context.setVariable("shippingTariff", dto.getShippingTariff());
+
+                // email for customer
+                ServiceResponse<MailDTO> mailResponse = mailService.sendMail(
+                        createMail(
+                                dto.getCustomer().getEmail(),
+                                "Order confirmation",
+                                htmlGenerator.generateHtml("templates/emails/order/order_customer.html", context)
+                        )
+                );
+                if (!mailResponse.isSuccessful()) {
+//                    return ServiceResponse.error(mailResponse.getStatus());
+                }
+                // email to sellers
+                String htmlForSellers = htmlGenerator.generateHtml("templates/emails/order/order_seller.html", context);
+                for (String sellerEmail : appProperties.getSellerEmails()) {
+                    ServiceResponse<MailDTO> sellerMailResponse = mailService.sendMail(
+                            createMail(
+                                    sellerEmail,
+                                    "Check new Order in e-shop",
+                                    htmlForSellers
+                            )
+                    );
+                    if (!sellerMailResponse.isSuccessful()) {
+                        // log! ServiceResponse.error(mailResponse.getStatus());
+                    }
+                }
+            }
+            return readOrderResponse;
+        }
+        return createResponse;
+    }
+
+    private ServiceResponse<Boolean> enoughAllOfCartItemsInStock(List<CartItem> cartItems) {
+        for (CartItem item : cartItems) {
+            ServiceResponse<Long> countItemsInStockResponse = stockItemService.countProductsInStock(item.getProduct().getId());
+            if (!countItemsInStockResponse.isSuccessful()) {
+                return ServiceResponse.error(countItemsInStockResponse.getStatus());
+            }
+            if (countItemsInStockResponse.getBody() < item.getQuantity()) {
+                return ServiceResponse.error(ServiceResponseStatus.NOT_ENOUGH_ITEMS_IN_STOCK);
+            }
+        }
+        return ServiceResponse.success(true);
+    }
+
+    private void reserveItems(OrderDTO orderDTO) {
+        for (OrderItemDTO item : orderDTO.getItems()) {
+            ServiceResponse<Page<StockItemDTO>> reserveItemsResponse = stockItemService.reserveProduct(
+                    item.getProductUid(),
+                    item.getQuantity(),
+                    orderDTO.getUid()
+            );
+            if (!reserveItemsResponse.isSuccessful()) {
+                throw new RuntimeException("Incomplete order!");
+            }
+        }
+    }
 
     @Override
     public ServiceResponse<Page<OrderDTO>> readCustomerOrders(UUID customerId, Pageable pageable) {
@@ -61,16 +182,85 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     }
 
     @Override
+    public ServiceResponse<OrderDTO> shipOrder(UUID orderId) {
+        ServiceResponse<OrderDTO> readResponse = read(orderId);
+        if (!readResponse.isSuccessful()) {
+            return readResponse;
+        }
+        OrderDTO orderDTO = new OrderDTO();
+        orderDTO.setUid(orderId);
+        orderDTO.setStatus(OrderStatusEnum.SHIPPED);
+        ServiceResponse<OrderDTO> patchResponse = patch(orderDTO);
+        if (!patchResponse.isSuccessful()) {
+            return patchResponse;
+        }
+        ServiceResponse<UserDTO> userResponse = userService.read(readResponse.getBody().getCustomerUid());
+        if (userResponse.isSuccessful()) {
+            MailDTO mailDTO = new MailDTO();
+            mailDTO.setTo(userResponse.getBody().getEmail());
+            mailDTO.setSubject("Order shipped");
+            mailDTO.setText("<h2>Greetings from Atelier LAINFINI!</h2>" +
+                    "<p>We are happy to announce your order <b>" + orderDTO.getUid() + "</b> has been shipped.<br><br>" +
+                    "Thank you for your interest in Atelier LAINFINI!</p>");
+            mailService.sendMail(mailDTO);
+        }
+        return read(orderId);
+    }
+
+    private MailDTO createMail(String email, String subject, String text) {
+        MailDTO mailDTO = new MailDTO();
+        mailDTO.setTo(email);
+        mailDTO.setSubject(subject);
+        mailDTO.setText(text);
+        return mailDTO;
+    }
+
+    @Override
     protected ServiceResponse<OrderDTO> doBeforeConvertInCreate(OrderDTO dto) {
-        if (dto.getCustomerUid() == null && dto.getDeliveryAddressUid() == null) {
-            if (dto.getCustomer() != null &&  dto.getDeliveryAddress() != null) {
+        // defaults
+        dto.setCreatedAt(new Date());
+        if (dto.getStatus() == null) {
+            dto.setStatus(OrderStatusEnum.WAITING_FOR_PAYMENT);
+        }
+        // restrictions
+        if (dto.getPaymentMethod().getState() == PaymentMethodEnum.State.DENIED) {
+            return ServiceResponse.error(ServiceResponseStatus.PAYMENT_METHOD_FORBIDDEN);
+        }
+        // cart
+        if (dto.getCartUid() == null) {
+            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_GIVEN);
+        }
+        ServiceResponse<CartDTO> cartResponse = cartService.read(dto.getCartUid());
+        if (!cartResponse.isSuccessful()) {
+            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_FOUND);
+        }
+        CartDTO cartDTO = cartResponse.getBody();
+        if (cartDTO.getStatus() != CartStatusEnum.OPENED) {
+            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_OPEN);
+        }
+        dto.setCart(cartDTO);
+        ServiceResponse<UserDTO> userResponse = null;
+        if (dto.getCustomerUid() == null) {
+            if (dto.getCustomer() != null) {
                 // create unregistered user
-                ServiceResponse<UserDTO> userResponse = userService.create(dto.getCustomer());
+                userResponse = userService.create(dto.getCustomer());
                 if (!userResponse.isSuccessful()) {
                     return ServiceResponse.error(userResponse.getStatus());
                 }
                 dto.setCustomer(userResponse.getBody());
-
+            } else {
+                return ServiceResponse.error(ServiceResponseStatus.CUSTOMER_NOT_GIVEN);
+            }
+        } else {
+            userResponse = userService.read(dto.getCustomerUid());
+            if (!userResponse.isSuccessful()) {
+                return ServiceResponse.error(userResponse.getStatus());
+            }
+        }
+        // addresses
+        if (dto.getDeliveryAddressUid() == null) {
+            if (dto.getDeliveryAddress() != null) {
+                dto.getDeliveryAddress().setCustomer(userResponse.getBody());
                 // create his delivery address
                 ServiceResponse<AddressDTO> deliveryAddressResponse = addressService.create(
                         dto.getDeliveryAddress()
@@ -82,8 +272,9 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
 
                 // if billing address is set, create it to
                 if (dto.getBillingAddress() != null) {
+                    dto.getBillingAddress().setCustomer(userResponse.getBody());
                     ServiceResponse<AddressDTO> billingAddressResponse = addressService.create(
-                        dto.getBillingAddress()
+                            dto.getBillingAddress()
                     );
                     if (!billingAddressResponse.isSuccessful()) {
                         return ServiceResponse.error(billingAddressResponse.getStatus());
@@ -91,8 +282,24 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                     dto.setBillingAddress(billingAddressResponse.getBody());
                 }
             } else {
-                return ServiceResponse.error(ServiceResponseStatus.CUSTOMER_OR_DELIVERY_ADDRESS_NOT_GIVEN);
+                return ServiceResponse.error(ServiceResponseStatus.DELIVERY_ADDRESS_NOT_GIVEN);
             }
+        }
+        // tariff
+        ServiceResponse<ShippingTariffDTO> tariffResponse = shippingTariffService.read(dto.getShippingTariffUid());
+        if (tariffResponse.isSuccessful()) {
+            ShippingDTO shippingDTO = new ShippingDTO();
+            ShippingTariffDTO tariff = tariffResponse.getBody();
+            shippingDTO.setShippingTariff(tariff);
+            // @TODO - NOT DONE
+            shippingDTO.setTrackingNumber("AAEE_NOT_DONE");
+            shippingDTO.setPrice(tariff.getPrice());
+            shippingDTO.setCurrencyUid(tariff.getCurrency().getUid());
+            ServiceResponse<ShippingDTO> shippingCreateResponse = deliveryService.create(shippingDTO);
+            if (!shippingCreateResponse.isSuccessful()) {
+                return ServiceResponse.error(shippingCreateResponse.getStatus());
+            }
+            dto.setShipping(shippingCreateResponse.getBody());
         }
         return super.doBeforeConvertInCreate(dto);
     }
@@ -100,24 +307,26 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     @Override
     protected void doAfterCreate(CustomerOrder entity) {
         if (entity.getCart() != null) {
-            List<CartHasProduct> cartHasProductList = cartHasProductRepository.findByCartId(entity.getCart().getId());
-            Set<OrderItem> orderItems = new LinkedHashSet<>();
-            for (CartHasProduct cartHasProduct : cartHasProductList) {
-                OrderItem orderItem = new OrderItem();
-                orderItem.setProduct(cartHasProduct.getProduct());
-                orderItem.setQuantity(cartHasProduct.getQuantity());
-                orderItem.setAddedAt(cartHasProduct.getAddedAt());
-                orderItem.setOrder(entity);
-                orderItem.setPrice(cartHasProduct.getProduct().getPrice());
-                orderItems.add(orderItem);
+            Cart cart = cartRepository.findOne(entity.getCart().getId());
+            if (cart != null) {
+                for (CartItem cartItem : cartItemRepository.findByCartId(entity.getCart().getId())) {
+                    // create order item from cart item
+                    OrderItem orderItem = new OrderItem();
+                    orderItem.setProduct(cartItem.getProduct());
+                    orderItem.setQuantity(cartItem.getQuantity());
+                    orderItem.setPrice(cartItem.getProduct().getPrice());
+                    orderItem.setAddedAt(cartItem.getAddedAt());
+                    orderItem.setOrder(entity);
+                    orderItemRepository.save(orderItem);
+                }
             }
-            entity.setItems(orderItems);
-            orderRepository.save(entity);
+            cart.setStatus(CartStatusEnum.CHECKEDOUT);
+            cartRepository.save(cart);
         }
     }
 
     @Override
-    protected AdditionalDataManipulatorBatch<OrderDTO> getCreateAdditionalDataLoaderBatch(OrderDTO orderDTO) {
+    protected AdditionalDataManipulatorBatch<OrderDTO> getAdditionalDataLoaderBatch(OrderDTO orderDTO) {
         AdditionalDataManipulatorBatch<OrderDTO> batch = new AdditionalDataManipulatorBatch<>(orderDTO);
         // add customer
         batch.add(o -> new AdditionalDataManipulator<>(
@@ -131,17 +340,11 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                 new AdditionalDataManipulator.Writer<>(o::setCart),
                 ServiceResponseStatus.CART_NOT_FOUND)
         );
-        // add delivery type
+        // add shipping tariff
         batch.add(o -> new AdditionalDataManipulator<>(
-                new AdditionalDataManipulator.Reader<>(o.getDeliveryTypeUid(), deliveryService::read),
-                new AdditionalDataManipulator.Writer<>(o::setDeliveryType),
+                new AdditionalDataManipulator.Reader<>(o.getShippingTariffUid(), shippingTariffService::read),
+                new AdditionalDataManipulator.Writer<>(o::setShippingTariff),
                 ServiceResponseStatus.DELIVERY_NOT_FOUND)
-        );
-        // add payment method
-        batch.add(o -> new AdditionalDataManipulator<>(
-                new AdditionalDataManipulator.Reader<>(o.getPaymentMethodUid(), paymentMethodService::read),
-                new AdditionalDataManipulator.Writer<>(o::setPaymentMethod),
-                ServiceResponseStatus.PAYMENT_METHOD_NOT_FOUND)
         );
         // add billing address
         batch.add(o -> new AdditionalDataManipulator<>(
@@ -155,7 +358,51 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
                 new AdditionalDataManipulator.Writer<>(o::setDeliveryAddress),
                 ServiceResponseStatus.ADDRESS_NOT_FOUND)
         );
+        // add shipping region
+        batch.add(o -> new AdditionalDataManipulator<>(
+                new AdditionalDataManipulator.Reader<>(o.getShippingRegionUid(), shippingRegionService::read),
+                new AdditionalDataManipulator.Writer<>(o::setShippingRegion),
+                ServiceResponseStatus.SHIPPING_REGION_NOT_FOUND)
+        );
         return batch;
+    }
+
+    @Override
+    protected void additionalUpdateDto(OrderDTO dto) {
+        List<OrderItem> items = orderItemRepository.findByOrderId(dto.getUid());
+        Set<OrderItemDTO> itemDTOs = new HashSet<>();
+        for (OrderItem item : items) {
+            OrderItemDTO orderItemDTO = item.toDTO(false);
+            ServiceResponse<ProductDTO> productResponse = productService.read(item.getProduct().getId());
+            if (productResponse.isSuccessful()) {
+                orderItemDTO.setProduct(productResponse.getBody());
+            }
+            itemDTOs.add(orderItemDTO);
+        }
+        dto.setItems(itemDTOs);
+        dto.setPaymentState(getOrderState(dto));
+    }
+
+    private PaymentStateEnum getOrderState(OrderDTO orderDTO) {
+        // total order price
+        BigDecimal totalPriceWithShipping = orderDTO.getTotalPriceWithShipping();
+        // total paid amount from order payments
+        List<Payment> orderPayments = paymentRepository.findByOrderId(orderDTO.getUid());
+        BigDecimal totalPaidAmount = BigDecimal.ZERO;
+        for (Payment payment : orderPayments) {
+            totalPaidAmount = totalPaidAmount.add(payment.getAmount());
+        }
+
+        // get state
+        if (totalPaidAmount.compareTo(totalPriceWithShipping) == 0) {
+            return PaymentStateEnum.PAID;
+        } else if (totalPaidAmount.compareTo(totalPriceWithShipping) == 1) {
+            return PaymentStateEnum.OVERPAID;
+        } else if (totalPaidAmount.compareTo(BigDecimal.ZERO) == 0) {
+            return PaymentStateEnum.NOT_PAID;
+        } else {
+            return PaymentStateEnum.PARTLY_PAID;
+        }
     }
 
     @Override

@@ -2,6 +2,7 @@ package application.rest.domain;
 
 import application.persistence.entity.Product;
 import application.persistence.entity.ProductFile;
+import application.persistence.type.ProductStatusEnum;
 import application.persistence.type.StatusEnum;
 import application.rest.CategoryController;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -9,7 +10,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
 
-import java.util.HashSet;
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Set;
 import java.util.UUID;
@@ -19,14 +20,14 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Product>, IdentifableDTO<UUID>, SoftDeletableDTO {
+public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Product>, IdentifableDTO<UUID>, SoftDeletableDTO, SlugDTO {
 
     private UUID uid;
     private String name;
     private String ean;
     private String shortDescription;
     private String description;
-    private Double price;
+    private BigDecimal price;
     private Integer categoryUid;
     private CallDTO call;
     private List<FlashDTO> flashes;
@@ -37,13 +38,27 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private Integer sizeUid;
     private UnitDTO unit;
     private Integer unitUid;
-    private String urlSlug;
+    private String slug;
     private StatusEnum status;
+    private String code;
+    private ProductStatusEnum productStatus;
+    private Integer technologyUid;
+    private Integer designUid;
+    private Boolean serialNumberIsRequired;
+
+    private Long availableItemsCount;
+
+    private String abraLink;
+
+    @JsonProperty("mainImage")
+    private ApplicationFileDTO mainImageDTO;
 
     @JsonProperty("images")
     private Set<ApplicationFileDTO> applicationFileDTOS;
 
     private CategoryDTO category;
+    private TechnologyDTO technology;
+    private ProductDesignDTO design;
 
     @Override
     public Product toEntity(boolean selectAsParent, Object... parentParams) {
@@ -54,6 +69,13 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
         product.setShortDescription(shortDescription);
         product.setDescription(description);
         product.setPrice(price);
+        product.setCode(code);
+        product.setAbraLink(abraLink);
+        product.setProductStatus(productStatus);
+        product.setSerialNumberIsRequired(serialNumberIsRequired);
+        if (mainImageDTO != null) {
+            product.setMainImage(mainImageDTO.toEntity(false));
+        }
         if (selectAsParent) {
             if (category != null) {
                 product.setCategory(category.toEntity(false));
@@ -67,11 +89,6 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
             if (unit != null) {
                 product.setUnit(unit.toEntity(false));
             }
-        }
-
-        if (selectAsParent) {
-            HashSet<ProductFile> productFiles = new HashSet<>();
-
             if (applicationFileDTOS != null) {
                 for (ApplicationFileDTO applicationFileDTO : applicationFileDTOS) {
                     ProductFile productFile = new ProductFile();
@@ -80,10 +97,14 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
                     product.getImages().add(productFile);
                 }
             }
+            if (technology != null) {
+                product.setTechnology(technology.toEntity(false));
+            }
+            if (design != null) {
+                product.setDesign(design.toEntity(false));
+            }
         }
-
-
-        product.setUrlSlug(urlSlug);
+        product.setSlug(slug);
         product.setStatus(status);
         return product;
     }
@@ -95,4 +116,9 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
         }
     }
 
+    @Override
+    public String slugFrom() {
+        return name;
+    }
+    
 }

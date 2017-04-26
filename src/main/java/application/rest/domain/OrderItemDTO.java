@@ -1,22 +1,28 @@
 package application.rest.domain;
 
 import application.persistence.entity.OrderItem;
+import application.rest.UserController;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
+import org.springframework.hateoas.ResourceSupport;
 
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.UUID;
 
+import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
+import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
+
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class OrderItemDTO implements ReadWriteDatabaseDTO<OrderItem>, IdentifableDTO<Long> {
+public class OrderItemDTO extends ResourceSupport implements ReadWriteDatabaseDTO<OrderItem>, IdentifableDTO<Long>, Linkable {
 
     private Long uid;
     private UUID productUid;
     private Integer quantity;
     private Date addedAt;
     private UUID orderUid;
-    private Double price;
+    private BigDecimal price;
 
     private ProductDTO product;
     private OrderDTO order;
@@ -38,5 +44,12 @@ public class OrderItemDTO implements ReadWriteDatabaseDTO<OrderItem>, Identifabl
         orderItem.setAddedAt(addedAt);
         orderItem.setPrice(price);
         return orderItem;
+    }
+
+    @Override
+    public void addLinks() {
+        if (productUid != null) {
+            add(linkTo(methodOn(UserController.class).readUser(productUid)).withRel("product"));
+        }
     }
 }

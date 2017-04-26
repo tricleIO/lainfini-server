@@ -1,20 +1,11 @@
 package application.rest.domain;
 
-import application.persistence.entity.PaymentMethod;
 import lombok.Data;
 
 @Data
-public class PaymentMethodDTO implements ReadWriteDatabaseDTO<PaymentMethod>, IdentifableDTO<Integer> {
+public class PaymentMethodDTO {
 
-    private Integer uid;
-    private String name;
-
-    @Override
-    public PaymentMethod toEntity(boolean selectAsParent, Object... parentParams) {
-        PaymentMethod paymentMethod = new PaymentMethod();
-        paymentMethod.setId(uid);
-        paymentMethod.setName(name);
-        return paymentMethod;
-    }
+    private String value;
+    private String link;
 
 }

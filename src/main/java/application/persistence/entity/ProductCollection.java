@@ -5,12 +5,13 @@ import application.rest.domain.ProductCollectionDTO;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Set;
 
 @Entity
 @Table(name = "product_collection")
 @Data
-public class ProductCollection implements DTOConvertable<ProductCollectionDTO> {
+public class ProductCollection implements DTOConvertable<ProductCollectionDTO>, SlugEntity, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,10 +21,10 @@ public class ProductCollection implements DTOConvertable<ProductCollectionDTO> {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "url_slug")
-    private String urlSlug;
+    @Column(name = "slug", unique = true)
+    private String slug;
 
-    @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "productCollection")
+    @OneToMany(cascade=CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY, mappedBy = "productCollection")
     private Set<ProductCollectionItem> items;
 
 
@@ -33,7 +34,7 @@ public class ProductCollection implements DTOConvertable<ProductCollectionDTO> {
 
         productCollectionDTO.setUid(id);
         productCollectionDTO.setName(name);
-        productCollectionDTO.setUrlSlug(urlSlug);
+        productCollectionDTO.setSlug(slug);
         if (items != null) {
             for (ProductCollectionItem item : items) {
                 productCollectionDTO.addItem(item.toDTO(false));

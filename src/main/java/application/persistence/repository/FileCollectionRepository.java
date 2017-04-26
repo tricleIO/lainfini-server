@@ -6,5 +6,7 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 /**
  * Created by pfilip on 13.3.17.
  */
-public interface FileCollectionRepository extends PagingAndSortingRepository<FileCollection, Long> {
+public interface FileCollectionRepository extends PagingAndSortingRepository<FileCollection, Long>, SlugRepository<FileCollection> {
+
+
 }

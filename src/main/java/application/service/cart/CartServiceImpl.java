@@ -1,25 +1,27 @@
 package application.service.cart;
 
 import application.persistence.entity.Cart;
-import application.persistence.entity.CartHasProduct;
-import application.persistence.repository.CartHasProductRepository;
+import application.persistence.entity.CartItem;
+import application.persistence.entity.User;
+import application.persistence.repository.CartItemRepository;
 import application.persistence.repository.CartRepository;
+import application.persistence.type.CartStatusEnum;
+import application.persistence.type.UserRoleEnum;
 import application.rest.domain.CartDTO;
-import application.rest.domain.ItemDTO;
+import application.rest.domain.CartItemDTO;
 import application.rest.domain.ProductDTO;
-import application.rest.domain.UserDTO;
+import application.service.AdditionalDataManipulator;
+import application.service.AdditionalDataManipulatorBatch;
 import application.service.BaseDatabaseServiceImpl;
 import application.service.product.ProductService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
+import application.service.security.CustomUserDetails;
 import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 @Service
 public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRepository, CartDTO> implements CartService {
@@ -28,7 +30,7 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
     private CartRepository cartRepository;
 
     @Autowired
-    private CartHasProductRepository cartHasProductRepository;
+    private CartItemRepository cartItemRepository;
 
     @Autowired
     private UserService userService;
@@ -37,93 +39,92 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
     private ProductService productService;
 
     @Override
-    public ServiceResponse<CartDTO> read(UUID cartId) {
-        // call original method
-        ServiceResponse<CartDTO> response = super.read(cartId);
-        // success
-        if (response.isSuccessful()) {
-            // add items of productFiles to cart
-            CartDTO cart = response.getBody();
-            addItemsToCart(cart, getCartHasProductsByCartId(cartId));
-        }
-        return response;
-    }
-
-    @Override
-    public ServiceResponse<Page<CartDTO>> readAll(Pageable pageable) {
-        // call original method
-        ServiceResponse<Page<CartDTO>> response = super.readAll(pageable);
-        // success
-        if (response.isSuccessful()) {
-            // add items of productFiles to carts
-            List<CartDTO> carts = response.getBody().getContent();
-            // @TODO - try think about optimization number of queries
-            for (CartDTO cart : carts) {
-                addItemsToCart(cart, getCartHasProductsByCartId(cart.getUid()));
+    protected void additionalUpdateDto(CartDTO dto) {
+        List<CartItem> items = cartItemRepository.findByCartId(dto.getUid());
+        Set<CartItemDTO> itemDTOs = new HashSet<>();
+        for (CartItem item : items) {
+            CartItemDTO cartItemDTO = item.toDTO(false);
+            ServiceResponse<ProductDTO> productResponse = productService.read(cartItemDTO.getProductUid());
+            if (productResponse.isSuccessful()) {
+                cartItemDTO.setProduct(productResponse.getBody());
             }
+            itemDTOs.add(cartItemDTO);
         }
-        return response;
+        dto.setItems(itemDTOs);
+    }
+
+    // @TODO - repair error with finOne in base service, not override here!
+    @Override
+    public ServiceResponse<CartDTO> read(UUID key) {
+        Cart cart = cartRepository.findById(key);
+        if (cart == null) {
+            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_FOUND);
+        }
+        CartDTO cartDTO = cart.toDTO(true);
+        additionalUpdateDto(cartDTO);
+        return ServiceResponse.success(cartDTO);
+    }
+
+    public ServiceResponse<CartDTO> readCurrentCustomersCart() {
+        User user = CustomUserDetails.getCurrentUser();
+        if (user == null) {
+            return ServiceResponse.error(ServiceResponseStatus.UNAUTHORIZED);
+        }
+        Cart cart = cartRepository.findFirstByCustomerIdAndStatusOrderByCreatedAtDesc(user.getId(), CartStatusEnum.OPENED);
+        if (cart == null) {
+            CartDTO cartDTO = new CartDTO();
+            cartDTO.setCustomerUid(user.getId());
+            return create(cartDTO);
+        }
+        return read(cart.getId());
     }
 
     @Override
-    public ServiceResponse<CartDTO> addProductToCart(UUID cartId, ItemDTO item) {
-        ServiceResponse<CartDTO> cartServiceResponse = read(cartId);
-        // find cart
-        if (!cartServiceResponse.isSuccessful()) {
-            ServiceResponse.error(ServiceResponseStatus.CART_NOT_FOUND);
-        }
-        // find product
-        ServiceResponse<ProductDTO> productServiceResponse = productService.read(item.getProductUid());
-        if (!productServiceResponse.isSuccessful()) {
-            ServiceResponse.error(ServiceResponseStatus.PRODUCT_NOT_FOUND);
-        }
-
-        Long countExistingPairs = cartHasProductRepository.countByCartIdAndProductId(cartId, item.getProductUid());
-        if (countExistingPairs == 0) {
-            // add product to cart (to CartHasProduct table)
-            item.setCart(cartServiceResponse.getBody());
-            item.setProduct(productServiceResponse.getBody());
-            CartHasProduct cartHasProduct = item.toEntity(true);
-            cartHasProductRepository.save(cartHasProduct);
-        } else {
-            // if pair exists, add number of given productFiles to original number of productFiles
-            CartHasProduct foundCartHasProduct = cartHasProductRepository.findByCartIdAndProductId(
-                    cartId, item.getProductUid()
+    public ServiceResponse<CartDTO> readCartSecured(UUID cartId) {
+        ServiceResponse<CartDTO> cartResponse = read(cartId);
+        if (cartResponse.isSuccessful()) {
+            CartDTO cartDTO = cartResponse.getBody();
+            // is admin
+            ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                    UserRoleEnum.ROLE_ADMIN
             );
-            foundCartHasProduct.setQuantity(foundCartHasProduct.getQuantity() + item.getQuantity());
-            cartHasProductRepository.save(foundCartHasProduct);
+            if (cartDTO.getCustomerUid() != null) {
+                // or its his
+                ServiceResponse<Boolean> isCurrentUserResponse = userService.isCurrrentUser(
+                        cartDTO.getCustomerUid()
+                );
+                if (!hasRolesResponse.isSuccessful() && !isCurrentUserResponse.isSuccessful()) {
+                    return ServiceResponse.error(ServiceResponseStatus.FORBIDDEN);
+                }
+            }
         }
-        // success, read patched cart
-        return read(cartId);
+        return cartResponse;
     }
 
-    // add info about customer
     @Override
-    public ServiceResponse<CartDTO> create(CartDTO cartDTO) {
-        if (cartDTO.getCustomerUid() != null) {
-            ServiceResponse<UserDTO> customerResponse = userService.read(cartDTO.getCustomerUid());
-            if (!customerResponse.isSuccessful()) {
-                return ServiceResponse.error(ServiceResponseStatus.CART_OWNER_NOT_FOUND);
-            }
-            cartDTO.setCustomer(customerResponse.getBody());
+    protected ServiceResponse<CartDTO> doBeforeConvertInCreate(CartDTO dto) {
+        dto.setCreatedAt(new Date());
+        if (dto.getStatus() == null) {
+            dto.setStatus(CartStatusEnum.OPENED);
         }
-        return super.create(cartDTO);
+        return super.doBeforeConvertInCreate(dto);
+    }
+
+    @Override
+    protected AdditionalDataManipulatorBatch<CartDTO> getAdditionalDataLoaderBatch(CartDTO dto) {
+        AdditionalDataManipulatorBatch<CartDTO> batch = new AdditionalDataManipulatorBatch<>(dto);
+        // add customer
+        batch.add(o -> new AdditionalDataManipulator<>(
+                new AdditionalDataManipulator.Reader<>(o.getCustomerUid(), userService::read),
+                new AdditionalDataManipulator.Writer<>(o::setCustomer),
+                ServiceResponseStatus.CUSTOMER_NOT_FOUND)
+        );
+        return batch;
     }
 
     @Override
     public CartRepository getRepository() {
         return cartRepository;
-    }
-
-    private void addItemsToCart(CartDTO cart, List<CartHasProduct> cartHasProducts) {
-        for (CartHasProduct cartHasProduct : cartHasProducts) {
-            // create item and add it to product list
-            cart.addItem(cartHasProduct.toDTO(false));
-        }
-    }
-
-    private List<CartHasProduct> getCartHasProductsByCartId(UUID cartId) {
-        return cartHasProductRepository.findByCartId(cartId);
     }
 
 }

@@ -7,13 +7,13 @@ import lombok.Data;
 public class SizeDTO implements ReadWriteDatabaseDTO<Size>, IdentifableDTO<Integer> {
 
     private Integer uid;
-    private String name;
+    private String value;
 
     @Override
     public Size toEntity(boolean selectAsParent, Object... parentParams) {
         Size size = new Size();
         size.setId(uid);
-        size.setName(name);
+        size.setValue(value);
         return size;
     }
 

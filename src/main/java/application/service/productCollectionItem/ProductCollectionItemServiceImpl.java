@@ -25,7 +25,7 @@ public class ProductCollectionItemServiceImpl extends BaseDatabaseServiceImpl<Pr
     private ProductCollectionService productCollectionService;
 
     @Override
-    protected AdditionalDataManipulatorBatch<ProductCollectionItemDTO> getCreateAdditionalDataLoaderBatch(ProductCollectionItemDTO dto) {
+    protected AdditionalDataManipulatorBatch<ProductCollectionItemDTO> getAdditionalDataLoaderBatch(ProductCollectionItemDTO dto) {
         AdditionalDataManipulatorBatch<ProductCollectionItemDTO> batch = new AdditionalDataManipulatorBatch<>(dto);
         // add product
         batch.add(pci -> new AdditionalDataManipulator<>(

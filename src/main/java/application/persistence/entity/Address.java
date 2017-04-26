@@ -3,13 +3,17 @@ package application.persistence.entity;
 import application.persistence.DTOConvertable;
 import application.rest.domain.AddressDTO;
 import lombok.Data;
+import lombok.ToString;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
+@Audited
 @Entity
 @Table(name = "address")
 @Data
+@ToString(exclude = {"customer"})
 public class Address implements DTOConvertable<AddressDTO>, Serializable {
 
     @Id
@@ -34,6 +38,9 @@ public class Address implements DTOConvertable<AddressDTO>, Serializable {
     @Column(name = "country", length = 63)
     private String country;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "customer_id", nullable = false)
+    private User customer;
 
     @Override
     public AddressDTO toDTO(boolean selectAsParent, Object... parentParams) {
@@ -45,6 +52,9 @@ public class Address implements DTOConvertable<AddressDTO>, Serializable {
         addressDTO.setPostal(postalCode);
         addressDTO.setState(state);
         addressDTO.setCountry(country);
+        if (customer != null) {
+            addressDTO.setCustomerUid(customer.getId());
+        }
         return addressDTO;
     }
 

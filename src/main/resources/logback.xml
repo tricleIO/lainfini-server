@@ -2,4 +2,8 @@
 <configuration>
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
     <jmxConfigurator/>
+    <!--<logger name="application" level="debug" additivity="false">-->
+        <!--<appender-ref ref="CONSOLE"/>-->
+        <!--<appender-ref ref="FILE"/>-->
+    <!--</logger>-->
 </configuration>
