@@ -5,6 +5,7 @@ import application.persistence.type.CartStatusEnum;
 import application.rest.domain.CartDTO;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -12,6 +13,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.UUID;
 
+@Audited
 @Entity
 @Table(name = "cart")
 @Data

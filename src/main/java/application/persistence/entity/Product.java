@@ -7,6 +7,8 @@ import application.rest.domain.ProductDTO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.envers.Audited;
+import org.hibernate.envers.NotAudited;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -15,6 +17,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
+@Audited
 @Entity
 @Table(name = "product")
 @Data
@@ -60,10 +63,12 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     @JoinColumn(name = "unit_id", referencedColumnName = "id")
     private Unit unit;
 
+    @NotAudited
     @OneToOne
     @JoinColumn(name = "main_image_id", referencedColumnName = "id")
     private ApplicationFile mainImage;
 
+    @NotAudited
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "pf.product", cascade=CascadeType.ALL)
     private Set<ProductFile> images = new HashSet<>();
 

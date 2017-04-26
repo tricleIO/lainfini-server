@@ -12,6 +12,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.io.Serializable;
 import java.util.LinkedList;
@@ -82,6 +83,7 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
         return new AdditionalDataManipulatorBatch<>(dto);
     }
 
+    @Transactional
     public ServiceResponse<D> patch(D dto) {
         // find record
         E originalEntity = getRepository().findOne(dto.getUid());

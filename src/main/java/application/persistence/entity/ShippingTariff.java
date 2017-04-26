@@ -4,11 +4,14 @@ import application.persistence.DTOConvertable;
 import application.rest.domain.ShippingTariffDTO;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
+import org.hibernate.envers.Audited;
+import org.hibernate.envers.NotAudited;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
+@Audited
 @Entity
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -35,6 +38,7 @@ public class ShippingTariff implements DTOConvertable<ShippingTariffDTO>, Serial
     @JoinColumn(name = "currency_id", referencedColumnName = "id")
     private Currency currency;
 
+    @NotAudited
     @OneToOne
     @JoinColumn(name = "icon_image_id", referencedColumnName = "id")
     private ApplicationFile icon;

@@ -3,10 +3,13 @@ package application.persistence.entity;
 import application.persistence.DTOConvertable;
 import application.rest.domain.CarrierDTO;
 import lombok.Data;
+import org.hibernate.envers.Audited;
+import org.hibernate.envers.NotAudited;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
+@Audited
 @Entity
 @Data
 public class Carrier implements DTOConvertable<CarrierDTO>, Serializable {
@@ -21,6 +24,7 @@ public class Carrier implements DTOConvertable<CarrierDTO>, Serializable {
 
     private String trackingEndpoint;
 
+    @NotAudited
     @OneToOne
     @JoinColumn(name = "logo_image_id", referencedColumnName = "id")
     private ApplicationFile logo;
