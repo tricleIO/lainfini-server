@@ -3,22 +3,24 @@ package application.service.user;
 import application.persistence.entity.Role;
 import application.persistence.entity.User;
 import application.persistence.repository.UserRepository;
-import application.persistence.type.UserRoleEnum;
-import application.persistence.type.UserStatusEnum;
+import application.persistence.type.*;
+import application.rest.domain.MailDTO;
 import application.rest.domain.UserDTO;
 import application.service.BaseDatabaseServiceImpl;
+import application.service.mail.MailService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.security.CustomUserDetails;
+import application.util.HtmlGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.thymeleaf.context.Context;
 
-import java.util.Arrays;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.UUID;
+import java.math.BigInteger;
+import java.security.SecureRandom;
+import java.util.*;
 
 @Service
 @Primary
@@ -30,13 +32,19 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
     @Autowired
     private PasswordEncoder passwordEncoder;
 
+    @Autowired
+    private MailService mailService;
+
+    @Autowired
+    private HtmlGenerator htmlGenerator;
+
     @Override
     public UserRepository getRepository() {
         return userRepository;
     }
 
     public ServiceResponse<UserDTO> read(String username) {
-        User foundUser = userRepository.findByLogin(username);
+        User foundUser = userRepository.findByEmail(username);
         if (foundUser == null) {
             return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
         }
@@ -52,11 +60,20 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
         if (user.getPassword() != null) {
             user.setPassword(passwordEncoder.encode(user.getPassword()));
         }
+        // default locale
+        if (user.getLocale() == null) {
+            user.setLocale(LocaleEnum.NONE);
+        }
+        // default sex
+        if (user.getSex() == null) {
+            user.setSex(SexEnum.UNKNOWN);
+        }
+        user.setStatus(StatusEnum.ACTIVE);
         return super.create(user);
     }
 
     private boolean exists(UserDTO dto) {
-        User foundUser = userRepository.findByLoginAndRegisterStatus(dto.getUsername(), UserStatusEnum.REGISTERED);
+        User foundUser = userRepository.findByEmailAndRegisterStatus(dto.getUsername(), UserStatusEnum.REGISTERED);
         return foundUser != null;
     }
 
@@ -81,7 +98,18 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
             currentUserRoleValues.add(currentUserRole.getValue());
         }
         if (!currentUserRoleValues.containsAll(Arrays.asList(demandedRoles))) {
-            return ServiceResponse.error(ServiceResponseStatus.READ_FORBIDDEN);
+            return ServiceResponse.error(ServiceResponseStatus.FORBIDDEN);
+        }
+        return ServiceResponse.success(true);
+    }
+
+    @Override
+    public ServiceResponse<Boolean> isCurrrentUser(UUID userId) {
+        if (CustomUserDetails.getCurrentUser() == null) {
+            return ServiceResponse.error(ServiceResponseStatus.UNAUTHORIZED);
+        }
+        if (!CustomUserDetails.getCurrentUser().getId().equals(userId)) {
+            return ServiceResponse.error(ServiceResponseStatus.FORBIDDEN);
         }
         return ServiceResponse.success(true);
     }
@@ -94,6 +122,56 @@ public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRep
         }
         return ServiceResponse.success(user.toDTO(false));
 
+    }
+
+    public ServiceResponse<UserDTO> resetUserPassword(String email) {
+        User user = userRepository.findByEmailAndRegisterStatus(email, UserStatusEnum.REGISTERED);
+        if (user == null) {
+            return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
+        }
+        UserDTO userDTO = user.toDTO(true);
+        // generate new password
+        String newPassword = PasswordGenerator.generate();
+        // patch user password
+        ServiceResponse<UserDTO> patchPasswordResponse = patchUserPassword(
+                userDTO.getUid(), newPassword
+        );
+        if (!patchPasswordResponse.isSuccessful()) {
+            return ServiceResponse.error(patchPasswordResponse.getStatus());
+        }
+        // send reset password email to user
+        ServiceResponse<MailDTO> mailResponse = mailService.sendMail(
+                createResetPasswordEmailForUser(userDTO, newPassword)
+        );
+        if (!mailResponse.isSuccessful()) {
+            return ServiceResponse.error(mailResponse.getStatus());
+        }
+        return patchPasswordResponse;
+    }
+
+    private ServiceResponse<UserDTO> patchUserPassword(UUID userId, String newPassword) {
+        UserDTO user = new UserDTO();
+        user.setUid(userId);
+        user.setPassword(passwordEncoder.encode(newPassword));
+        return patch(user);
+    }
+
+    private MailDTO createResetPasswordEmailForUser(UserDTO userDTO, String password) {
+        MailDTO mailDTO = new MailDTO();
+        mailDTO.setTo(userDTO.getEmail());
+        mailDTO.setSubject("Reset password");
+        final Context context = new Context(Locale.ENGLISH);
+        context.setVariable("password", password);
+        mailDTO.setText(htmlGenerator.generateHtml("templates/emails/user/password_reset.html", context));
+        return mailDTO;
+    }
+
+    private static final class PasswordGenerator {
+        private static SecureRandom random = new SecureRandom();
+
+        public static String generate() {
+            return new BigInteger(130, random).toString(32);
+        }
     }
 
 }

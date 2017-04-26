@@ -2,11 +2,13 @@ package application.rest.domain;
 
 
 import application.persistence.entity.ProductCollectionItem;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 import java.util.UUID;
 
 @Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ProductCollectionItemDTO implements ReadWriteDatabaseDTO<ProductCollectionItem>, IdentifableDTO<Integer> {
 
     private Integer uid;

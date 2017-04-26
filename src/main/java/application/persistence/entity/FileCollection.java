@@ -19,28 +19,28 @@ import java.util.Set;
 @Table(name = "file_collection")
 @Data
 @EqualsAndHashCode(exclude="files")
-public class FileCollection implements DTOConvertable<FileCollectionDTO>, Serializable {
+public class FileCollection implements DTOConvertable<FileCollectionDTO>, Serializable, SlugEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
+    @Column(name = "title")
     private String title;
 
-    @Column
+    @Column(name = "description")
     private String description;
 
-    @Column
-    private String urlSlug;
+    @Column(name="url_slug")
+    private String slug;
 
-    @Column
+    @Column(name = "valid_from", nullable = false)
     private Date validFrom;
 
-    @Column
+    @Column(name = "valid_to")
     private Date validTo;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "fc.collection", cascade= CascadeType.ALL)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "fc.collection", cascade= CascadeType.PERSIST)
     private Set<FileCollectionHasFile> files = new HashSet<>();
 
     @Transient
@@ -52,7 +52,7 @@ public class FileCollection implements DTOConvertable<FileCollectionDTO>, Serial
         fileCollectionDTO.setUid(getId());
         fileCollectionDTO.setTitle(getTitle());
         fileCollectionDTO.setDescription(getDescription());
-        fileCollectionDTO.setUrlSlug(getUrlSlug());
+        fileCollectionDTO.setSlug(getSlug());
         fileCollectionDTO.setValidFrom(getValidFrom());
         fileCollectionDTO.setValidTo(getValidTo());
 

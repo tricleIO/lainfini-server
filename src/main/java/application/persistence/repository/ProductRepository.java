@@ -8,10 +8,11 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import java.util.List;
 import java.util.UUID;
 
-public interface ProductRepository extends PagingAndSortingRepository<Product, UUID>, SoftDeletableRepository<Product> {
+public interface ProductRepository extends PagingAndSortingRepository<Product, UUID>, SoftDeletableRepository<Product>, SlugRepository<Product> {
 
     Page<Product> findByCategoryId(Integer categoryId, Pageable pageable);
     Page<Product> findByCategoryIdIn(List<Integer> categoryIds, Pageable pageable);
-    Product findOneByUrlSlug(String urlSlug);
+    Product findOneBySlug(String slug);
 
+    Product findByCode(String code);
 }

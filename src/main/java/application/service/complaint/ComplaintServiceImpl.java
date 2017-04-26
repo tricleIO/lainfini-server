@@ -18,6 +18,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.UUID;
 
 @Service
@@ -42,7 +43,13 @@ public class ComplaintServiceImpl extends BaseDatabaseServiceImpl<Complaint, UUI
     private ApplicationFileService applicationFileService;
 
     @Override
-    protected AdditionalDataManipulatorBatch<ComplaintDTO> getCreateAdditionalDataLoaderBatch(ComplaintDTO dto) {
+    protected ServiceResponse<ComplaintDTO> doBeforeConvertInCreate(ComplaintDTO dto) {
+        dto.setCreatedAt(new Date());
+        return super.doBeforeConvertInCreate(dto);
+    }
+
+    @Override
+    protected AdditionalDataManipulatorBatch<ComplaintDTO> getAdditionalDataLoaderBatch(ComplaintDTO dto) {
         AdditionalDataManipulatorBatch<ComplaintDTO> batch = new AdditionalDataManipulatorBatch<>(dto);
         // add reason
         batch.add(c -> new AdditionalDataManipulator<>(

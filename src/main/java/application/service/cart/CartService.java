@@ -10,5 +10,6 @@ import java.util.UUID;
 public interface CartService extends BaseDatabaseService<Cart, UUID, CartDTO> {
 
     ServiceResponse<CartDTO> readCurrentCustomersCart();
+    ServiceResponse<CartDTO> readCartSecured(UUID cartId);
 
 }

@@ -13,6 +13,7 @@ import application.service.response.ServiceResponseStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.UUID;
 
 @Service
@@ -36,6 +37,12 @@ public class CartItemServiceImpl extends BaseDatabaseServiceImpl<CartItem, Long,
     }
 
     @Override
+    protected ServiceResponse<CartItemDTO> doBeforeConvertInCreate(CartItemDTO dto) {
+        dto.setAddedAt(new Date());
+        return super.doBeforeConvertInCreate(dto);
+    }
+
+    @Override
     public ServiceResponse<CartItemDTO> put(CartItemDTO dto) {
         if (!productInCartAlreadyExists(dto.getProductUid(), dto.getCartUid())) {
             return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
@@ -49,7 +56,17 @@ public class CartItemServiceImpl extends BaseDatabaseServiceImpl<CartItem, Long,
     }
 
     @Override
-    protected AdditionalDataManipulatorBatch<CartItemDTO> getCreateAdditionalDataLoaderBatch(CartItemDTO cartItemDTO) {
+    public ServiceResponse<CartItemDTO> removeProductFromCart(UUID productId, UUID cartId) {
+        CartItem cartItem = cartItemRepository.findByProductIdAndCartId(productId, cartId);
+        if (cartItem == null) {
+            return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
+        }
+        cartItemRepository.delete(cartItem);
+        return ServiceResponse.success(cartItem.toDTO(true));
+    }
+
+    @Override
+    protected AdditionalDataManipulatorBatch<CartItemDTO> getAdditionalDataLoaderBatch(CartItemDTO cartItemDTO) {
         AdditionalDataManipulatorBatch<CartItemDTO> batch = new AdditionalDataManipulatorBatch<>(cartItemDTO);
         // add cart
         batch.add(oi -> new AdditionalDataManipulator<>(
@@ -69,10 +86,6 @@ public class CartItemServiceImpl extends BaseDatabaseServiceImpl<CartItem, Long,
     @Override
     public CartItemRepository getRepository() {
         return cartItemRepository;
-    }
-
-    private void increaseQuantityOfProductInCartBy(Integer additionalQuantity, CartItem cartItem) {
-
     }
 
     private boolean productInCartAlreadyExists(UUID productId, UUID cartId) {

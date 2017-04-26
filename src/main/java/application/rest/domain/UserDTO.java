@@ -10,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
 
+import java.util.List;
 import java.util.UUID;
 
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
@@ -48,25 +49,24 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
 
     private LocaleEnum locale;
 
+    private List<LinkedAccountDTO> linkedAccounts;
+
+    private LinkedAccountDTO socialRequest;
+
     @Override
     public User toEntity(boolean selectAsParent, Object... parentParams) {
         User user = new User();
         user.setId(uid);
-        user.setLogin(username);
+        user.setEmail(username);
         user.setPassword(password);
         user.setFirstName(firstName);
         user.setLastName(lastName);
         user.setPhoneCode(phoneCode);
         user.setPhoneNumber(phoneNumber);
-        user.setStatus(StatusEnum.ACTIVE);
+        user.setLocale(locale);
+        user.setStatus(status);
         if (currency != null) {
             user.setCurrency(currency.toEntity(false));
-        }
-        if (sex == null) {
-            sex = SexEnum.UNKNOWN;
-        }
-        if (locale == null) {
-            locale = LocaleEnum.NONE;
         }
         user.setSex(sex);
         user.setAbraLink(abraLink);
@@ -75,6 +75,10 @@ public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Use
         user.setDegreeBeforeName(degreeBeforeName);
         user.setRegisterStatus(registerStatus);
         return user;
+    }
+
+    public String getEmail() {
+        return username;
     }
 
     @Override

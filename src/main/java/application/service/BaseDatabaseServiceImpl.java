@@ -1,14 +1,18 @@
 package application.service;
 
 import application.persistence.DTOConvertable;
+import application.persistence.repository.SlugRepository;
 import application.rest.domain.EntityConvertable;
 import application.rest.domain.IdentifableDTO;
+import application.rest.domain.SlugDTO;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
+import application.util.BeanCopier;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.io.Serializable;
 import java.util.LinkedList;
@@ -41,9 +45,18 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
             return beforeConvertResponse;
         }
         // load additional info to DTO
-        ServiceResponseStatus status = getCreateAdditionalDataLoaderBatch(dto).tryReadAll();
+        ServiceResponseStatus status = getAdditionalDataLoaderBatch(dto).tryReadAll();
         if (status != ServiceResponseStatus.OK) {
             return ServiceResponse.error(status);
+        }
+        // slug generation
+        if (this instanceof SlugService && dto instanceof SlugDTO && getRepository() instanceof SlugRepository) {
+            SlugService slugService = (SlugService) this;
+            SlugDTO slugDTO = (SlugDTO) dto;
+            ServiceResponse generateSlugResponse = slugService.generateSlugAndSetItToDTO(slugDTO);
+            if (!generateSlugResponse.isSuccessful()) {
+                return ServiceResponse.error(generateSlugResponse.getStatus());
+            }
         }
         // convert to entity
         E entity = dto.toEntity(true);
@@ -66,16 +79,26 @@ public abstract class BaseDatabaseServiceImpl<E extends DTOConvertable<D>, I ext
     protected void doAfterCreate(E entity) {
     }
 
-    protected AdditionalDataManipulatorBatch<D> getCreateAdditionalDataLoaderBatch(D dto) {
-        return new AdditionalDataManipulatorBatch(dto);
+    protected AdditionalDataManipulatorBatch<D> getAdditionalDataLoaderBatch(D dto) {
+        return new AdditionalDataManipulatorBatch<>(dto);
     }
 
+    @Transactional
     public ServiceResponse<D> patch(D dto) {
-        if (!getRepository().exists(dto.getUid())) {
+        // find record
+        E originalEntity = getRepository().findOne(dto.getUid());
+        if (originalEntity == null) {
             return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
         }
-        E entity = dto.toEntity(true);
-        E patchedEntity = getRepository().save(entity);
+        // load additional info to DTO
+        ServiceResponseStatus status = getAdditionalDataLoaderBatch(dto).tryReadAll();
+        if (status != ServiceResponseStatus.OK) {
+            return ServiceResponse.error(status);
+        }
+        // update
+        E updatingEntity = dto.toEntity(true);
+        BeanCopier.copyNonNullProperties(updatingEntity, originalEntity);
+        E patchedEntity = getRepository().save(originalEntity);
         return ServiceResponse.success(patchedEntity.toDTO(true));
     }
 

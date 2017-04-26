@@ -1,30 +1,55 @@
 package application.persistence.entity;
 
 import application.persistence.DTOConvertable;
-import application.rest.domain.DeliveryDTO;
+import application.rest.domain.ShippingDTO;
 import lombok.Data;
+import org.hibernate.envers.Audited;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
 
+@Audited
 @Entity
 @Data
-public class Delivery implements DTOConvertable<DeliveryDTO>, Serializable {
+public class Delivery implements DTOConvertable<ShippingDTO>, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
-    private String name;
+    @ManyToOne
+    @JoinColumn(name = "shipping_tariff_id", referencedColumnName = "id")
+    private ShippingTariff shippingTariff;
+
+    @Column(precision = 11, scale = 2)
+    private BigDecimal price;
+
+    @ManyToOne
+    @JoinColumn(name = "currency_id", referencedColumnName = "id")
+    private Currency currency;
+
+    private String trackingNumber;
+
+    private Date shippedAt;
 
     @Override
-    public DeliveryDTO toDTO(boolean selectAsParent, Object... parentParams) {
-        DeliveryDTO deliveryDTO = new DeliveryDTO();
+    public ShippingDTO toDTO(boolean selectAsParent, Object... parentParams) {
+        ShippingDTO deliveryDTO = new ShippingDTO();
         deliveryDTO.setUid(id);
-        deliveryDTO.setName(name);
+        deliveryDTO.setTrackingNumber(trackingNumber);
+        deliveryDTO.setPrice(price);
+        deliveryDTO.setShippedAt(shippedAt);
+        if (currency != null) {
+            deliveryDTO.setCurrency(currency.toDTO(false));
+        }
+        if (shippingTariff != null) {
+            deliveryDTO.setShippingTariffUid(shippingTariff.getId());
+        }
+        if (shippingTariff != null) {
+            deliveryDTO.setShippingTariff(shippingTariff.toDTO(false));
+        }
         return deliveryDTO;
     }
 

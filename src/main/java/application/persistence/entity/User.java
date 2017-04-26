@@ -24,19 +24,23 @@ import application.persistence.type.UserStatusEnum;
 import application.rest.domain.UserDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.envers.Audited;
+import org.hibernate.envers.NotAudited;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 import java.util.UUID;
 
+@Audited
 @Entity
 @Table(name = "customer")
 @Data
+@EqualsAndHashCode(exclude = {"addresses","wishes", "linkedAccountList"})
 public class User implements DTOConvertable<UserDTO>, Serializable {
 
     @Id
@@ -45,8 +49,8 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(name = "id", unique = true, nullable = false, columnDefinition = "BINARY(16)")
     private UUID id;
 
-    @OneToMany(mappedBy = "customer")
-    private List<LinkedAccount> linkedAccountList;
+//    @OneToMany(mappedBy = "customer")
+//    private List<LinkedAccount> linkedAccountList;
 
     @Column(name = "degree_before_name")
     private String degreeBeforeName;
@@ -54,18 +58,16 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(name = "degree_after_name")
     private String degreeAfterName;
 
-    @NotNull
-    @Column(name = "first_name", length = 64, nullable = false)
+    @Column(name = "first_name", length = 64)
     private String firstName;
 
-    @NotNull
-    @Column(name = "last_name", length = 64, nullable = false)
+    @Column(name = "last_name", length = 64)
     private String lastName;
 
     @Column(name = "sex", length = 1)
     private String sex;
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "billing_address_id", referencedColumnName = "id")
     private Address billingAddress;
 
@@ -82,10 +84,12 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(name = "abra_link")
     private String abraLink;
 
+    @NotAudited
     @Column(name = "stripe_customer_token")
     private String stripeToken;
 
-    @OneToOne(mappedBy = "user")
+    @NotAudited
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private UserEmailVerificationToken emailVerificationToken;
 
     @Enumerated(EnumType.STRING)
@@ -100,21 +104,25 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @Column(name = "locale", length = 10)
     private LocaleEnum locale;
 
-    @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "customer")
+    @NotAudited
+    @OneToMany(cascade=CascadeType.ALL, mappedBy = "customer")
     private Set<Wish> wishes;
 
-    @OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "customer")
+    @NotAudited
+    @OneToMany(cascade=CascadeType.ALL, mappedBy = "customer")
     private Set<Address> addresses;
 
     /*login part*/
 
     @NotNull
     @Column(nullable = false)
-    private String login;
+    private String email;
 
+    @NotAudited
     @Column(name = "password", length = 64)
     private String password;
 
+    @NotAudited
     @JsonIgnore
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "user_role", joinColumns = {@JoinColumn(name = "user_id")}, inverseJoinColumns = {@JoinColumn(name = "role_id")})
@@ -130,10 +138,10 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     public User(User user) {
         super();
         this.id = user.getId();
-        this.login = user.getLogin();
+        this.email = user.getEmail();
         this.password = user.getPassword();
         this.roles = user.getRoles();
-        this.linkedAccountList = user.getLinkedAccountList();
+//        this.linkedAccountList = user.getLinkedAccountList();
         this.degreeBeforeName = user.getDegreeBeforeName();
         this.degreeAfterName = user.getDegreeAfterName();
         this.firstName =user.getFirstName();
@@ -154,7 +162,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     public UserDTO toDTO(boolean selectAsParent, Object... parentParams) {
         UserDTO userDTO = new UserDTO();
         userDTO.setUid(id);
-        userDTO.setUsername(login);
+        userDTO.setUsername(email);
         userDTO.setFirstName(firstName);
         userDTO.setLastName(lastName);
         userDTO.setStatus(status);
@@ -172,6 +180,16 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
         if (currency != null) {
             userDTO.setCurrency(currency.toDTO(false));
         }
+
+//        if (linkedAccountList != null && linkedAccountList.size() > 0) {
+//            List<LinkedAccountDTO> linkedAccountDTOS = new ArrayList<>();
+//            for (LinkedAccount linkedAccount : linkedAccountList) {
+//                LinkedAccountDTO linkedAccountDTO = new LinkedAccountDTO();
+//                linkedAccountDTO.setParty(linkedAccount.getParty());
+//                linkedAccountDTOS.add(linkedAccountDTO);
+//            }
+//            userDTO.setLinkedAccounts(linkedAccountDTOS);
+//        }
         userDTO.setDegreeAfterName(degreeAfterName);
         userDTO.setDegreeBeforeName(degreeBeforeName);
         userDTO.setRegisterStatus(registerStatus);
@@ -183,7 +201,9 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     }
 
     public void setSex(SexEnum sex) {
-        this.sex = sex.getValue();
+        if (sex != null) {
+            this.sex = sex.getValue();
+        }
     }
 
 }

@@ -1,20 +1,27 @@
 package application.service.user;
 
+import application.configuration.AppProperties;
 import application.persistence.entity.Role;
 import application.persistence.entity.User;
+import application.persistence.entity.UserEmailVerificationToken;
 import application.persistence.repository.RoleRepository;
 import application.persistence.repository.UserRepository;
 import application.persistence.type.UserRoleEnum;
 import application.persistence.type.UserStatusEnum;
+import application.rest.domain.MailDTO;
 import application.rest.domain.UserDTO;
+import application.service.mail.MailService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
+import application.util.HtmlGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.thymeleaf.context.Context;
 
 import java.util.HashSet;
+import java.util.Locale;
 import java.util.Set;
 import java.util.UUID;
 
@@ -26,6 +33,15 @@ public class CustomerServiceImpl extends UserServiceImpl implements CustomerServ
 
     @Autowired
     private RoleRepository roleRepository;
+
+    @Autowired
+    private MailService mailService;
+
+    @Autowired
+    private AppProperties appProperties;
+
+    @Autowired
+    private HtmlGenerator htmlGenerator;
 
     @Override
     public ServiceResponse<UserDTO> read(UUID key) {
@@ -56,6 +72,16 @@ public class CustomerServiceImpl extends UserServiceImpl implements CustomerServ
         // if is created without password, set to unregistered
         if (user.getPassword() != null) {
             user.setRegisterStatus(UserStatusEnum.PRE_REGISTERED);
+            UserEmailVerificationToken userEmailVerificationToken = new UserEmailVerificationToken(user);
+            user.setEmailVerificationToken(userEmailVerificationToken);
+            MailDTO mailDTO = new MailDTO();
+            mailDTO.setSubject("Registration");
+            mailDTO.setTo(user.getEmail());
+
+            final Context context = new Context(Locale.ENGLISH);
+            context.setVariable("verificationLink", getVerificationUrl(userEmailVerificationToken));
+            mailDTO.setText(htmlGenerator.generateHtml("templates/emails/user/registration_verification.html", context));
+            mailService.sendMail(mailDTO);
         } else {
             user.setRegisterStatus(UserStatusEnum.UNREGISTERED);
         }
@@ -67,6 +93,10 @@ public class CustomerServiceImpl extends UserServiceImpl implements CustomerServ
             user.setRoles(roles);
         }
         super.doAfterConvertInCreate(user);
+    }
+
+    private String getVerificationUrl(UserEmailVerificationToken userEmailVerificationToken) {
+       return appProperties.getFrontendAddress() + "email-verification/" + userEmailVerificationToken.getToken();
     }
 
 }

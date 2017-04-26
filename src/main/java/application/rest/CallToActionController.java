@@ -1,9 +1,12 @@
 package application.rest;
 
 import application.persistence.entity.CallToAction;
+import application.persistence.type.UserRoleEnum;
 import application.rest.domain.CallDTO;
 import application.rest.domain.SoldItemsCallDTO;
+import application.service.response.ServiceResponse;
 import application.service.soldItemsCall.CallToActionService;
+import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +18,9 @@ public class CallToActionController extends AbstractDatabaseController<CallToAct
 
     @Autowired
     private CallToActionService soldItemsCallService;
+
+    @Autowired
+    private UserService userService;
 
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<?> readAddresses(Pageable pageable) {
@@ -28,6 +34,12 @@ public class CallToActionController extends AbstractDatabaseController<CallToAct
 
     @RequestMapping(value = "/soldItems", method = RequestMethod.POST)
     public ResponseEntity<?> createSoldItems(@RequestBody SoldItemsCallDTO soldItemsCallDTO) {
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        if (!hasRolesResponse.isSuccessful()) {
+            return new ErrorResponseEntity(hasRolesResponse.getStatus());
+        }
         return create(soldItemsCallDTO);
     }
 

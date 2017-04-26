@@ -24,6 +24,7 @@ public abstract class AbstractFileDTO<T extends AbstractFile> extends ResourceSu
     protected UUID fileIndex;
     protected String mimeType;
     protected String fileName;
+    protected String fileTitle;
     protected String fileDescription;
     protected FileStatusEnum fileStatus;
 

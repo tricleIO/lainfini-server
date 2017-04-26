@@ -2,6 +2,8 @@ package application.rest.domain;
 
 import application.persistence.entity.CustomerOrder;
 import application.persistence.type.OrderStatusEnum;
+import application.persistence.type.PaymentMethodEnum;
+import application.persistence.type.PaymentStateEnum;
 import application.rest.CartController;
 import application.rest.OrderController;
 import application.rest.UserController;
@@ -9,6 +11,8 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Date;
 import java.util.Set;
 import java.util.UUID;
@@ -23,25 +27,33 @@ public class OrderDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cu
     private UUID uid;
     private UUID cartUid;
     private UUID customerUid;
-    private Integer deliveryTypeUid;
+    private Integer shippingUid;
+    private Integer shippingTariffUid;
     private Integer paymentMethodUid;
     private Date createdAt;
+    private Date completedAt; // @TODO - set completed at some place!
     private OrderStatusEnum status;
     private Set<OrderItemDTO> items;
     private Long billingAddressUid;
     private Long deliveryAddressUid;
+    private Integer shippingRegionUid;
+    private PaymentStateEnum paymentState;
 
     private CartDTO cart;
     private UserDTO customer;
-    private DeliveryDTO deliveryType;
-    private PaymentMethodDTO paymentMethod;
+    private ShippingDTO shipping;
+    private ShippingTariffDTO shippingTariff;
+    private ShippingRegionDTO shippingRegion;
+    private PaymentMethodEnum paymentMethod;
     private AddressDTO billingAddress;
     private AddressDTO deliveryAddress;
 
     @Override
     public CustomerOrder toEntity(boolean selectAsParent, Object... parentParams) {
         CustomerOrder order = new CustomerOrder();
-        order.setCreatedAt(new Date());
+        order.setId(uid);
+        order.setCreatedAt(createdAt);
+        order.setCompletedAt(completedAt);
         order.setStatus(status);
         if (selectAsParent) {
             if (cart != null) {
@@ -50,11 +62,14 @@ public class OrderDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cu
             if (customer != null) {
                 order.setCustomer(customer.toEntity(false));
             }
-            if (deliveryType != null) {
-                order.setDeliveryType(deliveryType.toEntity(false));
+            if (shipping != null) {
+                order.setDelivery(shipping.toEntity(false));
+            }
+            if (shippingRegion != null) {
+                order.setShippingRegion(shippingRegion.toEntity(false));
             }
             if (paymentMethod != null) {
-                order.setPaymentMethod(paymentMethod.toEntity(false));
+                order.setPaymentMethod(paymentMethod);
             }
             if (billingAddress != null) {
                 order.setBillingAddress(billingAddress.toEntity(false));
@@ -64,6 +79,20 @@ public class OrderDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Cu
             }
         }
         return order;
+    }
+
+    public BigDecimal getTotalPriceWithShipping() {
+        return getTotalPrice().add(this.getShipping().getPrice()).setScale(2, RoundingMode.HALF_UP);
+    }
+
+    public BigDecimal getTotalPrice() {
+        // total order price
+        BigDecimal orderTotalPrice = BigDecimal.ZERO;
+        for (OrderItemDTO item : this.getItems()) {
+            BigDecimal itemsCost = item.getPrice().multiply(new BigDecimal(item.getQuantity()));
+            orderTotalPrice = orderTotalPrice.add(itemsCost);
+        }
+        return orderTotalPrice.setScale(2, RoundingMode.HALF_UP);
     }
 
     @Override

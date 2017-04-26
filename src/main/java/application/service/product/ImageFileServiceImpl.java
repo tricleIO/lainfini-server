@@ -149,7 +149,7 @@ public class ImageFileServiceImpl  extends BaseDatabaseServiceImpl<ImageFile, Lo
     }
 
     private BufferedImage imageManipulation(BufferedImage inputImage, int width, int height) {
-        return Scalr.resize(inputImage, Scalr.Method.QUALITY, Scalr.Mode.AUTOMATIC, width, height, Scalr.OP_GRAYSCALE, Scalr.OP_BRIGHTER,Scalr.OP_BRIGHTER);
+        return Scalr.resize(inputImage, Scalr.Method.QUALITY, Scalr.Mode.AUTOMATIC, width, height);
     }
 
     private BufferedImage cropImage(BufferedImage inputImage, int x, int y, int w, int h) {

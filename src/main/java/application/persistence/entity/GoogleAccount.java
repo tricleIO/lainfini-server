@@ -1,6 +1,8 @@
 package application.persistence.entity;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -9,11 +11,17 @@ import java.io.Serializable;
 @Entity
 @Table(name = "la_google")
 @Data
+@EqualsAndHashCode(exclude = {"linkedAccount"})
+@ToString(exclude = {"linkedAccount"})
 public class GoogleAccount implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @NotNull
+    @Column(name = "google_id", nullable = false)
+    private String googleId;
 
     @NotNull
     @Column(name = "username", length = 128, nullable = false)

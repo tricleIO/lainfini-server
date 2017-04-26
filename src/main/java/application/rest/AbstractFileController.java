@@ -1,8 +1,11 @@
 package application.rest;
 
 import application.persistence.entity.AbstractFile;
+import application.persistence.type.FileStatusEnum;
 import application.rest.domain.AbstractFileDTO;
+import application.rest.domain.ApplicationFileDTO;
 import application.service.product.AbstractFileService;
+import application.service.product.ApplicationFileService;
 import application.service.product.ImageFileService;
 import application.service.response.ServiceResponse;
 import application.util.FileUtil;
@@ -32,12 +35,15 @@ public abstract class AbstractFileController<E extends AbstractFile<D>, D extend
     @Autowired
     private ImageFileService imageFileService;
 
+    @Autowired
+    private ApplicationFileService applicationFileService;
+
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<?> readAllFiles(Pageable pageable) {
         return readAll(pageable);
     }
 
-    @RequestMapping(value = "", method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> uploadDocument(@RequestParam("file") MultipartFile[] files) throws IllegalAccessException, InstantiationException {
         List<D> applicationFileDTOS = new ArrayList<>();
         for (MultipartFile file : files) {
@@ -45,6 +51,33 @@ public abstract class AbstractFileController<E extends AbstractFile<D>, D extend
             applicationFileDTOS.add(body);
         }
         return new ResponseEntity(applicationFileDTOS, HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/{id}/", method = RequestMethod.PATCH)
+    public ResponseEntity<?> updateImage(@PathVariable UUID id, @RequestBody ApplicationFileDTO applicationFileDTO) {
+        ServiceResponse<ApplicationFileDTO> byIndex = applicationFileService.findByIndex(id);
+        if (byIndex != null) {
+            ApplicationFileDTO patchFile = byIndex.getBody();
+            patchFile.setFileName(applicationFileDTO.getFileName());
+            patchFile.setFileStatus(applicationFileDTO.getFileStatus());
+            patchFile.setFileTitle(applicationFileDTO.getFileTitle());
+            patchFile.setFileDescription(applicationFileDTO.getFileDescription());
+            applicationFileService.patch(patchFile);
+            return ResponseEntity.ok(patchFile);
+        }
+        return ResponseEntity.notFound().build();
+    }
+
+    @RequestMapping(value = "/{id}/", method = RequestMethod.DELETE)
+    public ResponseEntity<?> deleteImage(@PathVariable UUID id) {
+        ServiceResponse<ApplicationFileDTO> byIndex = applicationFileService.findByIndex(id);
+        if (byIndex != null) {
+            ApplicationFileDTO patchFile = byIndex.getBody();
+            patchFile.setFileStatus(FileStatusEnum.DELETED);
+            applicationFileService.patch(patchFile);
+            return ResponseEntity.ok(patchFile);
+        }
+        return ResponseEntity.notFound().build();
     }
 
     public D fileUploadProcess(MultipartFile file) throws InstantiationException, IllegalAccessException {
@@ -76,7 +109,7 @@ public abstract class AbstractFileController<E extends AbstractFile<D>, D extend
     public byte[] getFile(@PathVariable UUID id, @PathVariable String extension,
                           @RequestParam(required = false) Integer width,
                           @RequestParam(required = false) Integer height,
-                          @RequestParam(required = false) boolean asAttachment,
+                          @RequestParam(required = false) boolean dl,
                           HttpServletResponse response) {
         ServiceResponse<?> byIndex = getBaseService().findByIndex(id);
         FileAccessModel fileAccessModel = new FileAccessModel(((D) byIndex.getBody()));
@@ -101,7 +134,7 @@ public abstract class AbstractFileController<E extends AbstractFile<D>, D extend
             fileAccessModel.setPathToFile(pathToThumbnail);
         }
 
-        return getFile(fileAccessModel.getPathToFile(), fileAccessModel.getFileName(), asAttachment, response);
+        return getFile(fileAccessModel.getPathToFile(), fileAccessModel.getFileName(), dl, response);
     }
 
 

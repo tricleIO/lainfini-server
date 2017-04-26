@@ -4,10 +4,12 @@ import application.persistence.DTOConvertable;
 import application.persistence.type.CurrencySymbolPlacementEnum;
 import application.rest.domain.CurrencyDTO;
 import lombok.Data;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
+@Audited
 @Data
 @Entity
 public class Currency implements DTOConvertable<CurrencyDTO>, Serializable {
