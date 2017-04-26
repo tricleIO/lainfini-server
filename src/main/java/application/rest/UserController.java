@@ -87,6 +87,19 @@ public class UserController extends AbstractDatabaseController<User, UUID, UserD
         return create(user);
     }
 
+    @RequestMapping(value = "/{id}", method = RequestMethod.PATCH)
+    public ResponseEntity<?> patchUser(@PathVariable UUID id, @RequestBody UserDTO userDTO) {
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        ServiceResponse<Boolean> isCurrentUserResponse = userService.isCurrrentUser(id);
+        if (!hasRolesResponse.isSuccessful() && !isCurrentUserResponse.isSuccessful()) {
+            return new ErrorResponseEntity(ServiceResponseStatus.FORBIDDEN);
+        }
+        userDTO.setUid(id);
+        return patch(userDTO);
+    }
+
     @RequestMapping(value = "/current", method = RequestMethod.GET)
     public ResponseEntity<?> readCurrentUser() {
         return getSimpleResponseEntity(

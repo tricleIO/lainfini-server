@@ -205,6 +205,13 @@
         </dependency>
 
 
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-envers</artifactId>
+            <version>5.2.8.Final</version>
+        </dependency>
+
+
         <!-- Hibernate library dependecy start -->
         <dependency>
             <groupId>dom4j</groupId>
