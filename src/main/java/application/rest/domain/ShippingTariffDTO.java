@@ -16,6 +16,7 @@ public class ShippingTariffDTO implements ReadWriteDatabaseDTO<ShippingTariff>, 
     private Integer carrierUid;
     private BigDecimal price;
     private Integer currencyUid;
+    private String deliveryTime;
 
     private CurrencyDTO currency;
     private CarrierDTO carrier;
@@ -29,6 +30,7 @@ public class ShippingTariffDTO implements ReadWriteDatabaseDTO<ShippingTariff>, 
         shippingTariff.setCode(code);
         shippingTariff.setSlug(slug);
         shippingTariff.setPrice(price);
+        shippingTariff.setDeliveryTime(deliveryTime);
         if (selectAsParent) {
             if (currency != null) {
                 shippingTariff.setCurrency(currency.toEntity(false));
