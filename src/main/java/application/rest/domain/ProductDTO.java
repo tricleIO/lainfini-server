@@ -71,7 +71,7 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
         product.setPrice(price);
         product.setCode(code);
         product.setAbraLink(abraLink);
-        product.setProductStatus(productStatus);
+//        product.setProductStatus(productStatus);
         product.setSerialNumberIsRequired(serialNumberIsRequired);
         if (mainImageDTO != null) {
             product.setMainImage(mainImageDTO.toEntity(false));
