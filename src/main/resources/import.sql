@@ -35,7 +35,7 @@ INSERT INTO faq (question, answer) VALUES ('Can I contact you as a wholesaler?',
 
 INSERT INTO technology (id, name) VALUES (1, 'Digital print');
 
-INSERT INTO product_design (id, name) VALUES (1, 'Atelier Lainfini');
+INSERT INTO product_design (id, name) VALUES (1, 'Atelier LAINFINI');
 
 -- INSERT INTO faq (question, answer) VALUES ('How can I comment on a BBC programme or service?', 'We appreciate ');
 -- INSERT INTO faq (question, answer)VALUES ('Where can I obtain my radio or key code, or a new key for my Ford?', 'Firstly, ');
@@ -170,6 +170,16 @@ INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,vali
 INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (66,'F','66.png','UPLOADED',0xA65E361C9F0947CDA93AE0E34A2B23FB,'image/png','2017-03-16 11:08:01');
 INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (67,'F','67.png','UPLOADED',0xA75E361C9F0947CDA93AE0E34A2B23FB,'image/png','2017-03-16 11:08:01');
 
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (68,'F','68.png','UPLOADED',0xB75E361C9F0947CDA93AE0E34A2B2300,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (69,'F','69.png','UPLOADED',0xB75E361C9F0947CDA93AE0E34A2B2301,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (70,'F','70.png','UPLOADED',0xB75E361C9F0947CDA93AE0E34A2B2302,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (71,'F','71.png','UPLOADED',0xB75E361C9F0947CDA93AE0E34A2B2303,'image/png','2017-03-16 11:08:01');
+
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (72,'F','72.png','UPLOADED',0xB75E361C9F0947CDA93AE0E34A2B2304,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (73,'F','73.png','UPLOADED',0xB75E361C9F0947CDA93AE0E34A2B2305,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (74,'F','74.png','UPLOADED',0xB75E361C9F0947CDA93AE0E34A2B2306,'image/png','2017-03-16 11:08:01');
+INSERT INTO base_file (id, dtype,file_name,file_status,file_index,mime_type,valid_from)  VALUES (75,'F','75.png','UPLOADED',0xB75E361C9F0947CDA93AE0E34A2B2307,'image/png','2017-03-16 11:08:01');
+
 INSERT INTO product (id, abra_link, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status, technology_id, design_id, serial_number_is_required) VALUES (0x66353763616364612D303935612D3131,'1200000101', 0, 'ST012010101_17001015', 'BUTTERFLY SCARF', 795, 'butterfly-scarf', 1, 3, 1, 1, 1, 0, 1, 1, 0);
 INSERT INTO product (id, abra_link, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status, technology_id, design_id, serial_number_is_required) VALUES (0xCF03CE9A7BE24201BF006B4C4CE623F5,'3200000101', 0, 'ST012010103_17002015', 'PLAY OF BLUE SCARF', 795, 'play-of-blue-scarf', 1, 6, 1, 1, 1, 0, 1, 1, 0);
 INSERT INTO product (id, abra_link, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status, technology_id, design_id, serial_number_is_required) VALUES (0xFA800FA1F9A24BCAB53B3736B67E0C1F,'4200000101', 0, 'SS012010104_17003015', 'MOONBOW', 795, 'moonbow', 1, 1, 2, 1, 1, 0, 1, 1, 0);
@@ -182,8 +192,8 @@ INSERT INTO product (id, abra_link, status, code, name, price, slug, category_id
 INSERT INTO product (id, abra_link, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status, technology_id, design_id, serial_number_is_required) VALUES (0x2D947E4844AD439E8C71B11A106D6B81,'B200000101', 0, 'ST012010107_17010015', 'MOVEMENT', 795, 'movement', 1, 14, 1, 1, 1, 0, 1, 1, 0);
 INSERT INTO product (id, abra_link, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status, technology_id, design_id, serial_number_is_required) VALUES (0x8EA1D8FD01DB4982AEEC30EBCDE88843,'1400000101', 0, 'MT012020201_17011012', 'BUTTERFLY SHAWL', 995, 'butterfly-shawl', 2, 10, 3, 2, 1, 0, 1, 1, 0);
 INSERT INTO product (id, abra_link, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status, technology_id, design_id, serial_number_is_required) VALUES (0x991DC5AB44744538849059A613EECC70,'2400000101', 0, 'MT012020203_17012012', 'PLAY OF BLUE SHAWL', 995, 'play-of-blue-shawl', 2, 11, 3, 2, 1, 0, 1, 1, 0);
-
-
+INSERT INTO product (id, abra_link, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status, technology_id, design_id, serial_number_is_required) VALUES (0x991DC5AB44744538849059A613EECC10,'001', 0, null, 'INFINI', 995, 'INFINI', 1, 68, 2, 1, 1, 0, 1, 1, 0);
+INSERT INTO product (id, abra_link, status, code, name, price, slug, category_id, main_image_id, material_id, size_id, unit_id, product_status, technology_id, design_id, serial_number_is_required) VALUES (0x991DC5AB44744538849059A613EECC11,'002', 0, null, 'MYSTERY', 995, 'MYSTERY', 1, 72, 2, 1, 1, 0, 1, 1, 0);
 
 
 INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,16,0xBF5E361C9F0947CDA93AE0E34A2B23FB);
@@ -230,6 +240,14 @@ INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (2,46,0
 
 INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,47,0x991DC5AB44744538849059A613EECC70);
 INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (2,48,0x991DC5AB44744538849059A613EECC70);
+
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,69,0x991DC5AB44744538849059A613EECC10);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (2,70,0x991DC5AB44744538849059A613EECC10);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (3,71,0x991DC5AB44744538849059A613EECC10);
+
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (1,73,0x991DC5AB44744538849059A613EECC11);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (2,74,0x991DC5AB44744538849059A613EECC11);
+INSERT INTO product_has_file (sequence_number,file_id,product_id) VALUES (3,75,0x991DC5AB44744538849059A613EECC11);
 
 
 INSERT INTO file_collection (id,description,title,url_slug, valid_from) VALUES (1,'New collection for year 2017','Collection 2017','collection-2017','2017-01-01');
