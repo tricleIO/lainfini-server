@@ -62,15 +62,6 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
                     }
                 }
             }
-            // count available item
-            ServiceResponse<Long> countAvailableProductItems = stockItemService.countProductsInStock(
-                    productDTO.getUid()
-            );
-            if (countAvailableProductItems.isSuccessful()) {
-                productDTO.setAvailableItemsCount(
-                        countAvailableProductItems.getBody()
-                );
-            }
             addRandomCallToAction(productDTO);
         }
         return response;
@@ -174,6 +165,15 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
                 flashDTOList.add(productHasFlash.getFlash().toDTO(false));
             }
             dto.setFlashes(flashDTOList);
+        }
+        // count available item
+        ServiceResponse<Long> countAvailableProductItems = stockItemService.countProductsInStock(
+                dto.getUid()
+        );
+        if (countAvailableProductItems.isSuccessful()) {
+            dto.setAvailableItemsCount(
+                    countAvailableProductItems.getBody()
+            );
         }
     }
 
