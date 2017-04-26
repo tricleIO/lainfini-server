@@ -22,25 +22,23 @@ public class OrderItem implements DTOConvertable<OrderItemDTO>, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(updatable = false)
     private Long id;
 
     @ManyToOne
     @JoinColumn(name = "product_id", referencedColumnName = "id")
     private Product product;
 
-    @Column(updatable = false)
     private Integer quantity;
 
-    @Column(precision = 11, scale = 2, updatable = false)
+    @Column(precision = 11, scale = 2)
     private BigDecimal price;
 
     @NotNull
-    @Column(name = "added_at", nullable = false, updatable = false)
+    @Column(name = "added_at", nullable = false)
     private Date addedAt;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "order_id", nullable = false, updatable = false)
+    @JoinColumn(name = "order_id", nullable = false)
     private CustomerOrder order;
 
     @Override

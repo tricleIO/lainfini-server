@@ -27,7 +27,7 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     @Id
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     @GeneratedValue(generator = "uuid")
-    @Column(name = "id", unique = true, nullable = false, updatable = false, columnDefinition = "BINARY(16)")
+    @Column(name = "id", unique = true, nullable = false, columnDefinition = "BINARY(16)")
     private UUID id;
 
     @Column(name = "name", nullable = false, length = 255)
