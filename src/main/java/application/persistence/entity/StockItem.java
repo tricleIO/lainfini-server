@@ -36,6 +36,10 @@ public class StockItem implements DTOConvertable<StockItemDTO>, Serializable {
     @JoinColumn(name = "customer_order_id", referencedColumnName = "id")
     private CustomerOrder order;
 
+    @ManyToOne
+    @JoinColumn(name = "stock_id", referencedColumnName = "id", nullable = false)
+    private Stock stock;
+
     @Override
     public StockItemDTO toDTO(boolean selectAsParent, Object... parentParams) {
         StockItemDTO stockItemDTO = new StockItemDTO();
@@ -50,6 +54,9 @@ public class StockItem implements DTOConvertable<StockItemDTO>, Serializable {
         }
         if (order != null) {
             stockItemDTO.setOrderUid(order.getId());
+        }
+        if (stock != null) {
+            stockItemDTO.setStockUid(stock.getId());
         }
         stockItemDTO.setState(state);
         return stockItemDTO;
