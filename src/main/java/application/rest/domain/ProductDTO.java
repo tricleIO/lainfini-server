@@ -3,6 +3,7 @@ package application.rest.domain;
 import application.persistence.entity.Product;
 import application.persistence.entity.ProductFile;
 import application.persistence.type.ProductStatusEnum;
+import application.persistence.type.ShowProductEnum;
 import application.persistence.type.StatusEnum;
 import application.rest.CategoryController;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -48,6 +49,7 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
 
     private Long productStock;
     private ProductStatusEnum productAvailability;
+    private ShowProductEnum show;
 
     private String abraLink;
 
@@ -74,6 +76,7 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
         product.setAbraLink(abraLink);
 //        product.setProductStatus(productStatus);
         product.setSerialNumberIsRequired(serialNumberIsRequired);
+        product.setShowProduct(show);
         if (mainImageDTO != null) {
             product.setMainImage(mainImageDTO.toEntity(false));
         }
