@@ -125,7 +125,7 @@ public class StockItemServiceImpl extends BaseDatabaseServiceImpl<StockItem, Lon
         }
         // get requested amount of product
         Pageable requestedProductsPageable = getPageable(amount);
-        Page<StockItem> itemsToReserve = stockItemRepository.findByProductIdAndState(
+        Page<StockItem> itemsToReserve = stockItemRepository.findByProductIdAndStateOrderByStockPriority(
                 productId,
                 StockItemStateEnum.AVAILABLE,
                 requestedProductsPageable
