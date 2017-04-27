@@ -81,39 +81,56 @@ public class PaymentServiceImpl extends BaseDatabaseServiceImpl<Payment, Long, P
                 if (readOrderResponse.isSuccessful()) {
                     OrderDTO orderDTO = readOrderResponse.getBody();
                     if (orderDTO.getPaymentState() == PaymentStateEnum.PAID) {
-                        // send mail to customer
-                        ServiceResponse<UserDTO> readUserResponse = userService.read(readOrderResponse.getBody().getCustomerUid());
-                        if (readUserResponse.isSuccessful()) {
-                            MailDTO mailDTO = new MailDTO();
-                            mailDTO.setTo(readUserResponse.getBody().getEmail());
-                            mailDTO.setSubject("Order payment accepted");
-
-                            final Context context = new Context(Locale.ENGLISH);
-                            context.setVariable("order", orderDTO);
-                            mailDTO.setText(htmlGenerator.generateHtml(
-                                    "templates/emails/payment/payment_accepted.html",
-                                    context)
+                        // send mails
+                        new Thread(() -> {
+                            sendMailToCustomer(
+                                    readOrderResponse.getBody().getCustomerUid(),
+                                    orderDTO
                             );
-                            mailService.sendMail(mailDTO);
-                        }
-
-                        // sellers
-                        final Context context = new Context(Locale.ENGLISH);
-                        context.setVariable("order", orderDTO);
-                        final String htmlSeller = htmlGenerator.generateHtml("templates/emails/payment/payment_accepted_seller.html", context);
-                        // send mail to all sellers
-                        for (String sellerEmail : appProperties.getSellerEmails()) {
-                            MailDTO mailDTO = new MailDTO();
-                            mailDTO.setTo(sellerEmail);
-                            mailDTO.setSubject("Customer payment accepted");
-                            mailDTO.setText(htmlSeller);
-                            mailService.sendMail(mailDTO);
-                        }
+                            sendMailsToSellers(orderDTO);
+                        }).start();
                     }
                 }
             }
         }
         return createPaymentResponse;
+    }
+
+    private void sendMailsToSellers(OrderDTO orderDTO) {
+        try {
+            final Context context = new Context(Locale.ENGLISH);
+            context.setVariable("order", orderDTO);
+            final String htmlSeller = htmlGenerator.generateHtml("templates/emails/payment/payment_accepted_seller.html", context);
+            // send mail to all sellers
+            for (String sellerEmail : appProperties.getSellerEmails()) {
+                MailDTO mailDTO = new MailDTO();
+                mailDTO.setTo(sellerEmail);
+                mailDTO.setSubject("Customer payment accepted");
+                mailDTO.setText(htmlSeller);
+                mailService.sendMail(mailDTO);
+            }
+        } catch (Exception ex) {
+        }
+    }
+
+    private void sendMailToCustomer(UUID customerUid, OrderDTO orderDTO) {
+        try {
+            ServiceResponse<UserDTO> readUserResponse = userService.read(customerUid);
+            if (readUserResponse.isSuccessful()) {
+                MailDTO mailDTO = new MailDTO();
+                mailDTO.setTo(readUserResponse.getBody().getEmail());
+                mailDTO.setSubject("Order payment accepted");
+
+                final Context context = new Context(Locale.ENGLISH);
+                context.setVariable("order", orderDTO);
+                mailDTO.setText(htmlGenerator.generateHtml(
+                        "templates/emails/payment/payment_accepted.html",
+                        context)
+                );
+                mailService.sendMail(mailDTO);
+            }
+        } catch (Exception ex) {
+        }
     }
 
     private ServiceResponse<Integer> sellItems(UUID orderId) {
