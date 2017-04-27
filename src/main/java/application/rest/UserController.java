@@ -124,13 +124,8 @@ public class UserController extends AbstractDatabaseController<User, UUID, UserD
         if (user.getRegisterStatus() == UserStatusEnum.PRE_REGISTERED) {
             user.setRegisterStatus(UserStatusEnum.REGISTERED);
             userRepository.save(user);
-
-            MailDTO mailDTO = new MailDTO();
-            mailDTO.setTo(user.getEmail());
-            mailDTO.setSubject("Registration confirmed");
-            final Context context = new Context(Locale.ENGLISH);
-            mailDTO.setText(htmlGenerator.generateHtml("templates/emails/user/registration_confirmation.html", context));
-            mailService.sendMail(mailDTO);
+            // send mail in own thread
+            new Thread(() -> sendConfirmationMail(user)).start();
         }
 
         Set<GrantedAuthority> authorities = new HashSet<>();
@@ -154,6 +149,18 @@ public class UserController extends AbstractDatabaseController<User, UUID, UserD
         OAuth2Authentication auth = new OAuth2Authentication(oAuth2Request, authenticationToken);
         OAuth2AccessToken token2 = authorizationServerTokenServices.createAccessToken(auth);
         return new ResponseEntity<>(token2, HttpStatus.OK);
+    }
+
+    private void sendConfirmationMail(User user) {
+        try {
+            MailDTO mailDTO = new MailDTO();
+            mailDTO.setTo(user.getEmail());
+            mailDTO.setSubject("Registration confirmed");
+            final Context context = new Context(Locale.ENGLISH);
+            mailDTO.setText(htmlGenerator.generateHtml("templates/emails/user/registration_confirmation.html", context));
+            mailService.sendMail(mailDTO);
+        } catch (Exception ex) {
+        }
     }
 
     @Override
