@@ -131,7 +131,7 @@ public class BraintreeController {
                 return new ResponseEntity<>(createPaymentResponse.getBody(), HttpStatus.OK);
             } else {
                 // not success status
-                sendPaymentNotSuccessfulEmail(orderDTO);
+                new Thread(() -> sendPaymentNotSuccessfulEmail(orderDTO)).start();
                 return new ErrorResponseEntity(ServiceResponseStatus.PAYMENT_UNSUCCESSFUL);
             }
         } else {
@@ -139,7 +139,7 @@ public class BraintreeController {
             // payment error status
             ServiceResponseStatus paymentUnsuccessfulStatus = ServiceResponseStatus.PAYMENT_UNSUCCESSFUL;
             // send error mail
-            sendPaymentNotSuccessfulEmail(orderDTO);
+            new Thread(() -> sendPaymentNotSuccessfulEmail(orderDTO)).start();
             // try to find concrete error
             for (ValidationError error : result.getErrors().getAllDeepValidationErrors()) {
                 return new ResponseEntity<>(
