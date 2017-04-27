@@ -1,13 +1,11 @@
 package application.persistence.entity;
 
 import application.persistence.DTOConvertable;
+import application.persistence.type.StockPriority;
 import application.rest.domain.StockDTO;
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -20,11 +18,15 @@ public class Stock implements DTOConvertable<StockDTO>, Serializable {
 
     private String location;
 
+    @Enumerated(EnumType.ORDINAL)
+    private StockPriority priority;
+
     @Override
     public StockDTO toDTO(boolean selectAsParent, Object... parentParams) {
         StockDTO stockDTO = new StockDTO();
         stockDTO.setUid(id);
         stockDTO.setLocation(location);
+        stockDTO.setPriority(priority);
         return stockDTO;
     }
 

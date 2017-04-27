@@ -846,8 +846,8 @@ INSERT INTO sold_items_call (id) VALUES(1);
 INSERT INTO product_has_call_to_action (id, call_to_action_id, product_id) VALUES (1, 1, 0x1d470bbf8e654cac852b9a02e04f45ff);
 
 
-INSERT INTO stock(id, location) VALUES (1, 'e-shop');
-INSERT INTO stock(id, location) VALUES (2, 'Prague');
+INSERT INTO stock(id, location, priority) VALUES (1, 'e-shop', 0);
+INSERT INTO stock(id, location, priority) VALUES (2, 'Prague', 1);
 
 INSERT INTO stock_item (added_at, serial_number, state, customer_order_id, product_id, user_id, stock_id) VALUES ('2017-04-23 13:11:31', NULL, 0, NULL, 0x66353763616364612D303935612D3131, 0x66353763616364612d303935612d3131, 1);
 INSERT INTO stock_item (added_at, serial_number, state, customer_order_id, product_id, user_id, stock_id) VALUES ('2017-04-23 13:11:31', NULL, 0, NULL, 0x66353763616364612D303935612D3131, 0x66353763616364612d303935612d3131, 1);
