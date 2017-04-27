@@ -109,37 +109,40 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
             if (readOrderResponse.isSuccessful()) {
                 // reserve all items
                 reserveItems(readOrderResponse.getBody());
-                // set variables
-                final Context context = new Context(Locale.ENGLISH);
-                context.setVariable("customer", dto.getCustomer());
-                context.setVariable("deliveryAddress", dto.getDeliveryAddress());
-                context.setVariable("order", readOrderResponse.getBody());
-                context.setVariable("shippingTariff", dto.getShippingTariff());
+                try {
+                    // set variables
+                    final Context context = new Context(Locale.ENGLISH);
+                    context.setVariable("customer", dto.getCustomer());
+                    context.setVariable("deliveryAddress", dto.getDeliveryAddress());
+                    context.setVariable("order", readOrderResponse.getBody());
+                    context.setVariable("shippingTariff", dto.getShippingTariff());
 
-                // email for customer
-                ServiceResponse<MailDTO> mailResponse = mailService.sendMail(
-                        createMail(
-                                dto.getCustomer().getEmail(),
-                                "Order confirmation",
-                                htmlGenerator.generateHtml("templates/emails/order/order_customer.html", context)
-                        )
-                );
-                if (!mailResponse.isSuccessful()) {
-//                    return ServiceResponse.error(mailResponse.getStatus());
-                }
-                // email to sellers
-                String htmlForSellers = htmlGenerator.generateHtml("templates/emails/order/order_seller.html", context);
-                for (String sellerEmail : appProperties.getSellerEmails()) {
-                    ServiceResponse<MailDTO> sellerMailResponse = mailService.sendMail(
+                    // email for customer
+                    ServiceResponse<MailDTO> mailResponse = mailService.sendMail(
                             createMail(
-                                    sellerEmail,
-                                    "Check new Order in e-shop",
-                                    htmlForSellers
+                                    dto.getCustomer().getEmail(),
+                                    "Order confirmation",
+                                    htmlGenerator.generateHtml("templates/emails/order/order_customer.html", context)
                             )
                     );
-                    if (!sellerMailResponse.isSuccessful()) {
-                        // log! ServiceResponse.error(mailResponse.getStatus());
+                    if (!mailResponse.isSuccessful()) {
+//                    return ServiceResponse.error(mailResponse.getStatus());
                     }
+                    // email to sellers
+                    String htmlForSellers = htmlGenerator.generateHtml("templates/emails/order/order_seller.html", context);
+                    for (String sellerEmail : appProperties.getSellerEmails()) {
+                        ServiceResponse<MailDTO> sellerMailResponse = mailService.sendMail(
+                                createMail(
+                                        sellerEmail,
+                                        "Check new Order in e-shop",
+                                        htmlForSellers
+                                )
+                        );
+                        if (!sellerMailResponse.isSuccessful()) {
+                            // log! ServiceResponse.error(mailResponse.getStatus());
+                        }
+                    }
+                } catch (Exception ex) {
                 }
             }
             return readOrderResponse;
