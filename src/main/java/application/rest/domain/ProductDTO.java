@@ -46,7 +46,8 @@ public class ProductDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private Integer designUid;
     private Boolean serialNumberIsRequired;
 
-    private Long availableItemsCount;
+    private Long productStock;
+    private ProductStatusEnum productAvailability;
 
     private String abraLink;
 

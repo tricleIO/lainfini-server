@@ -2,6 +2,7 @@ package application.service.product;
 
 import application.persistence.entity.*;
 import application.persistence.repository.*;
+import application.persistence.type.ProductStatusEnum;
 import application.persistence.type.StatusEnum;
 import application.persistence.type.UserStatusEnum;
 import application.rest.domain.*;
@@ -171,8 +172,12 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
                 dto.getUid()
         );
         if (countAvailableProductItems.isSuccessful()) {
-            dto.setAvailableItemsCount(
-                    countAvailableProductItems.getBody()
+            Long productCountInStock = countAvailableProductItems.getBody();
+            dto.setProductStock(
+                    productCountInStock
+            );
+            dto.setProductAvailability(
+                    ProductStatusEnum.getProductStatus(productCountInStock)
             );
         }
     }
