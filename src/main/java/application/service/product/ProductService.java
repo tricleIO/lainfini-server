@@ -2,6 +2,7 @@ package application.service.product;
 
 import application.persistence.entity.Product;
 import application.persistence.repository.ProductRepository;
+import application.rest.domain.LocalProductAvailabilityDTO;
 import application.rest.domain.ProductDTO;
 import application.rest.domain.ProductHasFlashDTO;
 import application.service.BaseDatabaseService;
@@ -20,6 +21,6 @@ public interface ProductService extends BaseDatabaseService<Product, UUID, Produ
     ServiceResponse<Page<ProductDTO>> readProductsInCategoryAndSubcategories(Integer categoryId, Pageable pageable, Principal principal);
     ServiceResponse<ProductDTO> addFlash(ProductHasFlashDTO productHasFlash);
     ServiceResponse<Page<ProductDTO>> findByImagesPfFileId(Long imageId);
-
+    ServiceResponse<LocalProductAvailabilityDTO> readProductAvailability(UUID productId);
 
 }

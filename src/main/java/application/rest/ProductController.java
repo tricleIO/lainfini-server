@@ -2,7 +2,7 @@ package application.rest;
 
 import application.persistence.entity.Product;
 import application.persistence.type.UserRoleEnum;
-import application.rest.domain.ProductAvailabilityDTO;
+import application.rest.domain.LocalProductAvailabilityDTO;
 import application.rest.domain.ProductDTO;
 import application.rest.domain.ProductHasFlashDTO;
 import application.service.abra.AbraStoresubcardExpandStoreService;
@@ -11,6 +11,7 @@ import application.service.response.ServiceResponse;
 import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -116,11 +117,21 @@ public class ProductController extends AbstractDatabaseController<Product, UUID,
         );
     }
 
-    @RequestMapping(value = "product/{id}/availability", method = RequestMethod.GET)
-    public ProductAvailabilityDTO checkAvailability(@PathVariable UUID id) {
-        ServiceResponse<ProductAvailabilityDTO> productAvailabilityDTOServiceResponse = abraStoresubcardExpandStoreService.checkProductAvailability(id);
-        return productAvailabilityDTOServiceResponse.getBody();
+    @RequestMapping(value = "/{id}/availability", method = RequestMethod.GET)
+    public ResponseEntity<?> checkAvailability(@PathVariable UUID id) {
+        ServiceResponse<LocalProductAvailabilityDTO> availabilityResponse = productService.readProductAvailability(id);
+        if (!availabilityResponse.isSuccessful()) {
+            return new ErrorResponseEntity(availabilityResponse.getStatus());
+        }
+        return new ResponseEntity<>(availabilityResponse.getBody(), HttpStatus.OK);
     }
+
+
+//    @RequestMapping(value = "product/{id}/availability", method = RequestMethod.GET)
+//    public ProductAvailabilityDTO checkAvailability(@PathVariable UUID id) {
+//        ServiceResponse<ProductAvailabilityDTO> productAvailabilityDTOServiceResponse = abraStoresubcardExpandStoreService.checkProductAvailability(id);
+//        return productAvailabilityDTOServiceResponse.getBody();
+//    }
 
     @Override
     public ProductService getBaseService() {
