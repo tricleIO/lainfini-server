@@ -32,7 +32,6 @@ import org.hibernate.envers.NotAudited;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
@@ -126,7 +125,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @JsonIgnore
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "user_role", joinColumns = {@JoinColumn(name = "user_id")}, inverseJoinColumns = {@JoinColumn(name = "role_id")})
-    private Set<Role> roles = new HashSet<Role>();
+    private Set<Role> roles;
 
     @Column(name = "register_status")
     @Enumerated(EnumType.ORDINAL)

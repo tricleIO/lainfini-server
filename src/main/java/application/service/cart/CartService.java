@@ -11,5 +11,6 @@ public interface CartService extends BaseDatabaseService<Cart, UUID, CartDTO> {
 
     ServiceResponse<CartDTO> readCurrentCustomersCart();
     ServiceResponse<CartDTO> readCartSecured(UUID cartId);
+    boolean isCartOpen(UUID cartId);
 
 }
