@@ -80,7 +80,8 @@ public enum ServiceResponseStatus {
     PRODUCT_NOT_GIVEN("Product id was not given.", HttpStatus.BAD_REQUEST),
     NOT_ENOUGH_ITEMS_IN_STOCK("Not enough items in stock.", HttpStatus.NOT_FOUND),
     SELLING_NOT_RESERVED_STOCK_ITEMS("Selling not reserved stock items.", HttpStatus.BAD_REQUEST),
-    STOCK_NOT_FOUND("Stock with given uid was not found.", HttpStatus.NOT_FOUND);
+    STOCK_NOT_FOUND("Stock with given uid was not found.", HttpStatus.NOT_FOUND),
+    ORDER_ALREADY_SHIPPED("Order was already shipped.", HttpStatus.CONFLICT);
 
     private final HttpStatus httpStatus;
     private final String message;

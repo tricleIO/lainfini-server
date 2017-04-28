@@ -197,6 +197,9 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
         if (!readResponse.isSuccessful()) {
             return readResponse;
         }
+        if (readResponse.getBody().getStatus() == OrderStatusEnum.SHIPPED) {
+            return ServiceResponse.error(ServiceResponseStatus.ORDER_ALREADY_SHIPPED);
+        }
         OrderDTO orderDTO = new OrderDTO();
         orderDTO.setUid(orderId);
         orderDTO.setStatus(OrderStatusEnum.SHIPPED);
