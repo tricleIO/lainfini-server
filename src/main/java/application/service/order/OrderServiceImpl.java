@@ -209,15 +209,25 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
         }
         ServiceResponse<UserDTO> userResponse = userService.read(readResponse.getBody().getCustomerUid());
         if (userResponse.isSuccessful()) {
-            MailDTO mailDTO = new MailDTO();
-            mailDTO.setTo(userResponse.getBody().getEmail());
-            mailDTO.setSubject("Order shipped");
-            mailDTO.setText("<h2>Greetings from Atelier LAINFINI!</h2>" +
-                    "<p>We are happy to announce your order <b>" + orderDTO.getUid() + "</b> has been shipped.<br><br>" +
-                    "Thank you for your interest in Atelier LAINFINI!</p>");
-            mailService.sendMail(mailDTO);
+            new Thread(() -> sendShippedOrderMail(orderDTO, userResponse.getBody().getEmail())).start();
         }
         return read(orderId);
+    }
+
+    private void sendShippedOrderMail(OrderDTO orderDTO, String emailAddress) {
+        try {
+            final Context context = new Context(Locale.ENGLISH);
+            context.setVariable("order", orderDTO);
+            // email for customer
+            mailService.sendMail(
+                    createMail(
+                            emailAddress,
+                            "Order shipped",
+                            htmlGenerator.generateHtml("templates/emails/order/order_shipped.html", context)
+                    )
+            );
+        } catch (Exception ex) {
+        }
     }
 
     private MailDTO createMail(String email, String subject, String text) {
