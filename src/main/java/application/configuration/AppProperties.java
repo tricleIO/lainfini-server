@@ -62,6 +62,15 @@ public class AppProperties implements Serializable {
     @Value("${mail.list.sellers:null}")
     private String sellerEmails;
 
+    // braintree
+    @Value("${braintree.gateway.merchant-id:null}")
+    private String braintreeMerchantId;
+
+    @Value("${braintree.gateway.public-key:null}")
+    private String braintreePublicKey;
+
+    @Value("${braintree.gateway.private-key:null}")
+    private String braintreePrivateKey;
 
     @PostConstruct
     private void testValueContent() {
