@@ -15,6 +15,7 @@ import application.service.order.OrderService;
 import application.service.product.ProductService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
+import application.service.stock.StockService;
 import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -45,6 +46,9 @@ public class StockItemServiceImpl extends BaseDatabaseServiceImpl<StockItem, Lon
 
     @Autowired
     private OrderService orderService;
+
+    @Autowired
+    private StockService stockService;
 
     @Override
     protected ServiceResponse<StockItemDTO> doBeforeConvertInCreate(StockItemDTO dto) {
@@ -95,6 +99,11 @@ public class StockItemServiceImpl extends BaseDatabaseServiceImpl<StockItem, Lon
                 new AdditionalDataManipulator.Writer<>(si::setOrder),
                 ServiceResponseStatus.ORDER_NOT_FOUND
         ));
+        batch.add(si -> new AdditionalDataManipulator<>(
+                new AdditionalDataManipulator.Reader<>(si.getStockUid(), stockService::read),
+                new AdditionalDataManipulator.Writer<>(si::setStock),
+                ServiceResponseStatus.STOCK_NOT_FOUND
+        ));
         return batch;
     }
 
@@ -116,7 +125,7 @@ public class StockItemServiceImpl extends BaseDatabaseServiceImpl<StockItem, Lon
         }
         // get requested amount of product
         Pageable requestedProductsPageable = getPageable(amount);
-        Page<StockItem> itemsToReserve = stockItemRepository.findByProductIdAndState(
+        Page<StockItem> itemsToReserve = stockItemRepository.findByProductIdAndStateOrderByStockPriority(
                 productId,
                 StockItemStateEnum.AVAILABLE,
                 requestedProductsPageable

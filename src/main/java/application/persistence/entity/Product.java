@@ -1,6 +1,7 @@
 package application.persistence.entity;
 
 import application.persistence.DTOConvertable;
+import application.persistence.type.ShowProductEnum;
 import application.rest.domain.ApplicationFileDTO;
 import application.rest.domain.ProductDTO;
 import lombok.Data;
@@ -94,6 +95,9 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
     @Column(nullable = false, columnDefinition = "TINYINT", length = 1)
     private Boolean serialNumberIsRequired;
 
+    @Enumerated(EnumType.ORDINAL)
+    private ShowProductEnum showProduct;
+
     @Override
     public ProductDTO toDTO(boolean selectAsParent, Object... parentParams) {
         ProductDTO productDTO = new ProductDTO();
@@ -107,6 +111,7 @@ public class Product extends SoftDeletableEntityImpl implements DTOConvertable<P
         productDTO.setAbraLink(abraLink);
 //        productDTO.setProductStatus(productStatus);
         productDTO.setSerialNumberIsRequired(serialNumberIsRequired);
+        productDTO.setShow(showProduct);
         if (mainImage != null) {
             productDTO.setMainImageDTO(mainImage.toDTO(false));
         }
