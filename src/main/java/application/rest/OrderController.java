@@ -2,10 +2,12 @@ package application.rest;
 
 import application.persistence.entity.CustomerOrder;
 import application.persistence.type.UserRoleEnum;
+import application.rest.domain.CartDTO;
 import application.rest.domain.OrderDTO;
 import application.service.cart.CartService;
 import application.service.order.OrderService;
 import application.service.response.ServiceResponse;
+import application.service.response.ServiceResponseStatus;
 import application.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -91,28 +93,21 @@ public class OrderController extends AbstractDatabaseController<CustomerOrder, U
 
     @RequestMapping(value = "/orders", method = RequestMethod.POST)
     public ResponseEntity<?> createOrder(@RequestBody OrderDTO order) {
+        ServiceResponse<CartDTO> cartResponse = cartService.read(order.getCartUid());
+        if (cartResponse.isSuccessful()) {
+            UUID customerUid = cartResponse.getBody().getCustomerUid();
+            if (customerUid != null) {
+                ServiceResponse<Boolean> isAdminResponse = userService.hasCurrentUserDemandedRoles(
+                        UserRoleEnum.ROLE_ADMIN
+                );
+                ServiceResponse<Boolean> isCurrentUserResponse = userService.isCurrrentUser(customerUid);
+                if (!isAdminResponse.isSuccessful() && !isCurrentUserResponse.isSuccessful()) {
+                    return new ErrorResponseEntity(ServiceResponseStatus.FORBIDDEN);
+                }
+            }
+        }
         return create(order);
     }
-
-
-//    @RequestMapping(value = "/customers/{customerId}/orders", method = RequestMethod.POST)
-//    public ResponseEntity<?> createOrder(@PathVariable UUID customerId, @RequestBody OrderDTO order) {
-//        // admins
-//        ServiceResponse<Boolean> isAdminResponse = userService.hasCurrentUserDemandedRoles(
-//                UserRoleEnum.ROLE_ADMIN
-//        );
-//        ServiceResponse<Boolean> isCurrentUserResponse = userService.isCurrrentUser(
-//                customerId
-//        );
-//        // final evaluation
-//        if (!isAdminResponse.isSuccessful() && !isCurrentUserResponse.isSuccessful()) {
-//            return new ErrorResponseEntity(isCurrentUserResponse.getStatus());
-//        }
-//        order.setCustomerUid(customerId);
-//        CartDTO cartDTO = cartService.read(order.getCartUid()).getBody();
-//        System.out.println(cartDTO);
-//        return create(order);
-//    }
 
     @Override
     public OrderService getBaseService() {

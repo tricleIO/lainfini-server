@@ -13,5 +13,6 @@ public interface CartRepository extends PagingAndSortingRepository<Cart, UUID> {
     Page<Cart> findByStatus(CartStatusEnum status, Pageable pageable);
     Cart findById(UUID id);
     Cart findFirstByCustomerIdAndStatusOrderByCreatedAtDesc(UUID customerId, CartStatusEnum cartStatus);
+    Long countByIdAndStatus(UUID cartId, CartStatusEnum status);
 
 }
