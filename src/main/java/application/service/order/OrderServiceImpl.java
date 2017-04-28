@@ -87,14 +87,20 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
     @Override
     @Transactional
     public synchronized ServiceResponse<OrderDTO> create(OrderDTO dto) {
-        // cart is given?
+        // cart
         if (dto.getCartUid() == null) {
             return ServiceResponse.error(ServiceResponseStatus.CART_NOT_GIVEN);
         }
-        // cart exists?
-        if (!cartRepository.exists(dto.getCartUid())) {
+        ServiceResponse<CartDTO> cartResponse = cartService.read(dto.getCartUid());
+        if (!cartResponse.isSuccessful()) {
             return ServiceResponse.error(ServiceResponseStatus.CART_NOT_FOUND);
         }
+        CartDTO cartDTO = cartResponse.getBody();
+        if (cartDTO.getStatus() != CartStatusEnum.OPENED) {
+            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_OPEN);
+        }
+        dto.setCart(cartDTO);
+        // its items
         List<CartItem> cartItems = cartItemRepository.findByCartId(dto.getCartUid());
         // enough in stock?
         ServiceResponse<Boolean> countItemsInStockResponse = enoughAllOfCartItemsInStock(cartItems);
@@ -249,20 +255,7 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
         if (dto.getPaymentMethod().getState() == PaymentMethodEnum.State.DENIED) {
             return ServiceResponse.error(ServiceResponseStatus.PAYMENT_METHOD_FORBIDDEN);
         }
-        // cart
-        if (dto.getCartUid() == null) {
-            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_GIVEN);
-        }
-        ServiceResponse<CartDTO> cartResponse = cartService.read(dto.getCartUid());
-        if (!cartResponse.isSuccessful()) {
-            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_FOUND);
-        }
-        CartDTO cartDTO = cartResponse.getBody();
-        if (cartDTO.getStatus() != CartStatusEnum.OPENED) {
-            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_OPEN);
-        }
-        dto.setCart(cartDTO);
-        ServiceResponse<UserDTO> userResponse = null;
+        ServiceResponse<UserDTO> userResponse;
         if (dto.getCustomerUid() == null) {
             if (dto.getCustomer() != null) {
                 // create unregistered user
