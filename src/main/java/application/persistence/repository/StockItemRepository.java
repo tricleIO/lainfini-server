@@ -17,6 +17,7 @@ public interface StockItemRepository extends PagingAndSortingRepository<StockIte
     Page<StockItem> findByState(StockItemStateEnum state, Pageable pageable);
     Page<StockItem> findByProductId(UUID productId, Pageable pageable);
     Page<StockItem> findByProductIdAndState(UUID productId, StockItemStateEnum state, Pageable pageable);
+    Page<StockItem> findByProductIdAndStateOrderByStockPriority(UUID productId, StockItemStateEnum state, Pageable pageable);
     Long countByProductId(UUID productId);
     Long countByProductIdAndState(UUID productId, StockItemStateEnum state);
     List<StockItem> findByOrderId(UUID orderId);
