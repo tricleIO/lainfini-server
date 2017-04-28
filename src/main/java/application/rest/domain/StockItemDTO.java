@@ -19,10 +19,12 @@ public class StockItemDTO implements ReadWriteDatabaseDTO<StockItem>, Identifabl
     private UUID userUid;
     private StockItemStateEnum state;
     private UUID orderUid;
+    private Integer stockUid;
 
     private ProductDTO product;
     private UserDTO user;
     private OrderDTO order;
+    private StockDTO stock;
 
     @Override
     public StockItem toEntity(boolean selectAsParent, Object... parentParams) {
@@ -40,6 +42,9 @@ public class StockItemDTO implements ReadWriteDatabaseDTO<StockItem>, Identifabl
             }
             if (order != null) {
                 stockItem.setOrder(order.toEntity(false));
+            }
+            if (stock != null) {
+                stockItem.setStock(stock.toEntity(false));
             }
         }
         return stockItem;
