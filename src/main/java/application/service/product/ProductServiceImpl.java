@@ -16,6 +16,7 @@ import application.service.productDesign.ProductDesignService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.size.SizeService;
+import application.service.stock.StockService;
 import application.service.stockItem.StockItemService;
 import application.service.technology.TechnologyService;
 import application.service.unit.UnitService;
@@ -39,6 +40,9 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
 
     @Autowired
     private StockItemService stockItemService;
+
+    @Autowired
+    private StockService stockService;
 
     @Override
     protected ServiceResponse<ProductDTO> doBeforeConvertInCreate(ProductDTO dto) {
@@ -145,7 +149,45 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
             productDTOS.add(productFile.getPf().getProduct().toDTO(false));
         }
         return ServiceResponse.success(new PageImpl<ProductDTO>(productDTOS, null, productDTOS.size()));
+    }
 
+    @Override
+    public ServiceResponse<LocalProductAvailabilityDTO> readProductAvailability(UUID productId) {
+        ServiceResponse<ProductDTO> productResponse = read(productId);
+        if (!productResponse.isSuccessful()) {
+            return ServiceResponse.error(productResponse.getStatus());
+        }
+        ServiceResponse<Page<StockItemDTO>> itemsResponse = stockItemService.readProductStockedItems(productId, null);
+        if (!itemsResponse.isSuccessful()) {
+            return ServiceResponse.error(itemsResponse.getStatus());
+        }
+        Map<Integer, Long> stockProductQuantityMap = new HashMap<>();
+        for (StockItemDTO item : itemsResponse.getBody().getContent()) {
+            if (stockProductQuantityMap.containsKey(item.getStockUid())) {
+                Long quantity = stockProductQuantityMap.get(item.getStockUid());
+                quantity++;
+                stockProductQuantityMap.replace(item.getStockUid(), quantity);
+            } else {
+                stockProductQuantityMap.put(item.getStockUid(), 1L);
+            }
+        }
+        List<StockProductQuantityDTO> stocks = new LinkedList<>();
+        for (Integer stockId : stockProductQuantityMap.keySet()) {
+            StockProductQuantityDTO stock = new StockProductQuantityDTO();
+            stock.setUid(stockId);
+            ServiceResponse<StockDTO> stockResponse = stockService.read(stockId);
+            if (!stockResponse.isSuccessful()) {
+                return ServiceResponse.error(ServiceResponseStatus.INTERNAL_ERROR);
+            }
+            stock.setLocation(stockResponse.getBody().getLocation());
+            stock.setQuantity(stockProductQuantityMap.get(stockId));
+            stocks.add(stock);
+        }
+        LocalProductAvailabilityDTO productAvailabilityDTO = new LocalProductAvailabilityDTO();
+        productAvailabilityDTO.setProductUid(productId);
+        productAvailabilityDTO.setStocks(stocks);
+        productAvailabilityDTO.setStatus(productResponse.getBody().getProductAvailability());
+        return ServiceResponse.success(productAvailabilityDTO);
     }
 
     @Override
