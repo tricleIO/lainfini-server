@@ -99,6 +99,11 @@ public class OrderServiceImpl extends BaseDatabaseServiceImpl<CustomerOrder, UUI
         if (cartDTO.getStatus() != CartStatusEnum.OPENED) {
             return ServiceResponse.error(ServiceResponseStatus.CART_NOT_OPEN);
         }
+        if (cartDTO.getCustomerUid() != null && dto.getCustomerUid() != null) {
+            if (!cartDTO.getCustomerUid().equals(dto.getCustomerUid())) {
+                return ServiceResponse.error(ServiceResponseStatus.FORBIDDEN);
+            }
+        }
         dto.setCart(cartDTO);
         // its items
         List<CartItem> cartItems = cartItemRepository.findByCartId(dto.getCartUid());
