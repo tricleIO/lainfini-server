@@ -6,7 +6,7 @@ import application.persistence.repository.UserRepository;
 import application.persistence.type.*;
 import application.rest.domain.MailDTO;
 import application.rest.domain.UserDTO;
-import application.service.BaseDatabaseServiceImpl;
+import application.service.BaseSoftDeletableDatabaseServiceImpl;
 import application.service.mail.MailService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
@@ -24,7 +24,7 @@ import java.util.*;
 
 @Service
 @Primary
-public class UserServiceImpl extends BaseDatabaseServiceImpl<User, UUID, UserRepository, UserDTO> implements UserService {
+public class UserServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<User, UUID, UserRepository, UserDTO> implements UserService {
 
     @Autowired
     private UserRepository userRepository;

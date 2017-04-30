@@ -2,8 +2,8 @@ package application.service.productDesign;
 
 import application.persistence.entity.ProductDesign;
 import application.rest.domain.ProductDesignDTO;
-import application.service.BaseDatabaseService;
+import application.service.BaseSoftDeletableDatabaseService;
 
-public interface ProductDesignService extends BaseDatabaseService<ProductDesign, Integer, ProductDesignDTO> {
+public interface ProductDesignService extends BaseSoftDeletableDatabaseService<ProductDesign, Integer, ProductDesignDTO> {
 
 }

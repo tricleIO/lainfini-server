@@ -3,11 +3,13 @@ package application.persistence.entity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
+@Audited
 @Entity
 @Table(name = "la_instagram")
 @Data

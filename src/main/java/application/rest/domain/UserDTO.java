@@ -18,7 +18,7 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<User>, IdentifableDTO<UUID> {
+public class UserDTO extends ResourceSupport implements ReadWriteDatabaseDTO<User>, SoftDeletableDTO, IdentifableDTO<UUID> {
 
     private UUID uid;
     private String username;
