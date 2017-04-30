@@ -35,7 +35,7 @@ INSERT INTO faq (question, answer, status) VALUES ('Can I contact you as a whole
 
 INSERT INTO technology (id, name) VALUES (1, 'Digital print');
 
-INSERT INTO product_design (id, name) VALUES (1, 'Atelier LAINFINI');
+INSERT INTO product_design (id, name, status) VALUES (1, 'Atelier LAINFINI', 0);
 
 -- INSERT INTO faq (question, answer, status) VALUES ('How can I comment on a BBC programme or service?', 'We appreciate ');
 -- INSERT INTO faq (question, answer)VALUES ('Where can I obtain my radio or key code, or a new key for my Ford?', 'Firstly, ');
