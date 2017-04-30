@@ -55,8 +55,8 @@ INSERT INTO currency (id, name, symbol, symbol_placement) VALUES (3, 'EUR', '€
 INSERT INTO flash (message, title, type) VALUES ('This product may require professional installation', 'Professional is needed', 'WARNING');
 INSERT INTO flash (message, title, type) VALUES ('Goods is used', 'Used', 'WARNING');
 
-INSERT INTO size (id, value) VALUES (1,'35,43 x 35,43 in');
-INSERT INTO size (id, value) VALUES (2,'70,87 x 27,56 in');
+INSERT INTO size (id, value, status) VALUES (1,'35,43 x 35,43 in', 0);
+INSERT INTO size (id, value, status) VALUES (2,'70,87 x 27,56 in', 0);
 
 -- INSERT INTO unit (abbr, name) VALUES ('mm', 'milimeter');
 -- INSERT INTO unit (abbr, name) VALUES ('cm', 'centimeter');
