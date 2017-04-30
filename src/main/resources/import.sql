@@ -58,11 +58,7 @@ INSERT INTO flash (message, title, type) VALUES ('Goods is used', 'Used', 'WARNI
 INSERT INTO size (id, value, status) VALUES (1,'35,43 x 35,43 in', 0);
 INSERT INTO size (id, value, status) VALUES (2,'70,87 x 27,56 in', 0);
 
--- INSERT INTO unit (abbr, name) VALUES ('mm', 'milimeter');
--- INSERT INTO unit (abbr, name) VALUES ('cm', 'centimeter');
--- INSERT INTO unit (abbr, name) VALUES ('m', 'meter');
--- INSERT INTO unit (abbr, name) VALUES ('g', 'gram');
-INSERT INTO unit (id, abbr, name) VALUES (1, 'pcs', 'pieces');
+INSERT INTO unit (id, abbr, name, status) VALUES (1, 'pcs', 'pieces', 0);
 
 INSERT INTO material (id, name, composition, slug, status) VALUES (1,'Twill', '100% Silk', 'twill', 0);
 INSERT INTO material (id, name, composition, slug, status) VALUES (2, 'Satin', '100% Silk', 'satin', 0);
