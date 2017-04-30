@@ -9,7 +9,7 @@ import application.persistence.repository.ShippingTariffRepository;
 import application.rest.domain.ShippingTariffDTO;
 import application.service.AdditionalDataManipulator;
 import application.service.AdditionalDataManipulatorBatch;
-import application.service.BaseDatabaseServiceImpl;
+import application.service.BaseSoftDeletableDatabaseServiceImpl;
 import application.service.carrier.CarrierService;
 import application.service.product.ApplicationFileService;
 import application.service.response.ServiceResponse;
@@ -24,7 +24,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 @Service
-public class ShippingTariffServiceImpl extends BaseDatabaseServiceImpl<ShippingTariff, Integer, ShippingTariffRepository, ShippingTariffDTO> implements ShippingTariffService {
+public class ShippingTariffServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<ShippingTariff, Integer, ShippingTariffRepository, ShippingTariffDTO> implements ShippingTariffService {
 
     @Autowired
     private ShippingTariffRepository shippingTariffRepository;

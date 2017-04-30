@@ -1,12 +1,13 @@
 package application.rest.domain;
 
 import application.persistence.entity.ShippingTariff;
+import application.persistence.type.StatusEnum;
 import lombok.Data;
 
 import java.math.BigDecimal;
 
 @Data
-public class ShippingTariffDTO implements ReadWriteDatabaseDTO<ShippingTariff>, IdentifableDTO<Integer> {
+public class ShippingTariffDTO implements ReadWriteDatabaseDTO<ShippingTariff>, SoftDeletableDTO, IdentifableDTO<Integer> {
 
     private Integer uid;
     private String name;
@@ -17,6 +18,7 @@ public class ShippingTariffDTO implements ReadWriteDatabaseDTO<ShippingTariff>, 
     private BigDecimal price;
     private Integer currencyUid;
     private String deliveryTime;
+    private StatusEnum status;
 
     private CurrencyDTO currency;
     private CarrierDTO carrier;
@@ -31,6 +33,7 @@ public class ShippingTariffDTO implements ReadWriteDatabaseDTO<ShippingTariff>, 
         shippingTariff.setSlug(slug);
         shippingTariff.setPrice(price);
         shippingTariff.setDeliveryTime(deliveryTime);
+        shippingTariff.setStatus(status);
         if (selectAsParent) {
             if (currency != null) {
                 shippingTariff.setCurrency(currency.toEntity(false));
