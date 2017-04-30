@@ -42,11 +42,11 @@ INSERT INTO product_design (id, name) VALUES (1, 'Atelier LAINFINI');
 
 INSERT INTO complaint_reason (name) VALUES ('DEFECT');
 
-INSERT INTO category (id, name, parent_category_id, priority) VALUES (1, 'Scarves', NULL, 1);
-INSERT INTO category (id, name, parent_category_id, priority) VALUES (2, 'Shawl', 1, 1);
+INSERT INTO category (id, name, parent_category_id, priority, status) VALUES (1, 'Scarves', NULL, 1, 0);
+INSERT INTO category (id, name, parent_category_id, priority, status) VALUES (2, 'Shawl', 1, 1, 0);
 
-INSERT INTO category (id, name, parent_category_id, priority) VALUES (3,'Bestselling', NULL, 1);
-INSERT INTO category (id, name, parent_category_id, priority) VALUES (4, 'Discounts', NULL, 1);
+INSERT INTO category (id, name, parent_category_id, priority, status) VALUES (3,'Bestselling', NULL, 1, 0);
+INSERT INTO category (id, name, parent_category_id, priority, status) VALUES (4, 'Discounts', NULL, 1, 0);
 
 INSERT INTO currency (id, name, symbol, symbol_placement) VALUES (1, 'CZK', 'Kč', 1);
 INSERT INTO currency (id, name, symbol, symbol_placement) VALUES (2, 'USD', '$', 1);
