@@ -5,7 +5,7 @@ import application.persistence.repository.ProductCollectionRepository;
 import application.rest.domain.ProductCollectionDTO;
 import application.rest.domain.ProductCollectionItemDTO;
 import application.rest.domain.ProductDTO;
-import application.service.BaseDatabaseServiceImpl;
+import application.service.BaseSoftDeletableDatabaseServiceImpl;
 import application.service.product.ProductService;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class ProductCollectionServiceImpl extends BaseDatabaseServiceImpl<ProductCollection, Integer, ProductCollectionRepository, ProductCollectionDTO>
+public class ProductCollectionServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<ProductCollection, Integer, ProductCollectionRepository, ProductCollectionDTO>
         implements ProductCollectionService {
 
     @Autowired

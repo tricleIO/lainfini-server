@@ -286,9 +286,7 @@ INSERT INTO file_collection_has_file (sequence_number,file_id,collection_id) VAL
 
 
 
-INSERT INTO product_collection (id, name, slug) VALUES (1,'New Arrivals','new-arrivals');
--- INSERT INTO product_collection (id, name,slug) VALUES (2,'best toys ever','best_toys_ever');
--- INSERT INTO product_collection (id, name,slug) VALUES (3,'hallowen wishes','hallowen_wishes');
+INSERT INTO product_collection (id, name, slug, status) VALUES (1,'New Arrivals','new-arrivals', 0);
 
 INSERT INTO product_collection_item (position, product_id, product_collection_id) VALUES (1, 0x66353763616364612D303935612D3131,1);
 INSERT INTO product_collection_item (position, product_id,product_collection_id) VALUES (2, 0x004EDA8D0F3F4F33A5C3706C55A248C5,1);
