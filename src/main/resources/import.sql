@@ -312,7 +312,7 @@ INSERT INTO shipping_region (id, code, name) VALUES (1, 'NA', 'North America');
 INSERT INTO shipping_region (id, code, name) VALUES (2, 'EU', 'Europe');
 INSERT INTO shipping_region (id, code, name) VALUES (3, 'REST', 'Rest of the world');
 
-INSERT INTO carrier (id, name, slug, tracking_endpoint, logo_image_id) VALUES (1, 'DHL', 'dhl', 'www.track-it.com/dhl', NULL);
+INSERT INTO carrier (id, name, slug, tracking_endpoint, logo_image_id, status) VALUES (1, 'DHL', 'dhl', 'www.track-it.com/dhl', NULL, 0);
 
 INSERT INTO shipping_tariff (id, name, slug, carrier_id, price, currency_id, icon_image_id, delivery_time) VALUES (1, 'DHL EXPRESS WORLDWIDE', 'dhl-express', 1, 45, 2, NULL, '3-5 Days');
 INSERT INTO shipping_tariff (id, name, slug, carrier_id, price, currency_id, icon_image_id, delivery_time) VALUES (2, 'DHL EXPRESS WORLDWIDE', 'dhl-express', 1, 35, 2, NULL, '3-5 Days');
