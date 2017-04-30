@@ -14,7 +14,7 @@ import java.util.Set;
 @Audited
 @Entity
 @Data
-public class ShippingRegion implements DTOConvertable<ShippingRegionDTO>, Serializable {
+public class ShippingRegion extends SoftDeletableEntityImpl implements DTOConvertable<ShippingRegionDTO>, SoftDeletableEntity, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

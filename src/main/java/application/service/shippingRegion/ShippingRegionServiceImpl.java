@@ -6,7 +6,7 @@ import application.persistence.repository.CountryRepository;
 import application.persistence.repository.ShippingRegionRepository;
 import application.rest.domain.CountryDTO;
 import application.rest.domain.ShippingRegionDTO;
-import application.service.BaseDatabaseServiceImpl;
+import application.service.BaseSoftDeletableDatabaseServiceImpl;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Set;
 
 @Service
-public class ShippingRegionServiceImpl extends BaseDatabaseServiceImpl<ShippingRegion, Integer, ShippingRegionRepository, ShippingRegionDTO> implements ShippingRegionService {
+public class ShippingRegionServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<ShippingRegion, Integer, ShippingRegionRepository, ShippingRegionDTO> implements ShippingRegionService {
 
     @Autowired
     private ShippingRegionRepository shippingRegionRepository;

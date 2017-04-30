@@ -14,7 +14,7 @@ import java.io.Serializable;
 @Audited
 @Entity
 @Data
-public class Technology implements DTOConvertable<TechnologyDTO>, Serializable {
+public class Technology extends SoftDeletableEntityImpl implements DTOConvertable<TechnologyDTO>, SoftDeletableEntity, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

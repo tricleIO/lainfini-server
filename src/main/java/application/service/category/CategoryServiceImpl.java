@@ -3,7 +3,7 @@ package application.service.category;
 import application.persistence.entity.Category;
 import application.persistence.repository.CategoryRepository;
 import application.rest.domain.CategoryDTO;
-import application.service.BaseDatabaseServiceImpl;
+import application.service.BaseSoftDeletableDatabaseServiceImpl;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CategoryServiceImpl extends BaseDatabaseServiceImpl<Category, Integer, CategoryRepository, CategoryDTO> implements CategoryService {
+public class CategoryServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Category, Integer, CategoryRepository, CategoryDTO> implements CategoryService {
 
     @Autowired
     private CategoryRepository categoryRepository;

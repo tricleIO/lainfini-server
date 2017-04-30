@@ -1,6 +1,7 @@
 package application.rest.domain;
 
 import application.persistence.entity.Address;
+import application.persistence.type.StatusEnum;
 import application.rest.AddressController;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
@@ -13,7 +14,7 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class AddressDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Address>, IdentifableDTO<Long> {
+public class AddressDTO extends ResourceSupport implements ReadWriteDatabaseDTO<Address>, IdentifableDTO<Long>, SoftDeletableDTO {
 
     private Long uid;
     private String street;
@@ -23,6 +24,7 @@ public class AddressDTO extends ResourceSupport implements ReadWriteDatabaseDTO<
     private String state;
     private String country;
     private UUID customerUid;
+    private StatusEnum status;
 
     private UserDTO customer;
 

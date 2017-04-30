@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 @Entity
 @Data
-public class Country implements DTOConvertable<CountryDTO>, Serializable {
+public class Country extends SoftDeletableEntityImpl implements DTOConvertable<CountryDTO>, SoftDeletableEntity, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

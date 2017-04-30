@@ -15,7 +15,7 @@ import java.math.BigDecimal;
 @Entity
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class ShippingTariff implements DTOConvertable<ShippingTariffDTO>, Serializable {
+public class ShippingTariff extends SoftDeletableEntityImpl implements DTOConvertable<ShippingTariffDTO>, SoftDeletableEntity, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -12,7 +12,7 @@ import java.io.Serializable;
 @Audited
 @Entity
 @Data
-public class Carrier implements DTOConvertable<CarrierDTO>, Serializable {
+public class Carrier extends SoftDeletableEntityImpl implements DTOConvertable<CarrierDTO>, SoftDeletableEntity, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

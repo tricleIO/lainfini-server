@@ -14,7 +14,7 @@ import java.io.Serializable;
 @Table(name = "address")
 @Data
 @ToString(exclude = {"customer"})
-public class Address implements DTOConvertable<AddressDTO>, Serializable {
+public class Address extends SoftDeletableEntityImpl implements DTOConvertable<AddressDTO>, SoftDeletableEntity, Serializable {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)

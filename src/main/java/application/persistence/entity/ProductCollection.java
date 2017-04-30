@@ -11,7 +11,7 @@ import java.util.Set;
 @Entity
 @Table(name = "product_collection")
 @Data
-public class ProductCollection implements DTOConvertable<ProductCollectionDTO>, SlugEntity, Serializable {
+public class ProductCollection extends SoftDeletableEntityImpl implements DTOConvertable<ProductCollectionDTO>, SoftDeletableEntity, SlugEntity, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

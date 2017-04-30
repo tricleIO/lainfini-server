@@ -1,6 +1,7 @@
 package application.rest.domain;
 
 import application.persistence.entity.ProductCollection;
+import application.persistence.type.StatusEnum;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
@@ -9,12 +10,13 @@ import java.util.List;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class ProductCollectionDTO implements ReadWriteDatabaseDTO<ProductCollection>, IdentifableDTO<Integer>, SlugDTO {
+public class ProductCollectionDTO implements ReadWriteDatabaseDTO<ProductCollection>, IdentifableDTO<Integer>, SoftDeletableDTO, SlugDTO {
 
     private Integer uid;
     private String name;
     private String slug;
     private List<ProductCollectionItemDTO> items = new LinkedList<>();
+    private StatusEnum status;
 
     @Override
     public ProductCollection toEntity(boolean selectAsParent, Object... parentParams) {
@@ -22,6 +24,7 @@ public class ProductCollectionDTO implements ReadWriteDatabaseDTO<ProductCollect
         productCollection.setId(uid);
         productCollection.setName(name);
         productCollection.setSlug(slug);
+        productCollection.setStatus(status);
         return productCollection;
     }
 
