@@ -64,9 +64,9 @@ INSERT INTO size (id, value) VALUES (2,'70,87 x 27,56 in');
 -- INSERT INTO unit (abbr, name) VALUES ('g', 'gram');
 INSERT INTO unit (id, abbr, name) VALUES (1, 'pcs', 'pieces');
 
-INSERT INTO material (id, name, composition, slug) VALUES (1,'Twill', '100% Silk', 'twill');
-INSERT INTO material (id, name, composition, slug) VALUES (2, 'Satin', '100% Silk', 'satin');
-INSERT INTO material (id, name, composition, slug) VALUES (3, 'Triora', '70% Silk 30% Wool', 'triora');
+INSERT INTO material (id, name, composition, slug, status) VALUES (1,'Twill', '100% Silk', 'twill', 0);
+INSERT INTO material (id, name, composition, slug, status) VALUES (2, 'Satin', '100% Silk', 'satin', 0);
+INSERT INTO material (id, name, composition, slug, status) VALUES (3, 'Triora', '70% Silk 30% Wool', 'triora', 0);
 
 INSERT INTO role (id, role_name) VALUES (1, 'ROLE_ADMIN');
 INSERT INTO role (id, role_name) VALUES (2, 'ROLE_CUSTOMER');
