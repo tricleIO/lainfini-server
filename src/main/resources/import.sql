@@ -67,8 +67,8 @@ INSERT INTO material (id, name, composition, slug, status) VALUES (3, 'Triora', 
 INSERT INTO role (id, role_name) VALUES (1, 'ROLE_ADMIN');
 INSERT INTO role (id, role_name) VALUES (2, 'ROLE_CUSTOMER');
 
-INSERT INTO customer (id, degree_after_name, degree_before_name, first_name, last_name, locale, email, password, phone_code, phone_number, sex, status, currency_id, register_status) VALUES (0x66353763616364612D303935612D3131, 'PhD', 'Ing', 'Michal', 'Novák', 'CZECH', 'info@lainfini.com','$2a$09$RSIobSu0iAlqm.QfwMA2/OlQwGW5MAmhqSmiF/3a.0ZibJIDp8pFW', '+420','987654987', 'M', 'ACTIVE', 1, 0);
-INSERT INTO customer (id, degree_after_name, degree_before_name, first_name, last_name, locale, email, password, phone_code, phone_number, sex, status, currency_id, register_status) VALUES (0x66353763616364612D303935612D3130, '', '', 'Petra', 'Andělová', 'CZECH', 'jan.merta@tricle.io','$2a$10$ClApxW.jQ.ZhtDzsNB.yeunMPnrA.QiKkjwMEsfPqU5hRtuR2HUwW', '+420','555666888', 'F', 'ACTIVE', 1, 0);
+INSERT INTO customer (id, degree_after_name, degree_before_name, first_name, last_name, locale, email, password, phone_code, phone_number, sex, status, currency_id, register_status) VALUES (0x66353763616364612D303935612D3131, 'PhD', 'Ing', 'Michal', 'Novák', 'CZECH', 'info@lainfini.com','$2a$09$RSIobSu0iAlqm.QfwMA2/OlQwGW5MAmhqSmiF/3a.0ZibJIDp8pFW', '+420','987654987', 'M', 0, 1, 0);
+INSERT INTO customer (id, degree_after_name, degree_before_name, first_name, last_name, locale, email, password, phone_code, phone_number, sex, status, currency_id, register_status) VALUES (0x66353763616364612D303935612D3130, '', '', 'Petra', 'Andělová', 'CZECH', 'jan.merta@tricle.io','$2a$10$ClApxW.jQ.ZhtDzsNB.yeunMPnrA.QiKkjwMEsfPqU5hRtuR2HUwW', '+420','555666888', 'F', 0, 1, 0);
 
 INSERT INTO linked_account(id, customer_id, account_party, account_status, valid_from) VALUES (1, 0x66353763616364612D303935612D3131, 'FACEBOOK', 0, '2017-03-16 11:08:01');
 
