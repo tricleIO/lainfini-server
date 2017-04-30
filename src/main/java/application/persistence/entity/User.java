@@ -19,7 +19,6 @@ package application.persistence.entity;
 import application.persistence.DTOConvertable;
 import application.persistence.type.LocaleEnum;
 import application.persistence.type.SexEnum;
-import application.persistence.type.StatusEnum;
 import application.persistence.type.UserStatusEnum;
 import application.rest.domain.UserDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -32,7 +31,6 @@ import org.hibernate.envers.NotAudited;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
@@ -41,16 +39,13 @@ import java.util.UUID;
 @Table(name = "customer")
 @Data
 @EqualsAndHashCode(exclude = {"addresses","wishes", "linkedAccountList"})
-public class User implements DTOConvertable<UserDTO>, Serializable {
+public class User extends SoftDeletableEntityImpl implements DTOConvertable<UserDTO>, SoftDeletableEntity, Serializable {
 
     @Id
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     @GeneratedValue(generator = "uuid")
     @Column(name = "id", unique = true, nullable = false, columnDefinition = "BINARY(16)")
     private UUID id;
-
-//    @OneToMany(mappedBy = "customer")
-//    private List<LinkedAccount> linkedAccountList;
 
     @Column(name = "degree_before_name")
     private String degreeBeforeName;
@@ -92,10 +87,6 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private UserEmailVerificationToken emailVerificationToken;
 
-    @Enumerated(EnumType.STRING)
-    @Column(name = "status", length = 15)
-    private StatusEnum status;
-
     @ManyToOne
     @JoinColumn(name = "currency_id", referencedColumnName = "id")
     private Currency currency;
@@ -126,7 +117,7 @@ public class User implements DTOConvertable<UserDTO>, Serializable {
     @JsonIgnore
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "user_role", joinColumns = {@JoinColumn(name = "user_id")}, inverseJoinColumns = {@JoinColumn(name = "role_id")})
-    private Set<Role> roles = new HashSet<Role>();
+    private Set<Role> roles;
 
     @Column(name = "register_status")
     @Enumerated(EnumType.ORDINAL)

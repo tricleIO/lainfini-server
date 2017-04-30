@@ -101,6 +101,10 @@ public class CartServiceImpl extends BaseDatabaseServiceImpl<Cart, UUID, CartRep
         return cartResponse;
     }
 
+    public boolean isCartOpen(UUID cartId) {
+        return cartRepository.countByIdAndStatus(cartId, CartStatusEnum.OPENED) > 0;
+    }
+
     @Override
     protected ServiceResponse<CartDTO> doBeforeConvertInCreate(CartDTO dto) {
         dto.setCreatedAt(new Date());

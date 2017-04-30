@@ -5,14 +5,14 @@ import application.persistence.repository.CarrierRepository;
 import application.rest.domain.CarrierDTO;
 import application.service.AdditionalDataManipulator;
 import application.service.AdditionalDataManipulatorBatch;
-import application.service.BaseDatabaseServiceImpl;
+import application.service.BaseSoftDeletableDatabaseServiceImpl;
 import application.service.product.ApplicationFileService;
 import application.service.response.ServiceResponseStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CarrierServiceImpl extends BaseDatabaseServiceImpl<Carrier, Integer, CarrierRepository, CarrierDTO> implements CarrierService {
+public class CarrierServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Carrier, Integer, CarrierRepository, CarrierDTO> implements CarrierService {
 
     @Autowired
     private CarrierRepository carrierRepository;

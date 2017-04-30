@@ -8,7 +8,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-public class FAQ implements DTOConvertable<FaqDTO> {
+public class FAQ extends SoftDeletableEntityImpl implements DTOConvertable<FaqDTO>, SoftDeletableEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

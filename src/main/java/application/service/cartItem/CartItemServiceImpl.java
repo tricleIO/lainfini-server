@@ -30,6 +30,9 @@ public class CartItemServiceImpl extends BaseDatabaseServiceImpl<CartItem, Long,
 
     @Override
     public ServiceResponse<CartItemDTO> create(CartItemDTO dto) {
+        if (!cartService.isCartOpen(dto.getCartUid())) {
+            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_OPEN);
+        }
         if (productInCartAlreadyExists(dto.getProductUid(), dto.getCartUid())) {
             return ServiceResponse.error(ServiceResponseStatus.ALREADY_EXISTS);
         }
@@ -44,6 +47,9 @@ public class CartItemServiceImpl extends BaseDatabaseServiceImpl<CartItem, Long,
 
     @Override
     public ServiceResponse<CartItemDTO> put(CartItemDTO dto) {
+        if (!cartService.isCartOpen(dto.getCartUid())) {
+            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_OPEN);
+        }
         if (!productInCartAlreadyExists(dto.getProductUid(), dto.getCartUid())) {
             return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
         }
@@ -57,6 +63,9 @@ public class CartItemServiceImpl extends BaseDatabaseServiceImpl<CartItem, Long,
 
     @Override
     public ServiceResponse<CartItemDTO> removeProductFromCart(UUID productId, UUID cartId) {
+        if (!cartService.isCartOpen(cartId)) {
+            return ServiceResponse.error(ServiceResponseStatus.CART_NOT_OPEN);
+        }
         CartItem cartItem = cartItemRepository.findByProductIdAndCartId(productId, cartId);
         if (cartItem == null) {
             return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
