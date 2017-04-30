@@ -72,6 +72,9 @@ public class AppProperties implements Serializable {
     @Value("${braintree.gateway.private-key:null}")
     private String braintreePrivateKey;
 
+    @Value("${braintree.gateway.environment:null}")
+    private String braintreeEnvironment;
+
     @PostConstruct
     private void testValueContent() {
         for (Field f : AppProperties.class.getDeclaredFields()) {

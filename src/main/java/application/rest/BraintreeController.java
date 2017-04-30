@@ -181,7 +181,7 @@ public class BraintreeController {
 
     private BraintreeGateway getGateway() {
         return new BraintreeGateway(
-                Environment.SANDBOX,
+                Environment.parseEnvironment(appProperties.getBraintreeEnvironment()),
                 appProperties.getBraintreeMerchantId(),
                 appProperties.getBraintreePublicKey(),
                 appProperties.getBraintreePrivateKey()
