@@ -64,6 +64,24 @@ public class AddressController extends AbstractDatabaseController<Address, Long,
         return create(address);
     }
 
+    @RequestMapping(value = "/addresses/{id}", method = RequestMethod.DELETE)
+    public ResponseEntity<?> deleteAddress(@PathVariable Long id) {
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        ServiceResponse<AddressDTO> readResponse = addressService.read(id);
+        if (!readResponse.isSuccessful()) {
+            return new ErrorResponseEntity(readResponse.getStatus());
+        }
+        ServiceResponse<Boolean> isCurrentUserResponse = userService.isCurrrentUser(
+                readResponse.getBody().getCustomerUid()
+        );
+        if (!hasRolesResponse.isSuccessful() && !isCurrentUserResponse.isSuccessful()) {
+            return new ErrorResponseEntity(ServiceResponseStatus.FORBIDDEN);
+        }
+        return delete(id);
+    }
+
     @Override
     public AddressService getBaseService() {
         return addressService;

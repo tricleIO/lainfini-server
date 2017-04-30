@@ -58,7 +58,7 @@ public class BraintreeController {
     @RequestMapping(value = "/braintree/token", method = RequestMethod.POST)
     public ResponseEntity<?> getClientToken() {
         return new ResponseEntity<>(
-                new BraintreeClientToken(gateway.clientToken().generate()),
+                new BraintreeClientToken(getGateway().clientToken().generate()),
                 HttpStatus.OK
         );
     }
@@ -105,7 +105,7 @@ public class BraintreeController {
                 .options()
                 .submitForSettlement(true)
                 .done();
-        Result<Transaction> result = gateway.transaction().sale(request);
+        Result<Transaction> result = getGateway().transaction().sale(request);
 
         // result of transaction
         if (result.isSuccess()) {
@@ -179,11 +179,12 @@ public class BraintreeController {
         }
     }
 
-    private static BraintreeGateway gateway = new BraintreeGateway(
-            Environment.SANDBOX,
-            "j23qymyj5mxyx29t",
-            "bpn69z7wnhgn4zz9",
-            "3cb85613eaadd5c93e78a77188afff57"
-    );
-
+    private BraintreeGateway getGateway() {
+        return new BraintreeGateway(
+                Environment.parseEnvironment(appProperties.getBraintreeEnvironment()),
+                appProperties.getBraintreeMerchantId(),
+                appProperties.getBraintreePublicKey(),
+                appProperties.getBraintreePrivateKey()
+        );
+    }
 }

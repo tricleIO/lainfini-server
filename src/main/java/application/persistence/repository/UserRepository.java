@@ -25,7 +25,7 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 
 import java.util.UUID;
 
-public interface UserRepository extends PagingAndSortingRepository<User, UUID> {
+public interface UserRepository extends PagingAndSortingRepository<User, UUID>, SoftDeletableRepository<User> {
 
 	User findByEmail(String login);
 	User findByEmailAndRegisterStatus(String login, UserStatusEnum registerStatus);

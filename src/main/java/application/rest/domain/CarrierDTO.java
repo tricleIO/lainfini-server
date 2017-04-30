@@ -1,16 +1,18 @@
 package application.rest.domain;
 
 import application.persistence.entity.Carrier;
+import application.persistence.type.StatusEnum;
 import lombok.Data;
 
 @Data
-public class CarrierDTO implements ReadWriteDatabaseDTO<Carrier>, IdentifableDTO<Integer> {
+public class CarrierDTO implements ReadWriteDatabaseDTO<Carrier>, IdentifableDTO<Integer>, SoftDeletableDTO {
 
     private Integer uid;
     private String name;
     private String slug;
     private String trackingEndpoint;
     private Long logoUid;
+    private StatusEnum status;
 
     private ApplicationFileDTO logo;
 

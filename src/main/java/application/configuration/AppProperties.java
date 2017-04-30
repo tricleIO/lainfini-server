@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import javax.annotation.PostConstruct;
 import java.io.Serializable;
 import java.lang.reflect.Field;
-import java.util.LinkedList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -59,10 +59,24 @@ public class AppProperties implements Serializable {
     @Value("${lainfini.frontend.address:null}")
     private String frontendAddress;
 
+    @Value("${mail.list.sellers:null}")
+    private String sellerEmails;
+
+    // braintree
+    @Value("${braintree.gateway.merchant-id:null}")
+    private String braintreeMerchantId;
+
+    @Value("${braintree.gateway.public-key:null}")
+    private String braintreePublicKey;
+
+    @Value("${braintree.gateway.private-key:null}")
+    private String braintreePrivateKey;
+
+    @Value("${braintree.gateway.environment:null}")
+    private String braintreeEnvironment;
 
     @PostConstruct
     private void testValueContent() {
-
         for (Field f : AppProperties.class.getDeclaredFields()) {
             try {
                 if (f.get(this).toString().equals("null")) {
@@ -77,13 +91,7 @@ public class AppProperties implements Serializable {
     }
 
     public List<String> getSellerEmails() {
-        List<String> sellerEmails = new LinkedList<>();
-        sellerEmails.add("jan.merta.90@gmail.com");
-        sellerEmails.add("jan.merta@tricle.io");
-        sellerEmails.add("petr.filip@tricle.io");
-        sellerEmails.add("michal.fikejs@tricle.io");
-        sellerEmails.add("pavel.janku@tricle.io");
-        return sellerEmails;
+        return Arrays.asList(sellerEmails.split(";"));
     }
 
 }

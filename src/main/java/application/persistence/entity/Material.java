@@ -13,7 +13,7 @@ import javax.persistence.Id;
 @Audited
 @Data
 @Entity
-public class Material implements DTOConvertable<MaterialDTO>, SlugEntity {
+public class Material extends SoftDeletableEntityImpl implements DTOConvertable<MaterialDTO>, SoftDeletableEntity, SlugEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

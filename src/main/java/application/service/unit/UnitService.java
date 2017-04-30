@@ -2,8 +2,8 @@ package application.service.unit;
 
 import application.persistence.entity.Unit;
 import application.rest.domain.UnitDTO;
-import application.service.BaseDatabaseService;
+import application.service.BaseSoftDeletableDatabaseService;
 
-public interface UnitService extends BaseDatabaseService<Unit, Integer, UnitDTO> {
+public interface UnitService extends BaseSoftDeletableDatabaseService<Unit, Integer, UnitDTO> {
 
 }
