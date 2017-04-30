@@ -5,7 +5,7 @@ import application.persistence.repository.AddressRepository;
 import application.rest.domain.AddressDTO;
 import application.service.AdditionalDataManipulator;
 import application.service.AdditionalDataManipulatorBatch;
-import application.service.BaseDatabaseServiceImpl;
+import application.service.BaseSoftDeletableDatabaseServiceImpl;
 import application.service.response.ServiceResponse;
 import application.service.response.ServiceResponseStatus;
 import application.service.user.UserService;
@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 import java.util.UUID;
 
 @Service
-public class AddressServiceImpl extends BaseDatabaseServiceImpl<Address, Long, AddressRepository, AddressDTO> implements AddressService {
+public class AddressServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Address, Long, AddressRepository, AddressDTO> implements AddressService {
 
     @Autowired
     private AddressRepository addressRepository;

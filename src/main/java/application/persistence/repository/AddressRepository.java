@@ -7,7 +7,7 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 
 import java.util.UUID;
 
-public interface AddressRepository extends PagingAndSortingRepository<Address, Long> {
+public interface AddressRepository extends PagingAndSortingRepository<Address, Long>, SoftDeletableRepository<Address> {
 
     Page<Address> findByCustomerId(UUID customerId, Pageable pageable);
 

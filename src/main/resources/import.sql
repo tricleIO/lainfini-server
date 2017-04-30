@@ -81,8 +81,8 @@ INSERT INTO `lainfini-server`.la_facebook (facebook_id,username,linked_account_i
 
 -- INSERT INTO customer_email_verification_token (id,expiry_date,verification_token,customer_id) VALUES (1,'2020-03-03 20:20:20','1',0x66353763616364612D303935612D3113);
 
-INSERT INTO address (city, country, house_number, postal_code, state, street, customer_id) VALUES ('Praha', 'Czechia', '987', '77984', 'Czechia', 'Polabinská', 0x66353763616364612D303935612D3131);
-INSERT INTO address (city, country, house_number, postal_code, state, street, customer_id) VALUES ('Brno', 'Czechia', '451689'  , '77984', 'Czechia', 'Polabinská', 0x66353763616364612D303935612D3130);
+INSERT INTO address (city, country, house_number, postal_code, state, street, customer_id, status) VALUES ('Praha', 'Czechia', '987', '77984', 'Czechia', 'Polabinská', 0x66353763616364612D303935612D3131, 0);
+INSERT INTO address (city, country, house_number, postal_code, state, street, customer_id, status) VALUES ('Brno', 'Czechia', '451689'  , '77984', 'Czechia', 'Polabinská', 0x66353763616364612D303935612D3130, 0);
 
 INSERT INTO user_role (user_id, role_id) VALUES (0x66353763616364612D303935612D3131, 1);
 INSERT INTO user_role (user_id, role_id) VALUES (0x66353763616364612D303935612D3130, 2);
