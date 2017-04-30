@@ -12,7 +12,7 @@ import java.io.Serializable;
 
 @Entity
 @Data
-public class ComplaintReason implements DTOConvertable<ComplaintReasonDTO>, Serializable {
+public class ComplaintReason extends SoftDeletableEntityImpl implements DTOConvertable<ComplaintReasonDTO>, SoftDeletableEntity, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
