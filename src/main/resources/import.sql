@@ -306,9 +306,9 @@ INSERT INTO cart (id, created_at, created_from, status, customer_id) VALUES (0xF
 INSERT INTO cart_item (added_at, quantity, cart_id, product_id) VALUES ('2017-03-21 13:15:45', 1, 0xF888EE4007D94A08B6D3A3F7F2F1CC6D, 0x004EDA8D0F3F4F33A5C3706C55A248C5);
 INSERT INTO cart_item (added_at, quantity, cart_id, product_id) VALUES ('2017-03-21 13:16:24', 2, 0xF888EE4007D94A08B6D3A3F7F2F1CC6D, 0x991DC5AB44744538849059A613EECC70);
 
-INSERT INTO shipping_region (id, code, name) VALUES (1, 'NA', 'North America');
-INSERT INTO shipping_region (id, code, name) VALUES (2, 'EU', 'Europe');
-INSERT INTO shipping_region (id, code, name) VALUES (3, 'REST', 'Rest of the world');
+INSERT INTO shipping_region (id, code, name, status) VALUES (1, 'NA', 'North America', 0);
+INSERT INTO shipping_region (id, code, name, status) VALUES (2, 'EU', 'Europe', 0);
+INSERT INTO shipping_region (id, code, name, status) VALUES (3, 'REST', 'Rest of the world', 0);
 
 INSERT INTO carrier (id, name, slug, tracking_endpoint, logo_image_id, status) VALUES (1, 'DHL', 'dhl', 'www.track-it.com/dhl', NULL, 0);
 
