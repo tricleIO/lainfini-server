@@ -2,8 +2,8 @@ package application.service.technology;
 
 import application.persistence.entity.Technology;
 import application.rest.domain.TechnologyDTO;
-import application.service.BaseDatabaseService;
+import application.service.BaseSoftDeletableDatabaseService;
 
-public interface TechnologyService extends BaseDatabaseService<Technology, Integer, TechnologyDTO> {
+public interface TechnologyService extends BaseSoftDeletableDatabaseService<Technology, Integer, TechnologyDTO> {
 
 }

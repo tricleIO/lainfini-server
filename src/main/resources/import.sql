@@ -33,7 +33,7 @@ INSERT INTO faq (question, answer, status) VALUES ('Is the product changing colo
 INSERT INTO faq (question, answer, status) VALUES ('Can I order more pieces to sell it through my shop?', '<p>We are sorry, but LAINFINI Atelier business is based on the uniqueness of its products. Our collections are limited and their uniqueness is certified. We never produce more pieces of the collection which is already released.</p>', 0);
 INSERT INTO faq (question, answer, status) VALUES ('Can I contact you as a wholesaler?', '<p> Please contact us via email address <a href="mailto:info@lainfini.com">info@lainfini.com</a></p>', 0);
 
-INSERT INTO technology (id, name) VALUES (1, 'Digital print');
+INSERT INTO technology (id, name, status) VALUES (1, 'Digital print', 0);
 
 INSERT INTO product_design (id, name, status) VALUES (1, 'Atelier LAINFINI', 0);
 
