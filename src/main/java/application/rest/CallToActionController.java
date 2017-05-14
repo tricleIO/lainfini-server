@@ -3,7 +3,7 @@ package application.rest;
 import application.persistence.entity.CallToAction;
 import application.persistence.type.UserRoleEnum;
 import application.rest.domain.CallDTO;
-import application.rest.domain.SoldItemsCallDTO;
+import application.rest.domain.GoodTasteCallDTO;
 import application.service.response.ServiceResponse;
 import application.service.soldItemsCall.CallToActionService;
 import application.service.user.UserService;
@@ -33,7 +33,7 @@ public class CallToActionController extends AbstractDatabaseController<CallToAct
     }
 
     @RequestMapping(value = "/soldItems", method = RequestMethod.POST)
-    public ResponseEntity<?> createSoldItems(@RequestBody SoldItemsCallDTO soldItemsCallDTO) {
+    public ResponseEntity<?> createSoldItems(@RequestBody GoodTasteCallDTO soldItemsCallDTO) {
         ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
                 UserRoleEnum.ROLE_ADMIN
         );
