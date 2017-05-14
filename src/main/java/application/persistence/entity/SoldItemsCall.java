@@ -1,7 +1,7 @@
 package application.persistence.entity;
 
 import application.rest.domain.CallDTO;
-import application.rest.domain.SoldItemsCallDTO;
+import application.rest.domain.GoodTasteCallDTO;
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -15,7 +15,7 @@ public class SoldItemsCall extends CallToAction {
 
     @Override
     public CallDTO toDTO(boolean selectAsParent, Object... parentParams) {
-        SoldItemsCallDTO soldItemsCallDTO = new SoldItemsCallDTO();
+        GoodTasteCallDTO soldItemsCallDTO = new GoodTasteCallDTO();
         soldItemsCallDTO.setUid(getId());
         soldItemsCallDTO.setType(getType());
 //        soldItemsCallDTO.setMade(made);
