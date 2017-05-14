@@ -2,7 +2,7 @@ package application.persistence.type;
 
 public enum CallEnum {
 
-    LIMITED_EDITION,
+    HURRY_UP,
     GOOD_TASTE
 
 }
