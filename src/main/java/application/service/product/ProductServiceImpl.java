@@ -67,7 +67,7 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
                     }
                 }
             }
-            addRandomCallToAction(productDTO);
+//            addCallToAction(productDTO);
         }
         return response;
     }
@@ -222,6 +222,7 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
                     ProductStatusEnum.getProductStatus(productCountInStock)
             );
         }
+        addCallToAction(dto);
     }
 
 
@@ -277,18 +278,19 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
         return categoryIds;
     }
 
-    private void addRandomCallToAction(ProductDTO productDTO) {
-        if (productHasCallToActionRepository.countByProductId(productDTO.getUid()) > 0) {
-            List<ProductHasCallToAction> productHasCallToAction = productHasCallToActionRepository.findByProductId(productDTO.getUid());
-            int index = random.nextInt(productHasCallToAction.size());
-            ProductHasCallToAction randomProductHasCallToAction = productHasCallToAction.get(index);
-            CallDTO call = randomProductHasCallToAction.getCallToAction().toDTO(false);
-            if (call instanceof SoldItemsCallDTO) {
-                SoldItemsCallDTO soldItemsCallDTO = (SoldItemsCallDTO) call;
-                soldItemsCallDTO.setMade(stockItemService.countAllTimeStockedProducts(productDTO.getUid()).getBody());
-                soldItemsCallDTO.setSold(stockItemService.countAllTimeSoldItems(productDTO.getUid()).getBody());
-            }
-            productDTO.setCall(call);
+    private void addCallToAction(ProductDTO productDTO) {
+        Long made = stockItemService.countAllTimeStockedProducts(productDTO.getUid()).getBody();
+        Long sold = stockItemService.countAllTimeSoldItems(productDTO.getUid()).getBody();
+        double ratio = made / (double) sold;
+        if (ratio < 0.6) {
+            GoodTasteCallDTO soldItemsCallDTO = new GoodTasteCallDTO();
+            soldItemsCallDTO.setMade(made);
+            soldItemsCallDTO.setSold(sold);
+            productDTO.setCall(soldItemsCallDTO);
+        } else {
+            HurryUpCallDTO hurryUpCallDTO = new HurryUpCallDTO();
+            hurryUpCallDTO.setMade(made);
+            productDTO.setCall(hurryUpCallDTO);
         }
     }
 

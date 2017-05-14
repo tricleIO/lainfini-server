@@ -8,10 +8,10 @@ import lombok.Data;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class SoldItemsCallDTO extends CallDTO {
+public class HurryUpCallDTO extends CallDTO {
 
+    private CallEnum name = CallEnum.HURRY_UP;
     private Long made;
-    private Long sold;
 
     @Override
     public CallToAction toEntity(boolean selectAsParent, Object... parentParams) {
