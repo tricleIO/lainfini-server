@@ -53,6 +53,17 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     }
 
     @Override
+    public ServiceResponse<ProductDTO> readBySlug(String slug) {
+        Product result = productRepository.findOneBySlug(slug);
+        if (result == null) {
+            return ServiceResponse.error(ServiceResponseStatus.NOT_FOUND);
+        }
+        ProductDTO dto = result.toDTO(true);
+        additionalUpdateDto(dto);
+        return ServiceResponse.success(dto);
+    }
+
+    @Override
     public ServiceResponse<ProductDTO> read(UUID key, Principal principal) {
         ServiceResponse<ProductDTO> response = super.read(key);
         if (response.isSuccessful()) {
