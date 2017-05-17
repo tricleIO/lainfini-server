@@ -292,16 +292,27 @@ public class ProductServiceImpl extends BaseSoftDeletableDatabaseServiceImpl<Pro
     private void addCallToAction(ProductDTO productDTO) {
         Long made = stockItemService.countAllTimeStockedProducts(productDTO.getUid()).getBody();
         Long sold = stockItemService.countAllTimeSoldItems(productDTO.getUid()).getBody();
-        double ratio = made / (double) sold;
-        if (ratio < 0.6) {
-            GoodTasteCallDTO soldItemsCallDTO = new GoodTasteCallDTO();
-            soldItemsCallDTO.setMade(made);
-            soldItemsCallDTO.setSold(sold);
-            productDTO.setCall(soldItemsCallDTO);
+        if (made > 0) {
+            if (sold != made) {
+                double ratio = (made - sold) / (double) made;
+                if (ratio < 0.6) {
+                    GoodTasteCallDTO soldItemsCallDTO = new GoodTasteCallDTO();
+                    soldItemsCallDTO.setMade(made);
+                    soldItemsCallDTO.setSold(sold);
+                    productDTO.setCall(soldItemsCallDTO);
+                } else {
+                    HurryUpCallDTO hurryUpCallDTO = new HurryUpCallDTO();
+                    hurryUpCallDTO.setMade(made);
+                    productDTO.setCall(hurryUpCallDTO);
+                }
+            } else {
+                AllGoneCallDTO allGoneCallDTO = new AllGoneCallDTO();
+                allGoneCallDTO.setMade(made);
+                productDTO.setCall(allGoneCallDTO);
+            }
         } else {
-            HurryUpCallDTO hurryUpCallDTO = new HurryUpCallDTO();
-            hurryUpCallDTO.setMade(made);
-            productDTO.setCall(hurryUpCallDTO);
+            ConceptCallDTO conceptCallDTO = new ConceptCallDTO();
+            productDTO.setCall(conceptCallDTO);
         }
     }
 
