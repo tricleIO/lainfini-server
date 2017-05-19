@@ -42,6 +42,18 @@ public class MaterialController extends AbstractDatabaseController<Material, Int
         return create(materialDTO);
     }
 
+    @RequestMapping(value = "/{id}", method = RequestMethod.PATCH)
+    public ResponseEntity<?> patchMaterial(@PathVariable Integer id, @RequestBody MaterialDTO materialDTO) {
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        if (!hasRolesResponse.isSuccessful()) {
+            return new ErrorResponseEntity(hasRolesResponse.getStatus());
+        }
+        materialDTO.setUid(id);
+        return patch(materialDTO);
+    }
+
     @Override
     public MaterialService getBaseService() {
         return materialService;
