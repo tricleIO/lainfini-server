@@ -42,6 +42,18 @@ public class SizeController extends AbstractDatabaseController<Size, Integer, Si
         return create(sizeDTO);
     }
 
+    @RequestMapping(value = "/{id}", method = RequestMethod.PATCH)
+    public ResponseEntity<?> patchSize(@PathVariable Integer id, @RequestBody SizeDTO sizeDTO) {
+        ServiceResponse<Boolean> hasRolesResponse = userService.hasCurrentUserDemandedRoles(
+                UserRoleEnum.ROLE_ADMIN
+        );
+        if (!hasRolesResponse.isSuccessful()) {
+            return new ErrorResponseEntity(hasRolesResponse.getStatus());
+        }
+        sizeDTO.setUid(id);
+        return patch(sizeDTO);
+    }
+
     @Override
     public SizeService getBaseService() {
         return sizeService;
